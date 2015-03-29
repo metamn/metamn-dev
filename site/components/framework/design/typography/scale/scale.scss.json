@@ -6,11 +6,11 @@
       "properties": [
         {
           "name": "font-size",
-          "value": "100%"
+          "value": "120%"
         },
         {
           "name": "line-height",
-          "value": "1.25"
+          "value": "1.5"
         }
       ],
       "responsive": [
@@ -19,11 +19,11 @@
           "properties": [
             {
               "name": "font-size",
-              "value": "125%"
+              "value": "140%"
             },
             {
               "name": "line-height",
-              "value": "1.25"
+              "value": "1.5"
             }
           ]
         }

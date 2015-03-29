@@ -15,16 +15,16 @@
     @include colors(black-on-white);
     
     
+    
   }
   
   // Body text
   // - The default long text
   @if ($variant == 'body-text') {
-    @include font(futura-pt-book);
-    @include scale(default);
-    @include colors(black-on-white);
+    @include p;
     
     max-width: 30em;
+    
     
   }
   

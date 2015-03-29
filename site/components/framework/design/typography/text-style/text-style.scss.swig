@@ -14,6 +14,12 @@
     {% endfor %}
     {% if text.properties %}{% for property in text.properties %}{{ property.name }}: {{ property.value }};
     {% endfor %}{% endif %}
+    {% for responsive in text.responsive %}
+    @include {{ responsive.breakpoint }} {
+      {% for property in responsive.properties %}{{ property.name }}: {{ property.value }};
+      {% endfor %}
+    }
+    {% endfor %}
   }
   {% endfor %}
 }
