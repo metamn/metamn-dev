@@ -1,0 +1,20 @@
+
+
+// Typographic settings for different text types
+// - this file is generated please do not edit
+
+
+// The text mixin
+@mixin text-style($variant) {
+  
+  // Default
+  // - The default font
+  @if ($variant == 'default') {
+    @include font(futura-pt-book);
+    @include scale(default);
+    @include colors(black-on-white);
+    
+    
+  }
+  
+}

@@ -1,0 +1,29 @@
+{
+  "colors": [
+    {
+      "name": "white",
+      "value": "rgba(255, 255, 255, 1)",
+      "description": "The background color"
+    },
+    {
+      "name": "black",
+      "value": "rgba(0, 0, 0, 1)",
+      "description": "The text color"
+    }
+  ],
+  "color_pairs": [
+    {
+      "name": "black-on-white",
+      "properties": [
+        {
+          "name": "color",
+          "value": "$black"
+        },
+        {
+          "name": "background-color",
+          "value": "$white"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+// Colors
+// - generated from components/atoms/colors.scss.json
+// - please do not edit directly this file
+
+
+// The background color
+$white: rgba(255, 255, 255, 1);
+
+// The text color
+$black: rgba(0, 0, 0, 1);
+
+
+// Color combinations. Colors are not used standalone but in pairs
+@mixin colors($name) {
+
+  @if ($name == 'black-on-white') {
+    color: $black;
+    background-color: $white;
+    
+  }
+
+}
