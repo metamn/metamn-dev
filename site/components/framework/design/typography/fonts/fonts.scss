@@ -1,0 +1,32 @@
+
+
+// Typefaces and Fonts
+// - this file is auto generated. Please do not edit
+
+
+// Futura PT
+// - The default typeface, sans-serif
+// - character set: English, with OpenType Features on
+// - served from Typekit
+// - styles and weights: Book, Medium, 
+
+
+
+
+// The font mixin
+@mixin font($variant) {
+
+  @if ($variant == 'futura-pt-book') {
+    font-family: 'futura-pt', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  @if ($variant == 'futura-pt-medium') {
+    font-family: 'futura-pt', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+}
+
