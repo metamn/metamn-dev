@@ -1,0 +1,60 @@
+{
+  "url": "/",
+  "urlx": "http://metamn.github.io/metamn-dev/",
+  "title": "Metamn",
+  "images": "assets/images/",
+
+  "articles": [
+    "How this site was made",
+    "More articles"
+  ],
+
+  "links": {
+    "main": [
+      {
+        "title": "Work",
+        "url": "work"
+      },
+      {
+        "title": "Styleguide",
+        "url": "styleguide"
+      },
+      {
+        "title": "About",
+        "url": "about"
+      },
+      {
+        "title": "Contact",
+        "url": "contact"
+      }
+    ],
+
+    "contact": [
+      {
+        "title": "Email",
+        "url": "bartus.csongor@gmail.com",
+        "type": "email"
+      },
+      {
+        "title": "Twitter",
+        "url": "http://twitter.com/metamn",
+        "type": "external"
+      },
+      {
+        "title": "Github",
+        "url": "http://github.com/metamn",
+        "type": "external"
+      },
+      {
+        "title": "Tumblr",
+        "url": "http://metamn.tumblr.com",
+        "type": "external"
+      },
+      {
+        "title": "Readability",
+        "url": "https://www.readability.com/metamn/",
+        "type": "external"
+      }
+    ]
+  }
+}
