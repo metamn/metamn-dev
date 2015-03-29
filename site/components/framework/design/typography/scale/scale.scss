@@ -1,0 +1,36 @@
+// Typographic grid and scale
+// - this file is generated please do not edit
+
+
+// The default metric for sizing non-typographic elements
+// - it is based on the default font size and line height
+// - $lem is used for spacing elements on the webpage like margins and padding
+
+
+$lem: 1.25em;
+
+@include desktop { 
+  $lem: 1.5625em;
+}
+
+
+
+
+// Different typographic scales
+@mixin scale($variant) {
+
+  // The default font size and line height
+  @if ($variant == 'default') {
+    font-size: 100%;
+    line-height: 1.25;
+    
+    
+    @include desktop {
+      font-size: 125%;
+      line-height: 1.25;
+      
+    }
+    
+  }
+
+}

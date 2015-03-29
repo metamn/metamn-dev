@@ -1,0 +1,33 @@
+{
+  "scale": [
+    {
+      "name": "default",
+      "description": "The default font size and line height",
+      "properties": [
+        {
+          "name": "font-size",
+          "value": "100%"
+        },
+        {
+          "name": "line-height",
+          "value": "1.25"
+        }
+      ],
+      "responsive": [
+        {
+          "breakpoint": "desktop",
+          "properties": [
+            {
+              "name": "font-size",
+              "value": "125%"
+            },
+            {
+              "name": "line-height",
+              "value": "1.25"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
