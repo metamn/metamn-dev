@@ -1,0 +1,4 @@
+@mixin link {
+  text-decoration: none;
+  @include colors(blue-on-white);
+}

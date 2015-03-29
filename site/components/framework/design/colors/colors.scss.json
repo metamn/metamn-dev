@@ -9,6 +9,11 @@
       "name": "black",
       "value": "rgba(0, 0, 0, 1)",
       "description": "The text color"
+    },
+    {
+      "name": "blue",
+      "value": "rgba(0, 0, 255, 1)",
+      "description": "The highlight color"
     }
   ],
   "color_pairs": [
@@ -18,6 +23,19 @@
         {
           "name": "color",
           "value": "$black"
+        },
+        {
+          "name": "background-color",
+          "value": "$white"
+        }
+      ]
+    },
+    {
+      "name": "blue-on-white",
+      "properties": [
+        {
+          "name": "color",
+          "value": "$blue"
         },
         {
           "name": "background-color",

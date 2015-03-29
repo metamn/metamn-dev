@@ -1,0 +1,10 @@
+@mixin links {
+  .ul {
+    @include ul;
+    padding: $lem;
+
+    .link {
+      @include link;
+    }
+  }
+}

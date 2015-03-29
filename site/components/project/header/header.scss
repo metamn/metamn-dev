@@ -1,3 +1,7 @@
 @mixin header {
   padding: $lem $lem 0;
+
+  .link {
+    @include link;
+  }
 }

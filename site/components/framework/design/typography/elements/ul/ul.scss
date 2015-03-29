@@ -1,0 +1,14 @@
+@mixin ul {
+  list-style-type: none;
+
+  li {
+    display: flex;
+    align-items: center;
+
+    span {
+      &.long-dash {
+        @include long-dash;
+      }
+    }
+  }
+}

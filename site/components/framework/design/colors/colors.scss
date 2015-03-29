@@ -9,12 +9,21 @@ $white: rgba(255, 255, 255, 1);
 // The text color
 $black: rgba(0, 0, 0, 1);
 
+// The highlight color
+$blue: rgba(0, 0, 255, 1);
+
 
 // Color combinations. Colors are not used standalone but in pairs
 @mixin colors($name) {
 
   @if ($name == 'black-on-white') {
     color: $black;
+    background-color: $white;
+    
+  }
+
+  @if ($name == 'blue-on-white') {
+    color: $blue;
     background-color: $white;
     
   }

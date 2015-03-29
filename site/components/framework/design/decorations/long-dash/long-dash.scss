@@ -1,0 +1,6 @@
+@mixin long-dash {
+  border-bottom: 1px solid;
+  height: 1px;
+  width: $lem - 2 * $lem / 6;
+  margin: 0 $lem / 6;
+}
