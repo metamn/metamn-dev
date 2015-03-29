@@ -1,4 +1,4 @@
-/ Breakpoints and responsive mixins
+// Breakpoints and responsive mixins
 // - generated from components/atoms/grid/breakpoints.scss.json
 // - please do not edit directly this file
 
