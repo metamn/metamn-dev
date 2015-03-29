@@ -1,1 +1,0 @@
-< class="header__logo header__logo--rotated">
