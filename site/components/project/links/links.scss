@@ -1,7 +1,7 @@
 @mixin links {
   .ul {
     @include ul;
-    padding: $lem;
+    padding: $lem / 2 $lem;
 
     .link {
       @include link;

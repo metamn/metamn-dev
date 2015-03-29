@@ -23,15 +23,20 @@
       "name": "Body text",
       "description": "The default long text",
       "based_on": "Futura PT Book",
-      "mixins": [
-        {
-          "name": "p"
-        }
-      ],
       "properties": [
         {
           "name": "max-width",
           "value": "30em"
+        }
+      ],
+      "responsive": [
+        {
+          "breakpoint": "mobile",
+          "mixins": [
+            {
+              "name": "p"
+            }
+          ]
         }
       ]
     }

@@ -21,10 +21,15 @@
   // Body text
   // - The default long text
   @if ($variant == 'body-text') {
-    @include p;
     
     max-width: 30em;
     
+    
+    @include mobile {
+      @include p;
+      
+      
+    }
     
   }
   

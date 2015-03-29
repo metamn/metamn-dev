@@ -16,6 +16,8 @@
     {% endfor %}{% endif %}
     {% for responsive in text.responsive %}
     @include {{ responsive.breakpoint }} {
+      {% for mixin in responsive.mixins %}@include {{ mixin.name }}{% if mixin.value %}({{ mixin.value }}){% endif %};
+      {% endfor %}
       {% for property in responsive.properties %}{{ property.name }}: {{ property.value }};
       {% endfor %}
     }
