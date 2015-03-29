@@ -48,7 +48,7 @@ var makeFiles = function(path, klass) {
 
 
 // Create unique classname(s) according to BEM standards
-var makeClass = function(object, item, parent) {
+var makeClass = function(object, item, parent, parent2) {
   switch (object) {
     case 'block':
       return item;
@@ -56,19 +56,25 @@ var makeClass = function(object, item, parent) {
     case 'element':
       return parent + ' ' + parent + '__' + item;
       break;
-    case 'modifier':
+    case 'modifier-for-block':
       return parent + ' ' + parent + '--' + item;
+      break;
+    case 'modifier-for-element':
+      return parent2 + parent + ' ' + parent2 + parent + '--' + item;
   }
 }
 
 
 
-// Get the last substring of a string
-// - ex: 'components/framework' => framework
-// - ex: 'header header__logo' => header__logo
-var getLastItem = function(str, separator) {
+// Get the last (nth) substring of a string
+// - ex: 'components/framework', '/' => framework
+// - ex: 'header header__logo', ' ' => header__logo
+// - ex: 'header/__logo', '/', 2 => header
+var getLastItem = function(str, separator, nth) {
+  if (typeof(nth) === "undefined") { nth = 1; }
+
   splits = str.split(separator);
-  return splits[splits.length - 1];
+  return splits[splits.length - nth];
 }
 
 
@@ -116,29 +122,27 @@ var makeElement = function(path, name) {
 
 
 // Create a Modifier
-var makeModifier = function(path, argv) {
-  modifier = argv._[2];
-  if (!modifier) {
-    console.log("Modifier missing");
-    return;
+// - it has to have a parent already, ie <path> should exist
+// - Modifiers for blocks are different from modifiers for elements
+var makeModifier = function(path, name) {
+  // header/--black
+  new_path = path + '/--' + name;
+  makeFolder(new_path);
+
+  parent = getLastItem(path, '/');
+
+  // Modifier for Element
+  if (parent.indexOf('__') !== -1 ) {
+    parent2 = getLastItem(path, '/', 2);
+    new_file = new_path + '/' + parent2 + parent + '--' + name;
+    klass = makeClass('modifier-for-element', name, parent, parent2);
+    makeFiles(new_file, klass);
+  } else {
+    // Modifier for Block
+    new_file = new_path + '/' + parent + '--' + name;
+    klass = makeClass('modifier-for-block', name, parent);
+    makeFiles(new_file, klass);
   }
-
-  value = argv._[3];
-  if (!value) {
-    console.log("Modifier value missing");
-    return;
-  }
-
-  splits = path.split('/');
-  element = splits[splits.length - 1];
-  block = splits[splits.length - 2];
-  filename = block + element + '_' + modifier + '_' + value;
-  folder = path + '/_' + modifier;
-  file = folder + '/' + filename;
-
-  makeFolder(folder);
-  makeFile(file + '.html.swig', '< class="' + filename + '">');
-  makeFile(file + '.scss', "@mixin " + filename + " {}");
 }
 
 
