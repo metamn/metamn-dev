@@ -1,5 +1,11 @@
 html {
   body {
+    @include semantic-html5-titles;
+    @include reset;
     @include text-style(default);
+
+    .header {
+      @include header;
+    }
   }
 }

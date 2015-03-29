@@ -1,0 +1,7 @@
+@mixin semantic-html5-titles {
+  section, article, aside, nav {
+    > h3 {
+      display: none;
+    }
+  }
+}

@@ -1,1 +1,9 @@
-@mixin home {}
+html {
+  &.home {
+    body {
+      .about {
+        @include about;
+      }
+    }
+  }
+}

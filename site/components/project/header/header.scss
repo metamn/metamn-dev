@@ -1,0 +1,7 @@
+@mixin header {
+  padding: $lem;
+
+  h3 {
+    @include text-style(body-text);
+  }
+}

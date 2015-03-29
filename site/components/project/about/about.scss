@@ -1,0 +1,7 @@
+@mixin about {
+  padding: $lem;
+
+  .about__text {
+    @include text-style(body-text);
+  }  
+}

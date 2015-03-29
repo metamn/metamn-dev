@@ -8,12 +8,23 @@
 @mixin text-style($variant) {
   
   // Default
-  // - The default font
+  // - The default text
   @if ($variant == 'default') {
     @include font(futura-pt-book);
     @include scale(default);
     @include colors(black-on-white);
     
+    
+  }
+  
+  // Body text
+  // - The default long text
+  @if ($variant == 'body-text') {
+    @include font(futura-pt-book);
+    @include scale(default);
+    @include colors(black-on-white);
+    
+    max-width: 30em;
     
   }
   

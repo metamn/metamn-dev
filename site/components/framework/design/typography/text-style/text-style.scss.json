@@ -2,7 +2,7 @@
   "text_styles": [
     {
       "name": "Default",
-      "description": "The default font",
+      "description": "The default text",
       "based_on": "Futura PT Book",
       "mixins": [
         {
@@ -16,6 +16,31 @@
         {
           "name": "colors",
           "value": "black-on-white"
+        }
+      ]
+    },
+    {
+      "name": "Body text",
+      "description": "The default long text",
+      "based_on": "Futura PT Book",
+      "mixins": [
+        {
+          "name": "font",
+          "value": "futura-pt-book"
+        },
+        {
+          "name": "scale",
+          "value": "default"
+        },
+        {
+          "name": "colors",
+          "value": "black-on-white"
+        }
+      ],
+      "properties": [
+        {
+          "name": "max-width",
+          "value": "30em"
         }
       ]
     }
