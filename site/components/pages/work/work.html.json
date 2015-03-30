@@ -1,0 +1,65 @@
+{
+  "works": [
+    {
+      "title": "Wanderlust",
+      "services": [
+        "Front-end",
+        "Wordpress"
+      ]
+    },
+    {
+      "title": "Iorad",
+      "services": [
+        "Design",
+        "Front-end"
+      ]
+    },
+    {
+      "title": "OCCRP",
+      "services": [
+        "Design",
+        "Front-end"
+      ]
+    },
+    {
+      "title": "Reboot",
+      "services": [
+        "Front-end",
+        "Wordpress"
+      ]
+    },
+    {
+      "title": "Anvelocom",
+      "services": [
+        "Design",
+        "Front-end",
+        "Wordpress"
+      ]
+    },
+    {
+      "title": "Scatter",
+      "services": [
+        "Design",
+        "Front-end"
+      ]
+    },
+    {
+      "title": "Inu Chivu",
+      "services": [
+        "Design",
+        "Front-end",
+        "Wordpress"
+      ]
+    },
+    {
+      "title": "Smuff",
+      "services": [
+        "Design",
+        "Front-end",
+        "Wordpress",
+        "Yii",
+        "E-commerce"
+      ]
+    }
+  ]
+}

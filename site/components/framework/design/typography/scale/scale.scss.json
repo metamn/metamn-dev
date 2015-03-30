@@ -28,6 +28,26 @@
           ]
         }
       ]
+    },
+    {
+      "name": "small",
+      "description": "Smaller than default font size",
+      "properties": [
+        {
+          "name": "font-size",
+          "value": "0.667em"
+        }
+      ]
+    },
+    {
+      "name": "large",
+      "description": "Larger than default font size",
+      "properties": [
+        {
+          "name": "font-size",
+          "value": "1.5em"
+        }
+      ]
     }
   ]
 }

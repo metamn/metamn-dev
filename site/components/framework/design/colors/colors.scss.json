@@ -42,6 +42,19 @@
           "value": "$white"
         }
       ]
+    },
+    {
+      "name": "white-on-blue",
+      "properties": [
+        {
+          "name": "color",
+          "value": "$white"
+        },
+        {
+          "name": "background-color",
+          "value": "$blue"
+        }
+      ]
     }
   ]
 }

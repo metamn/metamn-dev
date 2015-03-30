@@ -32,4 +32,18 @@ $lem: 1.5em;
     
   }
 
+  // Smaller than default font size
+  @if ($variant == 'small') {
+    font-size: 0.667em;
+    
+    
+  }
+
+  // Larger than default font size
+  @if ($variant == 'large') {
+    font-size: 1.5em;
+    
+    
+  }
+
 }

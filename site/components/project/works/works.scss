@@ -1,0 +1,21 @@
+@mixin works {
+  @include colors(white-on-blue);
+  margin: $lem / 2 0;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  .work {
+    padding: $lem;
+    flex-basis: 280px;
+
+    .work__services {
+      @include text-style(category-list);
+    }
+
+    .work__title {
+      display: flex;
+      @include text-style(title);
+    }
+  }
+}

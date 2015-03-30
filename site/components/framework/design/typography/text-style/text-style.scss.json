@@ -39,6 +39,40 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Category list",
+      "description": "The category or tag list",
+      "based_on": "Futura PT Medium",
+      "mixins": [
+        {
+          "name": "font",
+          "value": "futura-pt-medium"
+        },
+        {
+          "name": "scale",
+          "value": "small"
+        },
+        {
+          "name": "uppercase",
+          "value": "1.3px"
+        }
+      ]
+    },
+    {
+      "name": "Title",
+      "description": "The title of an article",
+      "based_on": "Futura PT Book",
+      "mixins": [
+        {
+          "name": "font",
+          "value": "futura-pt-book"
+        },
+        {
+          "name": "scale",
+          "value": "large"
+        }
+      ]
     }
   ]
 }

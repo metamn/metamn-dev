@@ -28,4 +28,10 @@ $blue: rgba(0, 0, 255, 1);
     
   }
 
+  @if ($name == 'white-on-blue') {
+    color: $white;
+    background-color: $blue;
+    
+  }
+
 }
