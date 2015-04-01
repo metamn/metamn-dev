@@ -1,12 +1,28 @@
 @mixin work__images {
-  padding: $lem;
-
-  // Stretch images to fill the full space available
-  flex-grow: 1;
   overflow: hidden;
 
+  @include tablet-and-below {
+    flex-basis: 100%;
+  }
+
+  @include tablet-and-up {
+    // Stretch images to fill the full space available
+    flex-grow: 1;
+  }
+
+
   .slides {
-    @include intrinsic-ratio(16, 9, '.slide');
+    @include mobile {
+      @include intrinsic-ratio(3, 4, '.slide');
+    }
+
+    @include tablet {
+      @include intrinsic-ratio(1, 1, '.slide');
+    }
+
+    @include landscape {
+      @include intrinsic-ratio(3, 2, '.slide');
+    }
 
     .slide {
       @include animation(transform);
@@ -17,6 +33,10 @@
 
       figure {
         @include figure;
+
+        + figure {
+          padding-left: $lem;
+        }
       }
     }
   }

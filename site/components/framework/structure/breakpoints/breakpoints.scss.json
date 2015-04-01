@@ -18,6 +18,14 @@
   ],
   "responsive_mixins": [
     {
+      "name": "portrait",
+      "media_query": "(orientation: portrait)"
+    },
+    {
+      "name": "landscape",
+      "media_query": "(orientation: landscape)"
+    },
+    {
       "name": "mobile",
       "media_query": "(max-width: $breakpoint-mobile - 0.1)"
     },

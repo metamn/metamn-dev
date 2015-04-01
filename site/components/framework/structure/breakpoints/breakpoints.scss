@@ -19,6 +19,18 @@ $breakpoint-desktop: 1600px;
 
 
 
+@mixin portrait {
+  @media only screen and (orientation: portrait) {
+    @content
+  }
+}
+
+@mixin landscape {
+  @media only screen and (orientation: landscape) {
+    @content
+  }
+}
+
 @mixin mobile {
   @media only screen and (max-width: $breakpoint-mobile - 0.1) {
     @content

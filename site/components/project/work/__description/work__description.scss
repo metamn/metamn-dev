@@ -1,6 +1,7 @@
 @mixin work__description {
-  padding: $lem;
-  
+  padding-right: $lem;
+  padding-bottom: $lem;
+
   .text {
     @include text-style(body-text);
   }

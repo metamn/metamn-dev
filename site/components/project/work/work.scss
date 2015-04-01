@@ -1,6 +1,4 @@
 @mixin work {
-  @include colors(white-on-blue);
-
   .work__services {
     @include work__services;
   }
@@ -14,6 +12,9 @@
   }
 
   .work__container {
+    @include colors(white-on-blue);
+    padding: $lem;
+    
     display: flex;
     flex-wrap: wrap;
     align-items: center;
