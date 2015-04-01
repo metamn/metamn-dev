@@ -1,6 +1,6 @@
 ---
 title: Iorad
-class: work
+klass: work
 ---
 
 {% extends '../../../project/templates/default/default.html.swig' %}

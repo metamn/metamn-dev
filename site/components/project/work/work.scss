@@ -1,1 +1,20 @@
-@mixin work {}
+@mixin work {
+  @include colors(white-on-blue);
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  .work__services {
+    flex-basis: 100%;
+    @include work__services;
+  }
+
+  .work__description {
+    @include work__description;
+  }
+
+  .work__images {
+    @include work__images;
+  }
+}

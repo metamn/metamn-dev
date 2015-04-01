@@ -14,6 +14,11 @@
       "name": "blue",
       "value": "rgba(0, 0, 255, 1)",
       "description": "The highlight color"
+    },
+    {
+      "name": "gray",
+      "value": "rgba(204, 204, 204, 1)",
+      "description": "Secondary background color"
     }
   ],
   "color_pairs": [
@@ -53,6 +58,19 @@
         {
           "name": "background-color",
           "value": "$blue"
+        }
+      ]
+    },
+    {
+      "name": "black-on-gray",
+      "properties": [
+        {
+          "name": "color",
+          "value": "$black"
+        },
+        {
+          "name": "background-color",
+          "value": "$gray"
         }
       ]
     }
