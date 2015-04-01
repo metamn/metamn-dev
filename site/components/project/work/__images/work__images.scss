@@ -1,3 +1,23 @@
 @mixin work__images {
   padding: $lem;
+
+  // Stretch images to fill the full space available
+  flex-grow: 1;
+  overflow: hidden;
+
+  .slides {
+    @include intrinsic-ratio(16, 9, '.slide');
+
+    .slide {
+      @include animation(transform);
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      figure {
+        @include figure;
+      }
+    }
+  }
 }

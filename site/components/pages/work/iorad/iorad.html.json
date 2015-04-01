@@ -14,13 +14,11 @@
         "images": [
           {
             "title": "The iorad pricing page on mobile",
-            "name": "iorad-pricing-mobile",
-            "class": "iphone"
+            "name": "iorad-pricing-mobile"
           },
           {
             "title": "The iorad checkout page on mobile",
-            "name": "iorad-checkout-mobile",
-            "class": "iphone"
+            "name": "iorad-checkout-mobile"
           }
         ]
       },

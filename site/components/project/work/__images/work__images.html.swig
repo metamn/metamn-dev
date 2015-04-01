@@ -15,6 +15,9 @@
     {% endfor %}
   </aside>
 
-  <button onclick="prev()">&rsaquo;</button>
-  <button onclick="next()">&raquo;</button>
+  <nav class="navigation">
+    <h3>Navigation</h3>
+    <button onclick="prev()">&rsaquo;</button>
+    <button onclick="next()">&raquo;</button>
+  </nav>
 </article>

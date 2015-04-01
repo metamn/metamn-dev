@@ -1,12 +1,7 @@
 @mixin work {
   @include colors(white-on-blue);
 
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-
   .work__services {
-    flex-basis: 100%;
     @include work__services;
   }
 
@@ -16,5 +11,11 @@
 
   .work__images {
     @include work__images;
+  }
+
+  .work__container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
   }
 }
