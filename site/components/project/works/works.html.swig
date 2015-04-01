@@ -7,7 +7,10 @@
         {{ work.services | join(', ') }}
       </div>
 
-      <h3 class="work__title">{{ work.title }}</h3>
+      <h3 class="work__title">
+        {% set link = { title: work.title } %}
+        {% include '../../framework/design/typography/elements/link/link.html.swig' %}
+      </h3>
     </article>
   {% endfor %}
 </section>
