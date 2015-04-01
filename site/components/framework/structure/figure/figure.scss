@@ -1,0 +1,46 @@
+@mixin figure($figcaption: off) {
+  margin: 0;
+
+  // Center an image to it's container
+  // - useful on large mobiles lile iPhone 6 Plump
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  img {
+    width: 100%;
+  }
+
+
+  // Remove the extra bottom spacing for <img> inside <a>
+  a {
+    line-height: 0;
+    display: block;
+  }
+
+  figcaption {
+    @if ($figcaption == off) {
+      display: none;
+    }
+
+    @if ($figcaption == on) {
+      display: flex;
+    }
+
+    @if ($figcaption == figcaption) {
+      display: none;
+
+      &.figcaption {
+        display: flex;
+      }
+    }
+
+    @if ($figcaption == from-title) {
+      display: none;
+
+      &.figcaption--from-title {
+        display: flex;
+      }
+    }
+  }
+}

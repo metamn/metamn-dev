@@ -2,6 +2,7 @@
   "works": [
     {
       "title": "Wanderlust",
+      "url": "work/wanderlust",
       "services": [
         "Front-end",
         "Wordpress"
@@ -9,6 +10,7 @@
     },
     {
       "title": "Iorad",
+      "url": "work/iorad",
       "services": [
         "Design",
         "Front-end"
@@ -16,6 +18,7 @@
     },
     {
       "title": "OCCRP",
+      "url": "work/occrp",
       "services": [
         "Design",
         "Front-end"
@@ -23,6 +26,7 @@
     },
     {
       "title": "Reboot",
+      "url": "work/reboot",
       "services": [
         "Front-end",
         "Wordpress"
@@ -30,6 +34,7 @@
     },
     {
       "title": "Anvelocom",
+      "url": "work/anvelocom",
       "services": [
         "Design",
         "Front-end",
@@ -38,6 +43,7 @@
     },
     {
       "title": "Scatter",
+      "url": "work/scatter",
       "services": [
         "Design",
         "Front-end"
@@ -45,6 +51,7 @@
     },
     {
       "title": "Inu Chivu",
+      "url": "work/inu",
       "services": [
         "Design",
         "Front-end",
@@ -53,6 +60,7 @@
     },
     {
       "title": "Smuff",
+      "url": "work/smuff",
       "services": [
         "Design",
         "Front-end",

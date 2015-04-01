@@ -1,0 +1,54 @@
+{
+  "iorad": {
+    "services": [
+      "Responsive web design",
+      "Front&ndash;end development"
+    ],
+    "description": [
+      "iorad is a startup helping businesses creating better tutorials on web and mobile.",
+      "Before the launch they've decided to give a face lift for their two most important pages: the Pricing and the Checkout page.",
+      "The project requirements were: speed of execution, keeping current visual assets untouched, cross-device and cross-browser compatibility. And a week duration from signing the contract to the final delivery."
+    ],
+    "slides": [
+      {
+        "images": [
+          {
+            "title": "The iorad pricing page on mobile",
+            "name": "iorad-pricing-mobile",
+            "class": "iphone"
+          },
+          {
+            "title": "The iorad checkout page on mobile",
+            "name": "iorad-checkout-mobile",
+            "class": "iphone"
+          }
+        ]
+      },
+      {
+        "images": [
+          {
+            "title": "The iorad pricing page on tablet",
+            "name": "iorad-pricing-tablet-angle1"
+          }
+        ]
+      },
+      {
+        "images": [
+          {
+            "title": "The iorad pricing page on laptop",
+            "name": "iorad-pricing-laptop"
+          }
+        ]
+      },
+      {
+        "images": [
+          {
+            "title": "The iorad pricing page on desktop",
+            "name": "iorad-pricing-desktop-left",
+            "class": "desktop--left"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+@mixin thumb {
+  padding: $lem;
+  flex-basis: 280px;
+
+  .thumb__title {
+    display: flex;
+    @include text-style(title);
+  }
+
+  .thub__categories {
+    @include text-style(category-list);
+  }
+}

@@ -1,8 +1,20 @@
 html {
   &.work {
     body {
-      .works {
-        @include works;
+      .work__archive {
+        @include colors(white-on-blue);
+        margin: $lem / 2 0;
+
+        display: flex;
+        flex-wrap: wrap;
+
+        .thumb {
+          @include thumb;
+        }
+      }
+
+      .work {
+        @include work;
       }
     }
   }
