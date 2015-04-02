@@ -1,6 +1,15 @@
 @mixin thumb {
-  padding: $lem;
-  flex-basis: 280px;
+  @include colors(white-on-blue);
+
+  width: 15em;
+  height: 15em;
+  margin: $lem;
+
+  transform: rotate(45deg);
+  @include animation(transform);
+  &:hover {
+    transform: rotate(0deg);
+  }
 
   .thumb__title {
     display: flex;
