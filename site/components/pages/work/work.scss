@@ -2,14 +2,22 @@ html {
   &.work {
     body {
       display: flex;
-      flex-wrap: wrap;      
+      flex-wrap: wrap;
 
       .thumb {
         @include thumb;
       }
 
-      .work {
-        @include work;
+      .work__services {
+        @include work__services;
+      }
+
+      .work__description {
+        @include work__description;
+      }
+
+      .work__images {
+        @include work__images;
       }
     }
   }

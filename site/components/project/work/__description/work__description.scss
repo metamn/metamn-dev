@@ -1,6 +1,6 @@
 @mixin work__description {
-  padding-right: $lem;
-  padding-bottom: $lem;
+  @include colors(white-on-blue);
+  padding: $lem;
 
   .text {
     @include text-style(body-text);

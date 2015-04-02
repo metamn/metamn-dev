@@ -1,14 +1,9 @@
 @mixin work__images {
   overflow: hidden;
 
-  @include tablet-and-below {
-    flex-basis: 100%;
-  }
-
-  @include tablet-and-up {
-    // Stretch images to fill the full space available
-    flex-grow: 1;
-  }
+  width: 40em;
+  height: 40em;
+  margin: $lem;
 
 
   .slides {
