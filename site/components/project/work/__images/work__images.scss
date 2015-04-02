@@ -42,9 +42,13 @@
   }
 
   .navigation {
+    position: relative;
+    top: -4.5em;
+    height: 0;
+
     span {
       cursor: pointer;
-      font-size: 400%;
+      font-size: 4em;
     }
   }
 }

@@ -1,0 +1,30 @@
+@mixin values {
+
+  .values {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    h3 {
+      display: flex;
+    }
+  }
+
+
+
+  .values__ui {
+    @include values__ui;
+  }
+
+  .values__styleguide {
+    @include values__styleguide;
+  }
+
+  .values__front-end {
+    @include values__front-end;
+  }
+
+  .values__wordpress {
+    @include values__wordpress;
+  }
+}

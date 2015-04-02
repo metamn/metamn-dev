@@ -1,9 +1,35 @@
 html {
   &.home {
     body {
+      display: flex;
+      flex-wrap: wrap;
+
+      .values {
+        order: 100;
+      }
+
+      .header {
+        order: 1;
+      }
+
+      .about {
+        order: 2;
+      }
+
+      .values__ui {
+        order: 3;
+      }
+
+      .links {
+        order: 4;
+        margin-top: -25vh;
+      }
+
       .about {
         @include about;
       }
+
+      @include values;
     }
   }
 }

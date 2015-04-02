@@ -1,0 +1,10 @@
+@mixin values__styleguide {
+  background: $black;
+
+  width: 50vw;
+  height: 70vh;
+
+  h3 {
+    margin-left: 75vw;
+  }
+}

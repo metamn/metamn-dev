@@ -26,17 +26,12 @@
       "properties": [
         {
           "name": "max-width",
-          "value": "30em"
+          "value": "26em"
         }
       ],
-      "responsive": [
+      "mixins": [
         {
-          "breakpoint": "mobile",
-          "mixins": [
-            {
-              "name": "p"
-            }
-          ]
+          "name": "p"
         }
       ]
     },
