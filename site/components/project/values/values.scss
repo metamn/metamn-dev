@@ -4,9 +4,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
     h3 {
       display: flex;
+    }
+
+    transform: rotate(45deg);
+    @include animation(transform);
+    &:hover {
+      transform: rotate(0deg);
     }
   }
 

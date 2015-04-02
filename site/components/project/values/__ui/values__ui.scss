@@ -1,11 +1,11 @@
 @mixin values__ui {
   @include colors(white-on-blue);
 
-  width: 40vw;
-  height: 70vh;
+  width: 30em;
+  height: 30em;
 
   h3 {
-    margin-left: -60vw;
+    margin-left: -45em;
     color: $black;
   }
 }
