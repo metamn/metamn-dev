@@ -1,26 +1,25 @@
 @mixin work__images {
   overflow: hidden;
+  @include colors(white-on-blue);
 
-  width: 40em;
-  height: 40em;
-  margin: $lem;
+  width: 30em;
+  height: 30em;
+  margin-top: $lem;
 
 
   .slides {
-    @include mobile {
-      @include intrinsic-ratio(3, 4, '.slide');
-    }
-
-    @include tablet {
-      @include intrinsic-ratio(1, 1, '.slide');
-    }
-
-    @include landscape {
-      @include intrinsic-ratio(3, 2, '.slide');
-    }
+    position: relative;
+    width: 100%;
+    height: 100%;
 
     .slide {
       @include animation(transform);
+
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
 
       display: flex;
       justify-content: center;
@@ -33,17 +32,6 @@
           padding-left: $lem;
         }
       }
-    }
-  }
-
-  .navigation {
-    position: relative;
-    top: -4.5em;
-    height: 0;
-
-    span {
-      cursor: pointer;
-      font-size: 4em;
     }
   }
 }

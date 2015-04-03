@@ -2,7 +2,10 @@
   "iorad": {
     "services": [
       "Responsive web design",
-      "Front&ndash;end development"
+      "Front&ndash;end development",
+      "HTML5",
+      "CSS3 / SCSS",
+      "Jekyll"
     ],
     "description": [
       "iorad is a startup helping businesses creating better tutorials on web and mobile.",

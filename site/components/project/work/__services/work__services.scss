@@ -1,7 +1,18 @@
 @mixin work__services {
   @include colors(black-on-gray);
+  padding: $lem;
 
   .ul {
-    padding: $lem;
+    @include ul;
   }
+
+  @include desktop {
+    margin-top: $lem;
+
+    .ul {
+      margin-top: $lem * 2;
+    }
+  }
+
+
 }

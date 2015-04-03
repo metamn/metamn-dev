@@ -1,8 +1,21 @@
 @mixin work__description {
   @include colors(white-on-blue);
+
   padding: $lem;
+  margin-top: $lem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
   .text {
     @include text-style(body-text);
+  }
+
+  .navigation {
+    span {
+      cursor: pointer;
+      font-size: 4em;
+    }
   }
 }

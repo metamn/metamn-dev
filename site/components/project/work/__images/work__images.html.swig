@@ -14,10 +14,4 @@
       </div>
     {% endfor %}
   </aside>
-
-  <nav class="navigation">
-    <h3>Navigation</h3>
-    <span onclick="prev()">&lsaquo;</span>
-    <span onclick="next()">&rsaquo;</span>
-  </nav>
 </article>

@@ -19,6 +19,10 @@ html {
       .work__images {
         @include work__images;
       }
+
+      .links {
+        display: flex;
+      }
     }
   }
 }
