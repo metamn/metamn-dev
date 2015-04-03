@@ -43,19 +43,16 @@ var paths = {
   // global config.json file
   config_json: './site/config.json',
 
+  // Styleguide global config.json file
+  styleguide_config_json: './styleguide/config.json',
 
 
-  // .html files from /site to be moved into dest
-  html_src: 'site/components/pages/**/**/*.html',
+
+  // .html files from to be moved into dest
+  html_src: 'components/pages/**/**/*.html',
 
   // the destination folder
   dest: 'dist',
-
-  // .html files from /styleguide to be moved to dest
-  styleguide_html_src: 'styleguide/components/**/*.html',
-
-  // the destination folder for /styleguide
-  styleguide_dest: 'dist/styleguide',
 
 
 
@@ -63,10 +60,13 @@ var paths = {
   // .scss file to compile
   scss_src: 'assets/styles/site.scss',
 
+  // .scss file to compile for /styleguide
+  styleguide_scss_src: 'assets/styles/styleguide.scss',
+
   // .css file destination
   scss_dest: 'dist/assets/styles',
 
-  // .css file destination for /styleguide
+  // .css file destination for styleguide
   styleguide_scss_dest: 'dist/styleguide/assets/styles',
 
 
@@ -257,7 +257,10 @@ var _scss = function(source, dest, html) {
 
 gulp.task('scss', function(){
   _scss('site/' + paths.scss_src, paths.scss_dest, paths.html_src);
-  //_scss('styleguide/' + paths.scss_src, paths.styleguide_scss_dest, paths.styleguide_html_src);
+});
+
+gulp.task('scss_sg', function(){
+  _scss('styleguide/' + paths.styleguide_scss_src, paths.styleguide_scss_dest, paths.styleguide_html_src);
 });
 
 
@@ -269,28 +272,8 @@ gulp.task('scss', function(){
 // HTML
 // - minify and copy html files to dist
 // - create seo friendly urls
-gulp.task('html_styleguide', function() {
-  return gulp.src(paths.styleguide_html_src)
-    .pipe(plumber({errorHandler: onError}))
-    .pipe(rename(function(path) {
-      // rename about.html > about/index.html
-      if (path.basename != 'index') {
-        path.dirname = path.dirname + '/' + path.basename;
-        path.basename = 'index';
-      }
-
-      // rename pages/index.html > index.html
-      if (path.dirname == 'pages' && path.basename == "index") {
-        path.dirname = '';
-      }
-    }))
-    .pipe(minifyHTML())
-    .pipe(gulp.dest(paths.styleguide_dest));
-});
-
-
-gulp.task('html_site', function() {
-  return gulp.src(paths.html_src)
+var _html = function(source, dest) {
+  return gulp.src(source)
     .pipe(plumber({errorHandler: onError}))
     .pipe(rename(function(path) {
       // rename home/home.html > index.html
@@ -301,7 +284,17 @@ gulp.task('html_site', function() {
       path.basename = 'index';
     }))
     .pipe(minifyHTML())
-    .pipe(gulp.dest(paths.dest));
+    .pipe(gulp.dest(dest));
+}
+
+
+gulp.task('html', function() {
+  _html('site/' + paths.html_src, paths.dest);
+});
+
+
+gulp.task('html_sg', function() {
+  _html('styleguide/' + paths.html_src, paths.dest + '/styleguide/');
 });
 
 
@@ -313,7 +306,7 @@ gulp.task('html_site', function() {
 // - process YAML Front Matter data, if any
 // - load JSON data for every file. It looks for a same-name json file. colors.scss.swig will look for colors.scss.json
 // - make available to /styleguide all JSON data from /site
-var _swig = function(source, dest, grabJSON) {
+var _swig = function(source, dest, config, grabJSON) {
   return gulp.src(source)
     .pipe(plumber({errorHandler: onError}))
 
@@ -343,7 +336,7 @@ var _swig = function(source, dest, grabJSON) {
         cache: false,
         // Load site-wide JSON settings
         locals: {
-          site: require(paths.config_json)
+          site: require(config)
         }
       }
     }))
@@ -354,8 +347,11 @@ var _swig = function(source, dest, grabJSON) {
 
 // Swig
 gulp.task('swig', function() {
-  _swig('site/' + paths.swig_src, 'site/' + paths.swig_dest);
-  //_swig('styleguide/' + paths.swig_src, 'styleguide/' + paths.swig_dest, true);
+  _swig('site/' + paths.swig_src, 'site/' + paths.swig_dest, paths.config_json);
+});
+
+gulp.task('swig_sg', function() {
+  _swig('styleguide/' + paths.swig_src, 'styleguide/' + paths.swig_dest, paths.styleguide_config_json, true);
 });
 
 
@@ -394,12 +390,22 @@ gulp.task('images', function(cb) {
 gulp.task('default', function(cb) {
   runSequence(
     'swig',
-    'html_site',
-    //'html_styleguide',
+    'html',
     'scss',
     'js',
     'scripts',
     'images',
+    cb
+  );
+});
+
+
+// The Styleguide task
+gulp.task('sg', function(cb) {
+  runSequence(
+    'swig_sg',
+    'html_sg',
+    'scss_sg',
     cb
   );
 });

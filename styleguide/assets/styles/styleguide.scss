@@ -1,0 +1,13 @@
+// Import everything from /site
+// - if the site/assets/styles/site.scss is changed this file must be manually updated
+
+// External components
+@import '../../../site/assets/styles/normalize.css';
+@import '../../../site/assets/styles/flexbox-bugfix.css';
+
+// Internal components
+@import '../../../site/components/framework/structure/**/*.scss';
+@import '../../../site/components/framework/design/**/*.scss';
+@import '../../../site/components/framework/behavior/**/*.scss';
+@import '../../../site/components/project/**/*.scss';
+@import '../../../site/components/pages/**/*.scss';

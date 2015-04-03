@@ -3,10 +3,12 @@
 @import 'flexbox-bugfix.css';
 
 
-
 // Internal components
 @import '../../components/framework/structure/**/*.scss';
 @import '../../components/framework/design/**/*.scss';
 @import '../../components/framework/behavior/**/*.scss';
 @import '../../components/project/**/*.scss';
 @import '../../components/pages/**/*.scss';
+
+
+// If something is changed here please update styleguide/assets/styles/styleguide.scss too !!!
