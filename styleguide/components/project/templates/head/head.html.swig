@@ -5,7 +5,7 @@
 {% set page_title = t.pagetitle(title, site.title) %}
 
 <!doctype html>
-<html lang="en" class="sg-{{ classname }} {{ klass }}">
+<html lang="en" class="sg sg-{{ classname }} {{ klass }}">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">

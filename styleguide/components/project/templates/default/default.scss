@@ -1,1 +1,9 @@
-@mixin default {}
+html {
+  &.sg {
+    body {
+      .header {
+        @include header;
+      }
+    }
+  }
+}

@@ -28,4 +28,4 @@
 
 
 
-<a class="link" href="{{ base_url }}{{ url }}" title="{{ title }}">{{ title }}</li>
+<a class="link" href="{{ base_url }}{{ url }}" title="{{ title }}">{{ title }}</a>
