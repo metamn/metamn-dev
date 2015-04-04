@@ -30,7 +30,7 @@ var gulp = require('gulp'),
     newer = require('gulp-newer'),
     shell = require('gulp-shell'),
 
-    through = require('through2');
+    path = require('path');
 
 
 
@@ -47,6 +47,7 @@ var paths = {
 
   // Styleguide global config.json file
   styleguide_config_json: './styleguide/config.json',
+
 
 
 
@@ -77,8 +78,22 @@ var paths = {
   // .js files to concat
   js_src: ['site/components/framework/**/**/*.js', 'site/components/project/**/**/*.js', 'site/components/framework/pages/**/**/*.js]'],
 
+  // .js minimezed file name
+  js_filename: 'site.js',
+
   // .js file destination
   js_dest: 'dist/assets/scripts',
+
+
+  // .js files to concat for styleguide
+  styleguide_js_src: ['styleguide/components/framework/**/**/*.js', 'styleguide/components/project/**/**/*.js', 'styleguide/components/framework/pages/**/**/*.js]'],
+
+  // .js minimezed file name for styleguide
+  styleguide_js_filename: 'styleguide.js',
+
+  // .js file destination for styleguide
+  styleguide_js_dest: 'dist/styleguide/assets/scripts',
+
 
   // .js files to move
   js_move_src: 'site/assets/scripts/**/*.js',
@@ -207,17 +222,25 @@ gulp.task('image_move_original', function() {
 
 
 // JS
-// - collect all .js files into site.js, then minify into site.min.js, then move to dest/assets/scripts
-gulp.task('js', function() {
-  return gulp.src(paths.js_src)
+// - collect all .js files into filename.js, then minify into filename.min.js, then move to dest
+var _js = function(source, filename, dest) {
+  return gulp.src(source)
     .pipe(plumber({errorHandler: onError}))
     .pipe(data(function(file) {
       //console.log("Merging " + file.path + " into site.min.js")
     }))
-    .pipe(concat('site.js'))
+    .pipe(concat(filename))
     .pipe(rename({ suffix: '.min' }))
-    //.pipe(uglify())
-    .pipe(gulp.dest(paths.js_dest));
+    .pipe(uglify())
+    .pipe(gulp.dest(dest));
+};
+
+gulp.task('js', function() {
+  _js(paths.js_src, paths.js_filename, paths.js_dest);
+});
+
+gulp.task('js_sg', function() {
+  _js(paths.styleguide_js_src, paths.styleguide_js_filename, paths.styleguide_js_dest);
 });
 
 
@@ -243,7 +266,7 @@ gulp.task('scripts', function() {
 // - remove unused CSS with uncss
 // - minify and copy the site.css and the sourcemap to dist/assets/styles
 var _scss = function(source, dest, html) {
-  gulp.src(source)
+  return gulp.src(source)
     .pipe(plumber({errorHandler: onError}))
     .pipe(cssGlobbing({
       extensions: ['.scss']
@@ -293,7 +316,6 @@ var _html = function(source, dest) {
 gulp.task('html', function() {
   _html('site/' + paths.html_src, paths.dest);
 });
-
 
 gulp.task('html_sg', function() {
   _html('styleguide/' + paths.html_src, paths.dest + '/styleguide/');
@@ -371,32 +393,53 @@ gulp.task('swig_sg', function() {
 
 // Styleguide tasks
 
+// Create Menu
+// - http://stackoverflow.com/questions/11194287/convert-a-directory-structure-in-the-filesystem-to-json-with-node-js
+// - http://jsfiddle.net/BvDW3/
 
-// Generate a JSON file with /site components
-// - adapted from https://github.com/danielhusar/gulp-to-json/blob/master/index.js
-// ... and https://github.com/masondesu/gulp-directory-map/blob/master/index.js
-gulp.task('sg_menu', function() {
-  var files = [];
+function dirTree(filename) {
+  var stats = fs.lstatSync(filename);
 
-  return gulp.src('site/components/**/**/*.scss')
-    .pipe(through.obj(function (file, enc, cb) {
-      if (file.isStream()) { return cb(); }
+  if (stats.isDirectory()) {
+    var info = { path: filename, name: path.basename(filename) };
+    info.children = fs.readdirSync(filename).map(function(child) {
+      return dirTree(filename + '/' + child);
+    });
+  }
 
-      var path = file.relative;
+  return info;
+}
 
-      files.push(path);
-
-      this.push(file);
-      return cb();
-
-    }, function (cb) {
-      json = '{"menu":' + JSON.stringify(files, null, 2) + '}';
-      fs.writeFile('styleguide/components/project/menu/menu.html.json', json, cb);
+function makeUL(lst) {
+    var html = [];
+    html.push('<ul>');
+    for (var i = 0; i < lst.length; i++ ) {
+      if (typeof lst[i] != 'undefined')
+        html.push(makeLI(lst[i]));
     }
-  ));
+    html.push('</ul>');
+    return html.join("\n");
+}
+
+function makeLI(elem) {
+    var html = [];
+    html.push('<li>');
+    html.push(elem.name);
+    if (elem.path)
+      html.push('<a>' + elem.path + '</a>');
+    if (elem.children)
+      html.push('<div>' + makeUL(elem.children) + '</div>');
+    html.push('</li>');
+    return html.join("\n");
+}
+
+
+gulp.task('sg_menu', function() {
+  var json = dirTree('site/components/framework');
+  var menu = makeUL([json ]);
+  //console.log(JSON.stringify(json));
+  console.log(menu);
 });
-
-
 
 
 
@@ -444,10 +487,11 @@ gulp.task('default', function(cb) {
 // The Styleguide task
 gulp.task('sg', function(cb) {
   runSequence(
-    'sg_menu',
+    //'sg_menu',
     'swig_sg',
     'html_sg',
     'scss_sg',
+    'js_sg',
     cb
   );
 });

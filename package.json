@@ -26,8 +26,8 @@
     "gulp-util": "^3.0.1",
     "mkdirp": "^0.5.0",
     "node-sass": "^2.0.1",
+    "path": "^0.11.14",
     "run-sequence": "^1.0.1",
-    "through2": "^0.6.3",
     "yargs": "^3.6.0"
   },
   "dependencies": {
