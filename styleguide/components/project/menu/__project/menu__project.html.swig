@@ -1,6 +1,7 @@
 <ul>
 <li>
 <a class="link" title="Project" href="project">Project</a>
+<span class="toggle">&#8230;</span>
 <ul>
 <li>
 <a class="link" title="About" href="project/about">About</a>
@@ -13,6 +14,7 @@
 </li>
 <li>
 <a class="link" title="Templates" href="project/templates">Templates</a>
+<span class="toggle">&#8230;</span>
 <ul>
 <li>
 <a class="link" title="Default" href="project/templates/default">Default</a>
@@ -30,9 +32,10 @@
 </li>
 <li>
 <a class="link" title="Values" href="project/values">Values</a>
+<span class="toggle">&#8230;</span>
 <ul>
 <li>
-<a class="link" title="Front-end" href="project/values/__front-end">Front-end</a>
+<a class="link" title="Front end" href="project/values/__front-end">Front end</a>
 </li>
 <li>
 <a class="link" title="Styleguide" href="project/values/__styleguide">Styleguide</a>
@@ -47,6 +50,7 @@
 </li>
 <li>
 <a class="link" title="Work" href="project/work">Work</a>
+<span class="toggle">&#8230;</span>
 <ul>
 <li>
 <a class="link" title="Description" href="project/work/__description">Description</a>

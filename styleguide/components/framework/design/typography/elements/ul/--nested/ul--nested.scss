@@ -5,9 +5,23 @@
     padding: 0;
 
     li {
+      .toggle {
+        cursor: pointer;
+      }
 
       ul {
         margin-left: $lem;
+
+        @include animation(opacity);
+        display: none;
+        opacity: 0;
+      }
+
+      &.active {
+        ul {
+          display: block;
+          opacity: 1;
+        }
       }
     }
   }

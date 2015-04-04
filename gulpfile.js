@@ -232,7 +232,7 @@ var _js = function(source, filename, dest) {
     }))
     .pipe(concat(filename))
     .pipe(rename({ suffix: '.min' }))
-    .pipe(uglify())
+    //.pipe(uglify())
     .pipe(gulp.dest(dest));
 };
 
@@ -432,12 +432,14 @@ function makeLI(elem) {
     html.push('<li>');
 
     if (elem.path) {
-      title = inflection.humanize(elem.name.replace('--', '').replace('__', ''));
+      title = inflection.humanize(elem.name.replace('--', '').replace('__', '').replace(/-/g, ' '));
       link = elem.path.replace('site/components/', '')
       html.push('<a class="link" title="' + title + '" href="' + link + '">' + title + '</a>');
     }
-    if (elem.children && (elem.children[0].type == 'folder'))
+    if (elem.children && (elem.children[0].type == 'folder')) {
+      html.push('<span class="toggle">&#8230;</span>');
       html.push(makeUL(elem.children));
+    }
 
     html.push('</li>');
     return html.join("\n");

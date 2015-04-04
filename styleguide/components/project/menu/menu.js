@@ -1,2 +1,1 @@
-ulNested('.menu__framework');
-ulNested('.menu__project');
+ulNested('.menu .toggle');
