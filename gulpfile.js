@@ -400,38 +400,45 @@ gulp.task('swig_sg', function() {
 
 function dirTree(filename) {
   var stats = fs.lstatSync(filename);
+  var info = { path: filename, name: path.basename(filename) };
 
   if (stats.isDirectory()) {
-    var info = { path: filename, name: path.basename(filename) };
+    info.type = 'folder';
     info.children = fs.readdirSync(filename).map(function(child) {
       return dirTree(filename + '/' + child);
     });
+  } else {
+    info.type = 'file';
   }
 
   return info;
 }
 
 function makeUL(lst) {
-    var html = [];
-    html.push('<ul>');
-    for (var i = 0; i < lst.length; i++ ) {
-      if (typeof lst[i] != 'undefined')
-        html.push(makeLI(lst[i]));
-    }
-    html.push('</ul>');
-    return html.join("\n");
+  var html = [];
+  html.push('<ul>');
+
+  for (var i = 0; i < lst.length; i++ ) {
+    if (lst[i].type == 'folder')
+      html.push(makeLI(lst[i]));
+  }
+
+  html.push('</ul>');
+  return html.join("\n");
 }
 
 function makeLI(elem) {
     var html = [];
     html.push('<li>');
+
     if (elem.path) {
       title = inflection.humanize(elem.name.replace('--', '').replace('__', ''));
       link = elem.path.replace('site/components/', '')
       html.push('<a class="link" title="' + title + '" href="' + link + '">' + title + '</a>');
     }
-    if (elem.children)
+    if (elem.children && (elem.children[0].type == 'folder'))
       html.push(makeUL(elem.children));
+
     html.push('</li>');
     return html.join("\n");
 }
