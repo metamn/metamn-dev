@@ -31,7 +31,8 @@ var gulp = require('gulp'),
     shell = require('gulp-shell'),
 
     path = require('path'),
-    inflection = require( 'inflection' );
+    inflection = require( 'inflection' ),
+    mkdirp = require('mkdirp');
 
 
 
@@ -346,16 +347,6 @@ var _swig = function(source, dest, config, grabJSON) {
       }
     }))
 
-    // load menu.json for styleguide
-    .pipe(data(function(file) {
-      if (grabJSON) {
-        json = './styleguide/components/project/menu/menu.html.json';
-        if (fs.existsSync(json)) {
-          return require(json);
-        }
-      }
-    }))
-
     // use YAML Front Matter
     .pipe(data(function(file) {
       var content = fm(String(file.contents));
@@ -394,10 +385,10 @@ gulp.task('swig_sg', function() {
 
 // Styleguide tasks
 
-// Create Menu
-// - http://stackoverflow.com/questions/11194287/convert-a-directory-structure-in-the-filesystem-to-json-with-node-js
-// - http://jsfiddle.net/BvDW3/
 
+
+// Maps the folder structure into a JSON file
+// - http://stackoverflow.com/questions/11194287/convert-a-directory-structure-in-the-filesystem-to-json-with-node-js
 function dirTree(filename) {
   var stats = fs.lstatSync(filename);
   var info = { path: filename, name: path.basename(filename) };
@@ -414,6 +405,8 @@ function dirTree(filename) {
   return info;
 }
 
+// Transforms a JSON file into nested <ul> menu
+// - http://jsfiddle.net/BvDW3/
 function makeUL(lst) {
   var html = [];
   html.push('<ul>');
@@ -446,6 +439,8 @@ function makeLI(elem) {
 }
 
 
+// Menu
+// - creates html menu files directly into styleguide/menu
 gulp.task('sg_menu', function() {
   var json = dirTree('site/components/framework');
   var menu = makeUL([json]);
@@ -455,6 +450,33 @@ gulp.task('sg_menu', function() {
   menu = makeUL([json]);
   fs.writeFileSync('styleguide/components/project/menu/__project/menu__project.html.swig', menu);
 });
+
+
+
+// Folders
+// - copy folders from /site under styleguide/pages
+var _folders = function(source) {
+  return gulp.src(source)
+    .pipe(plumber({errorHandler: onError}))
+    .pipe(data(function(file) {
+      var stats = fs.lstatSync(file.path);
+      if (stats.isDirectory())
+        var dir = file.path.replace('site/components', 'styleguide/components/pages');
+        if (!fs.existsSync(dir))
+          mkdirp(dir, function (err) {
+            if (err) console.error(err)
+            else console.log(file.relative + ' created');
+          });
+    }))
+}
+
+
+gulp.task('sg_folders', function() {
+  _folders('site/components/framework/**/**');
+  _folders('site/components/project/**/**');
+});
+
+
 
 
 
@@ -503,6 +525,7 @@ gulp.task('default', function(cb) {
 gulp.task('sg', function(cb) {
   runSequence(
     'sg_menu',
+    'sg_folders',
     'swig_sg',
     'html_sg',
     'scss_sg',
