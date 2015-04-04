@@ -1,1 +1,15 @@
-@mixin menu {}
+@mixin menu {
+  @include colors(black-on-gray);
+  padding: $lem;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  .menu__framework, .menu__project {
+    @include ul--nested;
+
+    a {
+      @include link(black-on-gray);
+    }
+  }
+}

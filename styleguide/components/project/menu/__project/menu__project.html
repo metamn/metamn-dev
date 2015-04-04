@@ -1,92 +1,92 @@
 <ul>
 <li>
-<a href="project">project</a>
-<div><ul>
+<a class="link" title="Project" href="project">Project</a>
+<ul>
 <li>
-<a href="project/about">about</a>
-<div><ul>
-</ul></div>
+<a class="link" title="About" href="project/about">About</a>
+<ul>
+</ul>
 </li>
 <li>
-<a href="project/header">header</a>
-<div><ul>
-</ul></div>
+<a class="link" title="Header" href="project/header">Header</a>
+<ul>
+</ul>
 </li>
 <li>
-<a href="project/links">links</a>
-<div><ul>
-</ul></div>
+<a class="link" title="Links" href="project/links">Links</a>
+<ul>
+</ul>
 </li>
 <li>
-<a href="project/templates">templates</a>
-<div><ul>
+<a class="link" title="Templates" href="project/templates">Templates</a>
+<ul>
 <li>
-<a href="project/templates/default">default</a>
-<div><ul>
-</ul></div>
-</li>
-<li>
-<a href="project/templates/head">head</a>
-<div><ul>
-</ul></div>
+<a class="link" title="Default" href="project/templates/default">Default</a>
+<ul>
+</ul>
 </li>
 <li>
-<a href="project/templates/scripts">scripts</a>
-<div><ul>
-</ul></div>
-</li>
-</ul></div>
+<a class="link" title="Head" href="project/templates/head">Head</a>
+<ul>
+</ul>
 </li>
 <li>
-<a href="project/thumb">thumb</a>
-<div><ul>
-</ul></div>
+<a class="link" title="Scripts" href="project/templates/scripts">Scripts</a>
+<ul>
+</ul>
+</li>
+</ul>
 </li>
 <li>
-<a href="project/values">values</a>
-<div><ul>
-<li>
-<a href="project/values/__front-end">__front-end</a>
-<div><ul>
-</ul></div>
+<a class="link" title="Thumb" href="project/thumb">Thumb</a>
+<ul>
+</ul>
 </li>
 <li>
-<a href="project/values/__styleguide">__styleguide</a>
-<div><ul>
-</ul></div>
+<a class="link" title="Values" href="project/values">Values</a>
+<ul>
+<li>
+<a class="link" title="Front-end" href="project/values/__front-end">Front-end</a>
+<ul>
+</ul>
 </li>
 <li>
-<a href="project/values/__ui">__ui</a>
-<div><ul>
-</ul></div>
+<a class="link" title="Styleguide" href="project/values/__styleguide">Styleguide</a>
+<ul>
+</ul>
 </li>
 <li>
-<a href="project/values/__wordpress">__wordpress</a>
-<div><ul>
-</ul></div>
-</li>
-</ul></div>
+<a class="link" title="Ui" href="project/values/__ui">Ui</a>
+<ul>
+</ul>
 </li>
 <li>
-<a href="project/work">work</a>
-<div><ul>
-<li>
-<a href="project/work/__description">__description</a>
-<div><ul>
-</ul></div>
+<a class="link" title="Wordpress" href="project/values/__wordpress">Wordpress</a>
+<ul>
+</ul>
+</li>
+</ul>
 </li>
 <li>
-<a href="project/work/__images">__images</a>
-<div><ul>
-</ul></div>
+<a class="link" title="Work" href="project/work">Work</a>
+<ul>
+<li>
+<a class="link" title="Description" href="project/work/__description">Description</a>
+<ul>
+</ul>
 </li>
 <li>
-<a href="project/work/__services">__services</a>
-<div><ul>
-</ul></div>
+<a class="link" title="Images" href="project/work/__images">Images</a>
+<ul>
+</ul>
 </li>
-</ul></div>
+<li>
+<a class="link" title="Services" href="project/work/__services">Services</a>
+<ul>
+</ul>
 </li>
-</ul></div>
+</ul>
+</li>
+</ul>
 </li>
 </ul>

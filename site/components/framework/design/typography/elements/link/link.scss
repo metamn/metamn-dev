@@ -1,4 +1,4 @@
-@mixin link {
+@mixin link($color-scheme) {
   text-decoration: none;
-  @include colors(blue-on-white);
+  @include colors($color-scheme);
 }

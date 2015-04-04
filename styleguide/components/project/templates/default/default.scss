@@ -4,6 +4,10 @@ html {
       .header {
         @include header;
       }
+
+      .menu {
+        @include menu;
+      }
     }
   }
 }

@@ -4,7 +4,7 @@
     padding: $lem / 2 $lem;
 
     .link {
-      @include link;
+      @include link(blue-on-white);
     }
   }
 }

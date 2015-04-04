@@ -30,7 +30,8 @@ var gulp = require('gulp'),
     newer = require('gulp-newer'),
     shell = require('gulp-shell'),
 
-    path = require('path');
+    path = require('path'),
+    inflection = require( 'inflection' );
 
 
 
@@ -424,10 +425,13 @@ function makeUL(lst) {
 function makeLI(elem) {
     var html = [];
     html.push('<li>');
-    if (elem.path)
-      html.push('<a href="' + elem.path.replace('site/components/', '') + '">' + elem.name + '</a>');
+    if (elem.path) {
+      title = inflection.humanize(elem.name.replace('--', '').replace('__', ''));
+      link = elem.path.replace('site/components/', '')
+      html.push('<a class="link" title="' + title + '" href="' + link + '">' + title + '</a>');
+    }
     if (elem.children)
-      html.push('<div>' + makeUL(elem.children) + '</div>');
+      html.push(makeUL(elem.children));
     html.push('</li>');
     return html.join("\n");
 }
