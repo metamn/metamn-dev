@@ -424,9 +424,8 @@ function makeUL(lst) {
 function makeLI(elem) {
     var html = [];
     html.push('<li>');
-    html.push(elem.name);
     if (elem.path)
-      html.push('<a>' + elem.path + '</a>');
+      html.push('<a href="' + elem.path.replace('site/components/', '') + '">' + elem.name + '</a>');
     if (elem.children)
       html.push('<div>' + makeUL(elem.children) + '</div>');
     html.push('</li>');
@@ -436,9 +435,8 @@ function makeLI(elem) {
 
 gulp.task('sg_menu', function() {
   var json = dirTree('site/components/framework');
-  var menu = makeUL([json ]);
-  //console.log(JSON.stringify(json));
-  console.log(menu);
+  var menu = makeUL([json]);
+  fs.writeFileSync('styleguide/components/project/menu/__items/menu__items.html.swig', menu);
 });
 
 
