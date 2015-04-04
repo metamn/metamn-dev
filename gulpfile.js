@@ -28,7 +28,9 @@ var gulp = require('gulp'),
 
     imageResize = require('gulp-image-resize'),
     newer = require('gulp-newer'),
-    shell = require('gulp-shell');
+    shell = require('gulp-shell'),
+
+    through = require('through2');
 
 
 
@@ -321,6 +323,16 @@ var _swig = function(source, dest, config, grabJSON) {
       }
     }))
 
+    // load menu.json for styleguide
+    .pipe(data(function(file) {
+      if (grabJSON) {
+        json = './styleguide/components/project/menu/menu.html.json';
+        if (fs.existsSync(json)) {
+          return require(json);
+        }
+      }
+    }))
+
     // use YAML Front Matter
     .pipe(data(function(file) {
       var content = fm(String(file.contents));
@@ -354,6 +366,35 @@ gulp.task('swig_sg', function() {
   _swig('styleguide/' + paths.swig_src, 'styleguide/' + paths.swig_dest, paths.styleguide_config_json, true);
 });
 
+
+
+
+// Styleguide tasks
+
+
+// Generate a JSON file with /site components
+// - adapted from https://github.com/danielhusar/gulp-to-json/blob/master/index.js
+// ... and https://github.com/masondesu/gulp-directory-map/blob/master/index.js
+gulp.task('sg_menu', function() {
+  var files = [];
+
+  return gulp.src('site/components/**/**/*.scss')
+    .pipe(through.obj(function (file, enc, cb) {
+      if (file.isStream()) { return cb(); }
+
+      var path = file.relative;
+
+      files.push(path);
+
+      this.push(file);
+      return cb();
+
+    }, function (cb) {
+      json = '{"menu":' + JSON.stringify(files, null, 2) + '}';
+      fs.writeFile('styleguide/components/project/menu/menu.html.json', json, cb);
+    }
+  ));
+});
 
 
 
@@ -403,6 +444,7 @@ gulp.task('default', function(cb) {
 // The Styleguide task
 gulp.task('sg', function(cb) {
   runSequence(
+    'sg_menu',
     'swig_sg',
     'html_sg',
     'scss_sg',

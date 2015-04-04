@@ -14,7 +14,7 @@
     {% include '../../../../site/components/framework/design/typography/elements/link/link.html.swig' %}
   </div>
 
-  {% if title != "Homes" %}
+  {% if title != "Home" %}
     <div class="header__page-title">
       {{ title }}
     </div>
