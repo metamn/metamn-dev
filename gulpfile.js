@@ -436,7 +436,11 @@ function makeLI(elem) {
 gulp.task('sg_menu', function() {
   var json = dirTree('site/components/framework');
   var menu = makeUL([json]);
-  fs.writeFileSync('styleguide/components/project/menu/__items/menu__items.html.swig', menu);
+  fs.writeFileSync('styleguide/components/project/menu/__framework/menu__framework.html.swig', menu);
+
+  json = dirTree('site/components/project');
+  menu = makeUL([json]);
+  fs.writeFileSync('styleguide/components/project/menu/__project/menu__project.html.swig', menu);
 });
 
 
@@ -485,7 +489,7 @@ gulp.task('default', function(cb) {
 // The Styleguide task
 gulp.task('sg', function(cb) {
   runSequence(
-    //'sg_menu',
+    'sg_menu',
     'swig_sg',
     'html_sg',
     'scss_sg',
