@@ -1,7 +1,10 @@
 // Colors
-// - generated from components/atoms/colors.scss.json
-// - please do not edit directly this file
-
+//
+// The colors together with the color pairs.
+// Colors don't exist alone yet in pairs, like black on white.
+// All color pairs have a contrast ratio set for perfect readability using [Lea Verou's excellent tool](http://leaverou.github.io/contrast-ratio/).
+//
+// Styleguide colors
 {% for color in colors %}
 // {{ color.description }}
 ${{ color.name }}: {{ color.value }};
@@ -16,3 +19,18 @@ ${{ color.name }}: {{ color.value }};
   }
 {% endfor %}
 }
+
+// Color classes
+{% for color in colors %}
+.{{ color.name }} {
+  background: {{ color.value }};
+};
+{% endfor %}
+
+// Color pair classes
+{% for pair in color_pairs %}
+.{{ pair.name }} {
+  {% for property in pair.properties %}{{ property.name }}: {{ property.value }};
+  {% endfor %}
+}
+{% endfor %}

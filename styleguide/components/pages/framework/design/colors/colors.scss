@@ -1,0 +1,47 @@
+html {
+  &.sg-colors {
+    body {
+      .example {
+        div {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          margin-right: $lem;
+          margin-bottom: $lem;
+        }
+      }
+
+      .example__color-pairs {
+        display: flex;
+        flex-wrap: wrap;
+
+        div {
+          padding: $lem * 2;
+
+          &.black-on-white, &.blue-on-white {
+            border: 1px solid;
+          }
+        }
+      }
+
+      .example__colors {
+        display: flex;
+        flex-wrap: wrap;
+
+        div {
+          flex-direction: column;
+
+          .placeholder {
+            width: 5em;
+            height: 5em;
+          }
+
+          .white {
+            border: 1px solid;
+          }
+        }
+      }
+    }
+  }
+}
