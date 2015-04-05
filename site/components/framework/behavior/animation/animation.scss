@@ -1,3 +1,8 @@
+// Animation
+//
+// Smooth animation using a cubic-bezier transition
+//
+// Styleguide animation
 @mixin animation($change) {
   will-change: $change;
   transition: $change 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);

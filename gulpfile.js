@@ -32,7 +32,8 @@ var gulp = require('gulp'),
 
     path = require('path'),
     inflection = require( 'inflection' ),
-    mkdirp = require('mkdirp');
+    mkdirp = require('mkdirp')
+    kss = require('kss');
 
 
 
@@ -360,9 +361,11 @@ var _swig = function(source, dest, config, grabJSON) {
       load_json: true,
       defaults: {
         cache: false,
-        // Load site-wide JSON settings
         locals: {
-          site: require(config)
+          // Load site-wide JSON settings
+          site: require(config),
+          // Load site-wide KSS file
+          kss: require('./styleguide/kss.json')
         }
       }
     }))
@@ -472,6 +475,19 @@ gulp.task('sg_folders', function() {
 });
 
 
+// KSS
+// - loads KSS documentation from /site .scss files and saves into a .json file
+// - later this /json file can be processed by swig
+gulp.task('sg_kss', function() {
+  kss.traverse('./site/components', { mask: '*.scss' }, function(err, styleguide) {
+    if (err) throw err;
+
+    fs.writeFileSync('styleguide/kss.json', JSON.stringify(styleguide.section()));
+    console.log(styleguide.section());
+  });
+});
+
+
 
 
 
@@ -521,6 +537,7 @@ gulp.task('sg', function(cb) {
   runSequence(
     'sg_menu',
     'sg_folders',
+    'sg_kss',
     'swig_sg',
     'html_sg',
     'scss_sg',
