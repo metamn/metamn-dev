@@ -483,7 +483,7 @@ gulp.task('sg_kss', function() {
     if (err) throw err;
 
     fs.writeFileSync('styleguide/kss.json', JSON.stringify(styleguide.section()));
-    console.log(styleguide.section());
+    //console.log(styleguide.section());
   });
 });
 
