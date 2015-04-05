@@ -13,6 +13,7 @@ html {
 
       .example1 {
         @include animation(transform);
+        margin-right: $lem * 2;
         margin-bottom: $lem;
       }
     }

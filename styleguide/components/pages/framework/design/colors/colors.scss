@@ -2,6 +2,10 @@ html {
   &.sg-colors {
     body {
       .example {
+        .example__title {
+          display: none;
+        }
+
         div {
           display: flex;
           justify-content: center;
