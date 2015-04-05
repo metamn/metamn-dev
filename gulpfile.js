@@ -336,10 +336,10 @@ var _swig = function(source, dest, config, grabJSON) {
   return gulp.src(source)
     .pipe(plumber({errorHandler: onError}))
 
-    // use global JSON definitions from /site in /styleguide
+    // use JSON definitions from /site in /styleguide
     .pipe(data(function(file) {
       if (grabJSON) {
-        components = file.path.replace('styleguide', 'site');
+        components = file.path.replace('styleguide/components/pages', 'site/components');
         json = components.split('.')[0] + '.scss.json';
         if (fs.existsSync(json)) {
           return require(json);
@@ -426,7 +426,6 @@ function makeLI(elem) {
 
     if (elem.path) {
       title = inflection.humanize(elem.name.replace('--', '').replace('__', '').replace(/-/g, ' '));
-      console.log(elem.path);
       link = elem.path.replace('site/components/', '{{ site.url }}')
       html.push('<a class="link" title="' + title + '" href="' + link + '">' + title + '</a>');
     }
