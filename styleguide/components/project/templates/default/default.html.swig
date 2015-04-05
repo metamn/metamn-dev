@@ -4,7 +4,11 @@
 
 {% include '../../description/description.html.swig' %}
 
-{% block content %}{% endblock %}
+<article class="example">
+  <h3 class="example__title">Example</h3>
+
+  {% block content %}{% endblock %}
+</article>
 
 {% include '../../menu/menu.html.swig' %}
 

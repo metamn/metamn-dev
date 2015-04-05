@@ -1,0 +1,7 @@
+@mixin example {
+  padding: $lem;
+  
+  .example__title {
+    display: flex;
+  }
+}

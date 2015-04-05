@@ -9,6 +9,10 @@ html {
         @include description;
       }
 
+      .example {
+        @include example;
+      }
+
       .menu {
         @include menu;
       }
