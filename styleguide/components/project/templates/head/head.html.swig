@@ -16,7 +16,7 @@
     <script>try{Typekit.load();}catch(e){}</script>
 
 
-    <link href="assets/styles/styleguide.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <link href="{{ site.url }}assets/styles/styleguide.css" media="screen, projection" rel="stylesheet" type="text/css" />
 
     <!-- Picturefill Responsive Images -->
     <script async src="../assets/scripts/picturefill.min.js"></script>

@@ -426,7 +426,8 @@ function makeLI(elem) {
 
     if (elem.path) {
       title = inflection.humanize(elem.name.replace('--', '').replace('__', '').replace(/-/g, ' '));
-      link = elem.path.replace('site/components/', '')
+      console.log(elem.path);
+      link = elem.path.replace('site/components/', '{{ site.url }}')
       html.push('<a class="link" title="' + title + '" href="' + link + '">' + title + '</a>');
     }
     if (elem.children && (elem.children[0].type == 'folder')) {
