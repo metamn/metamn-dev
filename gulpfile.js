@@ -455,25 +455,20 @@ gulp.task('sg_menu', function() {
 
 // Folders
 // - copy folders from /site under styleguide/pages
-var _folders = function(source) {
-  return gulp.src(source)
+gulp.task('sg_folders', function() {
+  return gulp.src(['site/components/framework/**/**/*','site/components/project/**/**/*'])
     .pipe(plumber({errorHandler: onError}))
     .pipe(data(function(file) {
       var stats = fs.lstatSync(file.path);
-      if (stats.isDirectory())
+      if (stats.isDirectory()) {
         var dir = file.path.replace('site/components', 'styleguide/components/pages');
-        if (!fs.existsSync(dir))
+        if (!fs.existsSync(dir)) {
           mkdirp(dir, function (err) {
-            if (err) console.error(err)
-            else console.log(file.relative + ' created');
+            console.log(file.relative + ' created');
           });
-    }))
-}
-
-
-gulp.task('sg_folders', function() {
-  _folders('site/components/framework/**/**');
-  _folders('site/components/project/**/**');
+        }
+      }
+    }));
 });
 
 
