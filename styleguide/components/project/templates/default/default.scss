@@ -5,6 +5,10 @@ html {
         @include header;
       }
 
+      .description {
+        @include description;
+      }
+
       .menu {
         @include menu;
       }

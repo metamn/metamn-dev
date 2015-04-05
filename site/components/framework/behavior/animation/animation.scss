@@ -1,6 +1,8 @@
 // Animation
 //
-// Smooth animation using a cubic-bezier transition
+// Smooth animation using a cubic-bezier transition.
+// It is used for all animations like the slider or hovering an element.
+// The animation style follows the [Google Web Fundamentals](https://developers.google.com/web/fundamentals/look-and-feel/animations/animating-between-views) best practices.
 //
 // Styleguide animation
 @mixin animation($change) {

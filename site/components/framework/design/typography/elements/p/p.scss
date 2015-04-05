@@ -1,3 +1,9 @@
+// Paragraph
+//
+// Paragraphs.
+// Consecutive paragraphs are separated by an empty line for better readability for long text.
+//
+// Styleguide p
 @mixin p {
   p + p {
     margin-top: $lem;

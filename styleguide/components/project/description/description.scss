@@ -1,0 +1,7 @@
+@mixin description {
+  padding: $lem;
+  
+  .text {
+    @include text-style(body-text);
+  }
+}

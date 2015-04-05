@@ -479,7 +479,7 @@ gulp.task('sg_folders', function() {
 // - loads KSS documentation from /site .scss files and saves into a .json file
 // - later this /json file can be processed by swig
 gulp.task('sg_kss', function() {
-  kss.traverse('./site/components', { mask: '*.scss' }, function(err, styleguide) {
+  kss.traverse('./site/components', { mask: '*.scss', markdown: true }, function(err, styleguide) {
     if (err) throw err;
 
     fs.writeFileSync('styleguide/kss.json', JSON.stringify(styleguide.section()));
