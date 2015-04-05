@@ -1,1 +1,15 @@
-@mixin home {}
+html {
+  &.sg-home {
+    body {
+      .example {
+        .example__title {
+          display: none;
+        }
+
+        .text {
+          @include text-style(body-text);
+        }
+      }
+    }
+  }
+}
