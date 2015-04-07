@@ -1,27 +1,17 @@
 @mixin values {
-
-  .values {
-    height: 100vh;
-    
-    h3 {
-      display: flex;
-    }
+  .ui {
+    @include ui;
   }
 
-
-  .values__ui {
-    @include values__ui;
+  .styleguide {
+    @include styleguide;
   }
 
-  .values__styleguide {
-    @include values__styleguide;
+  .front-end {
+    @include front-end;
   }
 
-  .values__front-end {
-    @include values__front-end;
-  }
-
-  .values__wordpress {
-    @include values__wordpress;
+  .wordpress {
+    @include wordpress;
   }
 }

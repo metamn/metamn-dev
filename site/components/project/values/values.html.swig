@@ -1,4 +1,8 @@
-{% include '__ui/values__ui.html.swig' %}
-{% include '__styleguide/values__styleguide.html.swig' %}
-{% include '__front-end/values__front-end.html.swig' %}
-{% include '__wordpress/values__wordpress.html.swig' %}
+<section class="values">
+  <h3>Values</h3>
+
+  {% for value in home.values %}
+    {% set file = value.id + '/' + value.id + '.html.swig' %}
+    {% include file %}
+  {% endfor %}
+</section>

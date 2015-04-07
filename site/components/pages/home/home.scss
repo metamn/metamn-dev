@@ -5,7 +5,9 @@ html {
         @include about;
       }
 
-      @include values;
+      .values {
+        @include values;
+      }
     }
   }
 }
