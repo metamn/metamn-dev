@@ -3,7 +3,7 @@
 // Link styling. No underlines just differentiation by color.
 //
 // Styleguide link
-@mixin link($color-scheme) {
-  text-decoration: none;
+@mixin link($color-scheme, $decoration: none) {
+  text-decoration: $decoration;
   @include colors($color-scheme);
 }

@@ -1,9 +1,9 @@
 var ulNested = function(toggler) {
   var triggers = document.querySelectorAll(toggler);
-  console.log(triggers);
 
-  function onViewChange(evt) {
-    this.parentNode.classList.toggle('active');
+  function onViewChange(event) {
+    this.classList.toggle('active');
+    event.stopPropagation();
   }
 
   for (var i = 0; i < triggers.length; i++ ) {

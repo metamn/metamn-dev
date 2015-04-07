@@ -1,1 +1,1 @@
-ulNested('.menu .toggle');
+ulNested('.menu li');

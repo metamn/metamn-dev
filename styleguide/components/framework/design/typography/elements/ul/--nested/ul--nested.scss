@@ -5,9 +5,7 @@
     padding: 0;
 
     li {
-      .toggle {
-        cursor: pointer;
-      }
+      cursor: pointer;
 
       ul {
         margin-left: $lem;
@@ -18,7 +16,7 @@
       }
 
       &.active {
-        ul {
+        > ul {
           display: block;
           opacity: 1;
         }

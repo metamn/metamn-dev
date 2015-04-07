@@ -1,7 +1,12 @@
 @mixin example {
   padding: $lem;
-  
+  @include colors(white-on-blue);
+
   .example__title {
     display: flex;
+  }
+
+  a {
+    @include link(white-on-blue, underline);
   }
 }

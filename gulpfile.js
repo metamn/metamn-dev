@@ -430,11 +430,15 @@ function makeLI(elem) {
     if (elem.path) {
       title = inflection.humanize(elem.name.replace('--', '').replace('__', '').replace(/-/g, ' '));
       link = elem.path.replace('site/components/', '{{ site.url }}')
-      html.push('<a class="link" title="' + title + '" href="' + link + '">' + title + '</a>');
+      html.push('<div>');
+      html.push("{% include '../../../../../site/components/framework/design/decorations/long-dash/long-dash.html.swig' %}");
     }
+
     if (elem.children && (elem.children[0].type == 'folder')) {
-      html.push('<span class="toggle">&#8230;</span>');
+      html.push(title + '</div>');
       html.push(makeUL(elem.children));
+    } else {
+      html.push('<a class="link" title="' + title + '" href="' + link + '">' + title + '</a>');
     }
 
     html.push('</li>');

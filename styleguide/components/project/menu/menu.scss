@@ -1,5 +1,4 @@
 @mixin menu {
-  @include colors(black-on-gray);
   padding: $lem;
 
   display: flex;
@@ -8,8 +7,28 @@
   .menu__framework, .menu__project {
     @include ul--nested;
 
-    a {
-      @include link(black-on-gray);
+    ul {
+      li {
+        div {
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+
+          span {
+            &.long-dash {
+              @include long-dash;
+            }
+          }
+        }
+      }
     }
+
+    a {
+      @include link(blue-on-white);
+    }
+  }
+
+  .menu__framework {
+    margin-right: $lem * 2;
   }
 }

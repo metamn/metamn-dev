@@ -1,7 +1,12 @@
 @mixin description {
   padding: $lem;
-  
+  @include colors(white-on-blue);
+
   .text {
     @include text-style(body-text);
+
+    a {
+      @include link(white-on-blue, underline);
+    }
   }
 }
