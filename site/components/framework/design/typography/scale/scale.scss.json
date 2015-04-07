@@ -6,11 +6,11 @@
       "properties": [
         {
           "name": "font-size",
-          "value": "120%"
+          "value": "110%"
         },
         {
           "name": "line-height",
-          "value": "1.5"
+          "value": "1.48"
         }
       ],
       "responsive": [
@@ -23,19 +23,9 @@
             },
             {
               "name": "line-height",
-              "value": "1.5"
+              "value": "1.89"
             }
           ]
-        }
-      ]
-    },
-    {
-      "name": "small",
-      "description": "Smaller than default font size",
-      "properties": [
-        {
-          "name": "font-size",
-          "value": "0.667em"
         }
       ]
     },
@@ -46,6 +36,10 @@
         {
           "name": "font-size",
           "value": "1.5em"
+        },
+        {
+          "name": "line-height",
+          "value": "1.3"
         }
       ]
     }

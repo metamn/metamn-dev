@@ -23,6 +23,5 @@
     font-weight: {{ style.weight }};
     font-style: {{ style.style }};
   }
-  {% endfor %}
+  {% endfor %}{% endfor %}
 }
-{% endfor %}

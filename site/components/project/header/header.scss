@@ -1,7 +1,11 @@
 @mixin header {
   padding: $lem $lem 0;
 
+  .header__site-title {
+    @include text-style(logo);
+  }
+
   .link {
-    @include link(blue-on-white);
+    @include link(white-on-blue);
   }
 }

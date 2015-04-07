@@ -11,10 +11,19 @@
           "name": "Book",
           "weight": "400",
           "style": "normal"
-        },
+        }
+      ]
+    },
+    {
+      "name": "Silkscreen",
+      "description": "The logo typeface",
+      "family": "sans-serif",
+      "character_set": "English, with OpenType Features on",
+      "served_from": "Typekit",
+      "styles": [
         {
-          "name": "Medium",
-          "weight": "500",
+          "name": "Regular",
+          "weight": "400",
           "style": "normal"
         }
       ]

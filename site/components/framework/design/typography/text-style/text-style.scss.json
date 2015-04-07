@@ -15,7 +15,42 @@
         },
         {
           "name": "colors",
-          "value": "black-on-white"
+          "value": "white-on-blue"
+        }
+      ]
+    },
+    {
+      "name": "Logo",
+      "description": "The logo text",
+      "based_on": "Silkscreen",
+      "mixins": [
+        {
+          "name": "font",
+          "value": "silkscreen-regular"
+        },
+        {
+          "name": "scale",
+          "value": "large"
+        }
+      ]
+    },
+    {
+      "name": "About",
+      "description": "The about text",
+      "based_on": "Futura PT Book",
+      "properties": [
+        {
+          "name": "max-width",
+          "value": "15em"
+        }
+      ],
+      "mixins": [
+        {
+          "name": "scale",
+          "value": "large"
+        },
+        {
+          "name": "p"
         }
       ]
     },
@@ -26,46 +61,12 @@
       "properties": [
         {
           "name": "max-width",
-          "value": "26em"
+          "value": "25em"
         }
       ],
       "mixins": [
         {
           "name": "p"
-        }
-      ]
-    },
-    {
-      "name": "Category list",
-      "description": "The category or tag list",
-      "based_on": "Futura PT Medium",
-      "mixins": [
-        {
-          "name": "font",
-          "value": "futura-pt-medium"
-        },
-        {
-          "name": "scale",
-          "value": "small"
-        },
-        {
-          "name": "uppercase",
-          "value": "1.3px"
-        }
-      ]
-    },
-    {
-      "name": "Title",
-      "description": "The title of an article",
-      "based_on": "Futura PT Book",
-      "mixins": [
-        {
-          "name": "font",
-          "value": "futura-pt-book"
-        },
-        {
-          "name": "scale",
-          "value": "large"
         }
       ]
     }

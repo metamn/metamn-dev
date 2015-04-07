@@ -6,10 +6,10 @@
 // - it is based on the default font size and line height
 // - $lem is used for spacing elements on the webpage like margins and padding
 
-$lem: 1.5em;
+$lem: 1.48em;
 
 @include desktop { 
-  $lem: 1.5em;
+  $lem: 1.89em;
 }
 
 
@@ -20,28 +20,22 @@ $lem: 1.5em;
 
   // The default font size and line height
   @if ($variant == 'default') {
-    font-size: 120%;
-    line-height: 1.5;
+    font-size: 110%;
+    line-height: 1.48;
     
     
     @include desktop {
       font-size: 140%;
-      line-height: 1.5;
+      line-height: 1.89;
       
     }
-    
-  }
-
-  // Smaller than default font size
-  @if ($variant == 'small') {
-    font-size: 0.667em;
-    
     
   }
 
   // Larger than default font size
   @if ($variant == 'large') {
     font-size: 1.5em;
+    line-height: 1.3;
     
     
   }

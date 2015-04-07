@@ -12,8 +12,29 @@
   @if ($variant == 'default') {
     @include font(futura-pt-book);
     @include scale(default);
-    @include colors(black-on-white);
+    @include colors(white-on-blue);
     
+    
+    
+  }
+  
+  // Logo
+  // - The logo text
+  @if ($variant == 'logo') {
+    @include font(silkscreen-regular);
+    @include scale(large);
+    
+    
+    
+  }
+  
+  // About
+  // - The about text
+  @if ($variant == 'about') {
+    @include scale(large);
+    @include p;
+    
+    max-width: 15em;
     
     
   }
@@ -23,28 +44,7 @@
   @if ($variant == 'body-text') {
     @include p;
     
-    max-width: 26em;
-    
-    
-  }
-  
-  // Category list
-  // - The category or tag list
-  @if ($variant == 'category-list') {
-    @include font(futura-pt-medium);
-    @include scale(small);
-    @include uppercase(1.3px);
-    
-    
-    
-  }
-  
-  // Title
-  // - The title of an article
-  @if ($variant == 'title') {
-    @include font(futura-pt-book);
-    @include scale(large);
-    
+    max-width: 25em;
     
     
   }

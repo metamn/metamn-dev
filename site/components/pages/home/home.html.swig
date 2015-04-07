@@ -8,5 +8,5 @@ title: Home
   {% set about = home.about %}
   {% include '../../project/about/about.html.swig' %}
 
-  {% include '../../project/values/values.html.swig' %}
+  {# include '../../project/values/values.html.swig' #}
 {% endblock %}
