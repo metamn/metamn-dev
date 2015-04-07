@@ -1,6 +1,9 @@
 var ulNested = function(toggler) {
   var triggers = document.querySelectorAll(toggler);
 
+  // First item is always active
+  triggers[0].classList.toggle('active');
+
   function onViewChange(event) {
     this.classList.toggle('active');
     event.stopPropagation();

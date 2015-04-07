@@ -17,7 +17,7 @@
     },
     {
       "name": "gray",
-      "value": "rgba(204, 204, 204, 1)",
+      "value": "rgba(240, 228, 212, 1)",
       "description": "Secondary background color"
     }
   ],
