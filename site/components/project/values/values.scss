@@ -1,23 +1,12 @@
 @mixin values {
 
   .values {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+    height: 100vh;
+    
     h3 {
       display: flex;
     }
-
-    @include tablet-and-up {
-      transform: rotate(45deg);
-      @include animation(transform);
-      &:hover {
-        transform: rotate(0deg);
-      }
-    }
   }
-
 
 
   .values__ui {

@@ -31,11 +31,16 @@
   // About
   // - The about text
   @if ($variant == 'about') {
-    @include scale(large);
     @include p;
     
-    max-width: 15em;
     
+    
+    @include mobile-and-up {
+      @include scale(large);
+      
+      max-width: 15em;
+      
+    }
     
   }
   

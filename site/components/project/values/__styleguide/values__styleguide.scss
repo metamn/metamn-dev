@@ -1,10 +1,3 @@
 @mixin values__styleguide {
   background: $black;
-
-  width: 40em;
-  height: calc(40em / 1.7778);
-
-  h3 {
-    margin-left: 50em;
-  }
 }

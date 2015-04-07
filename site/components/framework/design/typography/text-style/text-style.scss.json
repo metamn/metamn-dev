@@ -38,19 +38,26 @@
       "name": "About",
       "description": "The about text",
       "based_on": "Futura PT Book",
-      "properties": [
-        {
-          "name": "max-width",
-          "value": "15em"
-        }
-      ],
       "mixins": [
         {
-          "name": "scale",
-          "value": "large"
-        },
-        {
           "name": "p"
+        }
+      ],
+      "responsive": [
+        {
+          "breakpoint": "mobile-and-up",
+          "mixins": [
+            {
+              "name": "scale",
+              "value": "large"
+            }
+          ],
+          "properties": [
+            {
+              "name": "max-width",
+              "value": "15em"
+            }
+          ]
         }
       ]
     },
