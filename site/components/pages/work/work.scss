@@ -1,9 +1,7 @@
 html {
   &.work {
     body {
-      display: flex;
-      flex-wrap: wrap;
-
+      
       .thumb {
         @include thumb;
       }
