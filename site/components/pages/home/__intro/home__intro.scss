@@ -1,6 +1,6 @@
 @mixin home__intro {
-  .intro {
-    @include intro;
+  .header__with-description {
+    @include header__with-description;
   }
 
   .ui {

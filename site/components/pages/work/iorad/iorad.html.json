@@ -7,11 +7,13 @@
       "CSS3 / SCSS",
       "Jekyll"
     ],
-    "description": [
-      "iorad is a startup helping businesses creating better tutorials on web and mobile.",
-      "Before the launch they've decided to give a face lift for their two most important pages: the Pricing and the Checkout page.",
-      "The project requirements were: speed of execution, keeping current visual assets untouched, cross-device and cross-browser compatibility. And a week duration from signing the contract to the final delivery."
-    ],
+    "description": {
+      "paragraphs": [
+        "iorad is a startup helping businesses creating better tutorials on web and mobile.",
+        "Before the launch they've decided to give a face lift for their two most important pages: the Pricing and the Checkout page.",
+        "The project requirements were: speed of execution, keeping current visual assets untouched, cross-device and cross-browser compatibility. And a week duration from signing the contract to the final delivery."
+      ]
+    },
     "slides": [
       {
         "images": [

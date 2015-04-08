@@ -1,0 +1,20 @@
+@mixin work__description-with-images {
+  .description {
+    @include description;
+  }
+
+  .slider {
+    @include slider;
+  }
+
+  @include mobile-and-up {
+    display: flex;
+    align-items: center;
+
+    .slider {
+      display: flex;
+      justify-content: center;
+      flex: 1;
+    }
+  }
+}

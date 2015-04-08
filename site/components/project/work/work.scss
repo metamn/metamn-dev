@@ -1,0 +1,9 @@
+@mixin work-single {
+  .work__description-with-images {
+    @include work__description-with-images;
+  }
+
+  .work__services {
+    @include work__services;
+  }
+}

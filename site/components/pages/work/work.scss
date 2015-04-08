@@ -1,25 +1,13 @@
 html {
   &.work {
     body {
-      
+
       .thumb {
         @include thumb;
       }
 
-      .work__services {
-        @include work__services;
-      }
-
-      .work__description {
-        @include work__description;
-      }
-
-      .work__images {
-        @include work__images;
-      }
-
-      .links {
-        display: flex;
+      .work-single {
+        @include work-single;
       }
     }
   }

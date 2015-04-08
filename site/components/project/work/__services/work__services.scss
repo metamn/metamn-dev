@@ -5,14 +5,4 @@
   .ul {
     @include ul;
   }
-
-  @include desktop {
-    margin-top: $lem;
-
-    .ul {
-      margin-top: $lem * 2;
-    }
-  }
-
-
 }
