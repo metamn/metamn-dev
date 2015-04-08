@@ -1,4 +1,12 @@
 @mixin work__description-with-images {
+  display: flex;
+  flex-direction: column;
+
+  @include mobile-and-up {
+    flex-direction: row;
+    align-items: center;
+  }
+
   .description {
     @include description;
 
@@ -11,14 +19,4 @@
     @include slider;
   }
 
-  @include mobile-and-up {
-    display: flex;
-    align-items: center;
-
-    .slider {
-      display: flex;
-      justify-content: center;
-      flex: 1;
-    }
-  }
 }
