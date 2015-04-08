@@ -1,0 +1,17 @@
+@mixin home__intro {
+  .intro {
+    @include intro;
+  }
+
+  .ui {
+    @include ui;
+  }
+
+  @include mobile-and-up {
+    height: 100vh;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+}

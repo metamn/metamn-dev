@@ -1,12 +1,12 @@
 html {
   &.home {
     body {
-      .about {
-        @include about;
+      .home__intro {
+        @include home__intro;
       }
 
-      .values {
-        @include values;
+      .home__values {
+        @include home__values;
       }
     }
   }

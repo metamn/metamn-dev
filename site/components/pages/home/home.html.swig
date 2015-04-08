@@ -2,11 +2,9 @@
 title: Home
 ---
 
-{% extends '../../project/templates/default/default.html.swig' %}
+{% extends '../../project/templates/home/home.html.swig' %}
 {% block content %}
 
-  {% set about = home.about %}
-  {% include '../../project/about/about.html.swig' %}
+  {% include '__intro/home__intro.html.swig' %}
 
-  {% include '../../project/values/values.html.swig' %}
 {% endblock %}

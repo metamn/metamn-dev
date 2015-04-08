@@ -1,0 +1,12 @@
+@mixin intro {
+  padding: $lem;
+
+  .header {
+    @include header;
+    padding: 0 0 $lem;
+  }
+
+  .intro__text {
+    @include text-style(about);
+  }
+}

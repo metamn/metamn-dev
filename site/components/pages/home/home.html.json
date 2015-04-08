@@ -6,27 +6,12 @@
         "Lately I've been working on design, front&ndash;end and Wordpress projects with clients around the world."
       ]
     },
-    "values": [
-      {
-        "id": "ui",
-        "title": "Clean User Interfaces",
-        "image": {
-          "title": "Inu Chivu",
-          "name": "inu-archive-mobile"
-        }
-      },
-      {
-        "id": "styleguide",
-        "title": "Components & Styleguide"
-      },
-      {
-        "id": "front-end",
-        "title": "Scalable front&ndash;end"
-      },
-      {
-        "id": "wordpress",
-        "title": "Wordpress"
+    "ui": {
+      "title": "Clean User Interfaces",
+      "image": {
+        "title": "Inu Chivu",
+        "name": "inu-archive-mobile"
       }
-    ]
+    }
   }
 }
