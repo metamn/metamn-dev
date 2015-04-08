@@ -7,10 +7,10 @@
       ]
     },
     "ui": {
-      "title": "Clean User Interfaces",
+      "title": "Intro image",
       "image": {
-        "title": "Inu Chivu",
-        "name": "inu-archive-mobile"
+        "title": "Into image",
+        "name": "intro-desktop-front"
       }
     }
   }

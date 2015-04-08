@@ -5,13 +5,18 @@
 
   .ui {
     @include ui;
+    display: none;
   }
 
-  @include mobile-and-up {
+  @include tablet-and-up {
     height: 100vh;
 
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+
+    .ui {
+      display: flex;
+    }
   }
 }
