@@ -1,6 +1,10 @@
 @mixin work__description-with-images {
   .description {
     @include description;
+
+    span {
+      @include scale(large);
+    }
   }
 
   .slider {
