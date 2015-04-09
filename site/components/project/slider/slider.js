@@ -41,10 +41,13 @@ var slider = function(slide, bullets) {
   // - move slide
   function moveSlide(bullet) {
     current = bulletIndex(bullet);
+    step = current - Math.abs(pos);
+    console.log('current: ' + current);
+    console.log('step: ' + step);
     if (Math.abs(pos) < current ) {
-      previousSlide();
+      previousSlide(step);
     } else {
-      nextSlide();
+      nextSlide(-step);
     }
   }
 
@@ -59,7 +62,7 @@ var slider = function(slide, bullets) {
     for (var i = 0; i < siblings.length; i++) {
       if (bullet == siblings[i]) break;
     }
-    return i;
+    return i - 1;
   }
 
 
@@ -71,16 +74,17 @@ var slider = function(slide, bullets) {
   }
 
   // Get previous slide
-  function previousSlide() {
-    console.log('pos' + pos);
-    pos = Math.max(pos - 1, -(slideCount - 1));
+  function previousSlide(step) {
+    pos = Math.max(pos - step, -(slideCount - 1));
     setTransform();
+    console.log('pos: ' + pos);
   }
 
   // Get next slide
-  function nextSlide() {
-    pos = Math.min(pos + 1, 0);
+  function nextSlide(step) {
+    pos = Math.min(pos + step, 0);
     setTransform();
+    console.log('pos:' + pos);
   }
 }
 
