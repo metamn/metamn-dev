@@ -1,12 +1,6 @@
 @mixin figure($figcaption: off) {
   margin: 0;
 
-  // Center an image to it's container
-  // - useful on large mobiles like iPhone 6 Plump
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
   // Fluid images, both vertically and horizontally. Works well with the intrinsic ratio mixin
   img {
     max-width: 100%;
