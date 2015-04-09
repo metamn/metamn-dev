@@ -5,7 +5,7 @@ var slider = function(slide, bullets) {
   var slideCount = slides.length;
   var pos = 0;
 
-  // - move out of viewport inactive slides
+  // - move out of viewport all inactive slides
   function setTransform() {
     for (var i = 0; i < slideCount; i++ ) {
       slides[i].style['transform'] = 'translateX(' + ((i + pos) * slides[0].offsetWidth) + 'px)';
@@ -31,6 +31,7 @@ var slider = function(slide, bullets) {
   // - click on a bullet
   function clickBullet(event) {
     active = this.classList.contains('active');
+
     if (!active) {
       moveSlide(this);
       removeActiveBulletClass();
@@ -42,8 +43,7 @@ var slider = function(slide, bullets) {
   function moveSlide(bullet) {
     current = bulletIndex(bullet);
     step = current - Math.abs(pos);
-    console.log('current: ' + current);
-    console.log('step: ' + step);
+
     if (Math.abs(pos) < current ) {
       previousSlide(step);
     } else {
@@ -74,17 +74,17 @@ var slider = function(slide, bullets) {
   }
 
   // Get previous slide
+  // - it moves prev with 'step' slides
   function previousSlide(step) {
     pos = Math.max(pos - step, -(slideCount - 1));
     setTransform();
-    console.log('pos: ' + pos);
   }
 
   // Get next slide
+  // - it moves next with 'step' slides
   function nextSlide(step) {
     pos = Math.min(pos + step, 0);
     setTransform();
-    console.log('pos:' + pos);
   }
 }
 
