@@ -18,12 +18,8 @@
       {
         "images": [
           {
-            "title": "The iorad pricing page on mobile",
-            "name": "iorad-pricing-mobile"
-          },
-          {
-            "title": "The iorad checkout page on mobile",
-            "name": "iorad-checkout-mobile"
+            "title": "The iorad pricing page on laptop",
+            "name": "iorad-pricing-laptop"
           }
         ]
       },
@@ -38,8 +34,12 @@
       {
         "images": [
           {
-            "title": "The iorad pricing page on laptop",
-            "name": "iorad-pricing-laptop"
+            "title": "The iorad pricing page on mobile",
+            "name": "iorad-pricing-mobile"
+          },
+          {
+            "title": "The iorad checkout page on mobile",
+            "name": "iorad-checkout-mobile"
           }
         ]
       },

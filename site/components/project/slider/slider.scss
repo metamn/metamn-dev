@@ -16,12 +16,8 @@
       @include intrinsic-ratio(3, 4, '.slide');
     }
 
-    @include landscape {
+    @include mobile-and-up {
       @include intrinsic-ratio(3, 2, '.slide');
-    }
-
-    @include tablet {
-      @include intrinsic-ratio(1, 1, '.slide');
     }
 
     .slide {

@@ -6,15 +6,15 @@
     },
     {
       "name": "tablet",
-      "width": "720"
+      "width": "500"
     },
     {
       "name": "laptop",
-      "width": "960"
+      "width": "600"
     },
     {
       "name": "desktop",
-      "width": "960"
+      "width": "800"
     }
   ]
 }
