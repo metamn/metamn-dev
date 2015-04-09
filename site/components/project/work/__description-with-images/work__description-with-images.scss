@@ -1,22 +1,39 @@
 @mixin work__description-with-images {
-  display: flex;
-  flex-direction: column;
+  padding: $lem;
 
-  @include mobile-and-up {
-    flex-direction: row;
-    align-items: center;
+  .slider {
+    @include slider;
+  }
+
+  .slider__bullets {
+    @include slider__bullets;
   }
 
   .description {
     @include description;
+    padding: 0;
 
     span {
       @include scale(large);
     }
   }
 
-  .slider {
-    @include slider;
+
+  display: flex;
+  flex-direction: column;
+
+  @include tablet-and-up {
+    flex-direction: row;
+    align-items: center;
+
+    .description {
+      padding-right: $lem;
+    }
+
+    .slider__bullets {
+      @include slider__bullets--vertical;
+    }
   }
+
 
 }

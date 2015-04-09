@@ -6,4 +6,7 @@
 
   {% set slides = work.slides %}
   {% include '../../slider/slider.html.swig' %}
+
+  {% set bullets = work.slides %}
+  {% include '../../slider/__bullets/slider__bullets.html.swig' %}
 </article>

@@ -1,0 +1,33 @@
+@mixin slider__bullets {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  div {
+    cursor: pointer;
+    margin-right: $lem / 2;
+
+    span {
+      @include animation(opacity);
+
+      &.active {
+        display: none;
+        opacity: 0;
+      }
+    }
+
+    &.active {
+      cursor: default;
+
+      span {
+        display: none;
+        opacity: 0;
+
+        &.active {
+          display: flex;
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
