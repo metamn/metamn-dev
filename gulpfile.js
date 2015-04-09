@@ -146,7 +146,7 @@ var _image_resize = function(file, size, name) {
   gulp.src(file)
     .pipe(plumber({errorHandler: onError}))
     .pipe(imageResize({
-      width : size,
+      height : size,
       sharpen: true,
       imageMagick: true
     }))
@@ -166,7 +166,7 @@ var _image_batch_resize = function(files, retina, retina_name) {
         json = require(json_file);
         sizes = json.image_sizes;
         for (i in sizes) {
-          _image_resize(file.path, sizes[i].width * retina, sizes[i].name + retina_name);
+          _image_resize(file.path, sizes[i].height * retina, sizes[i].name + retina_name);
         }
       }
     }))

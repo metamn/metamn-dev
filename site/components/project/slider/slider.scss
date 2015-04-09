@@ -6,18 +6,18 @@
     flex-basis: 100%;
   }
 
-  // Stretch images to fill the full space available
+  // Stretch content to fill the full space available
   @include tablet-and-up {
     flex-grow: 1;
   }
 
   .slides {
     @include mobile {
-      @include intrinsic-ratio(3, 4, '.slide');
+      @include intrinsic-ratio(3, 4, '.slide', 'figure');
     }
 
     @include mobile-and-up {
-      @include intrinsic-ratio(3, 2, '.slide');
+      @include intrinsic-ratio(16, 9, '.slide', 'figure');
     }
 
     .slide {

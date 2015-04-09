@@ -47,9 +47,9 @@
 
   <picture>
     <!--[if IE 9]><video style="display: none;"><![endif]-->
-    <source media="(min-width: 90em)" srcset="{{ site.url }}assets/images/{{ desktop }}, {{ site.url }}assets/images/{{ desktop2x }} 2x">
-    <source media="(min-width: 64em)" srcset="{{ site.url }}assets/images/{{ laptop }}, {{ site.url }}assets/images/{{ laptop2x }} 2x">
-    <source media="(min-width: 37.5em)" srcset="{{ site.url }}assets/images/{{ tablet }}, {{ site.url }}assets/images/{{ tablet2x }} 2x">
+    <source media="(min-width: 1600px)" srcset="{{ site.url }}assets/images/{{ desktop }}, {{ site.url }}assets/images/{{ desktop2x }} 2x">
+    <source media="(min-width: 1024px)" srcset="{{ site.url }}assets/images/{{ laptop }}, {{ site.url }}assets/images/{{ laptop2x }} 2x">
+    <source media="(min-width: 600px)" srcset="{{ site.url }}assets/images/{{ tablet }}, {{ site.url }}assets/images/{{ tablet2x }} 2x">
     <source srcset="{{ site.url }}assets/images/{{ mobile }}, {{ site.url }}assets/images/{{ mobile2x }} 2x">
     <!--[if IE 9]></video><![endif]-->
     <img srcset="{{ site.url }}assets/images/{{ desktop }}" alt="{{ image.title }}">
