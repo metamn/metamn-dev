@@ -1,0 +1,65 @@
+{
+  "inu": {
+    "services": [
+      "Identity",
+      "Responsive web design",
+      "Front&ndash;end development",
+      "Back&ndash;end development",
+      "HTML5",
+      "CSS3 / SCSS",
+      "PHP / Wordpress"
+    ],
+    "description": {
+      "paragraphs": [
+        "Trapped with old technology powering his old portfolio Inu wanted a new website with a modern dashboard and a minimalist look.",
+        "We have created a special Wordpress backend for easy photography publishing. And a clean design which stays out of the viewer's way and is enjoyable even on small screens."
+      ]
+    },
+    "slides": [
+      {
+        "images": [
+          {
+            "title": "Inu Chivu in white on mobile",
+            "name": "inu-menu-white-mobile"
+          },
+          {
+            "title": "Inu Chivu in black on mobile",
+            "name": "inu-menu-black-mobile"
+          }
+        ]
+      },
+      {
+        "images": [
+          {
+            "title": "Inu Chivu frontpage on mobile",
+            "name": "inu-frontpage-mobile"
+          },
+          {
+            "title": "Inu Chivu archive page on mobile",
+            "name": "inu-archive-mobile"
+          }
+        ]
+      },
+      {
+        "images": [
+          {
+            "title": "Inu Chivu frontpage on tablet",
+            "name": "inu-frontpage-tablet"
+          },
+          {
+            "title": "Inu Chivu archive page on tablet",
+            "name": "inu-archive-tablet"
+          }
+        ]
+      },
+      {
+        "images": [
+          {
+            "title": "Inu Chivu frontpage on laptop",
+            "name": "inu-frontpage-laptop"
+          }
+        ]
+      }
+    ]
+  }
+}
