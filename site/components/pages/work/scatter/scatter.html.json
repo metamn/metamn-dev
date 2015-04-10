@@ -1,0 +1,64 @@
+{
+  "scatter": {
+    "services": [
+      "Responsive web design",
+      "Front&ndash;end development",
+      "HTML5",
+      "CSS3 / SCSS",
+      "Jekyll"
+    ],
+    "description": {
+      "paragraphs": [
+        "Scatter had ready a web application to connect local businesses with customers. They needed a website before the launch.",
+        "We've created a couple of landing pages describing product features both for businesses and customers. And a Pricing page to let visitors subscribe to their services.",
+        "On design the requirements were big typography with big background images, and intuitive graphics to explain product features. On development side we had to make everything fully responsible."
+      ]
+    },
+    "slides": [
+      {
+        "images": [
+          {
+            "title": "The Scatter for Business page on mobile",
+            "name": "scatter-business-mobile"
+          },
+          {
+            "title": "The Scatter frontpage on mobile",
+            "name": "scatter-frontpage-mobile"
+          }
+        ]
+      },
+      {
+        "images": [
+          {
+            "title": "The Scatter business page on tablet",
+            "name": "scatter-business-tablet-angle1"
+          }
+        ]
+      },
+      {
+        "images": [
+          {
+            "title": "The Scatter business page on tablet, second slide",
+            "name": "scatter-business-2-tablet-angle1"
+          }
+        ]
+      },
+      {
+        "images": [
+          {
+            "title": "The Scatter frontpage on laptop",
+            "name": "scatter-frontpage-laptop"
+          }
+        ]
+      },
+      {
+        "images": [
+          {
+            "title": "The Scatter frontpage on desktop",
+            "name": "scatter-frontpage-2-desktop"
+          }
+        ]
+      }
+    ]
+  }
+}
