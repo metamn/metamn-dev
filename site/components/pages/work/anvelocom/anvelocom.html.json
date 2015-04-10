@@ -1,0 +1,66 @@
+{
+  "anvelocom": {
+    "services": [
+      "Identity",
+      "Responsive web design",
+      "Front&ndash;end development",
+      "Back&ndash;end development",
+      "HTML5",
+      "CSS3 / SCSS",
+      "PHP / Wordpress"
+    ],
+    "description": {
+      "paragraphs": [
+        "Anvelocom started as a Wordpress blog to research the market for auto off-road accessories and tuning equipment.",
+        "After initial success we've created a responsive e-commerce Wordpress theme together with a strong visual identity.",
+        "A programming challenge was to create dynamic filters for products which work with any number of categories and combinations."
+      ]
+    },
+    "slides": [
+      {
+        "images": [
+          {
+            "title": "The Anvelocom archive page on laptop",
+            "name": "anvelocom-archive-laptop"
+          }
+        ]
+      },
+      {
+        "images": [
+          {
+            "title": "The Anvelocom frontpage on mobile",
+            "name": "anvelocom-frontpage-mobile"
+          },
+          {
+            "title": "The Anvelocom menu on mobile",
+            "name": "anvelocom-menu-mobile"
+          },
+          {
+            "title": "The Anvelocom archive page on mobile",
+            "name": "anvelocom-archive-mobile"
+          }
+        ]
+      },
+      {
+        "images": [
+          {
+            "title": "The Anvelocom frontpage on desktop",
+            "name": "anvelocom-frontpage-desktop"
+          }
+        ]
+      },
+      {
+        "images": [
+          {
+            "title": "The Anvelocom product page on tablet",
+            "name": "anvelocom-product-tablet"
+          },
+          {
+            "title": "The Anvelocom archive page on tablet",
+            "name": "anvelocom-archive-tablet"
+          }
+        ]
+      }
+    ]
+  }
+}
