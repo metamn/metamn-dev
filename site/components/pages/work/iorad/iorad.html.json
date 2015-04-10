@@ -42,15 +42,6 @@
             "name": "iorad-checkout-mobile"
           }
         ]
-      },
-      {
-        "images": [
-          {
-            "title": "The iorad pricing page on desktop",
-            "name": "iorad-pricing-desktop-left",
-            "class": "desktop--left"
-          }
-        ]
       }
     ]
   }
