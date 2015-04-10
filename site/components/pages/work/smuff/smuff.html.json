@@ -1,0 +1,72 @@
+{
+  "smuff": {
+    "services": [
+      "Identity",
+      "Product design and development",
+      "Responsive web design",
+      "Front&ndash;end development",
+      "Back&ndash;end development",
+      "E-commerce",
+      "HTML5",
+      "CSS3 / SCSS",
+      "PHP / Wordpress / Yii MVC"
+    ],
+    "description": {
+      "paragraphs": [
+        "The collaboration with Smuff started in the founding phase. The business idea for an online gadget store was ready and Smuff needed someone to build a web product around.",
+        "During years and iterations we have managed to build a custom e-commerce solution with a high conversion rate design and an automatic content distribution platform—measurable and optimizable—to aid sales and marketing.",
+        "Today Smuff is local market leader with 44% of returning customers."
+      ]
+    },
+    "slides": [
+      {
+        "images": [
+          {
+            "title": "The Smuff archive page on tablet",
+            "name": "smuff-archive-tablet"
+          },
+          {
+            "title": "The Smuff product page on tablet",
+            "name": "smuff-product-tablet"
+          }
+        ]
+      },
+      {
+        "images": [
+          {
+            "title": "The Smuff archive page on mobile",
+            "name": "smuff-archive-mobile"
+          },
+          {
+            "title": "The Smuff product page on mobile",
+            "name": "smuff-product-mobile"
+          }
+        ]
+      },
+      {
+        "images": [
+          {
+            "title": "The Smuff product page on laptop",
+            "name": "smuff-product-laptop"
+          }
+        ]
+      },
+      {
+        "images": [
+          {
+            "title": "The Smuff archive page on laptop",
+            "name": "smuff-archive-laptop"
+          }
+        ]
+      },
+      {
+        "images": [
+          {
+            "title": "The Smuff checkout page on laptop",
+            "name": "smuff-checkout-laptop"
+          }
+        ]
+      }
+    ]
+  }
+}
