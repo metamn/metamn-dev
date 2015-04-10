@@ -22,25 +22,9 @@
   // - The logo text
   @if ($variant == 'logo') {
     @include font(silkscreen-regular);
-    @include scale(large);
+    @include scale(large-1);
     
     
-    
-  }
-  
-  // About
-  // - The about text
-  @if ($variant == 'about') {
-    @include p;
-    
-    
-    
-    @include mobile-and-up {
-      @include scale(large);
-      
-      max-width: 15em;
-      
-    }
     
   }
   
@@ -50,6 +34,17 @@
     @include p;
     
     max-width: 25em;
+    
+    
+  }
+  
+  // Large text
+  // - A text larger than the default
+  @if ($variant == 'large-text') {
+    @include scale(large-1);
+    @include p;
+    
+    max-width: 15em;
     
     
   }

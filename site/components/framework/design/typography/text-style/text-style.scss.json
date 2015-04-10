@@ -30,34 +30,7 @@
         },
         {
           "name": "scale",
-          "value": "large"
-        }
-      ]
-    },
-    {
-      "name": "About",
-      "description": "The about text",
-      "based_on": "Futura PT Book",
-      "mixins": [
-        {
-          "name": "p"
-        }
-      ],
-      "responsive": [
-        {
-          "breakpoint": "mobile-and-up",
-          "mixins": [
-            {
-              "name": "scale",
-              "value": "large"
-            }
-          ],
-          "properties": [
-            {
-              "name": "max-width",
-              "value": "15em"
-            }
-          ]
+          "value": "large-1"
         }
       ]
     },
@@ -74,6 +47,26 @@
       "mixins": [
         {
           "name": "p"
+        }
+      ]
+    },
+    {
+      "name": "Large text",
+      "description": "A text larger than the default",
+      "based_on": "Futura PT Book",
+      "mixins": [
+        {
+          "name": "scale",
+          "value": "large-1"
+        },
+        {
+          "name": "p"
+        }
+      ],
+      "properties": [
+        {
+          "name": "max-width",
+          "value": "15em"
         }
       ]
     }

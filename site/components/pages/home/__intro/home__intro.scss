@@ -1,22 +1,16 @@
 @mixin home__intro {
-  .header__with-description {
-    @include header__with-description;
+  display: flex;
+  align-items: center;
+
+  .description {
+    @include description;
+
+    @include mobile-and-up {
+      @include text-style(large-text);
+    }
   }
 
   .ui {
     @include ui;
-    display: none;
-  }
-
-  @include tablet-and-up {
-    height: 100vh;
-
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-
-    .ui {
-      display: flex;
-    }
   }
 }

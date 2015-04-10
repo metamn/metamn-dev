@@ -1,11 +1,14 @@
 @mixin ui {
   padding: $lem;
+  margin: $lem 0;
 
+  flex-grow: 1;
   display: flex;
   justify-content: center;
-  flex: 1;
 
-  @include intrinsic-ratio(16, 9, 'figure', 'img');
+  @include tablet-and-below {
+    display: none;
+  }
 
   figure {
     @include figure;

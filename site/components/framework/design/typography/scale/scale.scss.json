@@ -30,12 +30,26 @@
       ]
     },
     {
-      "name": "large",
-      "description": "Larger than default font size",
+      "name": "large-1",
+      "description": "Larger than default font size with 1 scale",
       "properties": [
         {
           "name": "font-size",
-          "value": "1.5em"
+          "value": "1.333em"
+        },
+        {
+          "name": "line-height",
+          "value": "1.3"
+        }
+      ]
+    },
+    {
+      "name": "large-2",
+      "description": "Larger than default font size with 2 scales",
+      "properties": [
+        {
+          "name": "font-size",
+          "value": "1.777em"
         },
         {
           "name": "line-height",

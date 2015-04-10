@@ -1,9 +1,0 @@
-@mixin header__with-description {
-  .description {
-    padding: $lem;
-
-    .description__text {
-      @include text-style(about);
-    }
-  }
-}
