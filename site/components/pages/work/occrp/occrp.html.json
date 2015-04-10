@@ -1,0 +1,56 @@
+{
+  "OCCRP": {
+    "services": [
+      "Responsive web design",
+      "Front&ndash;end development",
+      "HTML5",
+      "CSS3 / SCSS",
+      "Jekyll"
+    ],
+    "description": {
+      "paragraphs": [
+        "Organized Crime And Corruption Reporting Project had it's website dated from the last decade. They needed a redesign.",
+        "We've managed to come up with a modern, newspaper-like design with clean headlines, good structure, clean understanding of priorities.",
+        "The new site supports all screens from mobile devices up to large projectors."
+      ]
+    },
+    "slides": [
+      {
+        "images": [
+          {
+            "title": "The top of OCCRP frontpage on mobile",
+            "name": "occrp-frontpage-top-mobile"
+          },
+          {
+            "title": "The OCCRP frontpage on mobile",
+            "name": "occrp-frontpage-mobile"
+          },
+          {
+            "title": "The OCCRP archive page on mobile",
+            "name": "occrp-archive-mobile"
+          }
+        ]
+      },
+      {
+        "images": [
+          {
+            "title": "The OCCRP archive page on tablet",
+            "name": "occrp-archive-tablet"
+          },
+          {
+            "title": "The OCCRP article page on tablet",
+            "name": "occrp-article-tablet"
+          }
+        ]
+      },
+      {
+        "images": [
+          {
+            "title": "The OCCRP frontpage on laptop",
+            "name": "occrp-frontpage-laptop"
+          }
+        ]
+      }
+    ]
+  }
+}
