@@ -1,0 +1,52 @@
+{
+  "reboot": {
+    "services": [
+      "Front&ndash;end development",
+      "Back&ndash;end development",
+      "HTML5",
+      "CSS3 / SCSS",
+      "PHP / Wordpress"
+    ],
+    "description": {
+      "paragraphs": [
+        "The collaboration with Smuff started in the founding phase. The business idea for an online gadget store was ready and Smuff needed someone to build a web product around.",
+        "During years and iterations we have managed to build a custom e-commerce solution with a high conversion rate design and an automatic content distribution platform—measurable and optimizable—to aid sales and marketing.",
+        "Today Smuff is local market leader with 44% of returning customers."
+      ]
+    },
+    "slides": [
+      {
+        "images": [
+          {
+            "title": "The Reboot frontpage on mobile",
+            "name": "reboot-archive-mobile"
+          },
+          {
+            "title": "The Reboot frontpage on tablet",
+            "name": "reboot-frontpage-tablet"
+          }
+        ]
+      },
+      {
+        "images": [
+          {
+            "title": "The Reboot case study page on mobile",
+            "name": "reboot-frontpage-mobile"
+          },
+          {
+            "title": "The Reboot case study page on tablet",
+            "name": "reboot-case-study-tablet"
+          }
+        ]
+      },
+      {
+        "images": [
+          {
+            "title": "The Reboot frontpage on laptop",
+            "name": "reboot-frontpage-laptop"
+          }
+        ]
+      }
+    ]
+  }
+}
