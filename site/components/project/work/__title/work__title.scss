@@ -1,0 +1,15 @@
+@mixin work__title {
+  padding: $lem;
+  padding-bottom: 0;
+
+  .title {
+    display: flex;
+    align-items: center;
+    
+    @include text-style(title);
+
+    .long-dash {
+      @include long-dash;
+    }
+  }
+}

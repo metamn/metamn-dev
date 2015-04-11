@@ -49,4 +49,13 @@
     
   }
   
+  // Title
+  // - The title of an article or page
+  @if ($variant == 'title') {
+    @include scale(large-1);
+    
+    
+    
+  }
+  
 }

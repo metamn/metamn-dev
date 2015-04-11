@@ -69,6 +69,17 @@
           "value": "15em"
         }
       ]
+    },
+    {
+      "name": "Title",
+      "description": "The title of an article or page",
+      "based_on": "Futura PT Book",
+      "mixins": [
+        {
+          "name": "scale",
+          "value": "large-1"
+        }
+      ]
     }
   ]
 }

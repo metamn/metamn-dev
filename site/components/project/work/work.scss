@@ -1,4 +1,8 @@
 @mixin work-single {
+  .work__title {
+    @include work__title;
+  }
+  
   .work__description-with-images {
     @include work__description-with-images;
   }
