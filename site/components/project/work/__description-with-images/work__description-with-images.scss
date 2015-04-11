@@ -3,10 +3,20 @@
 
   .slider {
     @include slider;
+
+    // More padding on tablets
+    @include tablet {
+      padding-top: $lem * 2;
+    }
   }
 
   .slider__bullets {
     @include slider__bullets;
+
+    // More padding on tablets
+    @include tablet {
+      padding: $lem 0;
+    }
   }
 
   .description {
