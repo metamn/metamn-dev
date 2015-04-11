@@ -1,0 +1,8 @@
+@mixin separator-line {
+  display: flex;
+
+  padding: $lem 0;
+  width: $lem * 3;
+
+  border-bottom: 1px outset;
+}

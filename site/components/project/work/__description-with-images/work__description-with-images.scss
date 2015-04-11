@@ -19,13 +19,18 @@
     }
   }
 
+
   .description {
     @include description;
     padding: 0;
 
-    span {
-      @include scale(large);
+    // A separator line between description and slider on tablets
+    @include tablet {
+      .separator-line {
+        @include separator-line;
+      }
     }
+
   }
 
 
