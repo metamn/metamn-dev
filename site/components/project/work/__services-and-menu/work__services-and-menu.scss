@@ -1,13 +1,15 @@
 @mixin work__services-and-menu {
   @include colors(black-on-gray);
   padding: $lem;
+  padding-bottom: $lem * 2;
 
   display: flex;
   @include mobile {
     flex-direction: column;
+    padding-bottom: $lem;
 
     .menu {
-      padding: $lem * 2 0 $lem;
+      padding: $lem * 2 0 0;
     }
   }
 
