@@ -453,11 +453,11 @@ function makeLI(elem) {
 gulp.task('sg_menu', function() {
   var json = dirTree('site/components/framework');
   var menu = makeUL([json]);
-  fs.writeFileSync('styleguide/components/project/menu/__framework/menu__framework.html.swig', menu);
+  fs.writeFileSync('styleguide/components/project/styleguide-menu/__framework/styleguide-menu__framework.html.swig', menu);
 
   json = dirTree('site/components/project');
   menu = makeUL([json]);
-  fs.writeFileSync('styleguide/components/project/menu/__project/menu__project.html.swig', menu);
+  fs.writeFileSync('styleguide/components/project/styleguide-menu/__project/styleguide-menu__project.html.swig', menu);
 });
 
 

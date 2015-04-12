@@ -5,69 +5,17 @@
   "site_title": "Metamn",
   "images": "assets/images/",
 
-  "menu": [
-    {
-      "name": "Structure",
-      "items": [
-        {
-          "name": "Breakpoints"
-        },
-        {
-          "name": "Semantic HTML5"
-        },
-        {
-          "name": "Intrinsic Ratio"
-        },
-        {
-          "name": "Figure"
-        }
-      ]
-    },
-    {
-      "name": "Design elements",
-      "items": [
-        "Colors",
-        {
-          "name": "Decorations",
-          "items": [
-            "long-dash"
-          ]
-        },
-        {
-          "name": "Typography",
-          "items": [
-            {
-              "name": "Elements",
-              "items": [
-                "Link",
-                "Paragraph",
-                "Unordered list",
-                "Uppercase"
-              ]
-            },
-            {
-              "name": "Fonts"
-            },
-            {
-              "name": "Reset"
-            },
-            {
-              "name": "Scale"
-            },
-            {
-              "name": "Text Style"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Behavior",
-      "items": [
-        {
-          "name": "Animations"
-        }
-      ]
-    }
-  ]
+  "links": {
+    "menu": [
+      {
+        "title": "Work"
+      },
+      {
+        "title": "About"
+      },
+      {
+        "title": "Contact"
+      }
+    ]
+  }
 }

@@ -13,6 +13,8 @@
   {% block content %}{% endblock %}
 </article>
 
-{% include '../../menu/menu.html.swig' %}
+{% include '../../styleguide-menu/styleguide-menu.html.swig' %}
+
+{% include '../../../../../site/components/project/menu/menu.html.swig' %}
 
 {% include '../scripts/scripts.html.swig' %}

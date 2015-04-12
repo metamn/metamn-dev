@@ -75,6 +75,19 @@
       ]
     },
     {
+      "name": "white-on-black",
+      "properties": [
+        {
+          "name": "color",
+          "value": "$white"
+        },
+        {
+          "name": "background-color",
+          "value": "$black"
+        }
+      ]
+    },
+    {
       "name": "black-on-gray",
       "properties": [
         {

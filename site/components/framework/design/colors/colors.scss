@@ -46,6 +46,12 @@ $gray: rgba(240, 228, 212, 1);
     
   }
 
+  @if ($name == 'white-on-black') {
+    color: $white;
+    background-color: $black;
+    
+  }
+
   @if ($name == 'black-on-gray') {
     color: $black;
     background-color: $gray;
@@ -96,6 +102,12 @@ $gray: rgba(240, 228, 212, 1);
 .white-on-blue {
   color: $white;
   background-color: $blue;
+  
+}
+
+.white-on-black {
+  color: $white;
+  background-color: $black;
   
 }
 

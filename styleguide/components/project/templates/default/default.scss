@@ -19,8 +19,13 @@ html {
         @include example;
       }
 
+      .styleguide-menu {
+        @include styleguide-menu;
+      }
+
       .menu {
         @include menu;
+        padding: $lem;
       }
     }
   }

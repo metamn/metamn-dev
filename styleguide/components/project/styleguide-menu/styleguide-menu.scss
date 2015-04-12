@@ -1,10 +1,11 @@
-@mixin menu {
+@mixin styleguide-menu {
+  @include colors(white-on-black);
   padding: $lem;
 
   display: flex;
   flex-wrap: wrap;
 
-  .menu__framework, .menu__project {
+  .styleguide-menu__framework, .styleguide-menu__project {
     @include ul--nested;
 
     ul {
@@ -28,7 +29,7 @@
     }
   }
 
-  .menu__framework {
+  .styleguide-menu__framework {
     margin-right: $lem * 2;
   }
 }
