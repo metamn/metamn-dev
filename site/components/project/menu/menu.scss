@@ -1,15 +1,16 @@
 @mixin menu {
   @include colors(blue-on-gray);
+
   display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  @include mobile {
+    flex-direction: column;
+  }
 
   a {
     @include link(blue-on-gray);
     @include text-style(menu);
-  }
-
-  .menu__item {
-    border-left: 1px solid;
-    padding-left: $lem / 2;
-    padding-right: $lem * 2;
   }
 }
