@@ -10,9 +10,9 @@
     ],
     "description": {
       "paragraphs": [
-        "The collaboration with Smuff started in the founding phase. The business idea for an online gadget store was ready and Smuff needed someone to build a web product around.",
-        "During years and iterations we have managed to build a custom e-commerce solution with a high conversion rate design and an automatic content distribution platform—measurable and optimizable—to aid sales and marketing.",
-        "Today Smuff is local market leader with 44% of returning customers."
+        "Reboot is a social impact firm dedicated to inclusive development and accountable governance. They help governments, foundations, and international organizations achieve their missions.",
+        "After growing out the startup phase the Reboot design team created a new look and wanted a developer to implement in Wordpress.",
+        "The requirement for back&ndash;end was portability. No third-party plugins, just Wordpress core features and structures."
       ]
     },
     "slides": [
