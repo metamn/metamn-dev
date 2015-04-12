@@ -32,6 +32,13 @@ $lem: 1.48em;
     
   }
 
+  // Smaller than default font size with 1 scale
+  @if ($variant == 'small-1') {
+    font-size: 0.75em;
+    
+    
+  }
+
   // Larger than default font size with 1 scale
   @if ($variant == 'large-1') {
     font-size: 1.333em;

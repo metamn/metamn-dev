@@ -2,14 +2,20 @@
   padding: $lem;
   padding-bottom: 0;
 
-  .title {
-    display: flex;
-    align-items: center;
-    
-    @include text-style(title);
+  display: flex;
+  align-items: center;
 
-    .long-dash {
-      @include long-dash;
+  span {
+    @include text-style(title);
+  }
+
+  .long-dash {
+    @include long-dash;
+  }
+
+  @include mobile {
+    .long-dash, .subtitle {
+      display: none;
     }
   }
 }

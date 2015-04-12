@@ -30,6 +30,16 @@
       ]
     },
     {
+      "name": "small-1",
+      "description": "Smaller than default font size with 1 scale",
+      "properties": [
+        {
+          "name": "font-size",
+          "value": "0.75em"
+        }
+      ]
+    },
+    {
       "name": "large-1",
       "description": "Larger than default font size with 1 scale",
       "properties": [

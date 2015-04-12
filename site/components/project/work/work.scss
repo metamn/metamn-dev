@@ -2,9 +2,21 @@
   .work__title {
     @include work__title;
   }
-  
+
   .work__description-with-images {
     @include work__description-with-images;
+  }
+
+
+  // Push title down on laptop and desktop
+  @include tablet-and-up {
+    .work__title {
+      padding-top: $lem * 2;
+    }
+
+    .work__description-with-images {
+      padding-top: 0;
+    }
   }
 
   .work__services {
