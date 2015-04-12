@@ -4,6 +4,11 @@ html {
       .home__intro {
         @include home__intro;
       }
+
+      .menu {
+        @include menu;
+        padding: $lem;
+      }
     }
   }
 }

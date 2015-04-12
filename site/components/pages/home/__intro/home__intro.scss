@@ -6,7 +6,9 @@
     @include description;
 
     @include mobile-and-up {
-      @include text-style(large-text);
+      .description__text {
+        @include text-style(large-text);
+      }
     }
   }
 

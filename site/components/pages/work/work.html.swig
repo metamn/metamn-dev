@@ -9,4 +9,6 @@ title: Work
     {% include '../../project/thumb/thumb.html.swig' %}
   {% endfor %}
 
+  {% include '../../project/menu/menu.html.swig' %}
+
 {% endblock %}
