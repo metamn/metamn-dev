@@ -17,7 +17,15 @@
 
   .thumb__image {
     background: $lightblue;
-    @include intrinsic-ratio(16, 9, 'figure');
+    padding: $lem / 2;
+
+    .container {
+      @include intrinsic-ratio(16, 9, 'figure');
+    }
+
+    figure {
+      @include figure;
+    }
   }
 
   .thumb__title {

@@ -6,7 +6,11 @@
       "services": [
         "Front-end",
         "Wordpress"
-      ]
+      ],
+      "image": {
+        "title": "Wanderlust",
+        "name": "wanderlust-thumb"
+      }
     },
     {
       "title": "Iorad",
