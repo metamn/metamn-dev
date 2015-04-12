@@ -68,6 +68,11 @@ Templates</div>
 <li>
 <div>
 {% include '../../../../../site/components/framework/design/decorations/long-dash/long-dash.html.swig' %}
+<a class="link" title="Title" href="{{ site.url }}project/title">Title</a>
+</li>
+<li>
+<div>
+{% include '../../../../../site/components/framework/design/decorations/long-dash/long-dash.html.swig' %}
 Values</div>
 <ul>
 <li>
@@ -111,11 +116,6 @@ Work</div>
 <div>
 {% include '../../../../../site/components/framework/design/decorations/long-dash/long-dash.html.swig' %}
 <a class="link" title="Services and menu" href="{{ site.url }}project/work/__services-and-menu">Services and menu</a>
-</li>
-<li>
-<div>
-{% include '../../../../../site/components/framework/design/decorations/long-dash/long-dash.html.swig' %}
-<a class="link" title="Title" href="{{ site.url }}project/work/__title">Title</a>
 </li>
 </ul>
 </li>

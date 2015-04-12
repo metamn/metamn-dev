@@ -2,6 +2,9 @@
 
 {% include '../../header/header.html.swig' %}
 
+{% set page_title = { title: site.title, subtitle: title } %}
+{% include '../../../../../site/components/project/title/title.html.swig' %}
+
 {% include '../../description/description.html.swig' %}
 
 <article class="example">

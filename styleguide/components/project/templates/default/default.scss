@@ -2,9 +2,13 @@ html {
   &.sg {
     body {
       @include colors(black-on-gray);
-      
+
       .header {
         @include header(black-on-gray);
+      }
+
+      .title {
+        @include title;
       }
 
       .description {
