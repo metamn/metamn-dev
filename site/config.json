@@ -10,22 +10,18 @@
   ],
 
   "links": {
-    "main": [
+    "menu": [
       {
-        "title": "Work",
-        "url": "work"
+        "title": "Work"
       },
       {
-        "title": "Styleguide",
-        "url": "styleguide"
+        "title": "Styleguide"
       },
       {
-        "title": "About",
-        "url": "about"
+        "title": "About"
       },
       {
-        "title": "Contact",
-        "url": "contact"
+        "title": "Contact"
       }
     ],
 

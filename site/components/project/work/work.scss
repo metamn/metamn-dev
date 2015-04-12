@@ -19,7 +19,7 @@
     }
   }
 
-  .work__services {
-    @include work__services;
+  .work__services-and-menu {
+    @include work__services-and-menu;
   }
 }

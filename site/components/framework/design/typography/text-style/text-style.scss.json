@@ -80,6 +80,25 @@
           "value": "futura-pt-medium"
         }
       ]
+    },
+    {
+      "name": "Menu",
+      "description": "The main navigation menu",
+      "based_on": "Futura PT Medium",
+      "mixins": [
+        {
+          "name": "font",
+          "value": "futura-pt-medium"
+        },
+        {
+          "name": "scale",
+          "value": "small-1"
+        },
+        {
+          "name": "uppercase",
+          "value": "1.5px"
+        }
+      ]
     }
   ]
 }

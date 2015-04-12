@@ -1,0 +1,29 @@
+@mixin work__services-and-menu {
+  @include colors(black-on-gray);
+  padding: $lem;
+
+  display: flex;
+  @include mobile {
+    flex-direction: column;
+
+    .menu {
+      padding: $lem * 2 0 $lem;
+    }
+  }
+
+  @include mobile-and-up {
+    .services, .menu {
+      flex: 1 0 0;
+    }
+  }
+
+  .services {
+    .ul {
+      @include ul;
+    }
+  }
+
+  .menu {
+    @include menu;
+  }
+}

@@ -58,4 +58,15 @@
     
   }
   
+  // Menu
+  // - The main navigation menu
+  @if ($variant == 'menu') {
+    @include font(futura-pt-medium);
+    @include scale(small-1);
+    @include uppercase(1.5px);
+    
+    
+    
+  }
+  
 }

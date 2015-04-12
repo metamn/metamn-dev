@@ -7,9 +7,5 @@ html {
     .header {
       @include header;
     }
-
-    .links {
-      @include links;
-    }
   }
 }
