@@ -12,10 +12,4 @@
   .long-dash {
     @include long-dash;
   }
-
-  @include mobile {
-    .long-dash, .subtitle {
-      display: none;
-    }
-  }
 }

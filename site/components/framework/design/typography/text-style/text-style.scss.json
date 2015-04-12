@@ -73,11 +73,11 @@
     {
       "name": "Title",
       "description": "The title of an article or page",
-      "based_on": "Futura PT Book",
+      "based_on": "Futura PT Medium",
       "mixins": [
         {
-          "name": "scale",
-          "value": "large-1"
+          "name": "font",
+          "value": "futura-pt-medium"
         }
       ]
     }

@@ -52,7 +52,7 @@
   // Title
   // - The title of an article or page
   @if ($variant == 'title') {
-    @include scale(large-1);
+    @include font(futura-pt-medium);
     
     
     
