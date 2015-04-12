@@ -1,0 +1,11 @@
+@mixin work__thumbs {
+  @include colors(white-on-blue);
+  padding: $lem;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  .thumb {
+    @include thumb;
+  }
+}

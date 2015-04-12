@@ -1,15 +1,31 @@
 @mixin thumb {
-  @include colors(white-on-blue);
+  flex-basis: 300px;
 
-  display: flex;
-  padding: $lem;
+  padding-bottom: $lem;
+
+  @include mobile {
+    &:last-of-type {
+      padding-bottom: 0;
+    }
+  }
+
+  @include mobile-and-up {
+    padding-right: $lem;
+  }
+
+
+
+  .thumb__image {
+    background: $lightblue;
+    @include intrinsic-ratio(16, 9, 'figure');
+  }
 
   .thumb__title {
     display: flex;
     @include text-style(title);
-  }
 
-  .thub__categories {
-    @include text-style(category-list);
+    a {
+      @include link(white-on-blue);
+    }
   }
 }

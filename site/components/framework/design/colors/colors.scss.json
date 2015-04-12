@@ -16,6 +16,11 @@
       "description": "The highlight color"
     },
     {
+      "name": "lightblue",
+      "value": "rgba(76, 76, 255, 1)",
+      "description": "A lighter highlight color"
+    },
+    {
       "name": "gray",
       "value": "rgba(240, 228, 212, 1)",
       "description": "Secondary background color"

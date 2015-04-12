@@ -15,6 +15,9 @@ $black: #003A40;
 // The highlight color
 $blue: rgba(0, 0, 255, 1);
 
+// A lighter highlight color
+$lightblue: rgba(76, 76, 255, 1);
+
 // Secondary background color
 $gray: rgba(240, 228, 212, 1);
 
@@ -72,6 +75,10 @@ $gray: rgba(240, 228, 212, 1);
 
 .blue {
   background: rgba(0, 0, 255, 1);
+};
+
+.lightblue {
+  background: rgba(76, 76, 255, 1);
 };
 
 .gray {

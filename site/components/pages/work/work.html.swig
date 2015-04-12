@@ -5,9 +5,10 @@ title: Work
 {% extends '../../project/templates/default/default.html.swig' %}
 {% block content %}
 
-  {% for work in works %}
-    {% include '../../project/thumb/thumb.html.swig' %}
-  {% endfor %}
+  {% set page_title = { title: title } %}
+  {% include '../../project/title/title.html.swig' %}
+
+  {% include '__thumbs/work__thumbs.html.swig' %}
 
   {% include '../../project/menu/menu.html.swig' %}
 

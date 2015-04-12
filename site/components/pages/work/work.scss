@@ -1,9 +1,12 @@
 html {
   &.work {
     body {
-
-      .thumb {
-        @include thumb;
+      .title {
+        @include title;
+      }
+      
+      .work__thumbs {
+        @include work__thumbs;
       }
 
       .work-single {
