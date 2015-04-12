@@ -7,7 +7,7 @@ Project</div>
 <li>
 <div>
 {% include '../../../../../site/components/framework/design/decorations/long-dash/long-dash.html.swig' %}
-<a class="link" title="About" href="{{ site.url }}project/about">About</a>
+<a class="link" title="Description" href="{{ site.url }}project/description">Description</a>
 </li>
 <li>
 <div>
@@ -17,7 +17,26 @@ Project</div>
 <li>
 <div>
 {% include '../../../../../site/components/framework/design/decorations/long-dash/long-dash.html.swig' %}
-<a class="link" title="Links" href="{{ site.url }}project/links">Links</a>
+<a class="link" title="Menu" href="{{ site.url }}project/menu">Menu</a>
+</li>
+<li>
+<div>
+{% include '../../../../../site/components/framework/design/decorations/long-dash/long-dash.html.swig' %}
+Slider</div>
+<ul>
+<li>
+<div>
+{% include '../../../../../site/components/framework/design/decorations/long-dash/long-dash.html.swig' %}
+Bullets</div>
+<ul>
+<li>
+<div>
+{% include '../../../../../site/components/framework/design/decorations/long-dash/long-dash.html.swig' %}
+<a class="link" title="Vertical" href="{{ site.url }}project/slider/__bullets/--vertical">Vertical</a>
+</li>
+</ul>
+</li>
+</ul>
 </li>
 <li>
 <div>
@@ -54,22 +73,22 @@ Values</div>
 <li>
 <div>
 {% include '../../../../../site/components/framework/design/decorations/long-dash/long-dash.html.swig' %}
-<a class="link" title="Front end" href="{{ site.url }}project/values/__front-end">Front end</a>
+<a class="link" title="Front end" href="{{ site.url }}project/values/front-end">Front end</a>
 </li>
 <li>
 <div>
 {% include '../../../../../site/components/framework/design/decorations/long-dash/long-dash.html.swig' %}
-<a class="link" title="Styleguide" href="{{ site.url }}project/values/__styleguide">Styleguide</a>
+<a class="link" title="Styleguide" href="{{ site.url }}project/values/styleguide">Styleguide</a>
 </li>
 <li>
 <div>
 {% include '../../../../../site/components/framework/design/decorations/long-dash/long-dash.html.swig' %}
-<a class="link" title="Ui" href="{{ site.url }}project/values/__ui">Ui</a>
+<a class="link" title="Ui" href="{{ site.url }}project/values/ui">Ui</a>
 </li>
 <li>
 <div>
 {% include '../../../../../site/components/framework/design/decorations/long-dash/long-dash.html.swig' %}
-<a class="link" title="Wordpress" href="{{ site.url }}project/values/__wordpress">Wordpress</a>
+<a class="link" title="Wordpress" href="{{ site.url }}project/values/wordpress">Wordpress</a>
 </li>
 </ul>
 </li>
@@ -81,17 +100,22 @@ Work</div>
 <li>
 <div>
 {% include '../../../../../site/components/framework/design/decorations/long-dash/long-dash.html.swig' %}
-<a class="link" title="Description" href="{{ site.url }}project/work/__description">Description</a>
-</li>
-<li>
-<div>
-{% include '../../../../../site/components/framework/design/decorations/long-dash/long-dash.html.swig' %}
-<a class="link" title="Images" href="{{ site.url }}project/work/__images">Images</a>
+<a class="link" title="Description with images" href="{{ site.url }}project/work/__description-with-images">Description with images</a>
 </li>
 <li>
 <div>
 {% include '../../../../../site/components/framework/design/decorations/long-dash/long-dash.html.swig' %}
 <a class="link" title="Services" href="{{ site.url }}project/work/__services">Services</a>
+</li>
+<li>
+<div>
+{% include '../../../../../site/components/framework/design/decorations/long-dash/long-dash.html.swig' %}
+<a class="link" title="Services and menu" href="{{ site.url }}project/work/__services-and-menu">Services and menu</a>
+</li>
+<li>
+<div>
+{% include '../../../../../site/components/framework/design/decorations/long-dash/long-dash.html.swig' %}
+<a class="link" title="Title" href="{{ site.url }}project/work/__title">Title</a>
 </li>
 </ul>
 </li>

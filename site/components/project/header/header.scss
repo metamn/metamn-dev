@@ -1,4 +1,4 @@
-@mixin header {
+@mixin header($color-scheme: white-on-blue) {
   padding: $lem $lem 0;
 
   .header__site-title {
@@ -6,6 +6,6 @@
   }
 
   .link {
-    @include link(white-on-blue);
+    @include link($color-scheme);
   }
 }

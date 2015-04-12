@@ -36,6 +36,11 @@ Decorations</div>
 {% include '../../../../../site/components/framework/design/decorations/long-dash/long-dash.html.swig' %}
 <a class="link" title="Long dash" href="{{ site.url }}framework/design/decorations/long-dash">Long dash</a>
 </li>
+<li>
+<div>
+{% include '../../../../../site/components/framework/design/decorations/long-dash/long-dash.html.swig' %}
+<a class="link" title="Separator line" href="{{ site.url }}framework/design/decorations/separator-line">Separator line</a>
+</li>
 </ul>
 </li>
 <li>

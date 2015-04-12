@@ -1,8 +1,10 @@
 html {
   &.sg {
     body {
+      @include colors(black-on-gray);
+      
       .header {
-        @include header;
+        @include header(black-on-gray);
       }
 
       .description {

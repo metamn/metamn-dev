@@ -1,6 +1,6 @@
 @mixin work-single {
-  .work__title {
-    @include work__title;
+  .title {
+    @include title;
   }
 
   .work__description-with-images {
@@ -10,7 +10,7 @@
 
   // Push title down on laptop and desktop
   @include tablet-and-up {
-    .work__title {
+    .title {
       padding-top: $lem * 2;
     }
 

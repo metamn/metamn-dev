@@ -3,11 +3,6 @@
 // Setting a container to a specific size defined by standard metrics like 16:9 (HD) or 4:3 and so on.
 // The original idea comes from [A List Apart article](http://alistapart.com/article/creating-intrinsic-ratios-for-video).
 //
-// $width - Intrinsic ratio width, like 16
-// $height - Intrinsic artio height, like 9
-// $item - The child element whose ratio is set
-// $item2 - The child of the child element. Optional. If the child element has another child it's max-height must be set to 100% to make it fluid.
-//
 // Styleguide intrinsic-ratio
 @mixin intrinsic-ratio($width, $height, $item, $item2: null) {
   position: relative;
