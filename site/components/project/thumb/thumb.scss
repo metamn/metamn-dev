@@ -1,5 +1,5 @@
 @mixin thumb {
-  flex-basis: 300px;
+  flex-basis: 25em;
 
   padding-bottom: $lem;
 
@@ -25,15 +25,25 @@
 
     figure {
       @include figure;
+      @include color-overlay($blue, .1);
     }
   }
 
   .thumb__title {
     display: flex;
-    @include text-style(title);
+
+    @include mobile {
+      @include text-style(title);
+    }
+
+    @include mobile-and-up {
+      position: relative;
+      top: -$lem;
+    }
 
     a {
       @include link(white-on-blue);
+      background: $thumbblue;
     }
   }
 

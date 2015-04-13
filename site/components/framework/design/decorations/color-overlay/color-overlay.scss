@@ -1,0 +1,26 @@
+// http://www.impressivewebs.com/image-tint-blend-css/
+@mixin color-overlay($color, $opacity) {
+  position: relative;
+  cursor: pointer;
+
+  &:before {
+    content: "";
+  	display: block;
+  	position: absolute;
+  	top: 0;
+  	bottom: 0;
+  	left: 0;
+  	right: 0;
+  	background: $color;
+    opacity: $opacity;
+    @include animation(background);
+  }
+
+  &:hover {
+    &:before {
+      background: none;
+      z-index: -1;
+      opacity: 1;
+    }
+  }
+}

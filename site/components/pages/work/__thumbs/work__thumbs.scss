@@ -1,6 +1,7 @@
 @mixin work__thumbs {
   @include colors(white-on-blue);
   padding: $lem;
+  max-width: 1368px;
 
   display: flex;
   flex-wrap: wrap;
