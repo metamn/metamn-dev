@@ -16,8 +16,8 @@
       "description": "The highlight color"
     },
     {
-      "name": "lightblue",
-      "value": "rgba(76, 76, 255, 1)",
+      "name": "thumbblue",
+      "value": "rgba(38, 38, 255, 1)",
       "description": "A lighter highlight color"
     },
     {

@@ -16,8 +16,8 @@
 
 
   .thumb__image {
-    background: $lightblue;
-    padding: $lem / 2;
+    background: $thumbblue;
+    padding: $lem / 4;
 
     .container {
       @include intrinsic-ratio(16, 9, 'figure');
@@ -34,6 +34,12 @@
 
     a {
       @include link(white-on-blue);
+    }
+  }
+
+  .thumb__services {
+    @include mobile-and-up {
+      display: none;
     }
   }
 }

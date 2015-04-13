@@ -9,7 +9,8 @@
       ],
       "image": {
         "title": "Wanderlust",
-        "name": "wanderlust-thumb"
+        "name": "wanderlust-thumb",
+        "url": "work/wanderlust"
       }
     },
     {
@@ -18,7 +19,12 @@
       "services": [
         "Design",
         "Front-end"
-      ]
+      ],
+      "image": {
+        "title": "Iorad",
+        "name": "iorad-thumb",
+        "url": "work/iorad"
+      }
     },
     {
       "title": "OCCRP",
@@ -26,7 +32,12 @@
       "services": [
         "Design",
         "Front-end"
-      ]
+      ],
+      "image": {
+        "title": "OCCRP",
+        "name": "occrp-thumb",
+        "url": "work/occrp"
+      }
     },
     {
       "title": "Reboot",
@@ -34,7 +45,12 @@
       "services": [
         "Front-end",
         "Wordpress"
-      ]
+      ],
+      "image": {
+        "title": "Reboot",
+        "name": "reboot-thumb",
+        "url": "work/reboot"
+      }
     },
     {
       "title": "Anvelocom",
@@ -43,7 +59,12 @@
         "Design",
         "Front-end",
         "Wordpress"
-      ]
+      ],
+      "image": {
+        "title": "Anvelocom",
+        "name": "anvelocom-thumb",
+        "url": "work/anvelocom"
+      }
     },
     {
       "title": "Scatter",
@@ -51,7 +72,12 @@
       "services": [
         "Design",
         "Front-end"
-      ]
+      ],
+      "image": {
+        "title": "Scatter",
+        "name": "scatter-thumb",
+        "url": "work/scatter"
+      }
     },
     {
       "title": "Inu Chivu",
@@ -60,7 +86,12 @@
         "Design",
         "Front-end",
         "Wordpress"
-      ]
+      ],
+      "image": {
+        "title": "Inu Chivu",
+        "name": "inu-thumb",
+        "url": "work/inu"
+      }
     },
     {
       "title": "Smuff",
@@ -71,7 +102,12 @@
         "Wordpress",
         "Yii",
         "E-commerce"
-      ]
+      ],
+      "image": {
+        "title": "Smuff",
+        "name": "smuff-thumb",
+        "url": "work/smuff"
+      }
     }
   ]
 }
