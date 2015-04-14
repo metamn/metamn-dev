@@ -1,5 +1,9 @@
 @mixin thumb {
-  flex-basis: 25em;
+  flex-basis: 30em;
+
+  @include desktop {
+    flex-basis: 20em;
+  }
 
   padding-bottom: $lem;
 
@@ -39,6 +43,7 @@
     @include mobile-and-up {
       position: relative;
       top: -$lem;
+      display: none;
     }
 
     a {

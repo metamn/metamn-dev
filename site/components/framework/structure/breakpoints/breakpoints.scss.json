@@ -46,6 +46,10 @@
       "media_query": "(min-width: $breakpoint-tablet + 0.1)"
     },
     {
+      "name": "laptop",
+      "media_query": "(min-width: $breakpoint-tablet + 0.1) and (max-width: $breakpoint-desktop)"
+    },
+    {
       "name": "desktop",
       "media_query": "(min-width: $breakpoint-desktop + 0.1)"
     }

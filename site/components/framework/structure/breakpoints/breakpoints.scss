@@ -61,6 +61,12 @@ $breakpoint-desktop: 1600px;
   }
 }
 
+@mixin laptop {
+  @media only screen and (min-width: $breakpoint-tablet + 0.1) and (max-width: $breakpoint-desktop) {
+    @content
+  }
+}
+
 @mixin desktop {
   @media only screen and (min-width: $breakpoint-desktop + 0.1) {
     @content
