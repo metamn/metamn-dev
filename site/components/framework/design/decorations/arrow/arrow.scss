@@ -1,1 +1,33 @@
-@mixin arrow {}
+@mixin arrow($color-scheme) {
+  display: inline-flex;
+
+  a {
+    @include link($color-scheme);
+
+    display: flex;
+    align-items: center;
+  }
+
+
+  .arrow__icon {
+    font-size: 400%;
+    line-height: 0;
+
+    position: relative;
+    top: -12px;
+  }
+
+  .arrow__icon--left {
+    margin-right: $lem / 8;
+  }
+
+  .arrow__icon--right {
+    margin-left: $lem / 8;
+  }
+
+  .arrow__text {
+    @include mobile {
+      display: none;
+    }
+  }
+}
