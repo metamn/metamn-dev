@@ -1,0 +1,13 @@
+@mixin thumb__image {
+  background: $thumbblue;
+  padding: $lem;
+
+  .container {
+    @include intrinsic-ratio(16, 9, 'figure');
+  }
+
+  figure {
+    @include figure;
+    @include color-overlay($blue, .1);
+  }
+}

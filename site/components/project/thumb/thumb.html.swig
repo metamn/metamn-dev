@@ -14,8 +14,4 @@
     {% set link = { url: work.url, title: work.title } %}
     {% include '../../framework/design/typography/elements/link/link.html.swig' %}
   </h3>
-
-  <div class="thumb__services">
-    {{ work.services | join(', ') }}
-  </div>
 </article>

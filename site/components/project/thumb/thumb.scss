@@ -1,60 +1,33 @@
 @mixin thumb {
-  flex-basis: 30em;
-
-  @include desktop {
-    flex-basis: 20em;
-  }
-
-  padding-bottom: $lem;
+  flex-basis: 25em;
+  margin-bottom: $lem;
 
   @include mobile {
     &:last-of-type {
-      padding-bottom: 0;
+      margin-bottom: 0;
     }
   }
 
   @include mobile-and-up {
-    padding-right: $lem;
+    margin-right: $lem;
   }
 
 
 
   .thumb__image {
-    background: $thumbblue;
-    padding: $lem / 4;
-
-    .container {
-      @include intrinsic-ratio(16, 9, 'figure');
-    }
-
-    figure {
-      @include figure;
-      @include color-overlay($blue, .1);
-    }
+    @include thumb__image;
   }
 
   .thumb__title {
-    display: flex;
-
-    @include mobile {
-      @include text-style(title);
-    }
-
-    @include mobile-and-up {
-      position: relative;
-      top: -$lem;
-      display: none;
-    }
-
-    a {
-      @include link(white-on-blue);
-      background: $thumbblue;
-    }
+    @include thumb__title;
   }
 
-  .thumb__services {
-    @include mobile-and-up {
-      display: none;
+  @include animation(transform);
+  &:hover {
+    .thumb__title {
+      a {
+        color: $white;
+      }
     }
   }
 }

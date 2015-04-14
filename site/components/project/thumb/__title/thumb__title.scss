@@ -1,0 +1,20 @@
+@mixin thumb__title {
+  display: flex;
+  padding: $lem / 4 $lem / 2;
+
+  @include text-style(menu);
+
+  a {
+    @include link(white-on-blue);
+  }
+
+  @include mobile-and-up {
+    position: relative;
+    top: -$lem * 2.5;
+    left: $lem;
+
+    a {
+      @include link(thumbgray-on-thumbblue);
+    }
+  }
+}

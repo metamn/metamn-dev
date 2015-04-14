@@ -21,6 +21,9 @@ $thumbblue: rgba(38, 38, 255, 1);
 // Secondary background color
 $gray: rgba(240, 228, 212, 1);
 
+// A darker gray color
+$thumbgray: rgba(214, 204, 189, 1);
+
 
 // Color combinations. Colors are not used standalone but in pairs
 @mixin colors($name) {
@@ -61,6 +64,12 @@ $gray: rgba(240, 228, 212, 1);
     
   }
 
+  @if ($name == 'thumbgray-on-thumbblue') {
+    color: $thumbgray;
+    background-color: $thumbblue;
+    
+  }
+
 }
 
 // Color classes
@@ -83,6 +92,10 @@ $gray: rgba(240, 228, 212, 1);
 
 .gray {
   background: rgba(240, 228, 212, 1);
+};
+
+.thumbgray {
+  background: rgba(214, 204, 189, 1);
 };
 
 
@@ -121,6 +134,12 @@ $gray: rgba(240, 228, 212, 1);
 .black-on-gray {
   color: $black;
   background-color: $gray;
+  
+}
+
+.thumbgray-on-thumbblue {
+  color: $thumbgray;
+  background-color: $thumbblue;
   
 }
 

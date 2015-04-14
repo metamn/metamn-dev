@@ -24,6 +24,11 @@
       "name": "gray",
       "value": "rgba(240, 228, 212, 1)",
       "description": "Secondary background color"
+    },
+    {
+      "name": "thumbgray",
+      "value": "rgba(214, 204, 189, 1)",
+      "description": "A darker gray color"
     }
   ],
   "color_pairs": [
@@ -102,6 +107,19 @@
         {
           "name": "background-color",
           "value": "$gray"
+        }
+      ]
+    },
+    {
+      "name": "thumbgray-on-thumbblue",
+      "properties": [
+        {
+          "name": "color",
+          "value": "$thumbgray"
+        },
+        {
+          "name": "background-color",
+          "value": "$thumbblue"
         }
       ]
     }
