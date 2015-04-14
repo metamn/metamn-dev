@@ -112,11 +112,6 @@ Work</div>
 {% include '../../../../../site/components/framework/design/decorations/long-dash/long-dash.html.swig' %}
 <a class="link" title="Services" href="{{ site.url }}project/work/__services">Services</a>
 </li>
-<li>
-<div>
-{% include '../../../../../site/components/framework/design/decorations/long-dash/long-dash.html.swig' %}
-<a class="link" title="Services and menu" href="{{ site.url }}project/work/__services-and-menu">Services and menu</a>
-</li>
 </ul>
 </li>
 </ul>

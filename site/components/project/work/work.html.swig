@@ -5,5 +5,5 @@
   {% include '../title/title.html.swig' %}
 
   {% include '__description-with-images/work__description-with-images.html.swig' %}
-  {% include '__services-and-menu/work__services-and-menu.html.swig' %}
+  {% include '__services/work__services.html.swig' %}
 </section>

@@ -25,7 +25,6 @@ html {
 
       .menu {
         @include menu;
-        padding: $lem;
       }
     }
   }

@@ -34,6 +34,11 @@ Decorations</div>
 <li>
 <div>
 {% include '../../../../../site/components/framework/design/decorations/long-dash/long-dash.html.swig' %}
+<a class="link" title="Color overlay" href="{{ site.url }}framework/design/decorations/color-overlay">Color overlay</a>
+</li>
+<li>
+<div>
+{% include '../../../../../site/components/framework/design/decorations/long-dash/long-dash.html.swig' %}
 <a class="link" title="Long dash" href="{{ site.url }}framework/design/decorations/long-dash">Long dash</a>
 </li>
 <li>

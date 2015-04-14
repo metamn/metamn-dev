@@ -1,12 +1,19 @@
 @mixin menu {
   padding: $lem;
-  @include colors(blue-on-gray);
 
   a {
-    @include link(blue-on-gray);
+    @include link(white-on-blue);
     @include text-style(menu);
   }
 
   display: flex;
   flex-direction: column;
+
+  @include mobile-and-up {
+    flex-direction: row;
+
+    .menu__item + .menu__item {
+      margin-left: $lem;
+    }
+  }
 }
