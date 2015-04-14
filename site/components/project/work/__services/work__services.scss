@@ -1,7 +1,4 @@
 @mixin work__services {
-  @include colors(black-on-gray);
-  padding: $lem;
-
   .ul {
     @include ul;
   }

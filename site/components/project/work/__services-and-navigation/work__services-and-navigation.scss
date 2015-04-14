@@ -1,0 +1,20 @@
+@mixin work__services-and-navigation {
+  @include colors(black-on-gray);
+  padding: $lem;
+
+  display: flex;
+  flex-wrap: no-wrap;
+  align-items: center;
+
+  .work__services, .work__navigation {
+    flex-basis: 50%;
+  }
+
+  .work__services {
+    @include work__services;
+  }
+
+  .work__navigation {
+    @include work__navigation;
+  }
+}
