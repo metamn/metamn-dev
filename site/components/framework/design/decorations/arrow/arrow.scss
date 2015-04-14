@@ -14,10 +14,11 @@
     line-height: 0;
 
     position: relative;
-    top: -12px;
+    top: -$lem / 16;
   }
 
   .arrow__text {
+    @include text-style(menu);
     display: none;
   }
 
