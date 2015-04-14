@@ -1,11 +1,8 @@
 @mixin work__navigation {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-
-  @include mobile {
-    justify-content: center;
-  }
+  justify-content: flex-end;
+  flex: 1;
 
   .arrow {
     @include arrow(blue-on-gray);
