@@ -3,19 +3,6 @@
   padding: $lem;
 
   display: flex;
-  @include mobile {
-    flex-direction: column;
-
-    .menu {
-      padding: $lem * 2 0 0;
-    }
-  }
-
-  @include mobile-and-up {
-    .services, .menu {
-      flex: 1 0 0;
-    }
-  }
 
   .services {
     .ul {
@@ -24,6 +11,6 @@
   }
 
   .menu {
-    @include menu;
+    display: none;
   }
 }

@@ -1,4 +1,4 @@
-<section class="work-single">
+<section class="work-item">
   <h3>{{ title }}</h3>
 
   {% set page_title= { title: title, subtitle: work.subtitle } %}

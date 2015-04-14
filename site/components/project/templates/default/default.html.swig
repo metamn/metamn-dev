@@ -4,5 +4,5 @@
 
 {% block content %}{% endblock %}
 
-
+{% include '../../menu/menu.html.swig' %}
 {% include '../scripts/scripts.html.swig' %}

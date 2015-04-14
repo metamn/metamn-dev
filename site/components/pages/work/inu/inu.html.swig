@@ -1,6 +1,6 @@
 ---
 title: Inu Chivu
-klass: work
+klass: work-single
 ---
 
 {% extends '../../../project/templates/default/default.html.swig' %}

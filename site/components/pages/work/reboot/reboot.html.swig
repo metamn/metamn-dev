@@ -1,6 +1,6 @@
 ---
 title: Reboot
-klass: work
+klass: work-single
 ---
 
 {% extends '../../../project/templates/default/default.html.swig' %}

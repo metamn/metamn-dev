@@ -1,5 +1,6 @@
 ---
 title: Work
+klass: work-archive
 ---
 
 {% extends '../../project/templates/default/default.html.swig' %}
@@ -9,7 +10,4 @@ title: Work
   {% include '../../project/title/title.html.swig' %}
 
   {% include '__thumbs/work__thumbs.html.swig' %}
-
-  {% include '../../project/menu/menu.html.swig' %}
-
 {% endblock %}

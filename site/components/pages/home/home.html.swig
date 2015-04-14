@@ -6,6 +6,5 @@ title: Home
 {% block content %}
 
   {% include '__intro/home__intro.html.swig' %}
-  {% include '../../project/menu/menu.html.swig' %}
 
 {% endblock %}

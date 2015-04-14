@@ -1,21 +1,20 @@
 html {
-  &.work {
+  &.work-archive {
     body {
       .title {
         @include title;
       }
-      
+
       .work__thumbs {
         @include work__thumbs;
       }
+    }
+  }
 
-      .work-single {
-        @include work-single;
-      }
-
-      .menu {
-        @include menu;
-        padding: $lem;
+  &.work-single {
+    body {
+      .work-item {
+        @include work-item;
       }
     }
   }
