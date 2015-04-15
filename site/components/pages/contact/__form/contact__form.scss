@@ -1,3 +1,11 @@
 @mixin contact__form {
   padding: $lem;
+
+  input {
+    @include colors(blue-on-white);
+  }
+
+  .submit {
+    @include text-style(menu);
+  }
 }

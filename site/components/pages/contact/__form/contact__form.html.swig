@@ -7,7 +7,7 @@
 
   <form action="https://getsimpleform.com/messages?form_api_token=d880283125ae9e07ca71d96259d6647b" method="post">
     <!-- all your input fields here.... -->
-    <input type='text' name='email' placeholder="Your email"/>
-    <input type='submit' value='Send email' />
+    <input class="email" type='text' name='email' placeholder="Your email"/>
+    <input class="submit" type='submit' value='Send email' />
   </form>
 </article>
