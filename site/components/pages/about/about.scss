@@ -1,0 +1,13 @@
+html {
+  &.about {
+    body {
+      .title {
+        @include title;
+      }
+
+      .description {
+        @include description;
+      }
+    }
+  }
+}
