@@ -9,5 +9,5 @@ title: Contact
   {% include '../../project/title/title.html.swig' %}
 
   {% include '__form/contact__form.html.swig' %}
-  
+  {% include '__icons/contact__icons.html.swig' %}
 {% endblock %}

@@ -8,6 +8,10 @@ html {
       .contact__form {
         @include contact__form;
       }
+
+      .contact__icons {
+        @include contact__icons;
+      }
     }
   }
 }

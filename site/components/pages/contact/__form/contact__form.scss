@@ -8,4 +8,8 @@
   .submit {
     @include text-style(menu);
   }
+
+  p + form {
+    margin-top: $lem;
+  }
 }

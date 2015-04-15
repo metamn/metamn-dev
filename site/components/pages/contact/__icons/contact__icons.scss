@@ -1,0 +1,8 @@
+@mixin contact__icons {
+  padding: $lem;
+
+  .contact-icons {
+    @include contact-icons;
+    padding-left: 0;
+  }
+}
