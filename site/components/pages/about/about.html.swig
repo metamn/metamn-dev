@@ -12,4 +12,7 @@ title: About
   {% set description = about %}
   {% include '../../project/description/description.html.swig' %}
 
+
+  {% include '../../project/contact-icons/contact-icons.html.swig' %}
+
 {% endblock %}

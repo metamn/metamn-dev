@@ -136,27 +136,14 @@
       {
         "title": "Email",
         "url": "bartus.csongor@gmail.com",
-        "type": "email"
+        "type": "email",
+        "icon": "email"
       },
       {
         "title": "Twitter",
         "url": "http://twitter.com/metamn",
-        "type": "external"
-      },
-      {
-        "title": "Github",
-        "url": "http://github.com/metamn",
-        "type": "external"
-      },
-      {
-        "title": "Tumblr",
-        "url": "http://metamn.tumblr.com",
-        "type": "external"
-      },
-      {
-        "title": "Readability",
-        "url": "https://www.readability.com/metamn/",
-        "type": "external"
+        "type": "external",
+        "icon": "twitter"
       }
     ]
   }

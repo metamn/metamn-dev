@@ -1,0 +1,13 @@
+@mixin contact-icons {
+  padding: $lem;
+  display: flex;
+  align-items: center;
+
+  .icon {
+    @include icon(white-on-blue);
+
+    + .icon {
+      margin-left: $lem / 2;
+    }
+  }
+}

@@ -8,6 +8,10 @@ html {
       .description {
         @include description;
       }
+
+      .contact-icons {
+        @include contact-icons;
+      }
     }
   }
 }

@@ -1,0 +1,7 @@
+@mixin icon($color-scheme) {
+  @include colors($color-scheme);
+
+  a {
+    @include link($color-scheme);
+  }
+}

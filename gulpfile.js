@@ -120,6 +120,11 @@ var paths = {
   images_dest: 'dist/assets/images',
 
 
+  // fonts
+  fonts_src: 'site/assets/fonts/**/*.*',
+  fonts_dest: 'dist/assets/fonts/',
+
+
   // clean path
   clean: ['dist/**/*'],
 
@@ -388,6 +393,21 @@ gulp.task('swig_sg', function() {
 
 
 
+
+
+// Fonts
+// - move fonts to dest
+gulp.task('fonts', function() {
+  return gulp.src(paths.fonts_src)
+    .pipe(plumber({errorHandler: onError}))
+    .pipe(gulp.dest(paths.fonts_dest));
+});
+
+
+
+
+
+
 // Styleguide tasks
 
 
@@ -533,6 +553,7 @@ gulp.task('default', function(cb) {
     'js',
     'scripts',
     'images',
+    'fonts',
     cb
   );
 });
