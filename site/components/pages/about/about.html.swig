@@ -8,6 +8,7 @@ title: About
   {% set page_title = { title: title } %}
   {% include '../../project/title/title.html.swig' %}
 
+  {% set separator_line = true %}
   {% set description = about %}
   {% include '../../project/description/description.html.swig' %}
 

@@ -4,4 +4,8 @@
   .description__text {
     @include text-style(body-text);
   }
+
+  .separator-line {
+    @include separator-line;
+  }
 }
