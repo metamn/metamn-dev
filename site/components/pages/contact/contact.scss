@@ -1,0 +1,13 @@
+html {
+  &.contact {
+    body {
+      .title {
+        @include title;
+      }
+
+      .contact__form {
+        @include contact__form;
+      }
+    }
+  }
+}
