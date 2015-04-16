@@ -1,6 +1,10 @@
 html {
   &.home {
     body {
+      .header {
+        display: none;
+      }
+      
       .home__intro {
         @include home__intro;
       }
