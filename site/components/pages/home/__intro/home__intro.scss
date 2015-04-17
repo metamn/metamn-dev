@@ -1,7 +1,18 @@
 @mixin home__intro {
-  overflow: hidden;
-  
-  .background-slider {
-    @include background-slider;
+  display: flex;
+  align-items: center;
+
+  .description {
+    @include description;
+
+    @include mobile-and-up {
+      .description__text {
+        @include text-style(large-text);
+      }
+    }
+  }
+
+  .ui {
+    @include ui;
   }
 }

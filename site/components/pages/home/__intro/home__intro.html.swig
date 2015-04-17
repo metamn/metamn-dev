@@ -1,6 +1,9 @@
 <section class="home__intro">
   <h3>Intro</h3>
 
-  {% set images = home.images %}
-  {% include '../../../framework/behavior/background-slider/background-slider.html.swig' %}
+  {% set description = home.about %}
+  {% include '../../../project/description/description.html.swig' %}
+
+  {% set value = home.ui %}
+  {% include '../../../project/values/ui/ui.html.swig' %}
 </section>
