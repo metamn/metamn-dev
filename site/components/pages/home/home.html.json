@@ -18,6 +18,22 @@
       {
         "images": [
           {
+            "title": "Reboot",
+            "name": "intro-reboot"
+          }
+        ]
+      },
+      {
+        "images": [
+          {
+            "title": "Wanderlust",
+            "name": "intro-wanderlust"
+          }
+        ]
+      },
+      {
+        "images": [
+          {
             "title": "Scatter",
             "name": "intro-scatter"
           }

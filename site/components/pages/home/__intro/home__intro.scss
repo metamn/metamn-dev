@@ -18,7 +18,7 @@
   }
 
   .slider {
-    @include slider(4, 3, 16, 9);
+    @include slider(4, 3, 4, 3);
   }
 
   .slider__bullets {
