@@ -6,12 +6,23 @@
         "Lately I've been working on design, front&ndash;end and Wordpress projects with clients around the world."
       ]
     },
-    "ui": {
-      "title": "Intro image",
-      "image": {
-        "title": "Into image",
-        "name": "intro-desktop-front"
+    "slides": [
+      {
+        "images": [
+          {
+            "title": "Inu Chivu",
+            "name": "intro-inu-chivu"
+          }
+        ]
+      },
+      {
+        "images": [
+          {
+            "title": "Scatter",
+            "name": "intro-scatter"
+          }
+        ]
       }
-    }
+    ]
   }
 }

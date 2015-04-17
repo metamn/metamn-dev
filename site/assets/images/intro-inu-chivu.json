@@ -2,19 +2,19 @@
   "image_sizes": [
     {
       "name": "mobile",
-      "height": "1"
+      "height": "360"
     },
     {
       "name": "tablet",
-      "height": "1"
+      "height": "480"
     },
     {
       "name": "laptop",
-      "height": "500"
+      "height": "480"
     },
     {
       "name": "desktop",
-      "height": "700"
+      "height": "720"
     }
   ]
 }
