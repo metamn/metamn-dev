@@ -4,6 +4,9 @@
   {% set description = home.about %}
   {% include '../../../project/description/description.html.swig' %}
 
-  {% set value = home.ui %}
-  {% include '../../../project/values/ui/ui.html.swig' %}
+  {% set slides = home.slides %}
+  {% include '../../../project/slider/slider.html.swig' %}
+
+  {% set bullets = home.slides %}
+  {% include '../../../project/slider/__bullets/slider__bullets.html.swig' %}
 </section>

@@ -6,15 +6,15 @@
     },
     {
       "name": "tablet",
-      "height": "720"
+      "height": "480"
     },
     {
       "name": "laptop",
-      "height": "768"
+      "height": "480"
     },
     {
       "name": "desktop",
-      "height": "1440"
+      "height": "720"
     }
   ]
 }
