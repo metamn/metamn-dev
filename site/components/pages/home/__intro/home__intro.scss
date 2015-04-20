@@ -29,4 +29,8 @@
       @include slider__bullets--vertical;
     }
   }
+
+  figure {
+    @include color-overlay($blue, .1);
+  }
 }

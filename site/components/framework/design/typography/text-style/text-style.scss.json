@@ -7,7 +7,7 @@
       "mixins": [
         {
           "name": "font",
-          "value": "futura-pt-book"
+          "value": "nimbus-sans-regular"
         },
         {
           "name": "scale",
@@ -77,7 +77,7 @@
       "mixins": [
         {
           "name": "font",
-          "value": "futura-pt-medium"
+          "value": "nimbus-sans-bold"
         }
       ]
     },
@@ -88,7 +88,7 @@
       "mixins": [
         {
           "name": "font",
-          "value": "futura-pt-medium"
+          "value": "nimbus-sans-bold"
         },
         {
           "name": "scale",

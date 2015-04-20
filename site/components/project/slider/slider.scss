@@ -3,7 +3,6 @@
   @include colors(white-on-blue);
 
   @include tablet-and-below {
-    flex-basis: 100%;
     width: 100%;
   }
 

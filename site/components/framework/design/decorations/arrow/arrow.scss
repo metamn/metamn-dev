@@ -25,22 +25,4 @@
   + .arrow {
     margin-left: $lem / 2;
   }
-
-  @include mobile-and-up {
-    .arrow__icon--left {
-      margin-right: $lem / 8;
-    }
-
-    .arrow__icon--right {
-      margin-left: $lem / 8;
-    }
-
-    .arrow__text {
-      display: flex;
-    }
-
-    + .arrow {
-      margin-left: $lem;
-    }
-  }
 }

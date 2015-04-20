@@ -10,7 +10,7 @@
   // Default
   // - The default text
   @if ($variant == 'default') {
-    @include font(futura-pt-book);
+    @include font(nimbus-sans-regular);
     @include scale(default);
     @include colors(white-on-blue);
     
@@ -52,7 +52,7 @@
   // Title
   // - The title of an article or page
   @if ($variant == 'title') {
-    @include font(futura-pt-medium);
+    @include font(nimbus-sans-bold);
     
     
     
@@ -61,7 +61,7 @@
   // Menu
   // - The main navigation menu
   @if ($variant == 'menu') {
-    @include font(futura-pt-medium);
+    @include font(nimbus-sans-bold);
     @include scale(small-1);
     @include uppercase(1.9px);
     
