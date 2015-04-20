@@ -3,7 +3,7 @@
     {
       "name": "Default",
       "description": "The default text",
-      "based_on": "Futura PT Book",
+      "based_on": "Nimbus Sans",
       "mixins": [
         {
           "name": "font",
@@ -37,7 +37,7 @@
     {
       "name": "Body text",
       "description": "The default long text",
-      "based_on": "Futura PT Book",
+      "based_on": "Nimbus Sans",
       "properties": [
         {
           "name": "max-width",
@@ -51,29 +51,9 @@
       ]
     },
     {
-      "name": "Large text",
-      "description": "A text larger than the default",
-      "based_on": "Futura PT Book",
-      "mixins": [
-        {
-          "name": "scale",
-          "value": "large-1"
-        },
-        {
-          "name": "p"
-        }
-      ],
-      "properties": [
-        {
-          "name": "max-width",
-          "value": "15em"
-        }
-      ]
-    },
-    {
       "name": "Title",
       "description": "The title of an article or page",
-      "based_on": "Futura PT Medium",
+      "based_on": "Nimbus Sans",
       "mixins": [
         {
           "name": "font",
@@ -84,7 +64,7 @@
     {
       "name": "Menu",
       "description": "The main navigation menu",
-      "based_on": "Futura PT Medium",
+      "based_on": "Nimbus Sans",
       "mixins": [
         {
           "name": "font",

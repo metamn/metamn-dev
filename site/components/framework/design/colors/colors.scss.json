@@ -111,11 +111,11 @@
       ]
     },
     {
-      "name": "thumbgray-on-thumbblue",
+      "name": "white-on-thumbblue",
       "properties": [
         {
           "name": "color",
-          "value": "$thumbgray"
+          "value": "$white"
         },
         {
           "name": "background-color",

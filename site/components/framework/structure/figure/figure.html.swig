@@ -55,7 +55,7 @@
     <img srcset="{{ site.url }}assets/images/{{ desktop }}" alt="{{ image.title }}">
   </picture>
 
-  <figcaption class="{{ figcaption_class }}">
+  <figcaption class="figcaption {{ figcaption_class }}">
     {{ figcaption }}
   </figcaption>
 

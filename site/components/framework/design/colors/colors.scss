@@ -64,8 +64,8 @@ $thumbgray: rgba(214, 204, 189, 1);
     
   }
 
-  @if ($name == 'thumbgray-on-thumbblue') {
-    color: $thumbgray;
+  @if ($name == 'white-on-thumbblue') {
+    color: $white;
     background-color: $thumbblue;
     
   }
@@ -137,8 +137,8 @@ $thumbgray: rgba(214, 204, 189, 1);
   
 }
 
-.thumbgray-on-thumbblue {
-  color: $thumbgray;
+.white-on-thumbblue {
+  color: $white;
   background-color: $thumbblue;
   
 }

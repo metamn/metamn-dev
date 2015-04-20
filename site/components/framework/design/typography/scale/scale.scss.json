@@ -6,26 +6,11 @@
       "properties": [
         {
           "name": "font-size",
-          "value": "110%"
+          "value": "100%"
         },
         {
           "name": "line-height",
           "value": "1.48"
-        }
-      ],
-      "responsive": [
-        {
-          "breakpoint": "desktop",
-          "properties": [
-            {
-              "name": "font-size",
-              "value": "140%"
-            },
-            {
-              "name": "line-height",
-              "value": "1.89"
-            }
-          ]
         }
       ]
     },
@@ -46,10 +31,6 @@
         {
           "name": "font-size",
           "value": "1.333em"
-        },
-        {
-          "name": "line-height",
-          "value": "1.3"
         }
       ]
     },
@@ -60,10 +41,6 @@
         {
           "name": "font-size",
           "value": "1.777em"
-        },
-        {
-          "name": "line-height",
-          "value": "1.3"
         }
       ]
     }

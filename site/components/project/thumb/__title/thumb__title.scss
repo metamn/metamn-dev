@@ -7,14 +7,4 @@
   a {
     @include link(white-on-blue);
   }
-
-  @include mobile-and-up {
-    position: relative;
-    top: -$lem * 2.5;
-    left: $lem;
-
-    a {
-      @include link(thumbgray-on-thumbblue);
-    }
-  }
 }

@@ -1,5 +1,15 @@
 @mixin thumb {
-  flex-basis: 22em;
+  flex-basis: 20em;
+
+  @include landscape {
+    flex-basis: 25em;
+  }
+
+  @include desktop {
+    flex-basis: 30em;
+  }
+
+
   margin-bottom: $lem;
 
   @include mobile {
@@ -16,18 +26,5 @@
 
   .thumb__image {
     @include thumb__image;
-  }
-
-  .thumb__title {
-    @include thumb__title;
-  }
-
-  @include animation(transform);
-  &:hover {
-    .thumb__title {
-      a {
-        color: $white;
-      }
-    }
   }
 }

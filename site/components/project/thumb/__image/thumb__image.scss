@@ -3,11 +3,23 @@
   padding: $lem;
 
   .container {
-    @include intrinsic-ratio(16, 9, 'figure');
+    @include intrinsic-ratio(4, 3, 'figure');
+
+    @include landscape {
+      @include intrinsic-ratio(3, 2, 'figure');
+    }
+  }
+
+  a {
+    @include link(white-on-thumbblue);
   }
 
   figure {
-    @include figure;
-    @include color-overlay($blue, .1);
+    @include figure($figcaption: on);
+    @include color-overlay($thumbblue, .1);
+
+    .figcaption {
+      padding: $lem;
+    }
   }
 }

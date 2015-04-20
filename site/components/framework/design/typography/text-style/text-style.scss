@@ -38,17 +38,6 @@
     
   }
   
-  // Large text
-  // - A text larger than the default
-  @if ($variant == 'large-text') {
-    @include scale(large-1);
-    @include p;
-    
-    max-width: 15em;
-    
-    
-  }
-  
   // Title
   // - The title of an article or page
   @if ($variant == 'title') {

@@ -9,12 +9,6 @@
 
   .description {
     @include description;
-
-    @include mobile-and-up {
-      .description__text {
-        @include text-style(large-text);
-      }
-    }
   }
 
   .slider {
