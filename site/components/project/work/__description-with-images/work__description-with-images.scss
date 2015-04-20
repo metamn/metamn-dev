@@ -2,7 +2,7 @@
   padding: $lem;
 
   .slider {
-    @include slider;
+    @include slider(3, 4, 16, 9);
 
     // More padding on tablets
     @include tablet {

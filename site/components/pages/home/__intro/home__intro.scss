@@ -2,6 +2,11 @@
   display: flex;
   align-items: center;
 
+  @include portrait {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
   .description {
     @include description;
 
@@ -12,7 +17,16 @@
     }
   }
 
-  .ui {
-    @include ui;
+  .slider {
+    @include slider(4, 3, 4, 3);
+  }
+
+  .slider__bullets {
+    @include slider__bullets;
+    padding: $lem;
+
+    @include tablet-and-up {
+      @include slider__bullets--vertical;
+    }
   }
 }
