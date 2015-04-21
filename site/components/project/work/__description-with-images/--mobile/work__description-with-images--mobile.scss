@@ -9,4 +9,9 @@
     @include slider(3, 4);
     @include colors(white-on-blue);
   }
+
+  .slider__bullets {
+    @include slider__bullets;
+    padding: $lem / 2 0;
+  }
 }
