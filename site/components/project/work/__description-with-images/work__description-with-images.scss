@@ -1,5 +1,5 @@
 @mixin work__description-with-images {
-  @include tablet-and-below {
+  @include tablet {
     @include work__description-with-images--portrait;
   }
 
