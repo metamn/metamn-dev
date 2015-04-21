@@ -1,54 +1,13 @@
 @mixin work__description-with-images {
-  padding: 0 $lem;
-
-  .slider {
-    @include slider(3, 4, 16, 9);
-
-    // More padding on tablets
-    @include tablet {
-      padding-top: $lem * 2;
-    }
+  @include tablet-and-below {
+    @include work__description-with-images--portrait;
   }
 
-  .slider__bullets {
-    @include slider__bullets;
-
-    // More padding on tablets
-    @include tablet {
-      padding: $lem 0;
-    }
+  @include mobile {
+    @include work__description-with-images--mobile;
   }
-
-
-  .description {
-    @include description;
-    padding: 0;
-
-    // A separator line between description and slider on tablets
-    @include tablet {
-      .separator-line {
-        @include separator-line;
-      }
-    }
-
-  }
-
-
-  display: flex;
-  flex-direction: column;
 
   @include tablet-and-up {
-    flex-direction: row;
-    align-items: center;
-
-    .description {
-      padding-right: $lem;
-    }
-
-    .slider__bullets {
-      @include slider__bullets--vertical;
-    }
+    @include work__description-with-images--landscape;
   }
-
-
 }

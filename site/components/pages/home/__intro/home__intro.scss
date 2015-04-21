@@ -12,7 +12,13 @@
   }
 
   .slider {
-    @include slider(4, 3, 3, 2);
+    @include mobile {
+      @include slider(4, 3);
+    }
+
+    @include tablet-and-up {
+      @include slider(3, 2);
+    }
   }
 
   .slider__bullets {

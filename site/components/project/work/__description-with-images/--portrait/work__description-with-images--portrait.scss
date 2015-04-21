@@ -1,0 +1,18 @@
+@mixin work__description-with-images--portrait {
+  display: flex;
+  flex-direction: column;
+
+  .description {
+    @include description;
+  }
+
+  .slider {
+    @include slider(16, 9);
+    @include colors(white-on-thumbblue);
+  }
+
+  .slider__bullets {
+    @include slider__bullets;
+    padding: $lem / 2 0;
+  }
+}

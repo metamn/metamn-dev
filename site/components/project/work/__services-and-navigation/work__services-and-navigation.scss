@@ -12,4 +12,8 @@
   .work__navigation {
     @include work__navigation(white-on-blue, $black);
   }
+
+  @include portrait {
+    margin-bottom: $lem;
+  }
 }

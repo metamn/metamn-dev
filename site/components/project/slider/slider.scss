@@ -1,4 +1,4 @@
-@mixin slider($ratio-mobile-width, $ratio-mobile-height, $ratio-desktop-width, $ratio-desktop-height) {
+@mixin slider($ratio-width, $ratio-height) {
   overflow: hidden;
   @include colors(white-on-blue);
 
@@ -12,13 +12,7 @@
   }
 
   .slides {
-    @include mobile {
-      @include intrinsic-ratio($ratio-mobile-width, $ratio-mobile-height, '.slide', 'figure');
-    }
-
-    @include mobile-and-up {
-      @include intrinsic-ratio($ratio-desktop-width, $ratio-desktop-height, '.slide', 'figure');
-    }
+    @include intrinsic-ratio($ratio-width, $ratio-height, '.slide', 'figure');
 
     .slide {
       @include animation(transform);

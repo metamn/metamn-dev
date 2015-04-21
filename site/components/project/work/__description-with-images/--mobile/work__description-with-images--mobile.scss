@@ -1,0 +1,12 @@
+@mixin work__description-with-images--mobile {
+  padding: $lem $lem 0;
+
+  .description {
+    padding: 0;
+  }
+
+  .slider {
+    @include slider(3, 4);
+    @include colors(white-on-blue);
+  }
+}
