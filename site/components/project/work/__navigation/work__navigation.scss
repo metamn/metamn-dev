@@ -1,10 +1,10 @@
-@mixin work__navigation {
-  display: none;
+@mixin work__navigation($color-scheme, $arrow_inactive) {
+  display: flex;
   align-items: center;
   justify-content: flex-end;
   flex: 1;
 
   .arrow {
-    @include arrow(blue-on-gray);
+    @include arrow($color-scheme, $arrow_inactive);
   }
 }

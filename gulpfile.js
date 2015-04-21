@@ -552,7 +552,7 @@ gulp.task('default', function(cb) {
     'scss',
     'js',
     'scripts',
-    'images',
+    //'images',
     'fonts',
     cb
   );

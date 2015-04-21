@@ -1,8 +1,7 @@
 @mixin work__services-and-navigation {
-  @include colors(black-on-gray);
   padding: $lem;
 
-  display: none;
+  display: flex;
   flex-wrap: no-wrap;
   align-items: center;
 
@@ -11,6 +10,6 @@
   }
 
   .work__navigation {
-    @include work__navigation;
+    @include work__navigation(white-on-blue, $black);
   }
 }

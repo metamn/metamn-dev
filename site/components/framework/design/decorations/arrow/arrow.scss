@@ -1,13 +1,11 @@
-@mixin arrow($color-scheme) {
+@mixin arrow($color-scheme, $arrow-inactive) {
   display: inline-flex;
 
   a {
     @include link($color-scheme);
-
     display: flex;
     align-items: center;
   }
-
 
   .arrow__icon {
     font-size: 400%;
@@ -24,5 +22,10 @@
 
   + .arrow {
     margin-left: $lem / 2;
+  }
+
+
+  &.inactive {
+    color: $arrow-inactive;
   }
 }
