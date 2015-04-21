@@ -12,7 +12,7 @@
   }
 
   .slider {
-    @include slider(4, 3, 4, 3);
+    @include slider(4, 3, 3, 2);
   }
 
   .slider__bullets {
