@@ -1,7 +1,6 @@
 @mixin work-item {
   .title {
     @include title;
-    padding-top: $lem * 2;
   }
 
   .work__description-with-images {

@@ -1,5 +1,5 @@
 @mixin work__description-with-images {
-  padding: $lem;
+  padding: 0 $lem;
 
   .slider {
     @include slider(3, 4, 16, 9);

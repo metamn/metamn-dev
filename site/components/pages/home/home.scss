@@ -1,12 +1,6 @@
 html {
   &.home {
     body {
-      .header {
-        @include tablet-and-up {
-          display: none;
-        }
-      }
-
       .home__intro {
         @include home__intro;
       }
