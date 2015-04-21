@@ -17,6 +17,12 @@
           "name": "colors",
           "value": "white-on-blue"
         }
+      ],
+      "properties": [
+        {
+          "name": "letter-spacing",
+          "value": "1.1px"
+        }
       ]
     },
     {
