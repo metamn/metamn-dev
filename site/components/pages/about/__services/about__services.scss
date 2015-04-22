@@ -6,9 +6,5 @@
 
   .ul {
     @include ul;
-
-    li {
-      padding-top: $lem / 2;
-    }
   }
 }

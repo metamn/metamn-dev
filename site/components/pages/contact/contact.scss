@@ -10,8 +10,10 @@ html {
         padding: $lem;
 
         .link {
-          @include link(blue-on-white);
-          padding: $lem / 4;
+          @include link(white-on-blue);
+          font-size: 700;
+          padding: $lem / 4 0;
+          border-bottom: 1px solid;
         }
       }
 

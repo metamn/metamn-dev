@@ -5,7 +5,10 @@
     padding-bottom: $lem / 2;
   }
 
-  dd + dt {
-    padding-top: $lem + $lem / 2;
+  dd {
+    margin: 0;
+    + dt {
+        padding-top: $lem + $lem / 2;
+    }
   }
 }
