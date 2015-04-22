@@ -1,0 +1,13 @@
+@mixin about--portrait {
+  .description {
+    @include description;
+  }
+
+  .about__services {
+    @include about__services;
+
+    ul {
+      padding: 0 $lem $lem;
+    }
+  }
+}

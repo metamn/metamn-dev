@@ -5,12 +5,13 @@ html {
         @include title;
       }
 
-      .description {
-        @include description;
+      @include portrait {
+        @include about--portrait;
       }
 
-      .contact-icons {
-        @include contact-icons;
+
+      @include landscape {
+        @include about--landscape;
       }
     }
   }

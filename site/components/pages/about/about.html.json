@@ -5,6 +5,15 @@
       "I have a B.Sc. in Computer Science and I'm a self&ndash;taught designer.",
       "I like to create clean user interfaces and meaningful interactions with usability in mind.",
       "I also like to write clean and reusable front&ndash;end code. My customers should be able to use my work in the future without my assistance."
+    ],
+    "services": [
+      "Identity design",
+      "Responsive web design",
+      "Front&ndash;end development",
+      "Styleguide",
+      "Wordpress theme and plugin development",
+      "Storytelling with Wordpress",
+      "Gulp and Jekyll based static sites"
     ]
   }
 }

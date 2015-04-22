@@ -1,0 +1,14 @@
+@mixin about__services {
+  .title {
+    @include text-style(title);
+    display: flex;
+  }
+
+  .ul {
+    @include ul;
+
+    li {
+      padding-top: $lem / 2;
+    }
+  }
+}

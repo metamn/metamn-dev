@@ -1,8 +1,5 @@
 @mixin work__services {
   .ul {
     @include ul;
-
-    padding-left: $lem;
-    border-left: 1px solid;
   }
 }

@@ -1,0 +1,17 @@
+@mixin about--landscape {
+  .description-and-services {
+    display: flex;
+    flex-wrap: no-wrap;
+    align-items: flex-end;
+  }
+
+  .description {
+    @include description;
+    flex: 1;
+  }
+
+  .about__services {
+    @include about__services;
+    flex: 1;
+  }
+}
