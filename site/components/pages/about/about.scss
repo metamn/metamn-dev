@@ -5,12 +5,22 @@ html {
         @include title;
       }
 
-      @include portrait {
-        @include about--portrait;
+      .description {
+        @include description;
+      }
+
+      .about__services {
+        @include about__services;
+
+        ul {
+          padding: 0 $lem $lem;
+        }
       }
 
 
       @include landscape {
+        display: flex;
+
         @include about--landscape;
       }
     }

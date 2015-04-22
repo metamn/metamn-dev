@@ -5,13 +5,8 @@
     align-items: flex-end;
   }
 
-  .description {
-    @include description;
-    flex: 1;
-  }
-
+  .description,
   .about__services {
-    @include about__services;
     flex: 1;
   }
 }

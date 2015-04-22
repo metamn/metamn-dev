@@ -2,5 +2,5 @@
   <h3 class="title">Services</h3>
 
   {% set items = about.services %}
-  {% include '../../../framework/design/typography/elements/ul/ul.html.swig' %}
+  {% include '../../../framework/design/typography/elements/ul/--no-dash/ul--no-dash.html.swig' %}
 </aside>
