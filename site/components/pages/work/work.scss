@@ -5,8 +5,41 @@ html {
         @include title;
       }
 
-      .work__thumbs {
-        @include work__thumbs;
+      .thumb {
+        @include thumb;
+      }
+
+      @include tablet-and-up {
+        display: flex;
+        flex-wrap: wrap;
+
+        .header {
+          flex-basis: 25em;
+          padding-right: 0;
+          order: 2;
+
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .thumb {
+          margin: $lem 0 0 $lem;
+        }
+
+        .menu {
+          order: 3;
+        }
+      }
+
+      @include desktop {
+        .header {
+          flex-basis: 30em;
+        }
+
+        .menu {
+          flex-basis: 30em;
+        }
       }
     }
   }
