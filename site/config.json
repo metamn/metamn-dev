@@ -130,21 +130,6 @@
       {
         "title": "Contact"
       }
-    ],
-
-    "contact": [
-      {
-        "title": "Email",
-        "url": "bartus.csongor@gmail.com",
-        "type": "email",
-        "icon": "email"
-      },
-      {
-        "title": "Twitter",
-        "url": "http://twitter.com/metamn",
-        "type": "external",
-        "icon": "twitter"
-      }
     ]
   }
 }

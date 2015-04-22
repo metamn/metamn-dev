@@ -8,6 +8,12 @@ title: Contact
   {% set page_title = { title: title } %}
   {% include '../../project/title/title.html.swig' %}
 
-  {% include '__form/contact__form.html.swig' %}
-  {% include '__icons/contact__icons.html.swig' %}
+  <dl>
+    {% for link in contact.links %}
+      <dt>{% include '../../framework/design/typography/elements/link/link.html.swig' %}</dt>
+      <dd>
+        {{ link.description }}
+      </dd>
+    {% endfor %}
+  </dl>
 {% endblock %}

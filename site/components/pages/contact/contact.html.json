@@ -1,0 +1,36 @@
+{
+  "contact": {
+    "links": [
+      {
+        "description": "I'll get back to you in a business day",
+        "url": "bartus.csongor@gmail.com",
+        "title": "bartus.csongor@gmail.com",
+        "type": "email"
+      },
+      {
+        "description": "Industry pulse",
+        "url": "http://twitter.com/metamn",
+        "title": "http://twitter.com/metamn",
+        "type": "external"
+      },
+      {
+        "description": "Blog",
+        "url": "http://metamn.tumblr.com",
+        "title": "http://metamn.tumblr.com",
+        "type": "external"
+      },
+      {
+        "description": "Code",
+        "url": "http://github.com/metamn",
+        "title": "http://github.com/metamn",
+        "type": "external"
+      },
+      {
+        "description": "Industry overview. An article a month for you.",
+        "url": "http://readability.com/metamn",
+        "title": "http://readability.com/metamn",
+        "type": "external"
+      }
+    ]
+  }
+}

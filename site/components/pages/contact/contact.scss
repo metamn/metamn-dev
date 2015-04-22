@@ -5,12 +5,22 @@ html {
         @include title;
       }
 
-      .contact__form {
-        @include contact__form;
+      dl {
+        @include dl;
+        padding: $lem;
+
+        .link {
+          @include link(blue-on-white);
+          padding: $lem / 4;
+        }
       }
 
-      .contact__icons {
-        @include contact__icons;
+      @include landscape {
+        display: flex;
+
+        .title__main {
+          transform: rotate(-90deg);
+        }
       }
     }
   }
