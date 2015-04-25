@@ -16,43 +16,42 @@ html {
         .header {
           flex-basis: 25em;
           padding-right: 0;
-          order: 5;
+          order: 0;
 
           display: flex;
-          justify-content: center;
-          align-items: center;
+          align-items: flex-end;
         }
 
         .thumb {
           margin: $lem 0 0 $lem;
           &:nth-of-type(0) {
-            order: 0;
-          }
-          &:nth-of-type(1) {
             order: 1;
           }
-          &:nth-of-type(2) {
+          &:nth-of-type(1) {
             order: 2;
           }
+          &:nth-of-type(2) {
+            order: 4;
+          }
           &:nth-of-type(3) {
-            order: 3;
+            order: 4;
           }
           &:nth-of-type(4) {
-            order: 4;
+            order: 5;
           }
           &:nth-of-type(5) {
             order: 6;
           }
-          &:nth-of-type(7) {
+          &:nth-of-type(6) {
             order: 7;
           }
-          &:nth-of-type(8) {
+          &:nth-of-type(7) {
             order: 8;
           }
         }
 
         .menu {
-          order: 9;
+          order: 3;
         }
       }
 
