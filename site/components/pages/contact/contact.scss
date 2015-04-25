@@ -5,25 +5,34 @@ html {
         @include title;
       }
 
-      dl {
+      .contact__links {
         @include dl;
-        padding: $lem;
+        padding: 0 $lem;
 
         .link {
           @include link(white-on-blue);
-          font-size: 700;
           padding: $lem / 4 0;
           border-bottom: 1px solid;
         }
       }
 
-      @include landscape {
-        display: flex;
+      display: flex;
+      flex-wrap: wrap;
+      height: 100vh;
+      align-items: flex-end;
 
-        .title__main {
-          transform: rotate(-90deg);
-        }
+      .title__main {
+        transform: rotate(-90deg);
       }
+
+      .menu {
+        flex-basis: 100%;
+      }
+
+      @include mobile {
+        @include contact--mobile;
+      }
+
     }
   }
 }

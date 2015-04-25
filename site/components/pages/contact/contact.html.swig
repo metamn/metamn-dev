@@ -8,7 +8,7 @@ title: Contact
   {% set page_title = { title: title } %}
   {% include '../../project/title/title.html.swig' %}
 
-  <dl>
+  <dl class="contact__links">
     {% for link in contact.links %}
       <dt>{% include '../../framework/design/typography/elements/link/link.html.swig' %}</dt>
       <dd>
