@@ -7,21 +7,35 @@ html {
 
       .description {
         @include description;
+        padding-bottom: 0;
       }
 
       .about__services {
         @include about__services;
+        padding: 0 $lem;
 
         ul {
-          padding: 0 $lem $lem;
+          padding: 0 $lem;
         }
       }
 
 
-      @include landscape {
-        display: flex;
+      display: flex;
+      flex-wrap: wrap;
+      height: 100vh;
+      align-items: flex-end;
 
-        @include about--landscape;
+      .title__main {
+        transform: rotate(-90deg);
+      }
+
+      .menu {
+        flex-basis: 100%;
+      }
+
+
+      @include mobile {
+        @include about--mobile;
       }
     }
   }

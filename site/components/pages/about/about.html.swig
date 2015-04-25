@@ -8,14 +8,9 @@ title: About
   {% set page_title = { title: title } %}
   {% include '../../project/title/title.html.swig' %}
 
-  <section class="description-and-services">
-    <h3>Description and services</h3>
+  {% set description = about %}
+  {% include '../../project/description/description.html.swig' %}
 
-    {% set separator_line = true %}
-    {% set description = about %}
-    {% include '../../project/description/description.html.swig' %}
-
-    {% include '__services/about__services.html.swig' %}
-  </section>
+  {% include '__services/about__services.html.swig' %}
 
 {% endblock %}
