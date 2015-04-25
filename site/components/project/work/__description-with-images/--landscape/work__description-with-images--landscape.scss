@@ -1,22 +1,15 @@
 @mixin work__description-with-images--landscape {
   padding: 0 $lem;
 
-  display: flex;
   flex-direction: row;
   align-items: center;
 
   .description {
-    @include description;
-    padding: 0;
+    padding: 0 $lem 0 0;
     text-align: justify;
   }
 
-  .slider {
-    @include slider(16, 9);
-  }
-
   .slider__bullets {
-    @include slider__bullets;
     @include slider__bullets--vertical;
   }
 }

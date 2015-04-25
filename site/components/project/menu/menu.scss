@@ -1,4 +1,7 @@
 @mixin menu {
+  display: flex;
+  flex-direction: row;
+
   padding: $lem;
 
   a {
@@ -6,14 +9,11 @@
     @include text-style(menu);
   }
 
-  display: flex;
-  flex-direction: column;
+  .menu__item + .menu__item {
+    margin-left: $lem;
+  }
 
-  @include mobile-and-up {
-    flex-direction: row;
-
-    .menu__item + .menu__item {
-      margin-left: $lem;
-    }
+  @include mobile {
+    @include menu--mobile;
   }
 }

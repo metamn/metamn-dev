@@ -30,12 +30,8 @@
       "media_query": "(max-width: $breakpoint-mobile - 0.1)"
     },
     {
-      "name": "mobile-and-up",
-      "media_query": "(min-width: $breakpoint-mobile)"
-    },
-    {
-      "name": "tablet",
-      "media_query": "(min-width: $breakpoint-mobile + 0.1) and (max-width: $breakpoint-tablet)"
+      "name": "tablet-landscape",
+      "media_query": "(orientation: landscape) and (min-width: $breakpoint-mobile) and (max-width: $breakpoint-tablet)"
     },
     {
       "name": "tablet-and-below",
@@ -44,10 +40,6 @@
     {
       "name": "tablet-and-up",
       "media_query": "(min-width: $breakpoint-tablet + 0.1)"
-    },
-    {
-      "name": "laptop",
-      "media_query": "(min-width: $breakpoint-tablet + 0.1) and (max-width: $breakpoint-desktop)"
     },
     {
       "name": "desktop",

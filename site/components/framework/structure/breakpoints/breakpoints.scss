@@ -37,14 +37,8 @@ $breakpoint-desktop: 1600px;
   }
 }
 
-@mixin mobile-and-up {
-  @media only screen and (min-width: $breakpoint-mobile) {
-    @content
-  }
-}
-
-@mixin tablet {
-  @media only screen and (min-width: $breakpoint-mobile + 0.1) and (max-width: $breakpoint-tablet) {
+@mixin tablet-landscape {
+  @media only screen and (orientation: landscape) and (min-width: $breakpoint-mobile) and (max-width: $breakpoint-tablet) {
     @content
   }
 }
@@ -57,12 +51,6 @@ $breakpoint-desktop: 1600px;
 
 @mixin tablet-and-up {
   @media only screen and (min-width: $breakpoint-tablet + 0.1) {
-    @content
-  }
-}
-
-@mixin laptop {
-  @media only screen and (min-width: $breakpoint-tablet + 0.1) and (max-width: $breakpoint-desktop) {
     @content
   }
 }

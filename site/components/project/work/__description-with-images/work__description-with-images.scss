@@ -1,5 +1,20 @@
 @mixin work__description-with-images {
-  @include tablet {
+  display: flex;
+
+  .description {
+    @include description;
+  }
+
+  .slider {
+    @include slider(16, 9);
+    @include colors(white-on-blue);
+  }
+
+  .slider__bullets {
+    @include slider__bullets;
+  }
+
+  @include portrait {
     @include work__description-with-images--portrait;
   }
 
@@ -7,7 +22,11 @@
     @include work__description-with-images--mobile;
   }
 
-  @include tablet-and-up {
+  @include landscape {
     @include work__description-with-images--landscape;
+  }
+
+  @include tablet-landscape {
+    @include work__description-with-images--tablet-landscape;
   }
 }
