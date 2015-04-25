@@ -1,4 +1,5 @@
 <article class="thumb">
+  <h3>{{ work.title }}</h3>
 
   <aside class="thumb__image">
     <h3>{{ work.title }} thumb</h3>

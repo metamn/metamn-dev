@@ -1,30 +1,20 @@
 @mixin thumb {
-  flex-basis: 20em;
-
-  @include landscape {
-    flex-basis: 25em;
-  }
-
-  @include desktop {
-    flex-basis: 30em;
-  }
-
-
   margin-bottom: $lem;
-
-  @include mobile {
-    &:last-of-type {
-      margin-bottom: 0;
-    }
-  }
-
-  @include mobile-and-up {
-    margin-right: $lem;
-  }
-
-
+  margin-right: $lem;
 
   .thumb__image {
     @include thumb__image;
+  }
+
+  @include portrait {
+    @include thumb--portrait;
+  }
+
+  @include landscape {
+    @include thumb--landscape;
+  }
+
+  @include desktop {
+    @include thumb--desktop;
   }
 }

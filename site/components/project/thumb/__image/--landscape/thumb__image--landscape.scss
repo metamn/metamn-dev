@@ -1,0 +1,5 @@
+@mixin thumb__image--landscape {
+  .container {
+    @include intrinsic-ratio(3, 2, 'figure')
+  }
+}
