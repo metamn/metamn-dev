@@ -1,0 +1,9 @@
+@mixin home__intro--landscape {
+  .slider {
+    @include slider(16, 9);
+  }
+
+  .slider__bullets {
+    @include slider__bullets--vertical;
+  }
+}

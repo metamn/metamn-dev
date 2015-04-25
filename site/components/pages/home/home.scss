@@ -1,6 +1,10 @@
 html {
   &.home {
     body {
+      @include landscape {
+        @include home--landscape;
+      }
+
       .home__intro {
         @include home__intro;
       }

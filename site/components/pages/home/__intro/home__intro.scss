@@ -2,35 +2,24 @@
   display: flex;
   align-items: center;
 
-  @include tablet-and-below {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
   .description {
     @include description;
-  }
-
-  .slider {
-    @include tablet-and-below {
-      @include slider(4, 3);
-    }
-
-    @include tablet-and-up {
-      @include slider(3, 2);
-    }
   }
 
   .slider__bullets {
     @include slider__bullets;
     padding: $lem;
-
-    @include tablet-and-up {
-      @include slider__bullets--vertical;
-    }
   }
 
   figure {
     @include color-overlay($blue, .1);
+  }
+
+  @include portrait {
+    @include home__intro--portrait;
+  }
+
+  @include landscape {
+    @include home__intro--landscape;
   }
 }

@@ -1,0 +1,8 @@
+@mixin home__intro--portrait {
+  flex-direction: column;
+  align-items: flex-start;
+
+  .slider {
+    @include slider(4, 3);
+  }
+}
