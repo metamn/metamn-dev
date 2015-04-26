@@ -35,6 +35,12 @@
           border-bottom: none;
         }
       }
+
+      &.inactive {
+        div {
+          @include menu--inactive;
+        }
+      }
     }
   }
 }

@@ -5,8 +5,6 @@ var menu = function(menuItems) {
   for (var i = 0; i < items.length; i++ ) {
     var itemTitle = items[i].children[0].getAttribute('title').toLowerCase();
 
-    console.log('t:' + itemTitle);
-
     if (htmlClassList.contains(itemTitle)) {
       items[i].classList.add('inactive');
     }
