@@ -3,7 +3,7 @@ var menuActive = function(menuItems) {
   var items = document.querySelectorAll(menuItems);
 
   for (var i = 0; i < items.length; i++ ) {
-    var itemTitle = items[i].children[0].children[0].getAttribute('title').toLowerCase();
+    var itemTitle = items[i].children[0].children[0].getAttribute('title').replace(/\s+/g, '-').toLowerCase();
 
     if (htmlClassList.contains('styleguide-' + itemTitle)) {
       items[i].classList.add('inactive');
