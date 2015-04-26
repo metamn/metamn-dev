@@ -428,6 +428,7 @@ function dirTree(filename) {
   return info;
 }
 
+
 // Transforms a JSON file into nested <ul> menu
 // - http://jsfiddle.net/BvDW3/
 function makeUL(lst) {
@@ -447,14 +448,24 @@ function makeLI(elem) {
     var html = [];
     html.push('<li>');
 
+    //console.log(elem);
+
+    // prepare data
     if (elem.path) {
       title = inflection.humanize(elem.name.replace('--', '').replace('__', '').replace(/-/g, ' '));
       link = elem.path.replace('site/components/', '{{ site.url }}')
       html.push('<div>');
-      html.push("{% include '../../../../../site/components/framework/design/decorations/long-dash/long-dash.html.swig' %}");
     }
 
-    if (elem.children && (elem.children[0].type == 'folder')) {
+    // decide if this is a folder or a link
+    var isFolder = true;
+    for (var i = 0; i < elem.children.length; i++ ) {
+      if (elem.children[i].type == 'file') {
+        isFolder = false;
+      }
+    }
+
+    if (elem.children && isFolder) {
       html.push(title + '</div>');
       html.push(makeUL(elem.children));
     } else {
@@ -499,7 +510,7 @@ gulp.task('sg_folders', function() {
 });
 
 
-// - remove unused components from styleguide
+// - remove unused folders from styleguide
 gulp.task('sg_folders_remove', function() {
   return gulp.src(['styleguide/components/pages/framework/**/**/*','styleguide/components/pages/project/**/**/*'])
     .pipe(plumber({errorHandler: onError}))
