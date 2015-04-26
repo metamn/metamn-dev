@@ -6,17 +6,22 @@
   display: flex;
   flex-wrap: wrap;
 
-  .styleguide-menu__framework, .styleguide-menu__project {
-    flex-basis: 30em;
-    @include ul--nested;
-  }
-
   a {
     @include link(blue-on-gray);
     @include text-style(menu);
   }
 
+
+  .styleguide-menu__framework, .styleguide-menu__project {
+    flex-basis: 30em;
+    @include ul--nested;
+  }
+
   .styleguide-menu__framework {
     margin-right: $lem * 2;
+
+    @include mobile {
+      margin-right: 0;
+    }
   }
 }
