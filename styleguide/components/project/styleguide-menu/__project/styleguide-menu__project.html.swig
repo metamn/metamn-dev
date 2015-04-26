@@ -7,11 +7,6 @@ Project</div>
 <li>
 <div>
 {% include '../../../../../site/components/framework/design/decorations/long-dash/long-dash.html.swig' %}
-<a class="link" title="Contact icons" href="{{ site.url }}project/contact-icons">Contact icons</a>
-</li>
-<li>
-<div>
-{% include '../../../../../site/components/framework/design/decorations/long-dash/long-dash.html.swig' %}
 <a class="link" title="Description" href="{{ site.url }}project/description">Description</a>
 </li>
 <li>

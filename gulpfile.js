@@ -410,8 +410,6 @@ gulp.task('fonts', function() {
 
 // Styleguide tasks
 
-
-
 // Maps the folder structure into a JSON file
 // - http://stackoverflow.com/questions/11194287/convert-a-directory-structure-in-the-filesystem-to-json-with-node-js
 function dirTree(filename) {
@@ -469,7 +467,7 @@ function makeLI(elem) {
 
 
 // Menu
-// - creates html menu files directly into styleguide/menu
+// - create html menu for styleguide
 gulp.task('sg_menu', function() {
   var json = dirTree('site/components/framework');
   var menu = makeUL([json]);
@@ -499,6 +497,22 @@ gulp.task('sg_folders', function() {
       }
     }));
 });
+
+
+// - remove unused components from styleguide
+gulp.task('sg_folders_remove', function() {
+  return gulp.src(['styleguide/components/pages/framework/**/**/*','styleguide/components/pages/project/**/**/*'])
+    .pipe(plumber({errorHandler: onError}))
+    .pipe(data(function(file) {
+      var stats = fs.lstatSync(file.path);
+      if (stats.isDirectory()) {
+        var dir = file.path.replace('styleguide/components/pages', 'site/components');
+        if (!fs.existsSync(dir)) {
+          console.log(file.relative + ' should be removed from styleguide');
+        }
+      }
+    }));
+})
 
 
 // KSS
@@ -564,6 +578,7 @@ gulp.task('sg', function(cb) {
   runSequence(
     'sg_menu',
     'sg_folders',
+    'sg_folders_remove',
     'sg_kss',
     'swig_sg',
     'html_sg',
