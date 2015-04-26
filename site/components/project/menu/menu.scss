@@ -9,8 +9,14 @@
     @include text-style(menu);
   }
 
-  .menu__item + .menu__item {
-    margin-left: $lem;
+  .menu__item {
+    &.inactive {
+      @include menu--inactive;
+    }
+
+    + .menu__item {
+      margin-left: $lem;
+    }
   }
 
   @include mobile {

@@ -18,9 +18,6 @@ $blue: rgba(0, 0, 255, 1);
 // A lighter highlight color
 $thumbblue: rgba(38, 38, 255, 1);
 
-// Highlight color for the black background
-$violet: rgba(166, 148, 189, 1);
-
 // Secondary background color
 $gray: rgba(240, 228, 212, 1);
 
@@ -40,6 +37,12 @@ $gray: rgba(240, 228, 212, 1);
     
   }
 
+  @if ($name == 'black-on-gray') {
+    color: $black;
+    background-color: $gray;
+    
+  }
+
   @if ($name == 'blue-on-gray') {
     color: $blue;
     background-color: $gray;
@@ -52,32 +55,20 @@ $gray: rgba(240, 228, 212, 1);
     
   }
 
-  @if ($name == 'white-on-black') {
-    color: $white;
-    background-color: $black;
-    
-  }
-
-  @if ($name == 'black-on-gray') {
-    color: $black;
-    background-color: $gray;
-    
-  }
-
   @if ($name == 'white-on-thumbblue') {
     color: $white;
     background-color: $thumbblue;
     
   }
 
-  @if ($name == 'gray-on-black') {
-    color: $gray;
+  @if ($name == 'white-on-black') {
+    color: $white;
     background-color: $black;
     
   }
 
-  @if ($name == 'violet-on-black') {
-    color: $violet;
+  @if ($name == 'gray-on-black') {
+    color: $gray;
     background-color: $black;
     
   }
@@ -102,10 +93,6 @@ $gray: rgba(240, 228, 212, 1);
   background: rgba(38, 38, 255, 1);
 };
 
-.violet {
-  background: rgba(166, 148, 189, 1);
-};
-
 .gray {
   background: rgba(240, 228, 212, 1);
 };
@@ -125,6 +112,12 @@ $gray: rgba(240, 228, 212, 1);
   
 }
 
+.black-on-gray {
+  color: $black;
+  background-color: $gray;
+  
+}
+
 .blue-on-gray {
   color: $blue;
   background-color: $gray;
@@ -137,32 +130,20 @@ $gray: rgba(240, 228, 212, 1);
   
 }
 
-.white-on-black {
-  color: $white;
-  background-color: $black;
-  
-}
-
-.black-on-gray {
-  color: $black;
-  background-color: $gray;
-  
-}
-
 .white-on-thumbblue {
   color: $white;
   background-color: $thumbblue;
   
 }
 
-.gray-on-black {
-  color: $gray;
+.white-on-black {
+  color: $white;
   background-color: $black;
   
 }
 
-.violet-on-black {
-  color: $violet;
+.gray-on-black {
+  color: $gray;
   background-color: $black;
   
 }

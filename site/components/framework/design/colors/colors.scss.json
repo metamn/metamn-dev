@@ -21,11 +21,6 @@
       "description": "A lighter highlight color"
     },
     {
-      "name": "violet",
-      "value": "rgba(166, 148, 189, 1)",
-      "description": "Highlight color for the black background"
-    },
-    {
       "name": "gray",
       "value": "rgba(240, 228, 212, 1)",
       "description": "Secondary background color"
@@ -59,6 +54,19 @@
       ]
     },
     {
+      "name": "black-on-gray",
+      "properties": [
+        {
+          "name": "color",
+          "value": "$black"
+        },
+        {
+          "name": "background-color",
+          "value": "$gray"
+        }
+      ]
+    },
+    {
       "name": "blue-on-gray",
       "properties": [
         {
@@ -85,32 +93,6 @@
       ]
     },
     {
-      "name": "white-on-black",
-      "properties": [
-        {
-          "name": "color",
-          "value": "$white"
-        },
-        {
-          "name": "background-color",
-          "value": "$black"
-        }
-      ]
-    },
-    {
-      "name": "black-on-gray",
-      "properties": [
-        {
-          "name": "color",
-          "value": "$black"
-        },
-        {
-          "name": "background-color",
-          "value": "$gray"
-        }
-      ]
-    },
-    {
       "name": "white-on-thumbblue",
       "properties": [
         {
@@ -124,11 +106,11 @@
       ]
     },
     {
-      "name": "gray-on-black",
+      "name": "white-on-black",
       "properties": [
         {
           "name": "color",
-          "value": "$gray"
+          "value": "$white"
         },
         {
           "name": "background-color",
@@ -137,11 +119,11 @@
       ]
     },
     {
-      "name": "violet-on-black",
+      "name": "gray-on-black",
       "properties": [
         {
           "name": "color",
-          "value": "$violet"
+          "value": "$gray"
         },
         {
           "name": "background-color",
