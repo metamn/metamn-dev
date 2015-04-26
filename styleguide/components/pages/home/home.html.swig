@@ -10,19 +10,16 @@ title: Home
       This is the styleguide accompannying the site
       {% set url = site.url | replace('styleguide/', '') %}
       {% set link = { url: url, title: site.site_title, type: "external" } %}
-      {% include '../../../../site/components/framework/design/typography/elements/link/link.html.swig' %}.
-      It serves as a visual documentation for the framework and components used to build the pages of the site.
-    <p>
-    <p>
+      {% include '../../../../site/components/framework/design/typography/elements/link/link.html.swig' %}
+      It serves as a visual documentation for the framework and components building the site.
       Any changes made to the site design is automatically reflected in this styleguide.
-      They use the same design elements only the content is differrent.
-    </p>
+    <p>
     <p>
       We use the
       {% set link = { url: 'https://en.bem.info/method/filesystem/', title: 'BEM methodology', type: "external" } %}
       {% include '../../../../site/components/framework/design/typography/elements/link/link.html.swig' %}
-      to structure the building blocks of the site. BEM is using Framework for basic components like typography, colors, the grid and
-      Project for all other components specific to the site like headers, thumbs, portfolio sections.
+      to structure the building blocks of the site. BEM is using <strong>Framework</strong> for basic components like typography, colors, the grid and
+      <strong>Project</strong> for all other components specific to the site like headers, thumbs, portfolio sections.
     </p>
   </div>
 

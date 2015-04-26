@@ -8,13 +8,24 @@
   "links": {
     "menu": [
       {
-        "title": "Work"
+        "title": "Home",
+        "url": "../"
       },
       {
-        "title": "About"
+        "title": "Styleguide",
+        "url": "../styleguide"
       },
       {
-        "title": "Contact"
+        "title": "Work",
+        "url": "../work"
+      },
+      {
+        "title": "About",
+        "url": "../about"
+      },
+      {
+        "title": "Contact",
+        "url": "../contact"
       }
     ]
   }

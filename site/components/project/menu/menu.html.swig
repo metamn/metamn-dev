@@ -3,7 +3,7 @@
 
   {% for link in site.links.menu %}
     <div class="menu__item">
-      {% set link = { title: link.title } %}
+      {% set link = link %}
       {% include '../../framework/design/typography/elements/link/link.html.swig' %}
     </div>
   {% endfor %}
