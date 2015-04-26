@@ -1,13 +1,7 @@
-@mixin description($separator-line: false) {
+@mixin description {
   padding: $lem;
 
   .description__text {
     @include text-style(body-text);
-  }
-
-  @if ($separator-line != false) {
-    .separator-line {
-      @include separator-line;
-    }
   }
 }

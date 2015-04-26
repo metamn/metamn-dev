@@ -6,8 +6,4 @@
       <p>{{ p | safe }}</p>
     {% endfor %}
   </div>
-
-  {% if separator_line == true %}
-    {% include '../../framework/design/decorations/separator-line/separator-line.html.swig' %}
-  {% endif %}
 </article>

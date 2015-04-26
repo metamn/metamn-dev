@@ -7,6 +7,11 @@ Project</div>
 <li>
 <div>
 {% include '../../../../../site/components/framework/design/decorations/long-dash/long-dash.html.swig' %}
+<a class="link" title="Contact icons" href="{{ site.url }}project/contact-icons">Contact icons</a>
+</li>
+<li>
+<div>
+{% include '../../../../../site/components/framework/design/decorations/long-dash/long-dash.html.swig' %}
 <a class="link" title="Description" href="{{ site.url }}project/description">Description</a>
 </li>
 <li>
@@ -17,7 +22,14 @@ Project</div>
 <li>
 <div>
 {% include '../../../../../site/components/framework/design/decorations/long-dash/long-dash.html.swig' %}
-<a class="link" title="Menu" href="{{ site.url }}project/menu">Menu</a>
+Menu</div>
+<ul>
+<li>
+<div>
+{% include '../../../../../site/components/framework/design/decorations/long-dash/long-dash.html.swig' %}
+<a class="link" title="Mobile" href="{{ site.url }}project/menu/--mobile">Mobile</a>
+</li>
+</ul>
 </li>
 <li>
 <div>
@@ -63,7 +75,41 @@ Templates</div>
 <li>
 <div>
 {% include '../../../../../site/components/framework/design/decorations/long-dash/long-dash.html.swig' %}
-<a class="link" title="Thumb" href="{{ site.url }}project/thumb">Thumb</a>
+Thumb</div>
+<ul>
+<li>
+<div>
+{% include '../../../../../site/components/framework/design/decorations/long-dash/long-dash.html.swig' %}
+<a class="link" title="Desktop" href="{{ site.url }}project/thumb/--desktop">Desktop</a>
+</li>
+<li>
+<div>
+{% include '../../../../../site/components/framework/design/decorations/long-dash/long-dash.html.swig' %}
+<a class="link" title="Landscape" href="{{ site.url }}project/thumb/--landscape">Landscape</a>
+</li>
+<li>
+<div>
+{% include '../../../../../site/components/framework/design/decorations/long-dash/long-dash.html.swig' %}
+<a class="link" title="Portrait" href="{{ site.url }}project/thumb/--portrait">Portrait</a>
+</li>
+<li>
+<div>
+{% include '../../../../../site/components/framework/design/decorations/long-dash/long-dash.html.swig' %}
+Image</div>
+<ul>
+<li>
+<div>
+{% include '../../../../../site/components/framework/design/decorations/long-dash/long-dash.html.swig' %}
+<a class="link" title="Landscape" href="{{ site.url }}project/thumb/__image/--landscape">Landscape</a>
+</li>
+<li>
+<div>
+{% include '../../../../../site/components/framework/design/decorations/long-dash/long-dash.html.swig' %}
+<a class="link" title="Portrait" href="{{ site.url }}project/thumb/__image/--portrait">Portrait</a>
+</li>
+</ul>
+</li>
+</ul>
 </li>
 <li>
 <div>
@@ -73,44 +119,49 @@ Templates</div>
 <li>
 <div>
 {% include '../../../../../site/components/framework/design/decorations/long-dash/long-dash.html.swig' %}
-Values</div>
+Work</div>
 <ul>
 <li>
 <div>
 {% include '../../../../../site/components/framework/design/decorations/long-dash/long-dash.html.swig' %}
-<a class="link" title="Front end" href="{{ site.url }}project/values/front-end">Front end</a>
+Description with images</div>
+<ul>
+<li>
+<div>
+{% include '../../../../../site/components/framework/design/decorations/long-dash/long-dash.html.swig' %}
+<a class="link" title="Landscape" href="{{ site.url }}project/work/__description-with-images/--landscape">Landscape</a>
 </li>
 <li>
 <div>
 {% include '../../../../../site/components/framework/design/decorations/long-dash/long-dash.html.swig' %}
-<a class="link" title="Styleguide" href="{{ site.url }}project/values/styleguide">Styleguide</a>
+<a class="link" title="Mobile" href="{{ site.url }}project/work/__description-with-images/--mobile">Mobile</a>
 </li>
 <li>
 <div>
 {% include '../../../../../site/components/framework/design/decorations/long-dash/long-dash.html.swig' %}
-<a class="link" title="Ui" href="{{ site.url }}project/values/ui">Ui</a>
+<a class="link" title="Portrait" href="{{ site.url }}project/work/__description-with-images/--portrait">Portrait</a>
 </li>
 <li>
 <div>
 {% include '../../../../../site/components/framework/design/decorations/long-dash/long-dash.html.swig' %}
-<a class="link" title="Wordpress" href="{{ site.url }}project/values/wordpress">Wordpress</a>
+<a class="link" title="Tablet landscape" href="{{ site.url }}project/work/__description-with-images/--tablet-landscape">Tablet landscape</a>
 </li>
 </ul>
 </li>
 <li>
 <div>
 {% include '../../../../../site/components/framework/design/decorations/long-dash/long-dash.html.swig' %}
-Work</div>
-<ul>
-<li>
-<div>
-{% include '../../../../../site/components/framework/design/decorations/long-dash/long-dash.html.swig' %}
-<a class="link" title="Description with images" href="{{ site.url }}project/work/__description-with-images">Description with images</a>
+<a class="link" title="Navigation" href="{{ site.url }}project/work/__navigation">Navigation</a>
 </li>
 <li>
 <div>
 {% include '../../../../../site/components/framework/design/decorations/long-dash/long-dash.html.swig' %}
 <a class="link" title="Services" href="{{ site.url }}project/work/__services">Services</a>
+</li>
+<li>
+<div>
+{% include '../../../../../site/components/framework/design/decorations/long-dash/long-dash.html.swig' %}
+<a class="link" title="Services and navigation" href="{{ site.url }}project/work/__services-and-navigation">Services and navigation</a>
 </li>
 </ul>
 </li>

@@ -14,6 +14,11 @@ Behavior</div>
 {% include '../../../../../site/components/framework/design/decorations/long-dash/long-dash.html.swig' %}
 <a class="link" title="Animation" href="{{ site.url }}framework/behavior/animation">Animation</a>
 </li>
+<li>
+<div>
+{% include '../../../../../site/components/framework/design/decorations/long-dash/long-dash.html.swig' %}
+<a class="link" title="Background slider" href="{{ site.url }}framework/behavior/background-slider">Background slider</a>
+</li>
 </ul>
 </li>
 <li>
@@ -31,6 +36,11 @@ Design</div>
 {% include '../../../../../site/components/framework/design/decorations/long-dash/long-dash.html.swig' %}
 Decorations</div>
 <ul>
+<li>
+<div>
+{% include '../../../../../site/components/framework/design/decorations/long-dash/long-dash.html.swig' %}
+<a class="link" title="Arrow" href="{{ site.url }}framework/design/decorations/arrow">Arrow</a>
+</li>
 <li>
 <div>
 {% include '../../../../../site/components/framework/design/decorations/long-dash/long-dash.html.swig' %}
@@ -58,6 +68,11 @@ Typography</div>
 {% include '../../../../../site/components/framework/design/decorations/long-dash/long-dash.html.swig' %}
 Elements</div>
 <ul>
+<li>
+<div>
+{% include '../../../../../site/components/framework/design/decorations/long-dash/long-dash.html.swig' %}
+<a class="link" title="Dl" href="{{ site.url }}framework/design/typography/elements/dl">Dl</a>
+</li>
 <li>
 <div>
 {% include '../../../../../site/components/framework/design/decorations/long-dash/long-dash.html.swig' %}
@@ -120,6 +135,11 @@ Helpers</div>
 <div>
 {% include '../../../../../site/components/framework/design/decorations/long-dash/long-dash.html.swig' %}
 <a class="link" title="Classname" href="{{ site.url }}framework/helpers/classname">Classname</a>
+</li>
+<li>
+<div>
+{% include '../../../../../site/components/framework/design/decorations/long-dash/long-dash.html.swig' %}
+<a class="link" title="Link" href="{{ site.url }}framework/helpers/link">Link</a>
 </li>
 <li>
 <div>
