@@ -1,32 +1,18 @@
 @mixin styleguide-menu {
-  @include colors(white-on-black);
+  @include colors(violet-on-black);
   padding: $lem;
 
   display: flex;
   flex-wrap: wrap;
 
   .styleguide-menu__framework, .styleguide-menu__project {
+    flex-basis: 30em;
     @include ul--nested;
+  }
 
-    ul {
-      li {
-        div {
-          display: flex;
-          flex-wrap: wrap;
-          align-items: center;
-
-          span {
-            &.long-dash {
-              @include long-dash;
-            }
-          }
-        }
-      }
-    }
-
-    a {
-      @include link(blue-on-white);
-    }
+  a {
+    @include link(gray-on-black);
+    @include text-style(menu);
   }
 
   .styleguide-menu__framework {

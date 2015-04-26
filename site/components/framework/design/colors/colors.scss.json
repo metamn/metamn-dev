@@ -21,14 +21,14 @@
       "description": "A lighter highlight color"
     },
     {
+      "name": "violet",
+      "value": "rgba(166, 148, 189, 1)",
+      "description": "Highlight color for the black background"
+    },
+    {
       "name": "gray",
       "value": "rgba(240, 228, 212, 1)",
       "description": "Secondary background color"
-    },
-    {
-      "name": "thumbgray",
-      "value": "rgba(214, 204, 189, 1)",
-      "description": "A darker gray color"
     }
   ],
   "color_pairs": [
@@ -120,6 +120,32 @@
         {
           "name": "background-color",
           "value": "$thumbblue"
+        }
+      ]
+    },
+    {
+      "name": "gray-on-black",
+      "properties": [
+        {
+          "name": "color",
+          "value": "$gray"
+        },
+        {
+          "name": "background-color",
+          "value": "$black"
+        }
+      ]
+    },
+    {
+      "name": "violet-on-black",
+      "properties": [
+        {
+          "name": "color",
+          "value": "$violet"
+        },
+        {
+          "name": "background-color",
+          "value": "$black"
         }
       ]
     }

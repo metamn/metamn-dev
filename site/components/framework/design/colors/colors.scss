@@ -18,11 +18,11 @@ $blue: rgba(0, 0, 255, 1);
 // A lighter highlight color
 $thumbblue: rgba(38, 38, 255, 1);
 
+// Highlight color for the black background
+$violet: rgba(166, 148, 189, 1);
+
 // Secondary background color
 $gray: rgba(240, 228, 212, 1);
-
-// A darker gray color
-$thumbgray: rgba(214, 204, 189, 1);
 
 
 // Color combinations. Colors are not used standalone but in pairs
@@ -70,6 +70,18 @@ $thumbgray: rgba(214, 204, 189, 1);
     
   }
 
+  @if ($name == 'gray-on-black') {
+    color: $gray;
+    background-color: $black;
+    
+  }
+
+  @if ($name == 'violet-on-black') {
+    color: $violet;
+    background-color: $black;
+    
+  }
+
 }
 
 // Color classes
@@ -90,12 +102,12 @@ $thumbgray: rgba(214, 204, 189, 1);
   background: rgba(38, 38, 255, 1);
 };
 
-.gray {
-  background: rgba(240, 228, 212, 1);
+.violet {
+  background: rgba(166, 148, 189, 1);
 };
 
-.thumbgray {
-  background: rgba(214, 204, 189, 1);
+.gray {
+  background: rgba(240, 228, 212, 1);
 };
 
 
@@ -140,6 +152,18 @@ $thumbgray: rgba(214, 204, 189, 1);
 .white-on-thumbblue {
   color: $white;
   background-color: $thumbblue;
+  
+}
+
+.gray-on-black {
+  color: $gray;
+  background-color: $black;
+  
+}
+
+.violet-on-black {
+  color: $violet;
+  background-color: $black;
   
 }
 

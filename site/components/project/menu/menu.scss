@@ -1,11 +1,11 @@
-@mixin menu {
+@mixin menu($color-scheme: white-on-blue) {
   display: flex;
   flex-direction: row;
 
   padding: $lem;
 
   a {
-    @include link(white-on-blue);
+    @include link($color-scheme);
     @include text-style(menu);
   }
 

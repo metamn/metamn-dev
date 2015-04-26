@@ -1,87 +1,87 @@
 <ul>
-<li>
+<li class="folder">
 <div>
 Framework</div>
 <ul>
-<li>
+<li class="folder">
 <div>
 Behavior</div>
 <ul>
-<li>
+<li class="file">
 <div>
 <a class="link" title="Animation" href="{{ site.url }}framework/behavior/animation">Animation</a>
 </li>
 </ul>
 </li>
-<li>
+<li class="folder">
 <div>
 Design</div>
 <ul>
-<li>
+<li class="file">
 <div>
 <a class="link" title="Colors" href="{{ site.url }}framework/design/colors">Colors</a>
 </li>
-<li>
+<li class="folder">
 <div>
 Decorations</div>
 <ul>
-<li>
+<li class="file">
 <div>
 <a class="link" title="Arrow" href="{{ site.url }}framework/design/decorations/arrow">Arrow</a>
 </li>
-<li>
+<li class="file">
 <div>
 <a class="link" title="Color overlay" href="{{ site.url }}framework/design/decorations/color-overlay">Color overlay</a>
 </li>
-<li>
+<li class="file">
 <div>
 <a class="link" title="Long dash" href="{{ site.url }}framework/design/decorations/long-dash">Long dash</a>
 </li>
 </ul>
 </li>
-<li>
+<li class="folder">
 <div>
 Typography</div>
 <ul>
-<li>
+<li class="folder">
 <div>
 Elements</div>
 <ul>
-<li>
+<li class="file">
 <div>
 <a class="link" title="Dl" href="{{ site.url }}framework/design/typography/elements/dl">Dl</a>
 </li>
-<li>
+<li class="file">
 <div>
 <a class="link" title="Link" href="{{ site.url }}framework/design/typography/elements/link">Link</a>
 </li>
-<li>
+<li class="file">
 <div>
 <a class="link" title="P" href="{{ site.url }}framework/design/typography/elements/p">P</a>
 </li>
-<li>
+<li class="file">
 <div>
 <a class="link" title="Ul" href="{{ site.url }}framework/design/typography/elements/ul">Ul</a>
 </li>
-<li>
+<li class="file">
 <div>
 <a class="link" title="Uppercase" href="{{ site.url }}framework/design/typography/elements/uppercase">Uppercase</a>
 </li>
 </ul>
 </li>
-<li>
+<li class="file">
 <div>
 <a class="link" title="Fonts" href="{{ site.url }}framework/design/typography/fonts">Fonts</a>
 </li>
-<li>
+<li class="file">
 <div>
 <a class="link" title="Reset" href="{{ site.url }}framework/design/typography/reset">Reset</a>
 </li>
-<li>
+<li class="file">
 <div>
 <a class="link" title="Scale" href="{{ site.url }}framework/design/typography/scale">Scale</a>
 </li>
-<li>
+<li class="file">
 <div>
 <a class="link" title="Text style" href="{{ site.url }}framework/design/typography/text-style">Text style</a>
 </li>
@@ -89,41 +89,41 @@ Elements</div>
 </li>
 </ul>
 </li>
-<li>
+<li class="folder">
 <div>
 Helpers</div>
 <ul>
-<li>
+<li class="file">
 <div>
 <a class="link" title="Classname" href="{{ site.url }}framework/helpers/classname">Classname</a>
 </li>
-<li>
+<li class="file">
 <div>
 <a class="link" title="Link" href="{{ site.url }}framework/helpers/link">Link</a>
 </li>
-<li>
+<li class="file">
 <div>
 <a class="link" title="Pagetitle" href="{{ site.url }}framework/helpers/pagetitle">Pagetitle</a>
 </li>
 </ul>
 </li>
-<li>
+<li class="folder">
 <div>
 Structure</div>
 <ul>
-<li>
+<li class="file">
 <div>
 <a class="link" title="Breakpoints" href="{{ site.url }}framework/structure/breakpoints">Breakpoints</a>
 </li>
-<li>
+<li class="file">
 <div>
 <a class="link" title="Figure" href="{{ site.url }}framework/structure/figure">Figure</a>
 </li>
-<li>
+<li class="file">
 <div>
 <a class="link" title="Intrinsic ratio" href="{{ site.url }}framework/structure/intrinsic-ratio">Intrinsic ratio</a>
 </li>
-<li>
+<li class="file">
 <div>
 <a class="link" title="Semantic html5 titles" href="{{ site.url }}framework/structure/semantic-html5-titles">Semantic html5 titles</a>
 </li>

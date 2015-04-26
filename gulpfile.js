@@ -446,9 +446,20 @@ function makeUL(lst) {
 
 function makeLI(elem) {
     var html = [];
-    html.push('<li>');
 
-    //console.log(elem);
+    // decide if this is a folder or a link
+    var klass = 'folder';
+    for (var i = 0; i < elem.children.length; i++ ) {
+      if (elem.children[i].type == 'file') {
+        klass = 'file';
+      }
+    }
+
+
+    html.push('<li class="' + klass + '">');
+
+
+
 
     // prepare data
     if (elem.path) {
@@ -457,15 +468,7 @@ function makeLI(elem) {
       html.push('<div>');
     }
 
-    // decide if this is a folder or a link
-    var isFolder = true;
-    for (var i = 0; i < elem.children.length; i++ ) {
-      if (elem.children[i].type == 'file') {
-        isFolder = false;
-      }
-    }
-
-    if (elem.children && isFolder) {
+    if (elem.children && (klass == 'folder')) {
       html.push(title + '</div>');
       html.push(makeUL(elem.children));
     } else {

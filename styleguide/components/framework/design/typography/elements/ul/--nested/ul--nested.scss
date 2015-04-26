@@ -21,6 +21,20 @@
           opacity: 1;
         }
       }
+
+      &.folder {
+        padding: $lem / 2 0;
+
+        div {
+          border-bottom: 1px solid;
+        }
+      }
+
+      &.file {
+        div {
+          border-bottom: none;
+        }
+      }
     }
   }
 }
