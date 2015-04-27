@@ -1,7 +1,23 @@
 html {
   &.styleguide-transition {
     body {
-      
+      .example {
+        span {
+          padding: $lem / 2 $lem;
+          cursor: pointer;
+        }
+
+        div {
+          display: flex;
+          align-items: center;
+          @include colors(white-on-black);
+          margin: 0 $lem $lem 0;
+        }
+
+        .example-1 {
+          @include transition(transform);
+        }
+      }
     }
   }
 }

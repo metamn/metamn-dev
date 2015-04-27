@@ -13,7 +13,7 @@
 
 
   .styleguide-menu__framework, .styleguide-menu__project {
-    flex-basis: 30em;
+    flex-basis: $text-block-width;
     @include ul--nested;
   }
 

@@ -4,6 +4,12 @@
 // - this file is generated please do not edit
 
 
+// The width of a text block
+{% for text in text_styles %}{% if text.name == "Body text" %}{% for property in text.properties %}{% if property.name == "max-width" %}
+$text-block-width: {{ property.value }}; {% endif %}{% endfor %}{% endif %}{% endfor %}
+
+
+
 // The text mixin
 @mixin text-style($variant) {
   {% for text in text_styles %}

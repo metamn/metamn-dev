@@ -89,7 +89,7 @@ var paths = {
 
 
   // .js files to concat for styleguide
-  styleguide_js_src: ['styleguide/components/framework/**/**/*.js', 'styleguide/components/project/**/**/*.js', 'styleguide/components/framework/pages/**/**/*.js]'],
+  styleguide_js_src: ['styleguide/components/pages/**/**/*.js', 'styleguide/components/framework/**/**/*.js', 'styleguide/components/project/**/**/*.js'],
 
   // .js minimezed file name for styleguide
   styleguide_js_filename: 'styleguide.js',

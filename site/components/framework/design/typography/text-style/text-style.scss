@@ -4,6 +4,12 @@
 // - this file is generated please do not edit
 
 
+// The width of a text block
+
+$text-block-width: 25em; 
+
+
+
 // The text mixin
 @mixin text-style($variant) {
   

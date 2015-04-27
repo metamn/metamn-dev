@@ -11,12 +11,21 @@ html {
         @include title;
       }
 
-      .description {
-        @include description;
-      }
+      .description-and-example {
+        display: flex;
+        flex-wrap: wrap;
 
-      .example {
-        @include example;
+        .description, .example {
+          flex-basis: $text-block-width;
+        }
+
+        .description {
+          @include description;
+        }
+
+        .example {
+          @include example;
+        }
       }
 
       .styleguide-menu {
