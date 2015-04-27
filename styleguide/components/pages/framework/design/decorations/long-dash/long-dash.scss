@@ -1,0 +1,18 @@
+html {
+  &.styleguide-long-dash {
+    body {
+      .example {
+        div {
+          margin-bottom: $lem;
+
+          display: flex;
+          align-items: center;
+          
+          .long-dash {
+            @include long-dash;
+          }
+        }
+      }
+    }
+  }
+}
