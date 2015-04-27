@@ -9,7 +9,7 @@ Behavior</div>
 <ul>
 <li class="file">
 <div>
-<a class="link" title="Animation" href="{{ site.url }}framework/behavior/animation">Animation</a>
+<a class="link" title="Transition" href="{{ site.url }}framework/behavior/transition">Transition</a>
 </li>
 </ul>
 </li>
