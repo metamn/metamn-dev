@@ -28,32 +28,6 @@
   ],
   "color_pairs": [
     {
-      "name": "black-on-white",
-      "properties": [
-        {
-          "name": "color",
-          "value": "$black"
-        },
-        {
-          "name": "background-color",
-          "value": "$white"
-        }
-      ]
-    },
-    {
-      "name": "blue-on-white",
-      "properties": [
-        {
-          "name": "color",
-          "value": "$blue"
-        },
-        {
-          "name": "background-color",
-          "value": "$white"
-        }
-      ]
-    },
-    {
       "name": "black-on-gray",
       "properties": [
         {
@@ -102,19 +76,6 @@
         {
           "name": "background-color",
           "value": "$thumbblue"
-        }
-      ]
-    },
-    {
-      "name": "white-on-black",
-      "properties": [
-        {
-          "name": "color",
-          "value": "$white"
-        },
-        {
-          "name": "background-color",
-          "value": "$black"
         }
       ]
     },

@@ -25,18 +25,6 @@ $gray: rgba(240, 228, 212, 1);
 // Color combinations. Colors are not used standalone but in pairs
 @mixin colors($name) {
 
-  @if ($name == 'black-on-white') {
-    color: $black;
-    background-color: $white;
-    
-  }
-
-  @if ($name == 'blue-on-white') {
-    color: $blue;
-    background-color: $white;
-    
-  }
-
   @if ($name == 'black-on-gray') {
     color: $black;
     background-color: $gray;
@@ -58,12 +46,6 @@ $gray: rgba(240, 228, 212, 1);
   @if ($name == 'white-on-thumbblue') {
     color: $white;
     background-color: $thumbblue;
-    
-  }
-
-  @if ($name == 'white-on-black') {
-    color: $white;
-    background-color: $black;
     
   }
 
@@ -100,18 +82,6 @@ $gray: rgba(240, 228, 212, 1);
 
 // Color pair classes
 
-.black-on-white {
-  color: $black;
-  background-color: $white;
-  
-}
-
-.blue-on-white {
-  color: $blue;
-  background-color: $white;
-  
-}
-
 .black-on-gray {
   color: $black;
   background-color: $gray;
@@ -133,12 +103,6 @@ $gray: rgba(240, 228, 212, 1);
 .white-on-thumbblue {
   color: $white;
   background-color: $thumbblue;
-  
-}
-
-.white-on-black {
-  color: $white;
-  background-color: $black;
   
 }
 

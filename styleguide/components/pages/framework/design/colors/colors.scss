@@ -1,31 +1,10 @@
 html {
-  &.sg-colors {
+  &.styleguide-colors {
     body {
       .example {
-        .example__title {
-          display: none;
-        }
-
         div {
           display: flex;
-          justify-content: center;
-          align-items: center;
-
-          margin-right: $lem;
-          margin-bottom: $lem;
-        }
-      }
-
-      .example__color-pairs {
-        display: flex;
-        flex-wrap: wrap;
-
-        div {
-          padding: $lem * 2;
-
-          &.black-on-white, &.blue-on-white {
-            border: 1px solid;
-          }
+          flex-direction: column;
         }
       }
 
@@ -34,15 +13,44 @@ html {
         flex-wrap: wrap;
 
         div {
-          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin-right: $lem;
+          margin-bottom: $lem;
 
           .placeholder {
-            width: 5em;
-            height: 5em;
+            @include circle(5em);
           }
 
-          .white {
+          .white,
+          .gray {
             border: 1px solid;
+          }
+        }
+      }
+
+      .example__color-pairs {
+        display: flex;
+        flex-wrap: wrap;
+
+        div {
+          margin-right: $lem * 2;
+          margin-bottom: $lem * 2;
+
+          @include portrait {
+            margin-right: 0;
+          }
+
+
+          .placeholder {
+            @include text-style(body-text);
+            padding: $lem;
+          }
+
+          .black-on-gray,
+          .blue-on-gray {
+            padding: $lem $lem * 2 $lem 0;
+            border-bottom: 1px solid;
           }
         }
       }

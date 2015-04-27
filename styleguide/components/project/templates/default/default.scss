@@ -15,16 +15,14 @@ html {
         display: flex;
         flex-wrap: wrap;
 
-        .description, .example {
-          flex-basis: $text-block-width;
-        }
-
         .description {
           @include description;
+          flex-basis: $text-block-width;
         }
 
         .example {
           @include example;
+          flex: 1;
         }
       }
 

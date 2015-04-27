@@ -10,7 +10,7 @@ html {
         div {
           display: flex;
           align-items: center;
-          @include colors(white-on-black);
+          @include colors(gray-on-black);
           margin: 0 $lem $lem 0;
         }
 
