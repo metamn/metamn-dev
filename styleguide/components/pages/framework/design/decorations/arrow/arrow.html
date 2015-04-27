@@ -2,12 +2,12 @@
 
 
 <!doctype html>
-<html lang="en" class="styleguide styleguide-colors ">
+<html lang="en" class="styleguide styleguide-arrow ">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <title>Colors &mdash; Styleguide</title>
+    <title>Arrow &mdash; Styleguide</title>
 
     <script src="//use.typekit.net/wrb3hlx.js"></script>
     <script>try{Typekit.load();}catch(e){}</script>
@@ -57,7 +57,7 @@
   
     <span class="long-dash"></span>
 
-    <span class="title__subtitle">Colors</span>
+    <span class="title__subtitle">Arrow</span>
   
 </header>
 
@@ -71,20 +71,19 @@
 
 
   
-
-  
-
-  
     <article class="description">
       <h3>Description</h3>
 
       <div class="text">
-        <p>The colors together with the color pairs.
-Colors don&#39;t exist alone yet in pairs, like black on white.
-All color pairs have a contrast ratio set for perfect readability using <a href="http://leaverou.github.io/contrast-ratio/">Lea Verou&#39;s excellent contrast checking tool</a>.</p>
+        <p>Left and right arrows used for navigation.
+They have active and inactive states and come in any colors.</p>
 
       </div>
     </article>
+  
+
+  
+
   
 
   
@@ -110,77 +109,65 @@ All color pairs have a contrast ratio set for perfect readability using <a href=
 
     
 
-  <aside class="example__colors">
-    <h3>Colors</h3>
+  <aside class='active'>
+    <h3>Active arrows</h3>
+    
+    
+    
+  <div class="arrow active">
+    <a href="/styleguide/" title="Test">
+      
+        <span class="arrow__icon arrow__icon--left">&lsaquo;</span>
+        <span class="arrow__text">Test</span>
+      
+
+      
+    </a>
+  </div>
+
+
 
     
-      <div>
-        <span class="white placeholder"></span>
-        <span class="name">white</span>
-      </div>
     
-      <div>
-        <span class="black placeholder"></span>
-        <span class="name">black</span>
-      </div>
-    
-      <div>
-        <span class="blue placeholder"></span>
-        <span class="name">blue</span>
-      </div>
-    
-      <div>
-        <span class="thumbblue placeholder"></span>
-        <span class="name">thumbblue</span>
-      </div>
-    
-      <div>
-        <span class="gray placeholder"></span>
-        <span class="name">gray</span>
-      </div>
-    
+  <div class="arrow active">
+    <a href="/styleguide/" title="Test">
+      
+
+      
+        <span class="arrow__text">Test</span>
+        <span class="arrow__icon arrow__icon--right">&rsaquo;</span>
+      
+    </a>
+  </div>
+
+
   </aside>
 
-  <aside class="example__color-pairs">
-    <h3>Color pairs</h3>
+  <aside class="inactive">
+    <h3>Inactive arrows</h3>
+    
+    
+  <div class="arrow inactive">
+    <span class="arrow__icon">
+      &lsaquo;
+      
+    </span>
+  </div>
+
+
 
     
-      <div>
-        <span class="black-on-gray placeholder">
-          Colors don't exist alone yet in pairs, like black on white. All color pairs have a contrast ratio set for perfect readability.
-        </span>
-        <span class="name">black-on-gray</span>
-      </div>
     
-      <div>
-        <span class="blue-on-gray placeholder">
-          Colors don't exist alone yet in pairs, like black on white. All color pairs have a contrast ratio set for perfect readability.
-        </span>
-        <span class="name">blue-on-gray</span>
-      </div>
-    
-      <div>
-        <span class="white-on-blue placeholder">
-          Colors don't exist alone yet in pairs, like black on white. All color pairs have a contrast ratio set for perfect readability.
-        </span>
-        <span class="name">white-on-blue</span>
-      </div>
-    
-      <div>
-        <span class="white-on-thumbblue placeholder">
-          Colors don't exist alone yet in pairs, like black on white. All color pairs have a contrast ratio set for perfect readability.
-        </span>
-        <span class="name">white-on-thumbblue</span>
-      </div>
-    
-      <div>
-        <span class="gray-on-black placeholder">
-          Colors don't exist alone yet in pairs, like black on white. All color pairs have a contrast ratio set for perfect readability.
-        </span>
-        <span class="name">gray-on-black</span>
-      </div>
-    
+  <div class="arrow inactive">
+    <span class="arrow__icon">
+      
+      &rsaquo;
+    </span>
+  </div>
+
+
   </aside>
+
 
   </article>
 </section>
