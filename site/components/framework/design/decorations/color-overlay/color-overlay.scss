@@ -13,7 +13,7 @@
   	right: 0;
   	background: $color;
     opacity: $opacity;
-    @include animation(background);
+    @include transition(opacity);
   }
 
   &:hover {

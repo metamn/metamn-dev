@@ -8,7 +8,7 @@
     margin-right: $lem / 2;
 
     span {
-      @include animation(opacity);
+      @include transition(opacity);
 
       &.active {
         display: none;

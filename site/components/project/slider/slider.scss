@@ -15,7 +15,7 @@
     @include intrinsic-ratio($ratio-width, $ratio-height, '.slide', 'figure');
 
     .slide {
-      @include animation(transform);
+      @include transition(transform);
 
       position: absolute;
       top: 0;
