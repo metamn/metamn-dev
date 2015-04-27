@@ -6,8 +6,9 @@ html {
           margin-bottom: $lem;
 
           display: flex;
+          flex-wrap: wrap;
           align-items: center;
-          
+
           .long-dash {
             @include long-dash;
           }
