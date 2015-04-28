@@ -1,0 +1,9 @@
+html {
+  &.styleguide-p {
+    body {
+      .example {
+        @include text-style(body-text);
+      }
+    }
+  }
+}
