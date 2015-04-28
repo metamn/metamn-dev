@@ -8,7 +8,7 @@ title: Color overlay
   <aside class='overlay'>
     <h3>Images with color overlay</h3>
 
-    {% for image in images %}
+    {% for image in overlay.images %}
       {% set image = image %}
       {{ image.name }}
       {% include '../../../../../../../site/components/framework/structure/figure/figure.html' %}
@@ -18,7 +18,7 @@ title: Color overlay
   <aside class="no-overlay">
     <h3>Images without color overlay</h3>
 
-    {% for image in images %}
+    {% for image in overlay.images %}
       {% set image = image %}
       {% include '../../../../../../../site/components/framework/structure/figure/figure.html' %}
     {% endfor %}

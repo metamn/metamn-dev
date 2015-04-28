@@ -1,0 +1,29 @@
+html {
+  &.styleguide-link {
+    body {
+      .example {
+        div {
+          margin-bottom: $lem;
+        }
+        
+        .example-1 {
+          .link {
+            @include link(black-on-gray);
+          }
+        }
+
+        .example-2 {
+          .link {
+            @include link(black-on-gray, underlined);
+          }
+        }
+
+        .example-3 {
+          .link {
+            @include link(black-on-gray, line-through);
+          }
+        }
+      }
+    }
+  }
+}
