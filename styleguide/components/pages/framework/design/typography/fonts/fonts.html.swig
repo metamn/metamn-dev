@@ -10,7 +10,7 @@ title: Fonts
     <h3 class="article__title">{{ font.name }}</h3>
     <ul>
       <li>{{ font.description }}, {{ font.family }}</li>
-      <li>Styles and weights: {% for style in font.styles %}{{ style.name }}, {% endfor %}</li>
+      
     </ul>
 
     {% set font_name = c.classname(font.name) %}

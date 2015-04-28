@@ -1,6 +1,9 @@
-// Typographic grid and scale
-// - this file is generated please do not edit
-
+// Scale
+//
+// Typographic grid and scale.
+// Different font sizes based on the [Modular Scale 4:3 Perfect Fourth](http://www.modularscale.com/?1&em&1.333&web&text) settings.
+//
+// Styleguide scale
 
 // The default metric for sizing non-typographic elements
 // - it is based on the default font size and line height
@@ -31,3 +34,18 @@ $lem: {{ line_height }}em;
   }
 {% endfor %}
 }
+
+
+// Typographic scale classes
+{% for scale in scale %}
+.{{ scale.name }} {
+  {% for property in scale.properties %}{{ property.name }}: {{ property.value }};
+  {% endfor %}
+  {% for responsive in scale.responsive %}
+  @include {{ responsive.breakpoint }} {
+    {% for property in responsive.properties %}{{ property.name }}: {{ property.value }};
+    {% endfor %}
+  }
+  {% endfor %}
+}
+{% endfor %}
