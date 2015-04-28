@@ -1,8 +1,15 @@
+// DL
+//
+// A simple data list. The data title is underlined.
+//
+// Styleguide dl
 @mixin dl {
   margin: 0;
 
   dt {
-    padding-bottom: $lem / 2;
+    padding-bottom: $lem / 4;
+    margin-bottom: $lem / 4;
+    border-bottom: 1px solid;
   }
 
   dd {

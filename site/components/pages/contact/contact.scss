@@ -11,8 +11,6 @@ html {
 
         .link {
           @include link(white-on-blue);
-          padding: $lem / 4 0;
-          border-bottom: 1px solid;
         }
       }
 

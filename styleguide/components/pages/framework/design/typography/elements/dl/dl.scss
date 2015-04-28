@@ -1,0 +1,13 @@
+html {
+  &.styleguide-dl {
+    body {
+      .example {
+        @include text-style(body-text);
+        
+        dl {
+          @include dl;
+        }
+      }
+    }
+  }
+}
