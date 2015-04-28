@@ -1,0 +1,18 @@
+html {
+  &.styleguide-uppercase {
+    body {
+      .example {
+        @include text-style(body-text);
+        
+        .example-1 {
+          @include uppercase(1.3px);
+          margin-bottom: $lem;
+        }
+
+        .example-2 {
+          @include uppercase(0px);
+        }
+      }
+    }
+  }
+}
