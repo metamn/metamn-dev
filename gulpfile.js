@@ -456,9 +456,7 @@ function makeLI(elem) {
     }
 
 
-    html.push('<li class="' + klass + '">');
-
-
+    html.push('<li class="' + klass + ' menu-item-' + elem.name + '">');
 
 
     // prepare data

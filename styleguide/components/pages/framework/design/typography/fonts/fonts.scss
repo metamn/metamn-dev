@@ -7,12 +7,7 @@ html {
 
         article {
           margin-bottom: $lem;
-
-          @include landscape {
-            + article {
-              margin-left: $lem * 2;
-            }
-          }
+          flex-basis: $text-block-width + $lem;
 
           .article__title {
             @include text-style(title);
