@@ -3,6 +3,7 @@
     <a href="{{ site.url}}{{ image.url }}" title="{{ image.title }}">
   {% endif %}
 
+  <!-- name: {{ image.name }} -->
 
   {% set desktop = image.name + '_desktop.png' %}
   {% set desktop2x = image.name + '_desktop2x.png' %}
