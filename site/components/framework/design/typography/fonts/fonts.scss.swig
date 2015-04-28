@@ -1,7 +1,11 @@
 {% import "../../../helpers/classname/classname.swig" as c  %}
 
-// Typefaces and Fonts
-// - this file is auto generated. Please do not edit
+// Fonts
+//
+// Typefaces and fonts used across the site.
+// They are never used directly but set up properly with the `text-style` mixin.
+//
+// Styleguide fonts
 
 {% for font in fonts %}
 // {{ font.name }}
@@ -25,3 +29,13 @@
   }
   {% endfor %}{% endfor %}
 }
+
+
+// Font classes
+{% for font in fonts %}{% set font_name = c.classname(font.name) %}{% for style in font.styles %}{% set style_name = c.classname(style.name ) %}
+.{{ font_name }}-{{ style_name }} {
+  font-family: '{{ font_name }}', {{ font.family }};
+  font-weight: {{ style.weight }};
+  font-style: {{ style.style }};
+}
+{% endfor %}{% endfor %}

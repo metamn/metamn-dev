@@ -1,19 +1,23 @@
 
 
-// Typefaces and Fonts
-// - this file is auto generated. Please do not edit
+// Fonts
+//
+// Typefaces and fonts used across the site.
+// They are never used directly but set up properly with the `text-style` mixin.
+//
+// Styleguide fonts
 
 
 // Nimbus Sans
 // - The default typeface, sans-serif
-// - character set: English, with OpenType Features on
+// - character set: English, with OpenType Features
 // - served from Typekit
 // - styles and weights: Regular, Bold, 
 
 
 // Silkscreen
 // - The logo typeface, sans-serif
-// - character set: English, with OpenType Features on
+// - character set: English, with OpenType Features
 // - served from Typekit
 // - styles and weights: Regular, 
 
@@ -42,3 +46,25 @@
   }
   
 }
+
+
+// Font classes
+
+.nimbus-sans-regular {
+  font-family: 'nimbus-sans', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.nimbus-sans-bold {
+  font-family: 'nimbus-sans', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.silkscreen-regular {
+  font-family: 'silkscreen', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+

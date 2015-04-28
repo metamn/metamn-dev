@@ -4,7 +4,7 @@
       "name": "Nimbus Sans",
       "description": "The default typeface",
       "family": "sans-serif",
-      "character_set": "English, with OpenType Features on",
+      "character_set": "English, with OpenType Features",
       "served_from": "Typekit",
       "styles": [
         {
@@ -23,7 +23,7 @@
       "name": "Silkscreen",
       "description": "The logo typeface",
       "family": "sans-serif",
-      "character_set": "English, with OpenType Features on",
+      "character_set": "English, with OpenType Features",
       "served_from": "Typekit",
       "styles": [
         {
