@@ -2,5 +2,5 @@
   <h3>Services</h3>
 
   {% set items = work.services %}
-  {% include '../../../framework/design/typography/elements/ul/--no-dash/ul--no-dash.html.swig' %}
+  {% include '../../../framework/design/typography/elements/ul/ul.html.swig' %}
 </aside>
