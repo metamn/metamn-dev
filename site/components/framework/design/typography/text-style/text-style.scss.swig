@@ -1,8 +1,12 @@
 {% import "../../../helpers/classname/classname.swig" as c  %}
 
-// Typographic settings for different text types
-// - this file is generated please do not edit
-
+// Text style
+//
+// Typographic settings for different text types.
+// Each text type has set a `font`, a `scale`, a `color` and additional parameters like letter-spacing, max-width or else.
+// Everything text is set using this `text-style` mixin. We don't set `color` or `font` directly for a text.
+//
+// Styleguide text-style
 
 // The width of a text block
 {% for text in text_styles %}{% if text.name == "Body text" %}{% for property in text.properties %}{% if property.name == "max-width" %}
@@ -31,3 +35,22 @@ $text-block-width: {{ property.value }}; {% endif %}{% endfor %}{% endif %}{% en
   }
   {% endfor %}
 }
+
+
+// Text style classes
+{% for text in text_styles %}{% set classname = c.classname(text.name) %}
+.{{ classname }} {
+  {% for mixin in text.mixins %}@include {{ mixin.name }}{% if mixin.value %}({{ mixin.value }}){% endif %};
+  {% endfor %}
+  {% if text.properties %}{% for property in text.properties %}{{ property.name }}: {{ property.value }};
+  {% endfor %}{% endif %}
+  {% for responsive in text.responsive %}
+  @include {{ responsive.breakpoint }} {
+    {% for mixin in responsive.mixins %}@include {{ mixin.name }}{% if mixin.value %}({{ mixin.value }}){% endif %};
+    {% endfor %}
+    {% for property in responsive.properties %}{{ property.name }}: {{ property.value }};
+    {% endfor %}
+  }
+  {% endfor %}
+}
+{% endfor %}

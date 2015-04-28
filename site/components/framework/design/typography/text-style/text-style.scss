@@ -1,8 +1,12 @@
 
 
-// Typographic settings for different text types
-// - this file is generated please do not edit
-
+// Text style
+//
+// Typographic settings for different text types.
+// Each text type has set a `font`, a `scale`, a `color` and additional parameters like letter-spacing, max-width or else.
+// Everything text is set using this `text-style` mixin. We don't set `color` or `font` directly for a text.
+//
+// Styleguide text-style
 
 // The width of a text block
 
@@ -55,7 +59,7 @@ $text-block-width: 25em;
   }
   
   // Menu
-  // - The main navigation menu
+  // - The links in a menu
   @if ($variant == 'menu') {
     @include font(nimbus-sans-bold);
     @include scale(small-1);
@@ -66,3 +70,49 @@ $text-block-width: 25em;
   }
   
 }
+
+
+// Text style classes
+
+.default {
+  @include font(nimbus-sans-regular);
+  @include scale(default);
+  @include colors(white-on-blue);
+  
+  letter-spacing: 1.1px;
+  
+  
+}
+
+.logo {
+  @include font(silkscreen-regular);
+  @include scale(large-1);
+  
+  
+  
+}
+
+.body-text {
+  @include p;
+  
+  max-width: 25em;
+  
+  
+}
+
+.title {
+  @include font(nimbus-sans-bold);
+  
+  
+  
+}
+
+.menu {
+  @include font(nimbus-sans-bold);
+  @include scale(small-1);
+  @include uppercase(1.9px);
+  
+  
+  
+}
+

@@ -1,6 +1,7 @@
 ---
 title: Fonts
 ---
+
 {% import "../../../../../../../site/components/framework/helpers/classname/classname.swig" as c  %}
 {% extends '../../../../../project/templates/default/default.html.swig' %}
 {% block content %}
@@ -10,7 +11,7 @@ title: Fonts
     <h3 class="article__title">{{ font.name }}</h3>
     <ul>
       <li>{{ font.description }}, {{ font.family }}</li>
-      
+
     </ul>
 
     {% set font_name = c.classname(font.name) %}
