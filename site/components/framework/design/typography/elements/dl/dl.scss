@@ -10,6 +10,8 @@
     padding-bottom: $lem / 4;
     margin-bottom: $lem / 4;
     border-bottom: 1px solid;
+
+    @include text-style(title);
   }
 
   dd {

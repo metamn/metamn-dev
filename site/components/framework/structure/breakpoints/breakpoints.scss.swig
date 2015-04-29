@@ -1,11 +1,9 @@
-// Breakpoints and responsive mixins
-// - generated from components/atoms/grid/breakpoints.scss.json
-// - please do not edit directly this file
+// Breakpoints
+//
+// Used to adapt content and design to various devices.
+//
+// Styleguide breakpoints
 
-// Set in px instead of em for the following resons
-// - em is set by the font-size, px is not. This way breakpoints stays always the same no matter the base font size
-// - typography might be responsive, so they use first breakpoints and not vice versa
-// - breakpoints in this project depends on image size which is set in pixels
 {% for breakpoint in breakpoints %}
 // {{ breakpoint.description }}
 $breakpoint-{{ breakpoint.name }}: {{ breakpoint.value }};

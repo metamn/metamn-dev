@@ -8,7 +8,7 @@
     {
       "name": "tablet",
       "value": "1199px",
-      "description": "Screens bigger than 600px and smaller than 1024px"
+      "description": "Screens bigger than 600px and smaller than 1199px"
     },
     {
       "name": "desktop",
