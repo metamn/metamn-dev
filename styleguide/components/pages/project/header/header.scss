@@ -1,0 +1,13 @@
+html {
+  &.styleguide-header {
+    body {
+      .example {
+        .header {
+          @include header;
+          @include colors(white-on-blue);
+          display: inline-flex;
+        }
+      }
+    }
+  }
+}
