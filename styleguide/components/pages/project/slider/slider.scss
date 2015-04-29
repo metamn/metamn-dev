@@ -1,0 +1,19 @@
+html {
+  &.styleguide-slider {
+    body {
+      .example {
+        @include colors(white-on-blue);
+        max-width: $text-block-width;
+
+        .slider {
+          @include slider(4,3);
+        }
+
+        .slider__bullets {
+          @include slider__bullets;
+          padding: $lem;
+        }
+      }
+    }
+  }
+}

@@ -1,3 +1,9 @@
+// Slider
+//
+// A content slider based on an idea from [Google Web Fundamentals](https://developers.google.com/web/fundamentals/look-and-feel/animations/animating-between-views).
+// Navigation is done via bullets, keyboard or swipe on touchscreens.
+//
+// Styleguide slider.
 @mixin slider($ratio-width, $ratio-height) {
   overflow: hidden;
   @include colors(white-on-blue);

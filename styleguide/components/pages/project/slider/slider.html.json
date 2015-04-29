@@ -1,0 +1,28 @@
+{
+  "slides": [
+    {
+      "images": [
+        {
+          "title": "Inu Chivu",
+          "name": "intro-inu-chivu"
+        }
+      ]
+    },
+    {
+      "images": [
+        {
+          "title": "Reboot",
+          "name": "intro-reboot"
+        }
+      ]
+    },
+    {
+      "images": [
+        {
+          "title": "Scatter",
+          "name": "intro-scatter"
+        }
+      ]
+    }
+  ]
+}
