@@ -2,7 +2,13 @@ html {
   &.styleguide-figure {
     body {
       .example {
-        
+        overflow-x: hidden;
+
+        figure {
+          margin-bottom: $lem * 2;
+          padding-bottom: $lem;
+          border-bottom: 1px solid;
+        }
       }
     }
   }

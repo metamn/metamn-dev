@@ -2,12 +2,19 @@
   "figure": {
     "images": [
       {
-        "title": "Wanderlust",
-        "name": "wanderlust-thumb"
-      },
-      {
         "title": "Iorad",
         "name": "iorad-thumb"
+      },
+      {
+        "title": "Wanderlust",
+        "name": "wanderlust-thumb",
+        "figcaption": "Image with title"
+      }
+    ],
+    "responsive": [
+      {
+        "title": "Wanderlust Festival page on latop",
+        "name": "wanderlust-festival-laptop"
       }
     ]
   }
