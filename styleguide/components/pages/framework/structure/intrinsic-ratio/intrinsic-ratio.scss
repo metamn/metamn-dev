@@ -2,9 +2,23 @@ html {
   &.styleguide-intrinsic-ratio {
     body {
       .example {
+        position: relative;
+        height: $text-block-width * 2;
+
+        @include mobile {
+          height: $text-block-width;
+        }
+
         aside {
-          max-width: $text-block-width;
-          margin-bottom: $lem * 2;
+          width: $text-block-width;
+
+          @include mobile {
+            width: 280px;
+          }
+
+          position: absolute;
+          top: 0;
+
 
           .container {
             border: 1px solid;
@@ -13,7 +27,7 @@ html {
           div {
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-items: flex-end;
           }
 
           &.r16-9 {
