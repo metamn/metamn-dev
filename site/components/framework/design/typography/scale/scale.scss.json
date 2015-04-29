@@ -33,16 +33,6 @@
           "value": "1.333em"
         }
       ]
-    },
-    {
-      "name": "large-2",
-      "description": "Larger than default font size with 2 scales",
-      "properties": [
-        {
-          "name": "font-size",
-          "value": "1.777em"
-        }
-      ]
     }
   ]
 }
