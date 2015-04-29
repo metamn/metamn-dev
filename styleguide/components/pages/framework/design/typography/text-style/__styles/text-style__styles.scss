@@ -21,16 +21,11 @@
       padding-bottom: $lem / 4;
     }
 
-    .default {
+    .text-style--default {
       padding: $lem;
     }
 
-    .title, .menu {
-      padding-top: 0;
-      padding-left: 0;
-    }
-
-    .menu {
+    .text-style--menu {
       @include colors(blue-on-gray);
     }
   }

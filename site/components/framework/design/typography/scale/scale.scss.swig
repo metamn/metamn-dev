@@ -38,7 +38,7 @@ $lem: {{ line_height }}em;
 
 // Typographic scale classes
 {% for scale in scale %}
-.{{ scale.name }} {
+.scale--{{ scale.name }} {
   {% for property in scale.properties %}{{ property.name }}: {{ property.value }};
   {% endfor %}
   {% for responsive in scale.responsive %}

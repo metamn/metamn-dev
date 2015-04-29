@@ -18,7 +18,7 @@ $text-block-width: 25em;
 @mixin text-style($variant) {
   
   // Default
-  // - The default text
+  // - The basic settings for a text.
   @if ($variant == 'default') {
     @include font(nimbus-sans-regular);
     @include scale(default);
@@ -30,7 +30,7 @@ $text-block-width: 25em;
   }
   
   // Logo
-  // - The logo text
+  // - Settings for the logo.
   @if ($variant == 'logo') {
     @include font(silkscreen-regular);
     @include scale(large-1);
@@ -40,7 +40,7 @@ $text-block-width: 25em;
   }
   
   // Body text
-  // - The default long text
+  // - Settings for long text blocks.
   @if ($variant == 'body-text') {
     @include p;
     
@@ -50,7 +50,7 @@ $text-block-width: 25em;
   }
   
   // Title
-  // - The title of an article or page
+  // - The title of an article or a page.
   @if ($variant == 'title') {
     @include font(nimbus-sans-bold);
     
@@ -59,7 +59,7 @@ $text-block-width: 25em;
   }
   
   // Menu
-  // - The links in a menu
+  // - The links in a menu.
   @if ($variant == 'menu') {
     @include font(nimbus-sans-bold);
     @include scale(small-1);
@@ -74,7 +74,7 @@ $text-block-width: 25em;
 
 // Text style classes
 
-.default {
+.text-style--default {
   @include font(nimbus-sans-regular);
   @include scale(default);
   @include colors(white-on-blue);
@@ -84,7 +84,7 @@ $text-block-width: 25em;
   
 }
 
-.logo {
+.text-style--logo {
   @include font(silkscreen-regular);
   @include scale(large-1);
   
@@ -92,7 +92,7 @@ $text-block-width: 25em;
   
 }
 
-.body-text {
+.text-style--body-text {
   @include p;
   
   max-width: 25em;
@@ -100,14 +100,14 @@ $text-block-width: 25em;
   
 }
 
-.title {
+.text-style--title {
   @include font(nimbus-sans-bold);
   
   
   
 }
 
-.menu {
+.text-style--menu {
   @include font(nimbus-sans-bold);
   @include scale(small-1);
   @include uppercase(1.9px);

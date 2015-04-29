@@ -39,7 +39,7 @@ $text-block-width: {{ property.value }}; {% endif %}{% endfor %}{% endif %}{% en
 
 // Text style classes
 {% for text in text_styles %}{% set classname = c.classname(text.name) %}
-.{{ classname }} {
+.text-style--{{ classname }} {
   {% for mixin in text.mixins %}@include {{ mixin.name }}{% if mixin.value %}({{ mixin.value }}){% endif %};
   {% endfor %}
   {% if text.properties %}{% for property in text.properties %}{{ property.name }}: {{ property.value }};

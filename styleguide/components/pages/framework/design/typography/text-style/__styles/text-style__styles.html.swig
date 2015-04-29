@@ -6,7 +6,7 @@
     <aside>
       <h3>{{ text.name }}</h3>
 
-      <div class="{{ classname }}">
+      <div class="text-style--{{ classname }}">
         {% if classname == 'default' %}
           This is the default text. With a high contrast background and a modern typeface with extra letter spacing
           it should look electric, vibrant, energizing on all displays.
