@@ -2,12 +2,12 @@
 
 
 <!doctype html>
-<html lang="en" class="styleguide styleguide-breakpoints ">
+<html lang="en" class="styleguide styleguide-figure ">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <title>Breakpoints &mdash; Styleguide</title>
+    <title>Figure &mdash; Styleguide</title>
 
     <script src="//use.typekit.net/wrb3hlx.js"></script>
     <script>try{Typekit.load();}catch(e){}</script>
@@ -57,7 +57,7 @@
   
     <span class="long-dash"></span>
 
-    <span class="title__subtitle">Breakpoints</span>
+    <span class="title__subtitle">Figure</span>
   
 </header>
 
@@ -73,22 +73,23 @@
   
 
   
+
+  
+
+  
+
+  
+
+  
     <article class="description">
       <h3>Description</h3>
 
       <div class="text">
-        <p>Used to adapt content and design to various devices.</p>
+        <p>Displaying images the responsive and retina friendly way.
+Images are usually displayed in a flexbox container and sized with the <code>intrinsic ratio</code> mixin.</p>
 
       </div>
     </article>
-  
-
-  
-
-  
-
-  
-
   
 
   
@@ -118,18 +119,111 @@
 
     
 
-  <dl>
   
-    <dt>Mobile</dt>
-    <dd>Screens smaller than 600px</dd>
+    
+    <figure >
   
-    <dt>Tablet</dt>
-    <dd>Screens bigger than 600px and smaller than 1199px</dd>
+
+  <!-- Naming convention for responsive images -->
   
-    <dt>Desktop</dt>
-    <dd>Screens larger than 1600px</dd>
   
-  </dl>
+  
+  
+  
+  
+  
+  
+
+
+  <!-- Showing different images for different devices -->
+  
+
+
+  <!-- Figcaption is image title unless is not set explicitely -->
+  
+  
+
+  
+
+
+
+  <!-- Images are served from /site also for /styleguide -->
+  
+  
+    
+  
+
+
+  <picture>
+    <!--[if IE 9]><video style="display: none;"><![endif]-->
+    <source media="(min-width: 1600px)" srcset="/assets/images/wanderlust-thumb_desktop.png, /assets/images/wanderlust-thumb_desktop2x.png 2x">
+    <source media="(min-width: 1199px)" srcset="/assets/images/wanderlust-thumb_laptop.png, /assets/images/wanderlust-thumb_laptop2x.png 2x">
+    <source media="(min-width: 600px)" srcset="/assets/images/wanderlust-thumb_tablet.png, /assets/images/wanderlust-thumb_tablet2x.png 2x">
+    <source srcset="/assets/images/wanderlust-thumb_mobile.png, /assets/images/wanderlust-thumb_mobile2x.png 2x">
+    <!--[if IE 9]></video><![endif]-->
+    <img srcset="/assets/images/wanderlust-thumb_desktop.png" alt="Wanderlust">
+  </picture>
+
+  <figcaption class="figcaption figcaption--from-title">
+    Wanderlust
+  </figcaption>
+
+  
+</figure>
+
+  
+    
+    <figure >
+  
+
+  <!-- Naming convention for responsive images -->
+  
+  
+  
+  
+  
+  
+  
+  
+
+
+  <!-- Showing different images for different devices -->
+  
+
+
+  <!-- Figcaption is image title unless is not set explicitely -->
+  
+  
+
+  
+
+
+
+  <!-- Images are served from /site also for /styleguide -->
+  
+  
+    
+  
+
+
+  <picture>
+    <!--[if IE 9]><video style="display: none;"><![endif]-->
+    <source media="(min-width: 1600px)" srcset="/assets/images/iorad-thumb_desktop.png, /assets/images/iorad-thumb_desktop2x.png 2x">
+    <source media="(min-width: 1199px)" srcset="/assets/images/iorad-thumb_laptop.png, /assets/images/iorad-thumb_laptop2x.png 2x">
+    <source media="(min-width: 600px)" srcset="/assets/images/iorad-thumb_tablet.png, /assets/images/iorad-thumb_tablet2x.png 2x">
+    <source srcset="/assets/images/iorad-thumb_mobile.png, /assets/images/iorad-thumb_mobile2x.png 2x">
+    <!--[if IE 9]></video><![endif]-->
+    <img srcset="/assets/images/iorad-thumb_desktop.png" alt="Iorad">
+  </picture>
+
+  <figcaption class="figcaption figcaption--from-title">
+    Iorad
+  </figcaption>
+
+  
+</figure>
+
+  
 
 
   </article>

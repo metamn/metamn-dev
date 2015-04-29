@@ -3,6 +3,8 @@
   "urlx": "http://metamn.github.io/metamn-dev/styleguide/",
   "title": "Styleguide",
   "site_title": "Metamn",
+  "site_url": "/",
+  "site_urlx": "http://metamn.github.io/metamn-dev/",
   "images": "assets/images/",
 
   "links": {

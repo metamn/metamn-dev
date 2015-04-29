@@ -1,3 +1,9 @@
+// Figure
+//
+// Displaying images the responsive and retina friendly way.
+// Images are usually displayed in a flexbox container and sized with the `intrinsic ratio` mixin.
+//
+// Styleguide figure
 @mixin figure($figcaption: off) {
   margin: 0;
 

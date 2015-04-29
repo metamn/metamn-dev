@@ -19,7 +19,7 @@
     <link href="{{ site.url }}assets/styles/styleguide.css" media="screen, projection" rel="stylesheet" type="text/css" />
 
     <!-- Picturefill Responsive Images -->
-    <script async src="../assets/scripts/picturefill.min.js"></script>
+    <script async src="{{ site.site_url }}assets/scripts/picturefill.min.js"></script>
   </head>
 
   <body>

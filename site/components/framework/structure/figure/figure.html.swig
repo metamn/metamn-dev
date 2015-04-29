@@ -3,8 +3,7 @@
     <a href="{{ site.url}}{{ image.url }}" title="{{ image.title }}">
   {% endif %}
 
-  <!-- name: {{ image.name }} -->
-
+  <!-- Naming convention for responsive images -->
   {% set desktop = image.name + '_desktop.png' %}
   {% set desktop2x = image.name + '_desktop2x.png' %}
   {% set laptop = image.name + '_laptop.png' %}
@@ -36,7 +35,7 @@
   {% endfor %}
 
 
-
+  <!-- Figcaption is image title unless is not set explicitely -->
   {% set figcaption = image.title %}
   {% set figcaption_class = 'figcaption--from-title' %}
 
@@ -46,14 +45,22 @@
   {% endif %}
 
 
+
+  <!-- Images are served from /site also for /styleguide -->
+  {% set site_url = site.url %}
+  {% if image.site_url %}
+    {% set site_url = image.site_url %}
+  {% endif %}
+
+
   <picture>
     <!--[if IE 9]><video style="display: none;"><![endif]-->
-    <source media="(min-width: 1600px)" srcset="{{ site.url }}assets/images/{{ desktop }}, {{ site.url }}assets/images/{{ desktop2x }} 2x">
-    <source media="(min-width: 1024px)" srcset="{{ site.url }}assets/images/{{ laptop }}, {{ site.url }}assets/images/{{ laptop2x }} 2x">
-    <source media="(min-width: 600px)" srcset="{{ site.url }}assets/images/{{ tablet }}, {{ site.url }}assets/images/{{ tablet2x }} 2x">
-    <source srcset="{{ site.url }}assets/images/{{ mobile }}, {{ site.url }}assets/images/{{ mobile2x }} 2x">
+    <source media="(min-width: 1600px)" srcset="{{ site_url }}assets/images/{{ desktop }}, {{ site_url }}assets/images/{{ desktop2x }} 2x">
+    <source media="(min-width: 1199px)" srcset="{{ site_url }}assets/images/{{ laptop }}, {{ site_url }}assets/images/{{ laptop2x }} 2x">
+    <source media="(min-width: 600px)" srcset="{{ site_url }}assets/images/{{ tablet }}, {{ site_url }}assets/images/{{ tablet2x }} 2x">
+    <source srcset="{{ site_url }}assets/images/{{ mobile }}, {{ site_url }}assets/images/{{ mobile2x }} 2x">
     <!--[if IE 9]></video><![endif]-->
-    <img srcset="{{ site.url }}assets/images/{{ desktop }}" alt="{{ image.title }}">
+    <img srcset="{{ site_url }}assets/images/{{ desktop }}" alt="{{ image.title }}">
   </picture>
 
   <figcaption class="figcaption {{ figcaption_class }}">
