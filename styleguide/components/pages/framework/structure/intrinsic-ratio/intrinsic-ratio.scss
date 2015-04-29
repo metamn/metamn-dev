@@ -1,0 +1,59 @@
+html {
+  &.styleguide-intrinsic-ratio {
+    body {
+      .example {
+        aside {
+          max-width: $text-block-width;
+          margin-bottom: $lem * 2;
+
+          .container {
+            border: 1px solid;
+          }
+
+          div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+
+          &.r16-9 {
+            .container {
+              @include intrinsic-ratio(16, 9, div);
+            }
+          }
+
+          &.r3-2 {
+            .container {
+              @include intrinsic-ratio(3, 2, div);
+            }
+          }
+
+          &.r4-3 {
+            .container {
+              @include intrinsic-ratio(4, 3, div);
+            }
+          }
+
+          &.r1-1 {
+            .container {
+              @include intrinsic-ratio(1, 1, div);
+            }
+          }
+
+          &.r3-4 {
+            .container {
+              @include intrinsic-ratio(3, 4, div);
+            }
+          }
+
+          &.r2-3 {
+            .container {
+              @include intrinsic-ratio(2, 3, div);
+            }
+          }
+
+        }
+      }
+    }
+  }
+}
