@@ -2,12 +2,12 @@
 
 
 <!doctype html>
-<html lang="en" class="styleguide styleguide-link ">
+<html lang="en" class="styleguide styleguide-semantic-html5-titles ">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <title>Link &mdash; Styleguide</title>
+    <title>Semantic HTML5 Titles &mdash; Styleguide</title>
 
     <script src="//use.typekit.net/wrb3hlx.js"></script>
     <script>try{Typekit.load();}catch(e){}</script>
@@ -57,18 +57,26 @@
   
     <span class="long-dash"></span>
 
-    <span class="title__subtitle">Link</span>
+    <span class="title__subtitle">Semantic HTML5 Titles</span>
   
 </header>
 
 
 
 <section class="description-and-example">
-  <h3>Link</h3>
+  <h3>Semantic HTML5 Titles</h3>
 
   
 
 
+
+  
+
+  
+
+  
+
+  
 
   
 
@@ -91,19 +99,12 @@
       <h3>Description</h3>
 
       <div class="text">
-        <p>Simple link styling. By default no underline just differentiation by color or text style.
-However links inside a long text can be decorated with an underline, or, inactive menu items can be decorated by a line-through.</p>
+        <p>The HTML5 structure should outline perfectly in the <a href="https://gsnedders.html5.org/">HTML5 Outliner</a>.
+For that all content is wrapped into semnatic HTML5 elements like <code>&lt;section&gt;</code>, <code>&lt;article&gt;</code>, <code>&lt;nav&gt;</code> etc.
+The title of these elements are necessary to display well in the Outliner but are hidden on the UI.</p>
 
       </div>
     </article>
-  
-
-  
-
-  
-
-  
-
   
 
   
@@ -121,17 +122,115 @@ However links inside a long text can be decorated with an underline, or, inactiv
 
     
 
-  <div class="example-1">
-    <a class="link" href="#" title="This is a link">This is a link.</a>
-  </div>
+  
+    
+    <figure >
+  
+    <a href="/styleguide/https://gsnedders.html5.org/outliner/process.py?url=http%3A%2F%2Fmetamn.io" title="The frontpage outlined">
+  
 
-  <div class="example-2">
-    <a class="link" href="#" title="This is an underlined link">This is an underlined link.</a>
-  </div>
+  <!-- Naming convention for responsive images -->
+  
+  
+  
+  
+  
+  
+  
+  
 
-  <div class="example-3">
-    <a class="link" href="#" title="This is a link with line-through">This is a link with line-through.</a>
-  </div>
+
+  <!-- Showing different images for different devices -->
+  
+
+
+  <!-- Figcaption is image title unless is not set explicitely -->
+  
+  
+
+  
+
+
+
+  <!-- Images are served from /site also for /styleguide -->
+  
+  
+    
+  
+
+
+  <picture>
+    <!--[if IE 9]><video style="display: none;"><![endif]-->
+    <source media="(min-width: 1600px)" srcset="/assets/images/frontpage-outlined_desktop.png, /assets/images/frontpage-outlined_desktop2x.png 2x">
+    <source media="(min-width: 1199px)" srcset="/assets/images/frontpage-outlined_laptop.png, /assets/images/frontpage-outlined_laptop2x.png 2x">
+    <source media="(min-width: 600px)" srcset="/assets/images/frontpage-outlined_tablet.png, /assets/images/frontpage-outlined_tablet2x.png 2x">
+    <source srcset="/assets/images/frontpage-outlined_mobile.png, /assets/images/frontpage-outlined_mobile2x.png 2x">
+    <!--[if IE 9]></video><![endif]-->
+    <img srcset="/assets/images/frontpage-outlined_desktop.png" alt="The frontpage outlined">
+  </picture>
+
+  <figcaption class="figcaption figcaption--from-title">
+    The frontpage outlined
+  </figcaption>
+
+  </a>
+</figure>
+
+  
+    
+    <figure >
+  
+    <a href="/styleguide/https://gsnedders.html5.org/outliner/process.py?url=http%3A%2F%2Fmetamn.io%2Fstyleguide%2Fframework%2Fstructure%2Fsemantic-html5-titles%2F" title="This styleguide entry outlined">
+  
+
+  <!-- Naming convention for responsive images -->
+  
+  
+  
+  
+  
+  
+  
+  
+
+
+  <!-- Showing different images for different devices -->
+  
+
+
+  <!-- Figcaption is image title unless is not set explicitely -->
+  
+  
+
+  
+
+
+
+  <!-- Images are served from /site also for /styleguide -->
+  
+  
+    
+  
+
+
+  <picture>
+    <!--[if IE 9]><video style="display: none;"><![endif]-->
+    <source media="(min-width: 1600px)" srcset="/assets/images/styleguide-outlined_desktop.png, /assets/images/styleguide-outlined_desktop2x.png 2x">
+    <source media="(min-width: 1199px)" srcset="/assets/images/styleguide-outlined_laptop.png, /assets/images/styleguide-outlined_laptop2x.png 2x">
+    <source media="(min-width: 600px)" srcset="/assets/images/styleguide-outlined_tablet.png, /assets/images/styleguide-outlined_tablet2x.png 2x">
+    <source srcset="/assets/images/styleguide-outlined_mobile.png, /assets/images/styleguide-outlined_mobile2x.png 2x">
+    <!--[if IE 9]></video><![endif]-->
+    <img srcset="/assets/images/styleguide-outlined_desktop.png" alt="This styleguide entry outlined">
+  </picture>
+
+  <figcaption class="figcaption figcaption--from-title">
+    This styleguide entry outlined
+  </figcaption>
+
+  </a>
+</figure>
+
+  
 
 
   </article>

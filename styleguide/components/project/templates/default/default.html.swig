@@ -7,7 +7,7 @@
 
 
 <section class="description-and-example">
-  <h3>Description and example</h3>
+  <h3>{{ title }}</h3>
 
   {% include '../../description/description.html.swig' %}
 

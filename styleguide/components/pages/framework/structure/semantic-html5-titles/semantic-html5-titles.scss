@@ -1,0 +1,25 @@
+html {
+  &.styleguide-semantic-html5-titles {
+    body {
+      .example {
+        display: flex;
+        flex-wrap: wrap;
+
+        figure {
+          @include figure($figcaption: on);
+          margin-bottom: $lem * 2;
+
+          figcaption {
+            margin-top: $lem / 2;
+          }
+
+          @include landscape {
+            + figure {
+              margin-left: $lem * 2;
+            }
+          }
+        }
+      }
+    }
+  }
+}

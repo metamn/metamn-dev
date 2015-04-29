@@ -1,5 +1,5 @@
 <section class="styleguide-menu">
-  <h3>Menu</h3>
+  <h3>Styleguide menu</h3>
 
   <nav class="styleguide-menu__framework">
     <h3>Framework</h3>
