@@ -1,8 +1,4 @@
 @mixin example {
   padding: $lem;
   @include colors(black-on-gray);
-
-  a {
-    @include link(black-on-gray, underline);
-  }
 }

@@ -1,0 +1,13 @@
+html {
+  &.styleguide-menu {
+    body {
+      .example {
+        .menu {
+          @include menu(white-on-blue);
+          @include colors(white-on-blue);
+          display: inline-flex;
+        }
+      }
+    }
+  }
+}
