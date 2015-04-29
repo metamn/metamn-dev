@@ -9,9 +9,8 @@ title: Color overlay
     <h3>Images with color overlay</h3>
 
     {% for image in overlay.images %}
-      {% set image = image %}
-      {{ image.name }}
-      {% include '../../../../../../../site/components/framework/structure/figure/figure.html' %}
+      {% set image.site_url = site.site_url %}
+      {% include '../../../../../../../site/components/framework/structure/figure/figure.html.swig' %}
     {% endfor %}
   </aside>
 
@@ -19,8 +18,8 @@ title: Color overlay
     <h3>Images without color overlay</h3>
 
     {% for image in overlay.images %}
-      {% set image = image %}
-      {% include '../../../../../../../site/components/framework/structure/figure/figure.html' %}
+      {% set image.site_url = site.site_url %}
+      {% include '../../../../../../../site/components/framework/structure/figure/figure.html.swig' %}
     {% endfor %}
   </aside>
 

@@ -1,1 +1,31 @@
-@mixin color-overlay {}
+html {
+  &.styleguide-color-overlay {
+    body {
+      .example {
+        display: flex;
+        flex-wrap: wrap;
+
+        aside {
+          h3 {
+            display: flex;
+            margin-bottom: $lem;
+          }
+
+          margin-right: $lem * 2;
+
+          figure {
+            @include colors(white-on-blue);
+            padding: $lem;
+            @include figure;
+          }
+        }
+
+        .overlay {
+          figure {
+            @include color-overlay($blue, .1);
+          }
+        }
+      }
+    }
+  }
+}
