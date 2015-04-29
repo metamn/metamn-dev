@@ -2,12 +2,12 @@
 
 
 <!doctype html>
-<html lang="en" class="styleguide styleguide-home ">
+<html lang="en" class="styleguide styleguide-thumb ">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <title>Styleguide</title>
+    <title>Thumb &mdash; Styleguide</title>
 
     <script src="//use.typekit.net/wrb3hlx.js"></script>
     <script>try{Typekit.load();}catch(e){}</script>
@@ -55,12 +55,16 @@
   <span class="title__main">Styleguide</span>
 
   
+    <span class="long-dash"></span>
+
+    <span class="title__subtitle">Thumb</span>
+  
 </header>
 
 
 
 <section class="description-and-example">
-  <h3>Home</h3>
+  <h3>Thumb</h3>
 
   
 
@@ -102,6 +106,15 @@
 
   
 
+  
+    <article class="styleguide-description">
+      <h3>Description</h3>
+
+      <div class="text">
+        <p>A project thumb displayed on the Work page.</p>
+
+      </div>
+    </article>
   
 
   
@@ -117,61 +130,73 @@
 
     
 
-  <div class="text">
-    <p>
-      This is the styleguide accompannying the site
-      
-      
-      
+  
+  
+  <article class="thumb">
+  <h3>Wanderlust</h3>
 
+  <aside class="thumb__image">
+    <h3>Wanderlust thumb</h3>
+
+    <div class="container">
+      
+      <figure >
+  
+    <a href="/styleguide/work/wanderlust" title="Wanderlust">
+  
+
+  <!-- Naming convention for responsive images -->
+  
+  
+  
+  
+  
+  
+  
+  
+
+
+  <!-- Showing different images for different devices -->
+  
+
+
+  <!-- Figcaption is image title unless is not set explicitely -->
+  
+  
+
+  
+
+
+
+  <!-- Images are served from /site also for /styleguide -->
+  
   
     
   
 
-  
+
+  <picture>
+    <!--[if IE 9]><video style="display: none;"><![endif]-->
+    <source media="(min-width: 1600px)" srcset="/assets/images/wanderlust-thumb_desktop.png, /assets/images/wanderlust-thumb_desktop2x.png 2x">
+    <source media="(min-width: 1199px)" srcset="/assets/images/wanderlust-thumb_laptop.png, /assets/images/wanderlust-thumb_laptop2x.png 2x">
+    <source media="(min-width: 600px)" srcset="/assets/images/wanderlust-thumb_tablet.png, /assets/images/wanderlust-thumb_tablet2x.png 2x">
+    <source srcset="/assets/images/wanderlust-thumb_mobile.png, /assets/images/wanderlust-thumb_mobile2x.png 2x">
+    <!--[if IE 9]></video><![endif]-->
+    <img srcset="/assets/images/wanderlust-thumb_desktop.png" alt="Wanderlust">
+  </picture>
+
+  <figcaption class="figcaption figcaption--from-title">
+    Wanderlust
+  </figcaption>
+
+  </a>
+</figure>
+
+    </div>
+  </aside>
+</article>
 
 
-  
-
-
-  
-
-  
-    
-  
-
-  <a class="link" href="/" title="Metamn">Metamn</a>
-
-      It serves as a visual documentation for the framework and components building the site.
-      Any changes made to the site design is automatically reflected in this styleguide.
-    <p>
-    <p>
-      We use the
-      
-      
-
-  
-    
-  
-
-  
-
-
-  
-
-
-  
-
-  
-    
-  
-
-  <a class="link" href="https://en.bem.info/method/filesystem/" title="BEM methodology">BEM methodology</a>
-
-      to structure the building blocks of the site. BEM is using <strong>Framework</strong> for basic components like typography, colors, the grid and
-      <strong>Project</strong> for all other components specific to the site like headers, thumbs, portfolio sections.
-    </p>
-  </div>
 
 
   </article>

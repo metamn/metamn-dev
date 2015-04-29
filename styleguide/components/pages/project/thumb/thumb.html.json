@@ -1,0 +1,17 @@
+{
+  "works": [
+    {
+      "title": "Wanderlust",
+      "url": "work/wanderlust",
+      "services": [
+        "Front-end",
+        "Wordpress"
+      ],
+      "image": {
+        "title": "Wanderlust",
+        "name": "wanderlust-thumb",
+        "url": "work/wanderlust"
+      }
+    }
+  ]
+}
