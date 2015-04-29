@@ -3,7 +3,7 @@
 
 {% for k in kss %}
   {% if k.data.reference == classname %}
-    <article class="description">
+    <article class="styleguide-description">
       <h3>Description</h3>
 
       <div class="text">

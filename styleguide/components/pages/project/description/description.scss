@@ -1,0 +1,13 @@
+html {
+  &.styleguide-description {
+    body {
+      .example {
+        .description {
+          @include description;
+          @include colors(white-on-blue);
+          display: inline-flex;
+        }
+      }
+    }
+  }
+}

@@ -1,6 +1,6 @@
 {% include '../head/head.html.swig' %}
 
-{% include '../../header/header.html.swig' %}
+{% include '../../styleguide-header/styleguide-header.html.swig' %}
 
 {% set page_title = { title: site.title, subtitle: title } %}
 {% include '../../../../../site/components/project/title/title.html.swig' %}
@@ -9,7 +9,7 @@
 <section class="description-and-example">
   <h3>{{ title }}</h3>
 
-  {% include '../../description/description.html.swig' %}
+  {% include '../../styleguide-description/styleguide-description.html.swig' %}
 
   <article class="example">
     <h3 class="example__title">Example</h3>
