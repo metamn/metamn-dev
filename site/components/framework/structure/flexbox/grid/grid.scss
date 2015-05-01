@@ -1,6 +1,7 @@
 // Grid
 //
-// Display flexbox items in a responsive grid. A column may contain multiple items.
+// Display flexbox items in a responsive grid.
+// On small screens items are displayed below each other, on larger screens in multiple rows and columns.
 //
 // Styleguide grid
 @mixin grid($item, $margin) {
