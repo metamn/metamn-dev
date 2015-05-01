@@ -6,7 +6,7 @@ title: Arrow
 {% block content %}
 
   <aside class='active'>
-    <h3>Active arrows</h3>
+    <h3 class="aside__title">Active arrows</h3>
 
     <div class="box">
       {% set active = { title: "Test" } %}
@@ -19,7 +19,7 @@ title: Arrow
   </aside>
 
   <aside class="inactive">
-    <h3>Inactive arrows</h3>
+    <h3 class="aside__title">Inactive arrows</h3>
 
     <div class="box">
       {% set arrow = { item: inactive, direction: 'left' } %}

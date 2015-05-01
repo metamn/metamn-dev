@@ -5,9 +5,13 @@ title: Slider
 {% extends '../../../project/templates/default/default.html.swig' %}
 {% block content %}
 
-  {% include '../../../../../site/components/project/slider/slider.html.swig' %}
+  <aside>
+    <h3 class="aside__title">Slider</h3>
 
-  {% set bullets = slides %}
-  {% include '../../../../../site/components/project/slider/__bullets/slider__bullets.html.swig' %}
+    {% include '../../../../../site/components/project/slider/slider.html.swig' %}
+
+    {% set bullets = slides %}
+    {% include '../../../../../site/components/project/slider/__bullets/slider__bullets.html.swig' %}
+  </aside>
 
 {% endblock %}

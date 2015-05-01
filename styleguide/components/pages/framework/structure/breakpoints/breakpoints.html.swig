@@ -6,7 +6,7 @@ title: Breakpoints
 {% block content %}
 
   <aside>
-    <h3>Breakpoints</h3>
+    <h3 class="aside__title">Breakpoints</h3>
     <div class="box">
       <dl>
       {% for breakpoint in breakpoints %}

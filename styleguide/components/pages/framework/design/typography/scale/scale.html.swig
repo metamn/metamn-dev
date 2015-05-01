@@ -7,7 +7,7 @@ title: Scale
 
 {% for scale in scale %}
   <aside>
-    <h3>{{ scale.name | capitalize }}</h3>
+    <h3 class="aside__title">{{ scale.name | capitalize }}</h3>
     <div class="box">
       <dl class="scale--{{ scale.name }}">
         <dt>{{ scale.description }}</dt>

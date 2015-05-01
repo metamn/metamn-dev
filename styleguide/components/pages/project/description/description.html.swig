@@ -5,6 +5,9 @@ title: Description
 {% extends '../../../project/templates/default/default.html.swig' %}
 {% block content %}
 
-  {% include '../../../../../site/components/project/description/description.html.swig' %}
+  <aside>
+    <h3 class="aside__title">Description</h3>
+    {% include '../../../../../site/components/project/description/description.html.swig' %}
+  </aside>
 
 {% endblock %}

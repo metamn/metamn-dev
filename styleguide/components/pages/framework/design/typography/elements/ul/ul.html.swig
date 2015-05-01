@@ -6,7 +6,7 @@ title: ul
 {% block content %}
 
   <aside>
-    <h3>List</h3>
+    <h3 class="aside__title">List</h3>
     <div class="box">
       <ul>
         <li>Identity design</li><li>Responsive web design</li><li>Front–end development</li><li>Styleguide</li><li>Wordpress</li><li>Storytelling</li><li>E–commerce</li>

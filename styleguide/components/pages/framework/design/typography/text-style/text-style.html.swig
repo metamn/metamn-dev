@@ -9,7 +9,7 @@ title: Text Style
   {% for text in text_styles %}
     {% set classname = c.classname(text.name) %}
     <aside>
-      <h3>{{ text.name }}</h3>
+      <h3 class="aside__title">{{ text.name }}</h3>
 
       <div class="box text-style--{{ classname }}">
         {% if classname == 'default' %}

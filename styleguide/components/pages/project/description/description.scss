@@ -5,7 +5,6 @@ html {
         .description {
           @include description;
           @include colors(white-on-blue);
-          display: inline-flex;
         }
       }
     }

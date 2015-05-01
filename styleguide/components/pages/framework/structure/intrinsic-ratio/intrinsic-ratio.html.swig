@@ -5,59 +5,58 @@ title: Intrinsic ratio
 {% extends '../../../../project/templates/default/default.html.swig' %}
 {% block content %}
 
-  <aside class="r16-9">
+  <article class="ratio r16-9">
     <h3>16:9</h3>
 
     <div class="container">
-      <div>16:9</div>
+      <div><span>16:9</span></div>
     </div>
-  </aside>
+  </article>
 
 
-  <aside class="r3-2">
+  <article class="ratio r3-2">
     <h3>3:2</h3>
 
     <div class="container">
-      <div>3:2</div>
+      <div><span>3:2</span></div>
     </div>
-  </aside>
+  </article>
 
 
-  <aside class="r4-3">
+  <article class="ratio r4-3">
     <h3>4:3</h3>
 
     <div class="container">
-      <div>4:3</div>
+      <div><span>4:3</span></div>
     </div>
-  </aside>
+  </article>
 
 
-  <aside class="r1-1">
+  <article class="ratio r1-1">
     <h3>1:1</h3>
 
     <div class="container">
-      <div>1:1</div>
+      <div><span>1:1</span></div>
     </div>
-  </aside>
+  </article>
 
 
-  <aside class="r3-4">
+  <article class="ratio r3-4">
     <h3>3:4</h3>
 
     <div class="container">
-      <div>3:4</div>
+      <div><span>3:4</span></div>
     </div>
-  </aside>
+  </article>
 
 
-
-  <aside class="r2-3">
+  <article class="ratio r2-3">
     <h3>2:3</h3>
 
     <div class="container">
-      <div>2:3</div>
+      <div><span>2:3</span></div>
     </div>
-  </aside>
+  </article>
 
 
 {% endblock %}

@@ -6,7 +6,7 @@ title: Link
 {% block content %}
 
   <aside>
-    <h3>Link</h3>
+    <h3 class="aside__title">Link</h3>
     <div class="box">
       <div class="example-1">
         <a class="link" href="#" title="This is a link">This is a link.</a>

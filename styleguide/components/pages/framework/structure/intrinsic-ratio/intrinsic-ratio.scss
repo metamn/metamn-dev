@@ -3,31 +3,32 @@ html {
     body {
       .example {
         position: relative;
-        height: $text-block-width * 2;
+        height: $text-block-width * 1.5;
 
         @include mobile {
           height: $text-block-width;
         }
 
-        aside {
-          width: $text-block-width;
-
-          @include mobile {
-            width: 280px;
-          }
-
+        .ratio {
           position: absolute;
           top: 0;
 
+          width: $text-block-width;
 
           .container {
             border: 1px solid;
           }
 
+
           div {
             display: flex;
             justify-content: center;
             align-items: flex-end;
+          }
+
+          span {
+            @include box-title(gray-on-black);
+            padding: $lem / 6 $lem / 2;
           }
 
           &.r16-9 {

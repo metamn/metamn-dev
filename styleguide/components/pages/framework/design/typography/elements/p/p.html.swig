@@ -6,7 +6,7 @@ title: P
 {% block content %}
 
   <aside>
-    <h3>Paragraph</h3>
+    <h3 class="aside__title">Paragraph</h3>
     <div class="box">
       <p>
         Hello, I'm a designer and developer creating user interfaces and experiences for the web.

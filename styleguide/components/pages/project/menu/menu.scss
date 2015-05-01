@@ -5,7 +5,6 @@ html {
         .menu {
           @include menu(white-on-blue);
           @include colors(white-on-blue);
-          display: inline-flex;
         }
       }
     }

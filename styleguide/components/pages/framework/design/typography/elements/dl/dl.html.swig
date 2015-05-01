@@ -6,7 +6,7 @@ title: Dl
 {% block content %}
 
   <aside>
-    <h3>Data list</h3>
+    <h3 class="aside__title">Data list</h3>
     <div class="box">
       <dl class="contact__links">
         {% for link in contact.links %}

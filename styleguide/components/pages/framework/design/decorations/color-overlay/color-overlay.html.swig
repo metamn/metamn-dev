@@ -6,7 +6,7 @@ title: Color overlay
 {% block content %}
 
   <aside class='overlay'>
-    <h3>Images with color overlay</h3>
+    <h3 class="aside__title">Images with color overlay</h3>
 
     <div class="box">
       {% for image in overlay.images %}
@@ -17,7 +17,7 @@ title: Color overlay
   </aside>
 
   <aside class="no-overlay">
-    <h3>Images without color overlay</h3>
+    <h3 class="aside__title">Images without color overlay</h3>
 
     <div class="box">
       {% for image in overlay.images %}

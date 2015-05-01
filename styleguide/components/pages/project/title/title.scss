@@ -2,10 +2,8 @@ html {
   &.styleguide-title {
     body {
       .example {
-        @include colors(white-on-blue);
-        max-width: $text-block-width;
-
         .title {
+          @include colors(white-on-blue);
           @include title;
         }
       }
