@@ -1,8 +1,28 @@
 html {
   &.styleguide-stretch {
     body {
-      .example {
+      .description-and-example {
+        flex-direction: column;
 
+        .styleguide-description {
+          flex-basis: auto;
+        }
+
+        .example {
+          border: 1px dashed;
+          padding: 0 $lem;
+          margin-bottom: $lem;
+
+          .stretch--columns {
+            @include stretch--columns;
+
+            aside {
+              &:last-of-type {
+                margin-bottom: 0;
+              }
+            }
+          }
+        }
       }
     }
   }
