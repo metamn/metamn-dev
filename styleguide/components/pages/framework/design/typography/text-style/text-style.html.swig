@@ -8,7 +8,7 @@ title: Text Style
 
   {% for text in text_styles %}
     {% set classname = c.classname(text.name) %}
-    <aside>
+    <aside class="example__aside">
       <h3 class="aside__title">{{ text.name }}</h3>
 
       <div class="box text-style--{{ classname }}">

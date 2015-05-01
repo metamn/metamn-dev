@@ -6,7 +6,7 @@ title: Scale
 {% block content %}
 
 {% for scale in scale %}
-  <aside>
+  <aside class="example__aside">
     <h3 class="aside__title">{{ scale.name | capitalize }}</h3>
     <div class="box">
       <dl class="scale--{{ scale.name }}">

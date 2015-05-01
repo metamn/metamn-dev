@@ -5,7 +5,7 @@ title: Arrow
 {% extends '../../../../../project/templates/default/default.html.swig' %}
 {% block content %}
 
-  <aside class='active'>
+  <aside class='example__aside active'>
     <h3 class="aside__title">Active arrows</h3>
 
     <div class="box">
@@ -18,7 +18,7 @@ title: Arrow
     </div>
   </aside>
 
-  <aside class="inactive">
+  <aside class="example__aside inactive">
     <h3 class="aside__title">Inactive arrows</h3>
 
     <div class="box">

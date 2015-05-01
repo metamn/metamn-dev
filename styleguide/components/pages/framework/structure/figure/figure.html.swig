@@ -8,7 +8,7 @@ title: Figure
 
   {% set image = figure.responsive[0] %}
 
-  <aside>
+  <aside class="example__aside">
     <h3 class="aside__title">Mobile</h3>
     <div class="box">
       <figure>
@@ -18,7 +18,7 @@ title: Figure
     </div>
   </aside>
 
-  <aside>
+  <aside class="example__aside">
     <h3 class="aside__title">Mobile for retina displays</h3>
     <div class="box">
       <figure>
@@ -28,7 +28,7 @@ title: Figure
     </div>
   </aside>
 
-  <aside>
+  <aside class="example__aside">
     <h3 class="aside__title">Tablet</h3>
     <div class="box">
       <figure>
@@ -38,7 +38,7 @@ title: Figure
     </div>
   </aside>
 
-  <aside>
+  <aside class="example__aside">
     <h3 class="aside__title">Tablet for retina displays</h3>
     <div class="box">
       <figure>
@@ -48,7 +48,7 @@ title: Figure
     </div>
   </aside>
 
-  <aside>
+  <aside class="example__aside">
     <h3 class="aside__title">Laptop</h3>
     <div class="box">
       <figure>
@@ -58,7 +58,7 @@ title: Figure
     </div>
   </aside>
 
-  <aside>
+  <aside class="example__aside">
     <h3 class="aside__title">Laptop for retina displays</h3>
     <div class="box">
       <figure>
@@ -68,7 +68,7 @@ title: Figure
     </div>
   </aside>
 
-  <aside>
+  <aside class="example__aside">
     <h3 class="aside__title">Desktop</h3>
     <div class="box">
       <figure>
@@ -78,7 +78,7 @@ title: Figure
     </div>
   </aside>
 
-  <aside>
+  <aside class="example__aside">
     <h3 class="aside__title">Desktop for retina displays</h3>
     <div class="box">
       <figure>

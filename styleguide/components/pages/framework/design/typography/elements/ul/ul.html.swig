@@ -5,7 +5,7 @@ title: ul
 {% extends '../../../../../../project/templates/default/default.html.swig' %}
 {% block content %}
 
-  <aside>
+  <aside class="example__aside">
     <h3 class="aside__title">List</h3>
     <div class="box">
       <ul>

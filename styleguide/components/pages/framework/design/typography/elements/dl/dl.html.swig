@@ -5,7 +5,7 @@ title: Dl
 {% extends '../../../../../../project/templates/default/default.html.swig' %}
 {% block content %}
 
-  <aside>
+  <aside class="example__aside">
     <h3 class="aside__title">Data list</h3>
     <div class="box">
       <dl class="contact__links">

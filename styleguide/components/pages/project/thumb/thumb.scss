@@ -2,11 +2,10 @@ html {
   &.styleguide-thumb {
     body {
       .example {
-        @include colors(white-on-blue);
-        max-width: $text-block-width;
-
         .thumb {
           @include thumb;
+          @include colors(white-on-blue);
+          margin: 0;
         }
       }
     }

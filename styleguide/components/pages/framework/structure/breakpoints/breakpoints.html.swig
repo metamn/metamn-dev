@@ -5,7 +5,7 @@ title: Breakpoints
 {% extends '../../../../project/templates/default/default.html.swig' %}
 {% block content %}
 
-  <aside>
+  <aside class="example__aside">
     <h3 class="aside__title">Breakpoints</h3>
     <div class="box">
       <dl>
