@@ -9,6 +9,10 @@ html {
           flex-basis: 100%;
         }
 
+        .aside__title {
+          @include box-title--with-border;
+        }
+
         .box {
           @include colors(white-on-blue);
         }

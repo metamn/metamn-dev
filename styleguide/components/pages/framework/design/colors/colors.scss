@@ -31,6 +31,16 @@ html {
 
         .example__color-pairs {
           @include grid('.aside', $lem * 2);
+
+          .aside {
+            &:nth-of-type(3),
+            &:nth-of-type(4),
+            &:nth-of-type(5) {
+              .aside__title {
+                @include box-title--with-border;
+              }
+            }
+          }
         }
       }
     }

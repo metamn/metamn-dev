@@ -2,6 +2,13 @@ html {
   &.styleguide-text-style {
     body {
       .example {
+        .aside {
+          &:nth-of-type(1) {
+            .aside__title {
+              @include box-title--with-border;
+            }
+          }
+        }
       }
     }
   }

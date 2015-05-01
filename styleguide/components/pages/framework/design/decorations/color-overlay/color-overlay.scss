@@ -16,6 +16,10 @@ html {
             @include color-overlay($blue, .1);
           }
         }
+
+        .aside__title {
+          @include box-title--with-border;
+        }
       }
     }
   }
