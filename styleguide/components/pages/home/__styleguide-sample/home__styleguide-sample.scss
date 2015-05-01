@@ -3,11 +3,17 @@
   justify-content: center;
   flex: 1;
 
+  border: 1px solid;
+  padding: $lem;
+
+  @include desktop {
+    margin: $lem * 4;
+  }
+
   .container {
     @include circle($text-block-width);
-    border: 1px solid;
     padding: $lem;
-    @include colors(gray-on-black);
+    border: 1px solid;
 
     display: flex;
     align-items: flex-start;
@@ -36,7 +42,7 @@
         @include circle(5em);
       }
 
-      .black {
+      .gray {
         border: 1px solid;
       }
     }
