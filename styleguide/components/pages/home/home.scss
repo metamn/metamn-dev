@@ -8,6 +8,10 @@ html {
 
         .text {
           @include text-style(body-text);
+
+          a {
+            @include link(black-on-gray, underline);
+          }
         }
       }
     }
