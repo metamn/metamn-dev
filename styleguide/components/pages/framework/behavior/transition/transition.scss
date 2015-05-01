@@ -2,16 +2,18 @@ html {
   &.styleguide-transition {
     body {
       .example {
-        span {
-          padding: $lem / 2 $lem;
-          cursor: pointer;
-        }
+        display: flex;
+        flex-direction: column;
 
         div {
-          display: flex;
+          max-width: $text-block-width;
           align-items: center;
+
           @include colors(gray-on-black);
-          margin: 0 $lem $lem 0;
+          padding: $lem / 2 $lem;
+          margin-bottom: $lem;
+
+          cursor: pointer;
         }
 
         .example-1 {
