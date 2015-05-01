@@ -2,50 +2,7 @@ html {
   &.styleguide-fonts {
     body {
       .example {
-        display: flex;
-        flex-wrap: wrap;
-
-        article {
-          margin-bottom: $lem;
-          flex-basis: $text-block-width + $lem;
-
-          .article__title {
-            @include text-style(title);
-            display: flex;
-          }
-
-          ul {
-            @include ul;
-          }
-
-          aside {
-            flex-basis: 100%;
-            margin: $lem * 2 0;
-
-            .text {
-              @include text-style(body-text);
-
-              display: flex;
-              flex-direction: column;
-            }
-
-            p {
-              padding: $lem;
-              border: 1px solid;
-            }
-
-            .aside__title {
-              @include text-style(title);
-
-              display: flex;
-              order: 2;
-
-              font-weight: 400;
-              @include colors(gray-on-black);
-              padding: $lem / 4 $lem;
-            }
-          }
-        }
+        @include row;
       }
     }
   }

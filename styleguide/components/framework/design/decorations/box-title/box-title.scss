@@ -1,0 +1,4 @@
+@mixin box-title($color-scheme) {
+  @include colors($color-scheme);
+  padding: $lem / 2 $lem;
+}

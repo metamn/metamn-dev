@@ -1,0 +1,5 @@
+@mixin box {
+  padding: $lem;
+  border: 1px solid;
+  border-bottom: none;
+}

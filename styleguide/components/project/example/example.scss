@@ -3,22 +3,6 @@
   @include colors(black-on-gray);
 
   aside {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: $lem * 2;
-    max-width: $text-block-width;
-
-    h3 {
-      display: flex;
-      order: 10;
-
-      @include text-style(title);
-      padding-left: $lem;
-    }
-
-    .box {
-      padding: $lem;
-      border: 1px solid;
-    }
+    @include example__aside;
   }
 }

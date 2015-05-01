@@ -2,62 +2,35 @@ html {
   &.styleguide-colors {
     body {
       .example {
-        aside {
-          flex-direction: row !important;
-          flex-wrap: wrap !important;
-          max-width: none !important;
-
-          h3 {
-            display: none !important;
-          }
+        .example__colors {
+          display: flex;
+          flex-wrap: wrap;
 
           .item {
             display: flex;
             flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            margin-right: $lem * 2;
+            margin-bottom: $lem * 2;
 
             .name {
               @include text-style(title);
             }
-          }
 
-          &.example__colors {
-            .item {
-              justify-content: center;
-              align-items: center;
-              margin-right: $lem;
-              margin-bottom: $lem;
+            .placeholder {
+              @include circle(5em);
+            }
 
-              .placeholder {
-                @include circle(5em);
-              }
-
-              .white,
-              .gray {
-                border: 1px solid;
-              }
+            .gray {
+              border: 1px solid;
             }
           }
+        }
 
-          &.example__color-pairs {
-            .item {
-              margin-right: $lem * 2;
-              margin-bottom: $lem * 2;
-
-              @include portrait {
-                margin-right: 0;
-              }
-
-              .placeholder {
-                @include text-style(body-text);
-                padding: $lem;
-                border: 1px solid;
-              }
-
-              .name {
-                padding-left: $lem;
-              }
-            }
-          }
+        .example__color-pairs {
+          @include row;
         }
       }
     }

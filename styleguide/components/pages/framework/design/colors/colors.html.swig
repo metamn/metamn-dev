@@ -5,7 +5,7 @@ title: Colors
 {% extends '../../../../project/templates/default/default.html.swig' %}
 {% block content %}
 
-  <aside class="example__colors">
+  <article class="example__colors">
     <h3>Colors</h3>
 
     {% for color in colors %}
@@ -14,18 +14,16 @@ title: Colors
         <span class="name">{{ color.name }}</span>
       </div>
     {% endfor %}
-  </aside>
+  </article>
 
-  <aside class="example__color-pairs">
-    <h3>Color pairs</h3>
-
+  <div class="example__color-pairs">
     {% for color in color_pairs %}
-      <div class="item">
-        <span class="{{ color.name }} placeholder">
+      <aside>
+        <h3>{{ color.name }}</h3>
+        <div class="box {{ color.name }}">
           Colors don't exist alone yet in pairs, like black on white. All color pairs have a contrast ratio set for perfect readability.
-        </span>
-        <span class="name">{{ color.name }}</span>
-      </div>
+        </div>
+      </aside>
     {% endfor %}
-  </aside>
+  </div>
 {% endblock %}

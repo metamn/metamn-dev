@@ -1,0 +1,13 @@
+@mixin row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  aside {
+    margin-right: $lem * 2;
+
+    @include mobile {
+      margin-right: none;
+    }
+  }
+}

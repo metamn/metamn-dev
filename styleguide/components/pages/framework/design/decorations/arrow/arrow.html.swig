@@ -8,7 +8,7 @@ title: Arrow
   <aside class='active'>
     <h3>Active arrows</h3>
 
-    <div class="arrows">
+    <div class="box">
       {% set active = { title: "Test" } %}
       {% set arrow = { item: active, direction: 'left' } %}
       {% include '../../../../../../../site/components/framework/design/decorations/arrow/arrow.html.swig' %}
@@ -21,7 +21,7 @@ title: Arrow
   <aside class="inactive">
     <h3>Inactive arrows</h3>
 
-    <div class="arrows">
+    <div class="box">
       {% set arrow = { item: inactive, direction: 'left' } %}
       {% include '../../../../../../../site/components/framework/design/decorations/arrow/arrow.html.swig' %}
 

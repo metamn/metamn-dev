@@ -2,22 +2,15 @@ html {
   &.styleguide-color-overlay {
     body {
       .example {
-        display: flex;
-        flex-wrap: wrap;
+        @include row;
+        
+        figure {
+          @include figure;
+          padding: $lem;
+        }
 
-        aside {
-          h3 {
-            display: flex;
-            margin-bottom: $lem;
-          }
-
-          margin-right: $lem * 2;
-
-          figure {
-            @include colors(white-on-blue);
-            padding: $lem;
-            @include figure;
-          }
+        .box {
+          @include colors(white-on-blue);
         }
 
         .overlay {

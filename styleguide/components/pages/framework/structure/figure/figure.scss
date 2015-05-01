@@ -4,10 +4,16 @@ html {
       .example {
         overflow-x: hidden;
 
-        figure {
-          margin-bottom: $lem * 2;
-          padding-bottom: $lem;
-          border-bottom: 1px solid;
+        aside {
+          max-width: none !important;
+        }
+
+        .box {
+          @include colors(white-on-blue);
+        }
+
+        figcaption {
+          display: none;
         }
       }
     }

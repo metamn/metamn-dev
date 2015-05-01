@@ -2,13 +2,8 @@ html {
   &.styleguide-arrow {
     body {
       .example {
-        display: flex;
-        flex-direction: column;
-
-        .arrows {
+        .box {
           @include colors(white-on-blue);
-          border: 1px solid;
-          padding: $lem;
         }
 
         .arrow {

@@ -2,26 +2,7 @@ html {
   &.styleguide-text-style {
     body {
       .example {
-        display: flex;
-        flex-wrap: wrap;
-
-        article {
-          @include landscape {
-            margin-right: $lem;
-          }
-
-          @include desktop {
-            margin-right: $lem * 3;
-          }
-        }
-
-        .text-style__intro {
-          @include text-style__intro;
-        }
-
-        .text-style__styles {
-          @include text-style__styles;
-        }
+        @include row;
       }
     }
   }
