@@ -25,4 +25,7 @@ title: Home
     </p>
   </div>
 
+
+  {% include '__styleguide-sample/home__styleguide-sample.html.swig' %}
+
 {% endblock %}

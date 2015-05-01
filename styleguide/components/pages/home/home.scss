@@ -2,6 +2,8 @@ html {
   &.styleguide-home {
     body {
       .example {
+        align-items: center;
+        
         .example__title {
           display: none;
         }
@@ -12,6 +14,10 @@ html {
           a {
             @include link(black-on-gray, underline);
           }
+        }
+
+        .home__styleguide-sample {
+          @include home__styleguide-sample;
         }
       }
     }

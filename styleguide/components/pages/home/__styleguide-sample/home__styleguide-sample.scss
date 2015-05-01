@@ -1,0 +1,44 @@
+@mixin home__styleguide-sample {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+
+  .container {
+    @include circle($text-block-width);
+    border: 1px solid;
+    padding: $lem;
+    @include colors(gray-on-black);
+
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .example__colors {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: $lem * 3.5;
+
+    .item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      margin-right: $lem;
+      margin-bottom: $lem;
+
+      .name {
+        @include text-style(title);
+      }
+
+      .placeholder {
+        @include circle(5em);
+      }
+
+      .black {
+        border: 1px solid;
+      }
+    }
+  }
+}
