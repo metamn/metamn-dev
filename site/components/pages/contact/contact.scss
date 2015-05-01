@@ -17,7 +17,7 @@ html {
       }
 
       .title__main {
-        transform: rotate(-90deg);
+        @include title--rotated;
       }
 
       .menu {

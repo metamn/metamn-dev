@@ -6,6 +6,15 @@ html {
           @include colors(white-on-blue);
           @include title;
         }
+
+        .rotated {
+          height: $text-block-width;
+          justify-content: center;
+          
+          .title {
+            @include title--rotated;
+          }
+        }
       }
     }
   }
