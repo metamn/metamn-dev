@@ -3,34 +3,40 @@
     <a href="{{ site.url}}{{ image.url }}" title="{{ image.title }}">
   {% endif %}
 
+  <!-- The default extension is .png but other formats are handled too -->
+  {% set extension = '.png' %}
+  {% if image.extension %}
+    {% set extension = image.extension %}
+  {% endif %}
+
   <!-- Naming convention for responsive images -->
-  {% set desktop = image.name + '_desktop.png' %}
-  {% set desktop2x = image.name + '_desktop2x.png' %}
-  {% set laptop = image.name + '_laptop.png' %}
-  {% set laptop2x = image.name + '_laptop2x.png' %}
-  {% set tablet = image.name + '_tablet.png' %}
-  {% set tablet2x = image.name + '_tablet2x.png' %}
-  {% set mobile = image.name + '_mobile.png' %}
-  {% set mobile2x = image.name + '_mobile2x.png' %}
+  {% set desktop = image.name + '_desktop' + extension %}
+  {% set desktop2x = image.name + '_desktop2x' + extension %}
+  {% set laptop = image.name + '_laptop' + extension %}
+  {% set laptop2x = image.name + '_laptop2x' + extension %}
+  {% set tablet = image.name + '_tablet' + extension %}
+  {% set tablet2x = image.name + '_tablet2x' + extension %}
+  {% set mobile = image.name + '_mobile' + extension %}
+  {% set mobile2x = image.name + '_mobile2x' + extension %}
 
 
   <!-- Showing different images for different devices -->
   {% for responsive in image.responsive %}
     {% if responsive.breakpoint == 'desktop' %}
-      {% set desktop = responsive.name + '_desktop.png' %}
-      {% set desktop2x = responsive.name + '_desktop2x.png' %}
+      {% set desktop = responsive.name + '_desktop' + extension %}
+      {% set desktop2x = responsive.name + '_desktop2x' + extension %}
     {% endif %}
     {% if responsive.breakpoint == 'laptop' %}
-      {% set laptop = responsive.name + '_laptop.png' %}
-      {% set laptop2x = responsive.name + '_laptop2x.png' %}
+      {% set laptop = responsive.name + '_laptop' + extension %}
+      {% set laptop2x = responsive.name + '_laptop2x' + extension %}
     {% endif %}
     {% if responsive.breakpoint == 'tablet' %}
-      {% set tablet = responsive.name + '_tablet.png' %}
-      {% set tablet2x = responsive.name + '_tablet2x.png' %}
+      {% set tablet = responsive.name + '_tablet' + extension %}
+      {% set tablet2x = responsive.name + '_tablet2x' + extension %}
     {% endif %}
     {% if responsive.breakpoint == 'mobile' %}
-      {% set mobile = responsive.name + '_mobile.png' %}
-      {% set mobile2x = responsive.name + '_mobile2x.png' %}
+      {% set mobile = responsive.name + '_mobile' + extension %}
+      {% set mobile2x = responsive.name + '_mobile2x' + extension %}
     {% endif %}
   {% endfor %}
 
@@ -43,7 +49,6 @@
     {% set figcaption = image.figcaption %}
     {% set figcaption_class = 'figcaption' %}
   {% endif %}
-
 
 
   <!-- Images are served from /site also for /styleguide -->

@@ -111,7 +111,7 @@ var paths = {
   image_resize_dest: 'site/assets/images/resized',
 
   // images to resize and optimize
-  images_resize_src: 'site/assets/images/*.png',
+  images_resize_src: 'site/assets/images/*.{png,jpg}',
 
   // images to move
   images_src: 'site/assets/images/*.{png,jpg,mp4,webm}',
@@ -145,6 +145,12 @@ var onError = function(error) {
 
 // Images
 
+// Get the JSON file associated to an image
+var image_json = function(file) {
+  splits = file.split('.');
+  return splits[0] + '.json';
+}
+
 // Resize a single image with ImageMagick
 var _image_resize = function(file, size, name) {
   console.log("Resizing " + file + " height to " + size);
@@ -166,7 +172,9 @@ var _image_batch_resize = function(files, retina, retina_name) {
     .pipe(plumber({errorHandler: onError}))
     .pipe(newer(paths.images_dest))
     .pipe(data(function(file) {
-      json_file = file.path.replace('.png', '.json');
+      // Get the associated JSON file
+      splits = file.path.split('.');
+      json_file = splits[0] + '.json';
       if (fs.existsSync(json_file)) {
         json = require(json_file);
         sizes = json.image_sizes;
@@ -207,7 +215,7 @@ gulp.task('image_optimize', function() {
 // Move resized and compressed images
 // - collect all images and move to dist/assets/images
 gulp.task('image_move', function() {
-  return gulp.src(paths.image_resize_dest + '/*.png')
+  return gulp.src(paths.image_resize_dest + '/*.{png,jpg}')
     .pipe(plumber({errorHandler: onError}))
     .pipe(newer(paths.images_dest))
     .pipe(gulp.dest(paths.images_dest));

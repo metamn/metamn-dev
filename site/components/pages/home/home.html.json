@@ -11,7 +11,8 @@
         "images": [
           {
             "title": "Inu Chivu",
-            "name": "intro-inu-chivu"
+            "name": "intro-inu-chivu",
+            "extension": ".jpg"
           }
         ]
       },
@@ -19,7 +20,8 @@
         "images": [
           {
             "title": "Reboot",
-            "name": "intro-reboot"
+            "name": "intro-reboot",
+            "extension": ".jpg"
           }
         ]
       },
@@ -27,7 +29,8 @@
         "images": [
           {
             "title": "Scatter",
-            "name": "intro-scatter"
+            "name": "intro-scatter",
+            "extension": ".jpg"
           }
         ]
       }
