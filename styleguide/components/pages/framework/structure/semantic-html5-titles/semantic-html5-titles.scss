@@ -2,8 +2,6 @@ html {
   &.styleguide-semantic-html5-titles {
     body {
       .example {
-        @include row;
-        
         figure {
           @include figure;
         }

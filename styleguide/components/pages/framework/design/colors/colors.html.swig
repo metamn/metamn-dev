@@ -18,7 +18,7 @@ title: Colors
 
   <div class="example__color-pairs">
     {% for color in color_pairs %}
-      <aside class="example__aside">
+      <aside class="aside">
         <h3 class="aside__title">{{ color.name }}</h3>
         <div class="box {{ color.name }}">
           Colors don't exist alone yet in pairs, like black on white. All color pairs have a contrast ratio set for perfect readability.

@@ -2,8 +2,6 @@ html {
   &.styleguide-scale {
     body {
       .example {
-        @include row;
-
         dl {
           @include dl;
         }

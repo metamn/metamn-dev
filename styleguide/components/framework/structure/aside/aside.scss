@@ -1,12 +1,12 @@
-@mixin example__aside {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: $lem * 2;
+@mixin aside {
   max-width: $text-block-width;
 
-  .aside-title {
+  display: flex;
+  flex-direction: column;
+
+  .aside__title {
     display: flex;
-    order: 10;
+    order: 2;
 
     @include box-title(gray-on-black);
   }

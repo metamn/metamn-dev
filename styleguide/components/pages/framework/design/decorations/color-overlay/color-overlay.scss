@@ -2,8 +2,6 @@ html {
   &.styleguide-color-overlay {
     body {
       .example {
-        @include row;
-        
         figure {
           @include figure;
           padding: $lem;

@@ -10,7 +10,7 @@ title: Fonts
     {% set font_name = c.classname(font.name) %}
     {% for style in font.styles %}
       {% set style_name = c.classname(style.name ) %}
-      <aside class="example__aside">
+      <aside class="aside">
         <h3 class="aside__title">{{ font.name }}, {{ style.name }}</h3>
         <div class="box {{ font_name }}-{{ style_name }}">
           Hello, I'm a designer and developer creating user interfaces and experiences for the web.

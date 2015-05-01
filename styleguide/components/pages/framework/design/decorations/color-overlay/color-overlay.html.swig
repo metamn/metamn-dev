@@ -5,7 +5,7 @@ title: Color overlay
 {% extends '../../../../../project/templates/default/default.html.swig' %}
 {% block content %}
 
-  <aside class='example__aside overlay'>
+  <aside class='aside overlay'>
     <h3 class="aside__title">Images with color overlay</h3>
 
     <div class="box">
@@ -16,7 +16,7 @@ title: Color overlay
     </div>
   </aside>
 
-  <aside class="example__aside no-overlay">
+  <aside class="aside no-overlay">
     <h3 class="aside__title">Images without color overlay</h3>
 
     <div class="box">

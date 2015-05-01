@@ -2,7 +2,9 @@
   padding: $lem;
   @include colors(black-on-gray);
 
-  .example__aside {
-    @include example__aside;
+  @include grid('.aside', $lem * 2);
+
+  .aside {
+    @include aside;
   }
 }

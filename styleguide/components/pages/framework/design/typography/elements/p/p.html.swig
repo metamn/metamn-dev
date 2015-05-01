@@ -5,7 +5,7 @@ title: P
 {% extends '../../../../../../project/templates/default/default.html.swig' %}
 {% block content %}
 
-  <aside class="example__aside">
+  <aside class="aside">
     <h3 class="aside__title">Paragraph</h3>
     <div class="box">
       <p>

@@ -30,7 +30,7 @@ html {
         }
 
         .example__color-pairs {
-          @include row;
+          @include grid('.aside', $lem * 2);
         }
       }
     }
