@@ -4,8 +4,9 @@ html {
       .example {
         overflow-x: hidden;
 
-        aside {
-          max-width: none !important;
+        .aside {
+          width: auto !important;
+          flex-basis: 100%;
         }
 
         .box {

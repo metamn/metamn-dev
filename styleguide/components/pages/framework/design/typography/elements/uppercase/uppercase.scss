@@ -2,8 +2,6 @@ html {
   &.styleguide-uppercase {
     body {
       .example {
-        @include text-style(body-text);
-
         .example-1 {
           @include uppercase(1.3px);
         }

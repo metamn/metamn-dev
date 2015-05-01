@@ -5,9 +5,9 @@ html {
         position: relative;
         height: $text-block-width * 1.5;
 
-        @include mobile {
-          height: $text-block-width;
-        }
+        flex-wrap: none !important;
+        flex: none !important;
+
 
         .ratio {
           position: absolute;

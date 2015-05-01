@@ -1,0 +1,22 @@
+@mixin default__description-and-example {
+  display: flex;
+  flex-wrap: wrap;
+
+  .styleguide-description {
+    @include styleguide-description;
+    flex-basis: $text-block-width;
+  }
+
+  .example {
+    @include example;
+    flex: 1;
+  }
+
+  @include tablet-and-below {
+    flex-direction: column;
+
+    .styleguide-description {
+      flex-basis: auto;
+    }
+  }
+}

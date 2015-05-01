@@ -1,5 +1,9 @@
 @mixin aside {
-  max-width: $text-block-width;
+  width: $text-block-width;
+
+  @include mobile {
+    width: 100%;
+  }
 
   display: flex;
   flex-direction: column;
