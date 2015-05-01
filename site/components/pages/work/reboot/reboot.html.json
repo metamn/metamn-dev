@@ -44,6 +44,14 @@
             "name": "reboot-frontpage-laptop"
           }
         ]
+      },
+      {
+        "images": [
+          {
+            "title": "The Reboot frontpage on desktop",
+            "name": "reboot-frontpage-desktop"
+          }
+        ]
       }
     ]
   }
