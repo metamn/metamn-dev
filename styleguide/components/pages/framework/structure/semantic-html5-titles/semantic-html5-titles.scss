@@ -5,6 +5,12 @@ html {
         figure {
           @include figure;
         }
+
+        .aside__title {
+          a {
+            @include link(gray-on-black, underline);
+          }
+        }
       }
     }
   }

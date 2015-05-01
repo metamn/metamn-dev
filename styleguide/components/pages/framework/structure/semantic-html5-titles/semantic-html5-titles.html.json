@@ -4,12 +4,14 @@
       {
         "title": "The frontpage outlined",
         "name": "frontpage-outlined",
-        "url": "https://gsnedders.html5.org/outliner/process.py?url=http%3A%2F%2Fmetamn.io"
+        "url": "https://gsnedders.html5.org/outliner/process.py?url=http%3A%2F%2Fmetamn.io",
+        "type": "external"
       },
       {
         "title": "This styleguide entry outlined",
         "name": "styleguide-outlined",
-        "url": "https://gsnedders.html5.org/outliner/process.py?url=http%3A%2F%2Fmetamn.io%2Fstyleguide%2Fframework%2Fstructure%2Fsemantic-html5-titles%2F"
+        "url": "https://gsnedders.html5.org/outliner/process.py?url=http%3A%2F%2Fmetamn.io%2Fstyleguide%2Fframework%2Fstructure%2Fsemantic-html5-titles%2F",
+        "type": "external"
       }
     ]
   }

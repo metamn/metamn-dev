@@ -7,7 +7,10 @@ title: Semantic HTML5 Titles
 
   {% for image in semantic.images %}
     <aside class="aside">
-      <h3 class="aside__title">{{ image.title }}</h3>
+      <h3 class="aside__title">
+        {% set link = image %}
+        {% include '../../../../../../site/components/framework/design/typography/elements/link/link.html.swig' %}
+      </h3>
       {% set image.site_url = site.site_url %}
       {% include '../../../../../../site/components/framework/structure/figure/figure.html.swig' %}
     </aside>
