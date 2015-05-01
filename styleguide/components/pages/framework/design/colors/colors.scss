@@ -2,55 +2,61 @@ html {
   &.styleguide-colors {
     body {
       .example {
-        div {
-          display: flex;
-          flex-direction: column;
-        }
-      }
+        aside {
+          flex-direction: row !important;
+          flex-wrap: wrap !important;
+          max-width: none !important;
 
-      .example__colors {
-        display: flex;
-        flex-wrap: wrap;
-
-        div {
-          justify-content: center;
-          align-items: center;
-          margin-right: $lem;
-          margin-bottom: $lem;
-
-          .placeholder {
-            @include circle(5em);
+          h3 {
+            display: none !important;
           }
 
-          .white,
-          .gray {
-            border: 1px solid;
-          }
-        }
-      }
+          .item {
+            display: flex;
+            flex-direction: column;
 
-      .example__color-pairs {
-        display: flex;
-        flex-wrap: wrap;
-
-        div {
-          margin-right: $lem * 2;
-          margin-bottom: $lem * 2;
-
-          @include portrait {
-            margin-right: 0;
+            .name {
+              @include text-style(title);
+            }
           }
 
+          &.example__colors {
+            .item {
+              justify-content: center;
+              align-items: center;
+              margin-right: $lem;
+              margin-bottom: $lem;
 
-          .placeholder {
-            @include text-style(body-text);
-            padding: $lem;
+              .placeholder {
+                @include circle(5em);
+              }
+
+              .white,
+              .gray {
+                border: 1px solid;
+              }
+            }
           }
 
-          .black-on-gray,
-          .blue-on-gray {
-            padding: $lem $lem * 2 $lem 0;
-            border-bottom: 1px solid;
+          &.example__color-pairs {
+            .item {
+              margin-right: $lem * 2;
+              margin-bottom: $lem * 2;
+
+              @include portrait {
+                margin-right: 0;
+              }
+
+              .placeholder {
+                @include text-style(body-text);
+                padding: $lem;
+                border: 1px solid;
+              }
+
+              .name {
+                padding-left: $lem;
+              }
+            }
           }
         }
       }

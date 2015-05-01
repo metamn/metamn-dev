@@ -2,9 +2,8 @@ html {
   &.styleguide-long-dash {
     body {
       .example {
-        div {
-          margin-bottom: $lem;
-
+        .box {
+          // for the long dash to work
           display: flex;
           flex-wrap: wrap;
           align-items: center;

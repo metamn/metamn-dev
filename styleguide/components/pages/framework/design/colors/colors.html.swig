@@ -9,7 +9,7 @@ title: Colors
     <h3>Colors</h3>
 
     {% for color in colors %}
-      <div>
+      <div class="item">
         <span class="{{ color.name }} placeholder"></span>
         <span class="name">{{ color.name }}</span>
       </div>
@@ -20,7 +20,7 @@ title: Colors
     <h3>Color pairs</h3>
 
     {% for color in color_pairs %}
-      <div>
+      <div class="item">
         <span class="{{ color.name }} placeholder">
           Colors don't exist alone yet in pairs, like black on white. All color pairs have a contrast ratio set for perfect readability.
         </span>

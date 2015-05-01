@@ -3,20 +3,19 @@ html {
     body {
       .example {
         display: flex;
-        flex-wrap: wrap;
-        align-items: center;
+        flex-direction: column;
 
-        .arrow {
-          @include arrow(blue-on-gray, $black);
+        .arrows {
+          @include colors(white-on-blue);
+          border: 1px solid;
+          padding: $lem;
         }
 
-        aside {
-          h3 {
-            display: flex;
-            margin-bottom: $lem;
-          }
+        .arrow {
+          @include arrow(white-on-blue, $black);
 
-          margin-right: $lem * 2;
+          position: relative;
+          top: $lem - $lem / 4;
         }
       }
     }

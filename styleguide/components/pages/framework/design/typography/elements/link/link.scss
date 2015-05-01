@@ -2,13 +2,15 @@ html {
   &.styleguide-link {
     body {
       .example {
-        div {
-          margin-bottom: $lem;
+        .box {
+          div + div {
+            margin-top: $lem;
+          }
         }
-        
+
         .example-1 {
           .link {
-            @include link(black-on-gray);
+            @include link(blue-on-gray);
           }
         }
 
