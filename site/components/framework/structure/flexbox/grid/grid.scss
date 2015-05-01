@@ -1,0 +1,22 @@
+// Grid
+//
+// Display flexbox items in a responsive grid
+//
+// Styleguide grid
+@mixin grid($item, $margin) {
+  display: flex;
+  flex-wrap: wrap;
+
+  #{$item} {
+    margin-right: $margin;
+    margin-bottom: $margin;
+
+    @include mobile {
+      margin-right: 0;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

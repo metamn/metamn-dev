@@ -119,6 +119,20 @@ Structure</div>
 <div>
 <a class="link" title="Figure" href="{{ site.url }}framework/structure/figure">Figure</a>
 </li>
+<li class="folder menu-item-flexbox">
+<div>
+Flexbox</div>
+<ul>
+<li class="file menu-item-grid">
+<div>
+<a class="link" title="Grid" href="{{ site.url }}framework/structure/flexbox/grid">Grid</a>
+</li>
+<li class="file menu-item-stretch">
+<div>
+<a class="link" title="Stretch" href="{{ site.url }}framework/structure/flexbox/stretch">Stretch</a>
+</li>
+</ul>
+</li>
 <li class="file menu-item-intrinsic-ratio">
 <div>
 <a class="link" title="Intrinsic ratio" href="{{ site.url }}framework/structure/intrinsic-ratio">Intrinsic ratio</a>

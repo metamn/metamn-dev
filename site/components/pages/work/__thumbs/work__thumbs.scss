@@ -2,8 +2,7 @@
   @include colors(white-on-blue);
   padding: $lem;
 
-  display: flex;
-  flex-wrap: wrap;
+  @include grid('.thumb', $lem);
 
   .thumb {
     @include thumb;

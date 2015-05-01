@@ -4,9 +4,6 @@
 //
 // Styleguide thumb
 @mixin thumb {
-  margin-bottom: $lem;
-  margin-right: $lem;
-
   .thumb__image {
     @include thumb__image;
   }

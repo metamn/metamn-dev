@@ -1,6 +1,8 @@
 html {
   &.about {
     body {
+      @include stretch--rows;
+
       .title {
         @include title;
       }
@@ -18,12 +20,6 @@ html {
           padding: 0 $lem;
         }
       }
-
-
-      display: flex;
-      flex-wrap: wrap;
-      height: 100vh;
-      align-items: flex-end;
 
       .title__main {
         transform: rotate(-90deg);
