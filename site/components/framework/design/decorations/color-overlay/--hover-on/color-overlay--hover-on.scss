@@ -1,0 +1,11 @@
+@mixin color-overlay--hover-on {
+  cursor: pointer;
+
+  &:hover {
+    &:before {
+      background: none;
+      z-index: -1;
+      opacity: 1;
+    }
+  }
+}

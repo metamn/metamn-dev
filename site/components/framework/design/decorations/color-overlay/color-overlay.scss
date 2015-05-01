@@ -1,12 +1,11 @@
 // Color overlay
 //
 // Applies a tint on an image. Used to make portfolio items look 'blueish' &mdash;uniform&mdash; on the Works page.
-// Based on [this excellent idea](http://www.impressivewebs.com/image-tint-blend-css/).
+// Based on [this idea](http://www.impressivewebs.com/image-tint-blend-css/).
 //
 // Styleguide color-overlay
-@mixin color-overlay($color, $opacity) {
+@mixin color-overlay($color, $opacity, $hover: on) {
   position: relative;
-  cursor: pointer;
 
   &:before {
     content: "";
@@ -21,11 +20,7 @@
     @include transition(opacity);
   }
 
-  &:hover {
-    &:before {
-      background: none;
-      z-index: -1;
-      opacity: 1;
-    }
+  @if ($hover == on ) {
+    @include color-overlay--hover-on;
   }
 }

@@ -12,7 +12,7 @@
   }
 
   figure {
-    @include color-overlay($blue, .1);
+    @include color-overlay($blue, .1, $hover: off);
   }
 
   @include portrait {
