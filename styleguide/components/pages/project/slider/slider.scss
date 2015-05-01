@@ -11,6 +11,7 @@ html {
 
         .slider__bullets {
           @include slider__bullets;
+          @include colors(white-on-blue);
           padding: $lem;
         }
       }
