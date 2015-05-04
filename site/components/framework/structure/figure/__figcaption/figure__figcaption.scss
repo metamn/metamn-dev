@@ -1,0 +1,25 @@
+@mixin figure__figcaption($figcaption) {
+  @if ($figcaption == off) {
+    display: none;
+  }
+
+  @if ($figcaption == on) {
+    display: flex;
+  }
+
+  @if ($figcaption == figcaption) {
+    display: none;
+
+    &.figcaption {
+      display: flex;
+    }
+  }
+
+  @if ($figcaption == from-title) {
+    display: none;
+
+    &.figcaption--from-title {
+      display: flex;
+    }
+  }
+}

@@ -99,10 +99,13 @@ var paths = {
 
 
   // .js files to move
-  js_move_src: 'site/assets/scripts/**/*.js',
+  js_move_src: 'assets/scripts/**/*.js',
 
   // .js files to move destination
   js_move_dest: 'dist/assets/scripts',
+
+  // .js files to move destination folder for Styleguide
+  js_move_dest: 'dist/styleguide/assets/scripts',
 
 
 
@@ -111,10 +114,10 @@ var paths = {
   image_resize_dest: 'site/assets/images/resized',
 
   // images to resize and optimize
-  images_resize_src: 'site/assets/images/*.{png,jpg}',
+  images_resize_src: 'site/assets/images/*.{png,jpg,gif}',
 
   // images to move
-  images_src: 'site/assets/images/*.{png,jpg,mp4,webm}',
+  images_src: 'site/assets/images/*.{png,jpg,gif}',
 
   // images destination
   images_dest: 'dist/assets/images',
@@ -262,14 +265,20 @@ gulp.task('js_sg', function() {
 });
 
 
-
-
-// Scripts
+// Move script files
 // - move (third party) scripts to dest
-gulp.task('scripts', function() {
-  return gulp.src(paths.js_move_src)
+var _js_move = function(src, dest) {
+  return gulp.src(src)
     .pipe(plumber({errorHandler: onError}))
-    .pipe(gulp.dest(paths.js_move_dest));
+    .pipe(gulp.dest(dest));
+}
+
+gulp.task('js_move', function() {
+  _js_move('site/' + paths.js_move_src, paths.js_move_dest);
+});
+
+gulp.task('js_sg_move', function() {
+  _js_move('styleguide/' + paths.js_move_src, paths.js_move_dest);
 });
 
 
@@ -585,7 +594,7 @@ gulp.task('default', function(cb) {
     'html',
     'scss',
     'js',
-    'scripts',
+    'js_move',
     //'images',
     'fonts',
     cb
@@ -604,6 +613,7 @@ gulp.task('sg', function(cb) {
     'html_sg',
     'scss_sg',
     'js_sg',
+    'js_sg_move',
     cb
   );
 });
