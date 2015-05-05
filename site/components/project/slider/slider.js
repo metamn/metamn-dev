@@ -18,8 +18,6 @@ var slider = function(slide, bullets) {
 
 
 
-
-
   // Bullets
   var bullets = document.querySelectorAll(bullets);
 
@@ -52,10 +50,7 @@ var slider = function(slide, bullets) {
   }
 
 
-
-
   // Helpers
-
   // Return the index of the clicked element
   function bulletIndex(bullet) {
     var siblings = bullet.parentNode.childNodes;
