@@ -99,13 +99,10 @@ var paths = {
 
 
   // .js files to move
-  js_move_src: 'assets/scripts/**/*.js',
+  js_move_src: 'assets/scripts/*.js',
 
   // .js files to move destination
   js_move_dest: 'dist/assets/scripts',
-
-  // .js files to move destination folder for Styleguide
-  js_move_dest: 'dist/styleguide/assets/scripts',
 
 
 

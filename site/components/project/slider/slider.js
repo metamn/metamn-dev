@@ -50,7 +50,33 @@ var slider = function(slide, bullets) {
   }
 
 
+
+  // jQuery TouchSlider
+  $(function() {
+    $(".slider").swipe( {
+      //Generic swipe handler for all directions
+      swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
+        switch (direction) {
+          case 'left':
+            previousSlide(1);
+            removeActiveBulletClass();
+            setActiveBulletClass();
+            break;
+          case 'right':
+            nextSlide(1);
+            removeActiveBulletClass();
+            setActiveBulletClass();
+            break;
+        }
+      }
+    });
+  });
+
+
+
+
   // Helpers
+
   // Return the index of the clicked element
   function bulletIndex(bullet) {
     var siblings = bullet.parentNode.childNodes;
@@ -67,6 +93,17 @@ var slider = function(slide, bullets) {
       bullets[i].classList.remove('active');
     }
   }
+
+
+  // Set active state for a bullet
+  function setActiveBulletClass() {
+    for (var i = 0; i < bullets.length; i++) {
+      if (slides[i].style['transform'] == 'translateX(0px)') {
+        bullets[i].classList.add('active');
+      }
+    }
+  }
+
 
   // Get previous slide
   // - it moves prev with 'step' slides
