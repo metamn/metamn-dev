@@ -1,4 +1,4 @@
-var slider = function(slide, bullets) {
+var slider = function(slide, bullets, touchTarget) {
 
   // Slides
   var slides = document.querySelectorAll(slide);
@@ -8,7 +8,14 @@ var slider = function(slide, bullets) {
   // - move out of viewport all inactive slides
   function setTransform() {
     for (var i = 0; i < slideCount; i++ ) {
-      slides[i].style['transform'] = 'translateX(' + ((i + pos) * slides[0].offsetWidth) + 'px)';
+      // We do these manually instead of loading Modernizr which is not used elsewhere
+      // - from https://github.com/thebird/Swipe/blob/master/swipe.js
+      slides[i].style.webkitTransform = 'translate(' + ((i + pos) * slides[0].offsetWidth) + 'px, 0)' + 'translateZ(0)';
+
+      slides[i].style.MozTransform =
+      slides[i].style.msTransform =
+      slides[i].style.OTransform =
+      slides[i].style.transform = 'translateX(' + ((i + pos) * slides[0].offsetWidth) + 'px)';
     }
   }
 
@@ -51,10 +58,10 @@ var slider = function(slide, bullets) {
 
 
 
-  // jQuery TouchSlider
+  // - jQuery TouchSlider
   $(function() {
-    $(".slider").swipe( {
-      //Generic swipe handler for all directions
+    $(touchTarget).swipe( {
+      allowPageScroll: "vertical",
       swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
         switch (direction) {
           case 'left':
@@ -121,4 +128,4 @@ var slider = function(slide, bullets) {
 }
 
 
-slider('.slides .slide', '.slider__bullets div');
+slider('.slides .slide', '.slider__bullets div', '.slider figure');

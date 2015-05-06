@@ -215,7 +215,7 @@ gulp.task('image_optimize', function() {
 // Move resized and compressed images
 // - collect all images and move to dist/assets/images
 gulp.task('image_move', function() {
-  return gulp.src(paths.image_resize_dest + '/*.{png,jpg}')
+  return gulp.src(paths.image_resize_dest + '/*.{png,jpg,.gif}')
     .pipe(plumber({errorHandler: onError}))
     .pipe(newer(paths.images_dest))
     .pipe(gulp.dest(paths.images_dest));
