@@ -1,0 +1,26 @@
+@mixin intro {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+
+  .intro__title {
+    @include intro__title;
+  }
+
+  .intro__lines {
+    @include intro__lines;
+  }
+
+  .intro__numbers {
+    @include intro__numbers;
+  }
+
+  .intro__colors {
+    @include intro__colors;
+  }
+
+  .intro__description {
+    @include intro__description;
+  }
+}

@@ -1,0 +1,7 @@
+@mixin intro__numbers {
+  max-width: $text-block-width / 2;
+
+  div {
+    @include text-style(logo);
+  }
+}

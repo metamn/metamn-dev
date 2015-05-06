@@ -1,0 +1,17 @@
+@mixin intro__colors {
+  @include grid('.item', $lem * 2);
+  padding-top: $lem;
+  max-width: $text-block-width * 1.5;
+
+  .item {
+    display: flex;
+
+    .placeholder {
+      @include circle(5em);
+    }
+
+    .gray {
+      border: 2px solid;
+    }
+  }
+}

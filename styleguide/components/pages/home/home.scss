@@ -1,23 +1,13 @@
 html {
   &.styleguide-home {
     body {
+      .title {
+        display: none;
+      }
+
       .example {
-        align-items: center;
-        
-        .example__title {
-          display: none;
-        }
-
-        .text {
-          @include text-style(body-text);
-
-          a {
-            @include link(black-on-gray, underline);
-          }
-        }
-
-        .home__styleguide-sample {
-          @include home__styleguide-sample;
+        .intro {
+          @include intro;
         }
       }
     }

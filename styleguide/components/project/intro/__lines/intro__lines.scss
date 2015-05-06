@@ -1,0 +1,11 @@
+@mixin intro__lines {
+  max-width: $text-block-width;
+
+  ul {
+    list-style: square;
+  }
+
+  li {
+    border-bottom: 1px solid;
+  }
+}
