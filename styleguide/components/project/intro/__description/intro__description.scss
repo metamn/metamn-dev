@@ -13,12 +13,14 @@
       @include text-style(body-text);
 
       &:nth-of-type(2) {
-        border: 1px dashed;
+        border: 2px dashed;
+        padding: $lem / 2;
+
+        @include landscape {
+          transform: rotate(-90deg);
+        }
 
         @include desktop {
-          border: none;
-          @include colors(gray-on-black);
-          transform: rotate(-90deg);
           padding: $lem;
         }
       }

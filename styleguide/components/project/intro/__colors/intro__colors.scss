@@ -3,6 +3,14 @@
   padding-top: $lem;
   max-width: $text-block-width * 1.5;
 
+  @include landscape {
+    order: 2;
+  }
+
+  @include desktop {
+    order: 0;
+  }
+
   .item {
     display: flex;
 
