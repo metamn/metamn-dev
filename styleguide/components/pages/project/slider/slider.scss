@@ -1,18 +1,23 @@
 html {
   &.styleguide-slider {
     body {
+      .description-and-example {
+        @include portrait {
+          flex-wrap: nowrap;
+        }
+      }
       .example {
         @include colors(white-on-blue);
         max-width: $text-block-width;
-
-        .slider {
-          @include slider(4,3);
-        }
 
         .slider__bullets {
           @include slider__bullets;
           @include colors(white-on-blue);
           padding: $lem;
+        }
+
+        .slider {
+          @include slider(4, 3);
         }
       }
     }

@@ -10,6 +10,7 @@
     padding-bottom: $lem / 4;
     margin-bottom: $lem / 4;
     border-bottom: 1px solid;
+    word-wrap: break-word;
 
     @include text-style(title);
   }
