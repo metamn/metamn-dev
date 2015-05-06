@@ -3,4 +3,15 @@
   background: url("{{ site.url }}assets/images/spinner.gif") no-repeat center center;
   min-width: 68px;
   min-height: 68px;
+
+  @include mobile {
+    background: url("{{ site.url }}assets/images/spinner-small.gif") no-repeat center center;
+    min-width: 30px;
+    min-height: 30px;
+  }
+
+  // Hide image alt text
+  img {
+    color: transparent;
+  }
 }
