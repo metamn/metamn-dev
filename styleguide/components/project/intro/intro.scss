@@ -8,6 +8,8 @@
   @include desktop {
     padding: $lem * 2 $lem;
   }
+  
+
 
   .intro__title {
     @include intro__title;

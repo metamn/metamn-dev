@@ -1,0 +1,33 @@
+html {
+  &.styleguide-home {
+    body {
+      .cloned {
+        position: absolute;
+        z-index: -1;
+        @include colors(black-on-gray);
+
+
+        @include text-style(body-text);
+        border: 2px dashed;
+        padding: $lem * 2 $lem / 2;
+        text-align: center;
+
+        @include desktop {
+          transform: rotate(-90deg);
+        }
+      }
+
+
+      @include desktop {
+        .example {
+          overflow: hidden;
+          padding-bottom: 0 !important;
+        }
+
+        .styleguide-menu {
+          margin-top: $lem;
+        }
+      }
+    }
+  }
+}

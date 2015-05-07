@@ -8,9 +8,11 @@
     {% include '../../../../../site/components/framework/design/typography/elements/link/link.html.swig' %}
     It serves as a visual documentation for the framework and components building the site.
   </p>
-  <p>
+
+  <p class="second">
     Any changes made to the site design is automatically reflected in this styleguide.
   </p>
+
   <p>
     We use the
     {% set link = { url: 'https://en.bem.info/method/filesystem/', title: 'BEM methodology', type: "external" } %}
