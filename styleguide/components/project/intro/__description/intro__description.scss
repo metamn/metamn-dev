@@ -1,21 +1,22 @@
 @mixin intro__description {
   flex-basis: 100%;
+  align-items: center;
+  @include grid('p', $lem);
 
-  .text {
-    @include grid('p', $lem);
-    align-items: center;
+  a {
+    @include link(white-on-blue);
+  }
 
-    a {
-      @include link(white-on-blue);
-    }
+  p {
+    @include text-style(body-text);
 
-    p {
-      @include text-style(body-text);
+    &:nth-of-type(2) {
+      border: 2px dashed;
+      padding: $lem * 2 $lem / 2;
+      text-align: center;
 
-      &:nth-of-type(2) {
-        border: 2px dashed;
-        padding: $lem * 2 $lem / 2;
-        text-align: center;
+      @include desktop {
+        transform: rotate(-90deg);
       }
     }
   }
