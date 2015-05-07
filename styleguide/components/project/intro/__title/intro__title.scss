@@ -2,12 +2,18 @@
   max-width: $text-block-width;
   padding: $lem 0;
 
-  @include colors(gray-on-black);
-
   span {
     word-wrap: break-word;
     line-height: 0.5;
     font-weight: 700;
     font-size: 9.969em;
+  }
+
+  @include portrait {
+    @include intro__title--portrait;
+  }
+
+  @include mobile {
+    @include intro__title--mobile;
   }
 }

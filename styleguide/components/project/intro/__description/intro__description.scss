@@ -1,10 +1,8 @@
 @mixin intro__description {
   flex-basis: 100%;
   align-items: center;
+
   @include grid('p', $lem);
-  @include landscape {
-    flex-wrap: nowrap;
-  }
 
   a {
     @include link(white-on-blue);
@@ -12,31 +10,22 @@
   }
 
   p {
-    @include text-style(body-text);
+    @include intro__description--p;
   }
 
-  .second {
-    border: 2px dashed;
-    padding: $lem * 2 $lem / 2;
-    text-align: center;
+  .bordered {
+    @include intro__description--bordered;
   }
 
   .rotated {
-    @include desktop {
-      transform: rotate(-90deg);
-    }
+    @include intro__description--rotated;
+  }
+
+  @include landscape {
+    flex-wrap: nowrap;
   }
 
   @include tablet-and-below {
     justify-content: space-around;
-
-    p {
-      max-width: 20em;
-
-      &.second {
-        width: 5em;
-        word-wrap: break-word;
-      }
-    }
   }
 }

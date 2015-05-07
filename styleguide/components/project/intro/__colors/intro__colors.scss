@@ -14,6 +14,11 @@
     max-width: $text-block-width * 2;
   }
 
+  @include mobile {
+    justify-content: flex-start;
+    padding-bottom: $lem;
+  }
+
   .item {
     display: flex;
     flex-direction: column;

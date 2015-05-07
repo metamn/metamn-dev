@@ -4,11 +4,12 @@
   justify-content: space-between;
 
   @include colors(gray-on-black);
+
   padding: $lem;
+
   @include desktop {
     padding: $lem * 2 $lem;
   }
-  
 
 
   .intro__title {

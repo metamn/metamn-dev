@@ -18,4 +18,4 @@ var cloneParagraph = function(paragraph) {
 }
 
 
-cloneParagraph('.styleguide-home .intro__description .second');
+cloneParagraph('.styleguide-home .intro__description .bordered');
