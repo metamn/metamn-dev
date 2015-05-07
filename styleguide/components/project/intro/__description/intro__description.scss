@@ -20,4 +20,17 @@
       }
     }
   }
+
+  @include tablet-and-below {
+    justify-content: space-around;
+
+    p {
+      max-width: 20em;
+
+      &:nth-of-type(2) {
+        width: 5em;
+        word-wrap: break-word;
+      }
+    }
+  }
 }

@@ -3,6 +3,13 @@
   padding-top: $lem;
 
   max-width: $text-block-width;
+
+  @include tablet-and-below {
+    max-width: none;
+    flex-basis: 100%;
+    justify-content: space-around;
+  }
+
   @include desktop {
     max-width: $text-block-width * 2;
   }
