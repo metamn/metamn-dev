@@ -1,3 +1,3 @@
-## metamn-dev
+## Metamn
 
-The source code for http://metamn.io
+The source code for http://metamn.io.

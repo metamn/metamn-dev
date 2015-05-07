@@ -15,11 +15,12 @@
     <script src="//use.typekit.net/wrb3hlx.js"></script>
     <script>try{Typekit.load();}catch(e){}</script>
 
-
     <link href="{{ site.url }}assets/styles/site.css" media="screen, projection" rel="stylesheet" type="text/css" />
 
     <!-- Picturefill Responsive Images -->
     <script async src="{{ site.url }}assets/scripts/picturefill.min.js"></script>
+
+    {% include '__icons/head__icons.html.swig' %}
   </head>
 
   <body>

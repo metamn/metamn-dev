@@ -15,6 +15,8 @@
     <script src="//use.typekit.net/wrb3hlx.js"></script>
     <script>try{Typekit.load();}catch(e){}</script>
 
+    {% include '../../../../../site/components/project/templates/head/__icons/head__icons.html.swig' %}
+
 
     <link href="{{ site.url }}assets/styles/styleguide.css" media="screen, projection" rel="stylesheet" type="text/css" />
 
