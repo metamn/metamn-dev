@@ -3,14 +3,11 @@
   flex-wrap: wrap;
   justify-content: space-between;
 
-  .intro__title,
-  .intro__lines,
-  .intro__numbers,
-  .intro__colors,
-  .intro__description {
-    order: 0;
+  @include colors(gray-on-black);
+  padding: $lem;
+  @include desktop {
+    padding: $lem * 2 $lem;
   }
-
 
   .intro__title {
     @include intro__title;

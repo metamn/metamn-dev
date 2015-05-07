@@ -2,9 +2,13 @@
   flex-basis: 100%;
   align-items: center;
   @include grid('p', $lem);
+  @include landscape {
+    flex-wrap: nowrap;
+  }
 
   a {
     @include link(white-on-blue);
+    @include text-style(menu);
   }
 
   p {
