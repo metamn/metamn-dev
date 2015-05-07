@@ -1,11 +1,6 @@
 @mixin intro__lines {
   max-width: $text-block-width;
 
-  @include landscape {
-    min-width: $text-block-width;
-    padding: 0 $lem;
-  }
-
   @include desktop {
     min-width: $lem * 2;
     padding: 0 $lem;

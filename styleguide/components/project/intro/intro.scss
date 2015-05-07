@@ -3,6 +3,14 @@
   flex-wrap: wrap;
   justify-content: space-between;
 
+  .intro__title,
+  .intro__lines,
+  .intro__numbers,
+  .intro__colors,
+  .intro__description {
+    order: 0;
+  }
+
 
   .intro__title {
     @include intro__title;

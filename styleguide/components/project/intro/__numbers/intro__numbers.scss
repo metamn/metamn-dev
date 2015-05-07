@@ -3,5 +3,9 @@
 
   div {
     @include text-style(logo);
+
+    + div {
+      margin-top: $lem;
+    }
   }
 }
