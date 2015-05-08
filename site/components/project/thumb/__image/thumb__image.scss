@@ -3,7 +3,7 @@
   padding: $lem;
 
   a {
-    @include link(white-on-thumbblue);
+    @include link(white-on-thumbblue, $hover: off);
   }
 
   figure {

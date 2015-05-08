@@ -1,5 +1,5 @@
 @mixin menu--inactive {
   a {
-    text-decoration: line-through;
+    @include link($decoration: line-through);
   }
 }

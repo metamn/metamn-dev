@@ -6,7 +6,7 @@
     @include text-style(body-text);
 
     a {
-      @include link(black-on-gray, underline);
+      @include link(black-on-gray, underline, $hover: off);
     }
   }
 }

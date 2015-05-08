@@ -484,7 +484,7 @@ function makeLI(elem) {
       html.push(title + '</div>');
       html.push(makeUL(elem.children));
     } else {
-      html.push('<a class="link" title="' + title + '" href="' + link + '">' + title + '</a>');
+      html.push('<a class="link" title="' + title + '" href="' + link + '"><span data-hover="' + title + '">' + title + '</span></a>');
     }
 
     html.push('</li>');
