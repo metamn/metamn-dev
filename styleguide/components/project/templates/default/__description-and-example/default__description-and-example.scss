@@ -14,6 +14,7 @@
 
   @include tablet-and-below {
     flex-direction: column;
+    flex-wrap: nowrap;
 
     .styleguide-description {
       flex-basis: auto;
