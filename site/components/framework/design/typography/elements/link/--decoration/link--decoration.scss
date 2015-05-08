@@ -1,0 +1,12 @@
+@mixin link--decoration($decoration) {
+  text-decoration: $decoration;
+
+  @if ($decoration == underline) {
+    @include transition(opacity);
+
+    &:hover,
+    &:active {
+      text-decoration: line-through;
+    }
+  }
+}

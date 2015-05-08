@@ -9,7 +9,7 @@
     @include colors($color-scheme);
   }
 
-  text-decoration: $decoration;
+  @include link--decoration($decoration);
 
   @if ($hover == on) {
     @include flip($decoration);

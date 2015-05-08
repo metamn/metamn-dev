@@ -69,7 +69,7 @@
   </picture>
 
   <figcaption class="figcaption {{ figcaption_class }}">
-    {{ figcaption }}
+    {{ figcaption | safe }}
   </figcaption>
 
   {% if image.url %}</a>{% endif %}
