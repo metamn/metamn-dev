@@ -1,6 +1,6 @@
 @mixin page-transition--in {
   section, header, nav, article, aside {
-    animation: fadeIn 0.25s ease-in;
+    animation: fadeIn .5s ease-in;
   }
 }
 
@@ -8,6 +8,11 @@
   0% {
     opacity: 0;
     transform: translate3d(0, 100%, 0);
+  }
+
+  50% {
+    opacity: 0.5;
+    transform: translate3d(0, 50%, 0);
   }
 
   100% {
