@@ -2,6 +2,7 @@ html {
   &.styleguide {
     body {
       @include colors(black-on-gray);
+      @include page-transition;
 
       .styleguide-header {
         @include header(black-on-gray);

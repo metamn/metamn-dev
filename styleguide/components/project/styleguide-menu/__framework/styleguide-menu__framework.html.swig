@@ -11,6 +11,10 @@ Behavior</div>
 <div>
 <a class="link" title="Flip" href="{{ site.url }}framework/behavior/flip"><span data-hover="Flip">Flip</span></a>
 </li>
+<li class="file menu-item-page-transition">
+<div>
+<a class="link" title="Page transition" href="{{ site.url }}framework/behavior/page-transition"><span data-hover="Page transition">Page transition</span></a>
+</li>
 <li class="file menu-item-transition">
 <div>
 <a class="link" title="Transition" href="{{ site.url }}framework/behavior/transition"><span data-hover="Transition">Transition</span></a>

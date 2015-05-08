@@ -1,0 +1,4 @@
+@mixin page-transition {
+  @include page-transition--in;
+  @include page-transition--out;
+}

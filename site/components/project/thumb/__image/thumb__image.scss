@@ -10,7 +10,7 @@
     @include figure($figcaption: on);
     @include color-overlay($thumbblue, .1);
 
-    .figcaption {
+    .figcaption { 
       padding: $lem;
     }
   }
