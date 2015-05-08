@@ -1,0 +1,6 @@
+@mixin animation($animation, $duration: 0.25s) {
+  animation-duration: $duration;
+  transition-timing-function: ease-in;
+  animation-fill-mode: both;
+  animation-name: #{$animation};
+}

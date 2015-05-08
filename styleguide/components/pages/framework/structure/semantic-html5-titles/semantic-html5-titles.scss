@@ -4,6 +4,10 @@ html {
       .example {
         figure {
           @include figure;
+
+          img {
+            width: 100%;
+          }
         }
 
         .aside__title {

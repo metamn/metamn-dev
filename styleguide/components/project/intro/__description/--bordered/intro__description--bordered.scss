@@ -1,5 +1,5 @@
 @mixin intro__description--bordered {
-  border: 2px dashed;
+  @include colors(black-on-gray);
   padding: $lem * 2 $lem / 2;
   text-align: center;
 

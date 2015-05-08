@@ -10,7 +10,7 @@
   </p>
 
   <p class="bordered">
-    Any changes made to the site design is automatically reflected in this styleguide.
+    Any changes made to the site design are automatically reflected in this styleguide.
   </p>
 
   <p>

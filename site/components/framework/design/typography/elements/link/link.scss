@@ -4,7 +4,36 @@
 // However links inside a long text can be decorated with an underline, or, inactive menu items can be decorated by a line-through.
 //
 // Styleguide link
-@mixin link($color-scheme, $decoration: none) {
+@mixin link($color-scheme, $decoration: none, $hover: on) {
   text-decoration: $decoration;
   @include colors($color-scheme);
+
+  position: relative;
+	display: inline-block;
+  outline: none;
+
+  &:hover,
+  &:focus {
+	  outline: none;
+  }
+
+  overflow: hidden;
+
+  span {
+  	position: relative;
+  	display: inline-block;
+  	transition: transform 0.3s;
+  }
+
+   span::before {
+  	position: absolute;
+  	top: 100%;
+  	content: attr(data-hover);
+  	transform: translate3d(0,0,0);
+  }
+
+  &:hover span,
+  &:focus span {
+  	transform: translateY(-100%);
+  }
 }

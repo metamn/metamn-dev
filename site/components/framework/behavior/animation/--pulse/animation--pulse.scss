@@ -1,0 +1,13 @@
+@mixin animation--pulse {
+  animation-name: pulse;
+}
+
+@keyframes pulse {
+  0% {
+    color: yellow;
+  }
+
+  100% {
+    color: $white;
+  }
+}

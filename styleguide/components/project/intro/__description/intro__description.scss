@@ -5,8 +5,7 @@
   @include grid('p', $lem);
 
   a {
-    @include link(white-on-blue);
-    @include text-style(menu);
+    @include link(gray-on-black, underlined);
   }
 
   p {

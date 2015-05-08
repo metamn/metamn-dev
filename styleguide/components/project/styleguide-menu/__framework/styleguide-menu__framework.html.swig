@@ -7,6 +7,10 @@ Framework</div>
 <div>
 Behavior</div>
 <ul>
+<li class="file menu-item-animation">
+<div>
+<a class="link" title="Animation" href="{{ site.url }}framework/behavior/animation">Animation</a>
+</li>
 <li class="file menu-item-transition">
 <div>
 <a class="link" title="Transition" href="{{ site.url }}framework/behavior/transition">Transition</a>
