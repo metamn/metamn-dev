@@ -1,10 +1,10 @@
 @mixin page-transition--in {
   section, article, aside {
-    animation: fadeIn .3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+    animation: fadeIn .5s cubic-bezier(0.465, 0.183, 0.153, 0.946);
   }
 
   .header, .styleguide-header, .menu, .title {
-    animation: moveIn .3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+    animation: moveIn .5s cubic-bezier(0.465, 0.183, 0.153, 0.946);
   }
 }
 
