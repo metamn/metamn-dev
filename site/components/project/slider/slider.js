@@ -58,6 +58,21 @@ var slider = function(slide, bullets, touchTarget) {
 
 
 
+  // Click on a slide
+  // - add click event on slide
+  for (var i = 0; i < bullets.length; i++) {
+    slides[i].addEventListener('click', clickSlide, false);
+  }
+
+  // - click on a slide
+  function clickSlide(event) {
+    previousSlide(1);
+    removeActiveBulletClass();
+    setActiveBulletClass();
+  }
+
+
+
   // - jQuery TouchSlider
   $(function() {
     $(touchTarget).swipe( {
