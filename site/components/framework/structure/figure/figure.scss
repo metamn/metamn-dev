@@ -4,7 +4,7 @@
 // using the [Picturefill library](http://scottjehl.github.io/picturefill/).
 //
 // Styleguide figure
-@mixin figure($figcaption: off) {
+@mixin figure($figcaption: off, $spinner-type: '') {
   margin: 0;
 
   // Fluid images, both vertically and horizontally. Works well with the intrinsic ratio mixin
@@ -20,7 +20,7 @@
   }
 
   // Spinner
-  @include figure__spinner;
+  @include figure__spinner($spinner-type);
 
   figcaption {
     @include figure__figcaption($figcaption);

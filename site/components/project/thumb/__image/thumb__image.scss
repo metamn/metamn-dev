@@ -7,10 +7,10 @@
   }
 
   figure {
-    @include figure($figcaption: on);
+    @include figure($figcaption: on, $spinner-type: '-thumbblue');
     @include color-overlay($thumbblue, .1);
 
-    .figcaption { 
+    .figcaption {
       padding: $lem;
     }
   }
