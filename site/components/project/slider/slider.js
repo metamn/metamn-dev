@@ -4,6 +4,7 @@ var slider = function(slide, bullets, touchTarget) {
   var slides = document.querySelectorAll(slide);
   var slideCount = slides.length;
   var pos = 0;
+  var direction = 'prev';
 
   // - move out of viewport all inactive slides
   function setTransform() {
@@ -66,10 +67,23 @@ var slider = function(slide, bullets, touchTarget) {
 
   // - click on a slide
   function clickSlide(event) {
-    previousSlide(1);
+    if (direction == 'prev') {
+      previousSlide(1);
+    } else {
+      nextSlide(1);
+    }
+
+    if (pos == -(slideCount - 1)) {
+      direction = 'next';
+    }
+    if (pos == 0) {
+      direction = 'prev';
+    }
+
     removeActiveBulletClass();
     setActiveBulletClass();
   }
+
 
 
 
