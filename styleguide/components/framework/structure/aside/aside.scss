@@ -12,7 +12,7 @@
     display: flex;
     order: 2;
 
-    @include box-title(gray-on-black);
+    @include box-title--with-border;
   }
 
   .box {

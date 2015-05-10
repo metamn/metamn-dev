@@ -1,11 +1,11 @@
 html {
   &.styleguide {
     body {
-      @include colors(black-on-gray);
+      @include colors(blue-on-white);
       //@include page-transition;
 
       .styleguide-header {
-        @include header(black-on-gray);
+        @include header(blue-on-white);
       }
 
       .title {
@@ -21,7 +21,7 @@ html {
       }
 
       .menu {
-        @include menu(black-on-gray);
+        @include menu(blue-on-white);
       }
     }
   }

@@ -19,40 +19,9 @@
       "name": "thumbblue",
       "value": "rgba(38, 38, 255, 1)",
       "description": "A lighter highlight color"
-    },
-    {
-      "name": "gray",
-      "value": "rgba(240, 228, 212, 1)",
-      "description": "Secondary background color"
     }
   ],
   "color_pairs": [
-    {
-      "name": "black-on-gray",
-      "properties": [
-        {
-          "name": "color",
-          "value": "$black"
-        },
-        {
-          "name": "background-color",
-          "value": "$gray"
-        }
-      ]
-    },
-    {
-      "name": "blue-on-gray",
-      "properties": [
-        {
-          "name": "color",
-          "value": "$blue"
-        },
-        {
-          "name": "background-color",
-          "value": "$gray"
-        }
-      ]
-    },
     {
       "name": "white-on-blue",
       "properties": [
@@ -80,15 +49,15 @@
       ]
     },
     {
-      "name": "gray-on-black",
+      "name": "blue-on-white",
       "properties": [
         {
           "name": "color",
-          "value": "$gray"
+          "value": "$blue"
         },
         {
           "name": "background-color",
-          "value": "$black"
+          "value": "$white"
         }
       ]
     }

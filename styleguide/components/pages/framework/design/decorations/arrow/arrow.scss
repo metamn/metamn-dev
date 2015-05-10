@@ -12,10 +12,6 @@ html {
           position: relative;
           top: $lem - $lem / 4;
         }
-
-        .aside__title {
-          @include box-title--with-border;
-        }
       }
     }
   }

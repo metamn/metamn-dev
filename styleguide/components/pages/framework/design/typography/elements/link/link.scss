@@ -10,19 +10,20 @@ html {
 
         .example-1 {
           .link {
-            @include link(blue-on-gray);
+            @include link(blue-on-white);
+            @include text-style(menu);
           }
         }
 
         .example-2 {
           .link {
-            @include link(black-on-gray, underlined);
+            @include link(blue-on-white, underlined);
           }
         }
 
         .example-3 {
           .link {
-            @include link(black-on-gray, line-through);
+            @include link(blue-on-white, line-through);
           }
         }
       }

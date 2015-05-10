@@ -7,7 +7,7 @@
   flex-wrap: wrap;
 
   a {
-    @include link(blue-on-gray);
+    @include link(blue-on-white);
     @include text-style(menu);
   }
 

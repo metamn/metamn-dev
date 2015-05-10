@@ -9,7 +9,7 @@ html {
           max-width: $text-block-width;
           align-items: center;
 
-          @include colors(gray-on-black);
+          @include colors(white-on-blue);
           padding: $lem / 2 $lem;
           margin-bottom: $lem;
 

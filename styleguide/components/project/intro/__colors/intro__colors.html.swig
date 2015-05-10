@@ -21,9 +21,4 @@
       <span class="name">thumbblue</span>
     </div>
 
-    <div class="item">
-      <span class="gray placeholder"></span>
-      <span class="name">gray</span>
-    </div>
-
 </article>

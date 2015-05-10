@@ -12,6 +12,10 @@ html {
             @include long-dash;
           }
         }
+
+        .aside__title {
+          @include box-title--with-border;
+        }
       }
     }
   }

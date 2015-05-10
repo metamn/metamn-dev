@@ -12,7 +12,7 @@ html {
 
         .aside__title {
           a {
-            @include link(gray-on-black, underline);
+            @include link(blue-on-white, underline);
           }
         }
       }

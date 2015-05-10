@@ -1,12 +1,11 @@
 @mixin styleguide-description {
   padding: $lem;
-  @include colors(black-on-gray);
 
   .text {
     @include text-style(body-text);
 
     a {
-      @include link(black-on-gray, underline, $hover: off);
+      @include link(blue-on-white, underline, $hover: off);
     }
   }
 }

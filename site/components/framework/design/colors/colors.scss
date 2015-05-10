@@ -18,24 +18,9 @@ $blue: rgba(0, 0, 255, 1);
 // A lighter highlight color
 $thumbblue: rgba(38, 38, 255, 1);
 
-// Secondary background color
-$gray: rgba(240, 228, 212, 1);
-
 
 // Color combinations. Colors are not used standalone but in pairs
 @mixin colors($name) {
-
-  @if ($name == 'black-on-gray') {
-    color: $black;
-    background-color: $gray;
-    
-  }
-
-  @if ($name == 'blue-on-gray') {
-    color: $blue;
-    background-color: $gray;
-    
-  }
 
   @if ($name == 'white-on-blue') {
     color: $white;
@@ -49,9 +34,9 @@ $gray: rgba(240, 228, 212, 1);
     
   }
 
-  @if ($name == 'gray-on-black') {
-    color: $gray;
-    background-color: $black;
+  @if ($name == 'blue-on-white') {
+    color: $blue;
+    background-color: $white;
     
   }
 
@@ -75,24 +60,8 @@ $gray: rgba(240, 228, 212, 1);
   background: rgba(38, 38, 255, 1);
 };
 
-.gray {
-  background: rgba(240, 228, 212, 1);
-};
-
 
 // Color pair classes
-
-.black-on-gray {
-  color: $black;
-  background-color: $gray;
-  
-}
-
-.blue-on-gray {
-  color: $blue;
-  background-color: $gray;
-  
-}
 
 .white-on-blue {
   color: $white;
@@ -106,9 +75,9 @@ $gray: rgba(240, 228, 212, 1);
   
 }
 
-.gray-on-black {
-  color: $gray;
-  background-color: $black;
+.blue-on-white {
+  color: $blue;
+  background-color: $white;
   
 }
 

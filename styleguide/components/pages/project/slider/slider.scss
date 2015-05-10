@@ -7,7 +7,6 @@ html {
         }
       }
       .example {
-        @include colors(white-on-blue);
         max-width: $text-block-width;
 
         .slider__bullets {

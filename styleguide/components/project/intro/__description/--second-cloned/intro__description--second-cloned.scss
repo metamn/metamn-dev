@@ -7,7 +7,7 @@ html {
 
         @include text-style(body-text);
         @include intro__description--bordered;
-        @include colors(gray-on-black);
+        //@include colors(gray-on-black);
         @include intro__description--rotated;
 
         @include mobile {
