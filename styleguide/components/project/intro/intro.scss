@@ -3,6 +3,8 @@
   flex-wrap: wrap;
   justify-content: space-between;
 
+  @include colors(white-on-blue);
+  padding: $lem;
 
   .intro__title {
     @include intro__title;

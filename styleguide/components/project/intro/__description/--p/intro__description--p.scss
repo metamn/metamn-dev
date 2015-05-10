@@ -4,8 +4,4 @@
   @include tablet-and-below {
     max-width: 20em;
   }
-
-  @include mobile {
-    display: none;
-  }
 }

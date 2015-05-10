@@ -10,12 +10,14 @@ html {
       }
 
       .example {
+        padding: 0 !important;
+
         .intro {
           @include intro;
         }
 
         @include mobile {
-          padding: $lem 0 0 !important;
+          padding-top: $lem;
         }
       }
     }
