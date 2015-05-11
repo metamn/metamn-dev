@@ -1,0 +1,17 @@
+html {
+  &.styleguide-flip {
+    body {
+      .description-and-example {
+        .example {
+          .aside {
+            .link {
+              @include link(blue-on-white);
+              @include text-style(menu);
+              @include flip;
+            }
+          }
+        }
+      }
+    }
+  }
+}
