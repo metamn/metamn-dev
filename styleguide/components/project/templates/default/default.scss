@@ -2,7 +2,7 @@ html {
   &.styleguide {
     body {
       @include colors(blue-on-white);
-      //@include page-transition;
+      @include stretch--columns;
 
       .styleguide-header {
         @include header(blue-on-white);

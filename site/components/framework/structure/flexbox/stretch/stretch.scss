@@ -4,11 +4,11 @@
 //
 // Styleguide stretch
 @mixin stretch($direction) {
-  @if (direction == columns) {
+  @if ($direction == columns) {
     @include stretch--columns;
   }
 
-  @if (direction == rowss) {
+  @if ($direction == rows) {
     @include stretch--rows;
   }
 }
