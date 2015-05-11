@@ -23,12 +23,12 @@ title: Text Style
 
         {% if classname == 'body-text' %}
           <p>
-            The body text&mdash;used for long text blocks with more than one paragraphs like the work description or the about section&mdash;is
-            set to be highly readable.
+            The body text used for long text blocks with more than one paragraphs like the work description or the about section.
+            Set to be highly readable.
           </p>
 
           <p>
-            Every line displays around 35-40 characters only and paragraphs are separated with an empty line.
+            Every line displays 35-40 characters and consecutive paragraphs are separated with an empty line.
           </p>
         {% endif %}
 
@@ -37,7 +37,7 @@ title: Text Style
         {% endif %}
 
         {% if classname == 'menu' %}
-          Menu is differentiated yet non-intrusive.
+          Menu looks different yet non-intrusive.
         {% endif %}
       </div>
     </aside>

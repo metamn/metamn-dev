@@ -16,7 +16,7 @@ title: Page transition
       <p>
 
       <p>
-        Clicking this link will reload this page. The page transition duration is set to 4 seconds to better observe how elements are
+        Clicking this link will reload this page. The page transition duration is 4 seconds to better observe how elements are
         entering the page / scaling up.
       </p>
     </div>

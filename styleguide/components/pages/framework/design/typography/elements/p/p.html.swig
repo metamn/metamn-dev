@@ -13,7 +13,7 @@ title: P
       </p>
 
       <p>
-        Lately I've been working on design, front–end and Wordpress projects with clients around the world.
+        I work on design, front–end and Wordpress projects with clients around the world.
       </p>
     </box>
   </aside>

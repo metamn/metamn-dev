@@ -1,6 +1,6 @@
 // Breakpoints
 //
-// Used to adapt content and design to various devices.
+// Used to adapt content and design to devices.
 //
 // Styleguide breakpoints
 

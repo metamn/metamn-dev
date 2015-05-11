@@ -3,8 +3,8 @@
 // Text style
 //
 // Typographic settings for different text types.
-// Each text type has set a `font`, a `scale`, a `color` and additional parameters like letter-spacing, max-width or else.
-// Everything text is set using this `text-style` mixin. We don't set `color` or `font` directly for a text.
+// Each text type has set a `font`, a `scale`, a `color` and parameters like letter-spacing, max-width or else.
+// Everything text uses this `text-style` mixin. We don't set `color` or `font` directly for a text.
 //
 // Styleguide text-style
 

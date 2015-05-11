@@ -1,7 +1,7 @@
 // Link
 //
-// Simple link styling. By default no underline just differentiation by color or text style.
-// However links inside a long text can be decorated with an underline, or, inactive menu items can be decorated by a line-through.
+// Simple link styling. By default no underline just differentiation by style.
+// Links inside a long text are decorated with an underline, inactive menu items are marked with a line-through.
 //
 // Styleguide link
 @mixin link($color-scheme: none, $decoration: none, $hover: on) {

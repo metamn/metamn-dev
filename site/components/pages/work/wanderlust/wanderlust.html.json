@@ -8,7 +8,7 @@
     "description": {
       "paragraphs": [
         "Wanderlust is an international yoga events and festivals company coming up with an ambitious project including redesign, back&ndash;end migration and storytelling.",
-        "Our task&mdash;a team of three developers working remotely&mdash;was to implement the design, migrate individual Drupal sites to Wordpress and create a storytelling engine for their team of editors.",
+        "Our task&mdash;a team of three developers working remotely&mdash;was to develop the front-end code, migrate individual Drupal sites to Wordpress and create a storytelling engine for their team of editors.",
         "And prepare the site for traffic peaks of 50.000 visitors / day when tickets go sale."
       ]
     },
