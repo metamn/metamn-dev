@@ -1,3 +1,9 @@
+// Page transition
+//
+// Animation for page transitions.
+// On every click the `header` and the `main menu` will slide in, and, the content of the page will scale up.
+//
+// Styleguide page-transition
 @mixin page-transition {
   @include page-transition--in;
   @include page-transition--out;
