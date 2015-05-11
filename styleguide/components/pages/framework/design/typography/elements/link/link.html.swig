@@ -9,7 +9,7 @@ title: Link
     <h3 class="aside__title">Link</h3>
     <div class="box">
       <div class="example-1">
-        <a class="link" href="#" title="This is a link">This is a link.</a>
+        <a class="link" href="#" title="This is a link"><span data-hover="This is a link">This is a link.</span></a>
       </div>
 
       <div class="example-2">

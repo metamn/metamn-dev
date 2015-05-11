@@ -1,5 +1,10 @@
-@mixin box {
+@mixin box($border: on) {
   padding: $lem;
-  border: 1px solid;
-  border-bottom: none;
+
+  @if ($border == on) {
+    border: 1px solid;
+    border-bottom: none;
+  } @else {
+    border: none;
+  }
 }

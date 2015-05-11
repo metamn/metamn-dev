@@ -1,24 +1,25 @@
 html {
   &.styleguide-figure {
     body {
-      .example {
-        overflow-x: hidden;
+      .description-and-example {
+        .example {
+          .aside {
+            overflow-x: hidden;
 
-        .aside {
-          width: auto !important;
-          flex-basis: 100%;
-        }
+            .aside {
+              width: auto !important;
+              flex-basis: 100%;
+            }
 
-        .aside__title {
-          @include box-title--with-border;
-        }
+            .box {
+              @include colors(white-on-blue);
+              @include box($border: none);
+            }
 
-        .box {
-          @include colors(white-on-blue);
-        }
-
-        figcaption {
-          display: none;
+            figcaption {
+              display: none;
+            }
+          }
         }
       }
     }

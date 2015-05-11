@@ -1,18 +1,17 @@
 @mixin aside {
+  display: flex;
+  flex-direction: column;
   width: $text-block-width;
 
   @include mobile {
     width: 100%;
   }
 
-  display: flex;
-  flex-direction: column;
-
   .aside__title {
     display: flex;
     order: 2;
 
-    @include box-title--with-border;
+    @include box__title;
   }
 
   .box {

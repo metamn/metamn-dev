@@ -12,6 +12,7 @@ html {
           .link {
             @include link(blue-on-white);
             @include text-style(menu);
+            @include flip;
           }
         }
 

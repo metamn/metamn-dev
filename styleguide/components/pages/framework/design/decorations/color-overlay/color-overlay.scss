@@ -1,19 +1,24 @@
 html {
   &.styleguide-color-overlay {
     body {
-      .example {
-        figure {
-          @include figure;
-          padding: $lem;
-        }
+      .description-and-example {
+        .example {
+          .aside {
+            figure {
+              @include figure;
+              padding: $lem;
+            }
 
-        .box {
-          @include colors(white-on-blue);
-        }
+            .box {
+              @include colors(white-on-blue);
+              @include box($border: none);
+            }
 
-        .overlay {
-          figure {
-            @include color-overlay($blue, .1);
+            &.overlay {
+              figure {
+                @include color-overlay($blue, .1);
+              }
+            }
           }
         }
       }

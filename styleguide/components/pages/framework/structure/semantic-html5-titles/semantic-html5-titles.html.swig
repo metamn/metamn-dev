@@ -11,8 +11,10 @@ title: Semantic HTML5 Titles
         {% set link = image %}
         {% include '../../../../../../site/components/framework/design/typography/elements/link/link.html.swig' %}
       </h3>
-      {% set image.site_url = site.site_url %}
-      {% include '../../../../../../site/components/framework/structure/figure/figure.html.swig' %}
+      <div class="box">
+        {% set image.site_url = site.site_url %}
+        {% include '../../../../../../site/components/framework/structure/figure/figure.html.swig' %}
+      </div>
     </aside>
   {% endfor %}
 

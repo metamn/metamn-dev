@@ -1,16 +1,21 @@
 html {
   &.styleguide-arrow {
     body {
-      .example {
-        .box {
-          @include colors(white-on-blue);
-        }
+      .description-and-example {
+        .example {
+          .aside {
+            .box {
+              @include colors(white-on-blue);
+              @include box($border: none);
+            }
 
-        .arrow {
-          @include arrow(white-on-blue, $black);
+            .arrow {
+              @include arrow(white-on-blue, $black);
 
-          position: relative;
-          top: $lem - $lem / 4;
+              position: relative;
+              top: $lem - $lem / 4;
+            }
+          }
         }
       }
     }

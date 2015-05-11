@@ -1,4 +1,4 @@
-@mixin box-title--with-border {
+@mixin box__title {
   border: 1px solid;
   padding: $lem / 2 $lem;
 }
