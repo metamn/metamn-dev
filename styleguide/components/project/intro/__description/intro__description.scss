@@ -1,6 +1,7 @@
 @mixin intro__description {
   flex-basis: 100%;
   align-items: center;
+  justify-content: space-around;
 
   @include grid('p', $lem);
 
@@ -16,15 +17,7 @@
     @include intro__description--bordered;
   }
 
-  .rotated {
-    @include intro__description--rotated;
-  }
-
   @include landscape {
     flex-wrap: nowrap;
-  }
-
-  @include tablet-and-below {
-    justify-content: space-around;
   }
 }
