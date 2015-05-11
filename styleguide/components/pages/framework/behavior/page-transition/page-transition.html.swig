@@ -10,14 +10,14 @@ title: Page transition
 
     <div class="box">
       <p>
-      <a class="link" href="{{ site.url }}framework/behavior/page-transition" title="page transition demo">
-        Page transition demo.
-      </a>
+        <a class="link" href="{{ site.url }}framework/behavior/page-transition" title="page transition demo">
+          Page transition demo.
+        </a>
       <p>
 
       <p>
-      Clicking this link will reload this page. The page transition duration is set to 4 seconds to better observe how elements are
-      entering the page / scaling up.
+        Clicking this link will reload this page. The page transition duration is set to 4 seconds to better observe how elements are
+        entering the page / scaling up.
       </p>
     </div>
   </aside>
