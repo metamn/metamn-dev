@@ -8,8 +8,10 @@ html {
           .item {
             display: flex;
             flex-direction: column;
-            justify-content: center;
             align-items: center;
+
+            margin-right: $lem * 2;
+            margin-bottom: $lem * 2;
 
             .name {
               @include text-style(title);

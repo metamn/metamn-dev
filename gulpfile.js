@@ -249,7 +249,7 @@ var _js = function(source, filename, dest) {
     }))
     .pipe(concat(filename))
     .pipe(rename({ suffix: '.min' }))
-    //.pipe(uglify())
+    .pipe(uglify())
     .pipe(gulp.dest(dest));
 };
 
