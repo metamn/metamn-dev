@@ -4,7 +4,8 @@
   text-align: center;
 
   @include tablet-and-below {
-    width: 5em;
+    width: 7em;
+    padding: $lem * 2;
     word-wrap: break-word;
   }
 
