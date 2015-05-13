@@ -8,11 +8,14 @@
 
   figure {
     @include figure($figcaption: on, $spinner-type: '-thumbblue');
-    @include color-overlay($thumbblue, .1);
 
     .figcaption {
       padding: $lem;
     }
+
+    @include tablet-and-up {
+      @include color-overlay($thumbblue, .1);
+    }    
   }
 
   @include portrait {

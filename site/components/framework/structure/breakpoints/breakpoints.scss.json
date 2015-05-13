@@ -30,6 +30,10 @@
       "media_query": "(max-width: $breakpoint-mobile - 0.1)"
     },
     {
+      "name": "tablet",
+      "media_query": "(min-width: $breakpoint-mobile) and (max-width: $breakpoint-tablet)"
+    },
+    {
       "name": "tablet-landscape",
       "media_query": "(orientation: landscape) and (min-width: $breakpoint-mobile) and (max-width: $breakpoint-tablet)"
     },
