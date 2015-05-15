@@ -1,6 +1,6 @@
 ## Metamn
 
-The source code for http://metamn.io.
+The source code for http://metamn.io and the associated (styleguide)[http://metamn.io/styleguide]
 
 ## Technologies
 
@@ -15,7 +15,7 @@ The source code for http://metamn.io.
 * Automatic image resize and compression
 * A Styleguide in sync with the site
 
-## Folders
+## Folders and files
 
 We have two sites, one for the portfolio with source files in `site`, and one for
 the Styleguide with source files in `styleguide`.
