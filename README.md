@@ -4,15 +4,15 @@ The source code for http://metamn.io.
 
 ## Technologies
 
-* Gulp for generating the site and the styleguide
-* JSON files for database
-* BEM folder structure and naming conventions, together with a generator
-* SWIG templating language
-* SCSS style pre-processor
-* JS except touch events
-* Picturefill for responsive images
+* Gulp &mdash; for generating the site and the styleguide
+* JSON &mdash; files for database
+* BEM &mdash; folder structure and naming conventions, together with a generator
+* SWIG &mdash; templating language
+* SCSS &mdash; style pre-processor
+* JS &mdash; except touch events
+* Picturefill &mdash; for responsive images
 * Automatic image resize and compression
-* KSS for documentation
+* KSS &mdash; for documentation
 * A Styleguide in sync with the site
 
 ## Overview
@@ -23,5 +23,3 @@ The Styleguide is optional. It can be completely ignored.
 
 The generated files can be found in `dist`. The Styleguide is mounted under `dist\styleguide`
 for simplicity.
-
- 
