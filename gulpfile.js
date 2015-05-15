@@ -1,7 +1,9 @@
 
 
 // Plugins
-var gulp = require('gulp'),
+
+var // General plugins
+    gulp = require('gulp'),
     del = require('del'),
     rename = require('gulp-rename'),
     concat = require('gulp-concat'),
@@ -10,12 +12,14 @@ var gulp = require('gulp'),
     runSequence = require('run-sequence'),
     plumber = require('gulp-plumber'),
 
+    // Swig and HTML plugins
     swig = require('gulp-swig'),
     data = require('gulp-data'),
     fs = require('fs'),
     fm = require('front-matter'),
     minifyHTML = require('gulp-minify-html'),
 
+    // SCSS plugins
     sass = require('gulp-sass'),
     cssGlobbing = require('gulp-css-globbing'),
     sourcemaps = require('gulp-sourcemaps'),
@@ -26,15 +30,18 @@ var gulp = require('gulp'),
 
     uglify = require('gulp-uglify'),
 
+    // Image plugins
     imageResize = require('gulp-image-resize'),
     newer = require('gulp-newer'),
     shell = require('gulp-shell'),
 
+    // bem.js plugins
     path = require('path'),
     inflection = require( 'inflection' ),
     mkdirp = require('mkdirp')
     kss = require('kss'),
 
+    // Sitemap plugins
     sitemap = require('gulp-sitemap'),
     gulpIgnore = require('gulp-ignore');
 
