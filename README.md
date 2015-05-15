@@ -1,6 +1,10 @@
 ## Metamn
 
-The source code for http://metamn.io and the associated Styleguide http://metamn.io/styleguide
+The source code for http://metamn.io and the associated Styleguide http://metamn.io/styleguide.
+
+A short introduction how use Gulp to create the Styleguide can be found on Medium: https://medium.com/@metamn/creating-a-styleguide-with-gulp-2298fc928086
+
+Here we will get all the details how everything was made.
 
 ## Technologies
 
