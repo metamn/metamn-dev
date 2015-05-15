@@ -56,3 +56,10 @@ In `components/framework` we use an explicit folder structure as follows:
 * `design` &mdash; everything related to design like colors, fonts, decorations
 * `helpers` &mdash; SWIG helpers used across the site and the styleguide
 * `structure` &mdash; everything related to structure like the grid, the responsive images, breakpoints etc.
+
+
+#### In the Styleguide
+
+All styleguide entries are in the `styleguide/components/pages` folder.
+The `styleguide/components/framework` and `styleguide/components/project` folders are containing
+components used to create the styleguide.
