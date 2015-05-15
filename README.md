@@ -31,3 +31,12 @@ for simplicity.
 `bem.js` is generating BEM folders, blocks, elements and modifiers.
 
 `gulpfile.js` contains all the generators and glues making the site.
+
+
+## Installation and usage
+
+1. Clone the repository
+2. Install all packages from `package.json` with `[sudo] npm install`
+3. Generate the site: `gulp`
+4. Generate the styleguide `gulp sg`
+5. Resize, compress images: `gulp images`
