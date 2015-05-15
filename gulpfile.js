@@ -33,7 +33,10 @@ var gulp = require('gulp'),
     path = require('path'),
     inflection = require( 'inflection' ),
     mkdirp = require('mkdirp')
-    kss = require('kss');
+    kss = require('kss'),
+
+    sitemap = require('gulp-sitemap'),
+    gulpIgnore = require('gulp-ignore');
 
 
 
@@ -324,6 +327,14 @@ gulp.task('scss_sg', function(){
 var _html = function(source, dest) {
   return gulp.src(source)
     .pipe(plumber({errorHandler: onError}))
+    // Do not copy BEM modifiers and elements
+    .pipe(gulpIgnore.exclude(function(file) {
+      if ((file.path.indexOf('--') !== -1) || (file.path.indexOf('__') !== -1)) {
+        //console.log("Skipping " + file.path);
+        return true;
+      }
+    }))
+    // SEO friendly urls
     .pipe(rename(function(path) {
       // rename home/home.html > index.html
       if (path.dirname == 'home') {
@@ -555,6 +566,17 @@ gulp.task('sg_kss', function() {
 
 
 
+
+// Sitemap
+//
+
+gulp.task('sitemap', function () {
+  gulp.src(paths.dest + '/**/*.html')
+    .pipe(sitemap({
+      siteUrl: 'http://metamn.io'
+    }))
+    .pipe(gulp.dest(paths.dest));
+});
 
 
 
