@@ -155,12 +155,6 @@ var onError = function(error) {
 
 // Images
 
-// Get the JSON file associated to an image
-var image_json = function(file) {
-  splits = file.split('.');
-  return splits[0] + '.json';
-}
-
 // Resize a single image with ImageMagick
 var _image_resize = function(file, size, name) {
   console.log("Resizing " + file + " height to " + size);
