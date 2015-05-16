@@ -31,7 +31,7 @@ Here we will get all the details how everything was made.
 
 
 
-### Folders and files
+## Folders and files
 
 We have two sites, one for the portfolio with source files in `site`, and one for
 the Styleguide with source files in `styleguide`.
@@ -65,7 +65,7 @@ The `styleguide/components/framework` and `styleguide/components/project` folder
 components used to create the styleguide.
 
 
-### Gulp
+## Gulp
 
 * We have just a single Gulpfile handling all tasks. Later this will be refactored into separate modules.
 * Extensive documentation is added to each gulp task and function
@@ -92,7 +92,7 @@ components used to create the styleguide.
 * All images go into the `site/assets/images` folder at their original, largest size.
 * Every image has associated a same name JSON file. `anvelocom-archive-laptop.png` pairs with `anvelocom-archive-laptop.json`.
 * The JSON file contains responsive size declarations for various device sizes.
-* The `gulp images` task resizes the original images to responsive sizes (with ImageMagick), compress them and moves all results to `site/assets/images/resized`.
+* The `gulp images` task resizes the original images to responsive sizes (with ImageMagick), creates the 2X retina version, compress them and moves all results to `site/assets/images/resized`.
 * From this temporary directory images are moved to destination directory (`dist/assets/images`).
 * Currently only `.png` images are compressed with `pngquant`. If you have a `.jpg` image make sure the already compressed version goes into `site/assets/images`.
 
@@ -128,7 +128,7 @@ components used to create the styleguide.
 
 
 
-### Special Styleguide Tasks
+## Special Styleguide Tasks
 
 #### Full Sync
 
