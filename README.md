@@ -1,4 +1,4 @@
-### Metamn
+## Metamn
 
 The source code for http://metamn.io and the associated Styleguide http://metamn.io/styleguide.
 
