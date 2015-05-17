@@ -12,4 +12,8 @@
   .work__services-and-navigation {
     @include work__services-and-navigation;
   }
+
+  @include tablet-and-up {
+    @include stretch(columns);
+  }
 }

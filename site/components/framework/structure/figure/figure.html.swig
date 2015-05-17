@@ -1,6 +1,6 @@
 <figure {% if image.class %} class="{{ image.class }}" {% endif %}>
   {% if image.url %}
-    <a href="{{ site.url}}{{ image.url }}" title="{{ image.title }}">
+    <a class="link" href="{{ site.url}}{{ image.url }}" title="{{ image.title }}">
   {% endif %}
 
   <!-- The default extension is .png but other formats are handled too -->

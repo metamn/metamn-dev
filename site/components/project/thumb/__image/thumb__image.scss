@@ -1,27 +1,15 @@
 @mixin thumb__image {
   padding: $lem;
 
-  a {
-    @include link(white-on-blue, $hover: off);
+  @include desktop {
+    padding: $lem * 3;
+  }
+
+  .link {
+    @include link(white-on-blue);
   }
 
   figure {
-    @include figure($figcaption: on);
-
-    .figcaption {
-      padding: $lem;
-    }
-
-    @include tablet-and-up {
-      @include color-overlay($blue, .1);
-    }
-  }
-
-  @include portrait {
-    @include thumb__image--portrait;
-  }
-
-  @include landscape {
-    @include thumb__image--landscape;
+    @include figure;
   }
 }

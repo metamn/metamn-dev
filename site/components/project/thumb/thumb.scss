@@ -4,19 +4,27 @@
 //
 // Styleguide thumb
 @mixin thumb {
-  .thumb__image {
-    @include thumb__image;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .link {
+    @include link(white-on-blue);
   }
 
-  @include portrait {
-    @include thumb--portrait;
+  figure {
+    @include figure;
+    @include colors(white-on-blue);
+    padding: $lem * 2;
+
+    @include desktop {
+      padding: $lem * 3;
+    }
   }
 
-  @include landscape {
-    @include thumb--landscape;
-  }
-
-  @include desktop {
-    @include thumb--desktop;
+  .thumb__title {
+    display: flex;
+    order: 2;
   }
 }

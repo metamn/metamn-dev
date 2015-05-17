@@ -1,5 +1,0 @@
-@mixin thumb__image--portrait {
-  .container {
-    @include intrinsic-ratio(4, 3, 'figure')
-  }
-}

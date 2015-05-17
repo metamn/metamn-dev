@@ -1,11 +1,13 @@
 // Spinner from http://spiffygif.com/
 @mixin figure__spinner($spinner-type) {
-  background: url("/assets/images/spinner#{$spinner-type}.gif") no-repeat center center;
+  background-image: url("/assets/images/spinner#{$spinner-type}.gif");
+  background-position: center center;
+  background-repeat: no-repeat;
   min-width: 68px;
   min-height: 68px;
 
   @include mobile {
-    background: url("/assets/images/spinner#{$spinner-type}-small.gif") no-repeat center center;
+    background-image: url("/assets/images/spinner#{$spinner-type}-small.gif");
     min-width: 30px;
     min-height: 30px;
   }
