@@ -1,12 +1,6 @@
 @mixin work__services-and-navigation {
   padding: $lem;
-  padding-bottom: $lem * 2;
-
-  @include tablet-and-up {
-    padding-top: 0;
-  }
-
-  
+  @include colors(blue-on-white);
 
   display: flex;
   flex-wrap: no-wrap;
@@ -17,6 +11,6 @@
   }
 
   .work__navigation {
-    @include work__navigation(white-on-blue, $black);
+    @include work__navigation(blue-on-white, $black);
   }
 }

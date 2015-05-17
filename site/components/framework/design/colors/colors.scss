@@ -7,13 +7,13 @@
 // Styleguide colors
 
 // The background color
-$white: #f1f1f1;
+$white: #fff;
 
 // The text color
 $black: #003A40;
 
 // The highlight color
-$blue: rgba(0, 0, 255, 1);
+$blue: #002EA7;
 
 // A lighter highlight color
 $thumbblue: rgba(38, 38, 255, 1);
@@ -45,7 +45,7 @@ $thumbblue: rgba(38, 38, 255, 1);
 // Color classes
 
 .white {
-  background: #f1f1f1;
+  background: #fff;
 };
 
 .black {
@@ -53,7 +53,7 @@ $thumbblue: rgba(38, 38, 255, 1);
 };
 
 .blue {
-  background: rgba(0, 0, 255, 1);
+  background: #002EA7;
 };
 
 .thumbblue {

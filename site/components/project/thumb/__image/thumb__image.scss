@@ -1,21 +1,20 @@
 @mixin thumb__image {
-  @include colors(white-on-thumbblue);
   padding: $lem;
 
   a {
-    @include link(white-on-thumbblue, $hover: off);
+    @include link(white-on-blue, $hover: off);
   }
 
   figure {
-    @include figure($figcaption: on, $spinner-type: '-thumbblue');
+    @include figure($figcaption: on);
 
     .figcaption {
       padding: $lem;
     }
 
     @include tablet-and-up {
-      @include color-overlay($thumbblue, .1);
-    }    
+      @include color-overlay($blue, .1);
+    }
   }
 
   @include portrait {

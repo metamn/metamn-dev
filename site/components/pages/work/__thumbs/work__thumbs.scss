@@ -1,5 +1,4 @@
 @mixin work__thumbs {
-  @include colors(white-on-blue);
   padding: $lem;
 
   @include grid('.thumb', $lem);

@@ -2,7 +2,7 @@
   "colors": [
     {
       "name": "white",
-      "value": "#f1f1f1",
+      "value": "#fff",
       "description": "The background color"
     },
     {
@@ -12,7 +12,7 @@
     },
     {
       "name": "blue",
-      "value": "rgba(0, 0, 255, 1)",
+      "value": "#002EA7",
       "description": "The highlight color"
     },
     {

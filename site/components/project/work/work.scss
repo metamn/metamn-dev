@@ -1,6 +1,8 @@
 @mixin work-item {
   .title {
     @include title;
+    @include colors(blue-on-white);
+    padding-bottom: $lem;
   }
 
   .work__description-with-images {

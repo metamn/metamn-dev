@@ -1,6 +1,17 @@
 html {
   &.work-archive {
     body {
+      @include colors(blue-on-white);
+
+      .header {
+        @include header(blue-on-white);
+      }
+
+      .menu {
+        @include menu(blue-on-white);
+      }
+
+
       .title {
         @include title;
       }
@@ -13,6 +24,15 @@ html {
 
   &.work-single {
     body {
+
+      .header {
+        @include header(blue-on-white);
+      }
+
+      .menu {
+        @include menu(blue-on-white);
+      }
+
       .work-item {
         @include work-item;
       }

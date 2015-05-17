@@ -9,6 +9,7 @@
   flex-direction: row;
 
   padding: $lem;
+  @include colors($color-scheme);
 
   a {
     @include link($color-scheme);
