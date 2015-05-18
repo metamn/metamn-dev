@@ -1,33 +1,11 @@
 html {
   &.contact {
     body {
-      @include stretch--rows;
-
-      .title {
-        @include title;
-      }
+      @include page;
 
       .contact__links {
-        @include dl;
-        padding: 0 $lem;
-
-        .link {
-          @include link(white-on-blue);
-        }
+        @include contact__links;
       }
-
-      .title__main {
-        @include title--rotated;
-      }
-
-      .menu {
-        flex-basis: 100%;
-      }
-
-      @include mobile {
-        @include contact--mobile;
-      }
-
     }
   }
 }

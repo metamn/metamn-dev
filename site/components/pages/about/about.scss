@@ -1,12 +1,8 @@
 html {
   &.about {
     body {
-      @include stretch--rows;
-
-      .title {
-        @include title;
-      }
-
+      @include page;
+      
       .description {
         @include description;
         padding-bottom: 0;
@@ -14,24 +10,6 @@ html {
 
       .about__services {
         @include about__services;
-        padding: 0 $lem;
-
-        ul {
-          padding: 0 $lem;
-        }
-      }
-
-      .title__main {
-        @include title--rotated;
-      }
-
-      .menu {
-        flex-basis: 100%;
-      }
-
-
-      @include mobile {
-        @include about--mobile;
       }
     }
   }

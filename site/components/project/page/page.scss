@@ -1,0 +1,19 @@
+@mixin page {
+  @include stretch--rows;
+
+  .title {
+    @include title;
+  }
+
+  .title__main {
+    @include title--rotated;
+  }
+
+  .menu {
+    flex-basis: 100%;
+  }
+
+  @include mobile {
+    @include page--mobile;
+  }
+}

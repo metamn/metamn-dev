@@ -1,0 +1,15 @@
+@mixin page--mobile {
+  .header {
+    flex-basis: 100%;
+    @include header(blue-on-white);
+  }
+
+  .menu {
+    @include menu(blue-on-white);
+  }
+
+  .title__main {
+    transform: rotate(0deg);
+    flex-basis: 100%;
+  }
+}
