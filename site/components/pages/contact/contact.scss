@@ -3,8 +3,8 @@ html {
     body {
       @include page;
 
-      .contact__links {
-        @include contact__links;
+      .contact__icons {
+        @include contact__icons;
       }
     }
   }

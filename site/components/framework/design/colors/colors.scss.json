@@ -3,22 +3,22 @@
     {
       "name": "white",
       "value": "#fff",
-      "description": "The background color"
-    },
-    {
-      "name": "black",
-      "value": "#003A40",
-      "description": "The text color"
+      "description": "Main color"
     },
     {
       "name": "blue",
       "value": "#002EA7",
-      "description": "The highlight color"
+      "description": "Main color"
     },
     {
-      "name": "thumbblue",
-      "value": "rgba(38, 38, 255, 1)",
-      "description": "A lighter highlight color"
+      "name": "black",
+      "value": "#003A40",
+      "description": "Secondary color"
+    },
+    {
+      "name": "gray",
+      "value": "#ccc",
+      "description": "Secondary color"
     }
   ],
   "color_pairs": [
@@ -36,19 +36,6 @@
       ]
     },
     {
-      "name": "white-on-thumbblue",
-      "properties": [
-        {
-          "name": "color",
-          "value": "$white"
-        },
-        {
-          "name": "background-color",
-          "value": "$thumbblue"
-        }
-      ]
-    },
-    {
       "name": "blue-on-white",
       "properties": [
         {
@@ -58,6 +45,19 @@
         {
           "name": "background-color",
           "value": "$white"
+        }
+      ]
+    },
+    {
+      "name": "gray-on-blue",
+      "properties": [
+        {
+          "name": "color",
+          "value": "$gray"
+        },
+        {
+          "name": "background-color",
+          "value": "$blue"
         }
       ]
     }

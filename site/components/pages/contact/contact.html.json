@@ -5,31 +5,36 @@
         "description": "I'll get back to you in a business day",
         "url": "bartus.csongor@gmail.com",
         "title": "bartus.csongor@gmail.com",
-        "type": "email"
+        "type": "email",
+        "glyph": "E"
       },
       {
         "description": "Industry pulse",
         "url": "http://twitter.com/metamn",
         "title": "Twitter",
-        "type": "external"
+        "type": "external",
+        "glyph": "Tw"
       },
       {
         "description": "Inspiration",
         "url": "http://metamn.tumblr.com",
         "title": "Tumblr",
-        "type": "external"
+        "type": "external",
+        "glyph": "T"
       },
       {
         "description": "Code sample",
         "url": "http://github.com/metamn",
         "title": "Github",
-        "type": "external"
+        "type": "external",
+        "glyph": "G"
       },
       {
         "description": "Industry overview. An article a month for you.",
         "url": "http://readability.com/metamn",
         "title": "Readability",
-        "type": "external"
+        "type": "external",
+        "glyph": "R"
       }
     ]
   }

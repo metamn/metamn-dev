@@ -1,0 +1,33 @@
+@mixin contact__icons {
+  display: flex;
+  flex-direction: column;
+
+  @include portrait {
+    padding: $lem $lem 0;
+  }
+
+  .icon {
+    display: flex;
+    align-items: center;
+    padding-bottom: $lem;
+  }
+
+  .glyph {
+    width: $lem;
+  }
+
+  .long-dash {
+    @include long-dash;
+    margin: 0 $lem;
+  }
+
+  .link {
+    @include link(white-on-blue);
+  }
+
+
+  @include mobile {
+    @include contact__icons--mobile;
+  }
+
+}

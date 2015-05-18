@@ -8,5 +8,5 @@ title: Contact
   {% set page_title = { title: title } %}
   {% include '../../project/title/title.html.swig' %}
 
-  {% include '__links/contact__links.html.swig' %}
+  {% include '__icons/contact__icons.html.swig' %}
 {% endblock %}

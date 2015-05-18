@@ -6,17 +6,17 @@
 //
 // Styleguide colors
 
-// The background color
+// Main color
 $white: #fff;
 
-// The text color
-$black: #003A40;
-
-// The highlight color
+// Main color
 $blue: #002EA7;
 
-// A lighter highlight color
-$thumbblue: rgba(38, 38, 255, 1);
+// Secondary color
+$black: #003A40;
+
+// Secondary color
+$gray: #ccc;
 
 
 // Color combinations. Colors are not used standalone but in pairs
@@ -28,15 +28,15 @@ $thumbblue: rgba(38, 38, 255, 1);
     
   }
 
-  @if ($name == 'white-on-thumbblue') {
-    color: $white;
-    background-color: $thumbblue;
-    
-  }
-
   @if ($name == 'blue-on-white') {
     color: $blue;
     background-color: $white;
+    
+  }
+
+  @if ($name == 'gray-on-blue') {
+    color: $gray;
+    background-color: $blue;
     
   }
 
@@ -48,16 +48,16 @@ $thumbblue: rgba(38, 38, 255, 1);
   background: #fff;
 };
 
-.black {
-  background: #003A40;
-};
-
 .blue {
   background: #002EA7;
 };
 
-.thumbblue {
-  background: rgba(38, 38, 255, 1);
+.black {
+  background: #003A40;
+};
+
+.gray {
+  background: #ccc;
 };
 
 
@@ -69,15 +69,15 @@ $thumbblue: rgba(38, 38, 255, 1);
   
 }
 
-.white-on-thumbblue {
-  color: $white;
-  background-color: $thumbblue;
-  
-}
-
 .blue-on-white {
   color: $blue;
   background-color: $white;
+  
+}
+
+.gray-on-blue {
+  color: $gray;
+  background-color: $blue;
   
 }
 
