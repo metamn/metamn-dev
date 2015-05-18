@@ -7,18 +7,20 @@
   margin: 0;
 
   dt {
-    padding-bottom: $lem / 4;
-    margin-bottom: $lem / 4;
-    border-bottom: 1px solid;
-    word-wrap: break-word;
-
     @include text-style(title);
+    word-wrap: break-word;
+    border: 1px solid;
+    border-bottom: none;
+    padding: $lem;
   }
 
   dd {
     margin: 0;
+    padding: $lem;
+    border: 1px solid;
+
     + dt {
-        padding-top: $lem + $lem / 2;
+        margin-top: $lem + $lem / 2;
     }
   }
 }

@@ -10,25 +10,25 @@
       {
         "description": "Industry pulse",
         "url": "http://twitter.com/metamn",
-        "title": "http://twitter.com/metamn",
+        "title": "Twitter",
         "type": "external"
       },
       {
         "description": "Inspiration",
         "url": "http://metamn.tumblr.com",
-        "title": "http://metamn.tumblr.com",
+        "title": "Tumblr",
         "type": "external"
       },
       {
         "description": "Code sample",
         "url": "http://github.com/metamn",
-        "title": "http://github.com/metamn",
+        "title": "Github",
         "type": "external"
       },
       {
         "description": "Industry overview. An article a month for you.",
         "url": "http://readability.com/metamn",
-        "title": "http://readability.com/metamn",
+        "title": "Readability",
         "type": "external"
       }
     ]

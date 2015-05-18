@@ -7,6 +7,7 @@
 
   .link {
     @include link(white-on-blue);
+    @include text-style(menu);
   }
 
   @include dl;
