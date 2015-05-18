@@ -1,10 +1,6 @@
 @mixin about__services {
   padding: 0 $lem;
 
-  @include mobile {
-    padding: 0 0 $lem;
-  }
-
   .title {
     @include text-style(title);
     display: flex;
@@ -13,5 +9,13 @@
   .ul {
     @include ul;
     padding: 0 $lem;
+  }
+
+  @include mobile {
+    padding: 0 0 $lem;
+
+    .title {
+      @include colors(white-on-blue);
+    }
   }
 }
