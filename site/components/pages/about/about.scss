@@ -2,7 +2,7 @@ html {
   &.about {
     body {
       @include page;
-      
+
       .description {
         @include description;
         padding-bottom: 0;

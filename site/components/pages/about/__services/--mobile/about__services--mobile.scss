@@ -1,0 +1,8 @@
+@mixin about__services--mobile {
+  padding: 0 0 $lem;
+
+  &:after {
+    @include separator-line;
+    padding: $lem 0;
+  }
+}

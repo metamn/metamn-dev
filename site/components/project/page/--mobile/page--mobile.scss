@@ -1,21 +1,11 @@
 @mixin page--mobile {
-  .header {
+  .header,
+  .title,
+  .title__main {
     flex-basis: 100%;
-    @include header(blue-on-white);
-  }
-
-  .menu {
-    @include menu(blue-on-white);
-  }
-
-  .title {
-    flex-basis: 100%;
-    @include colors(blue-on-white);
-    padding: 0 $lem $lem;
   }
 
   .title__main {
     transform: rotate(0deg);
-    flex-basis: 100%;
   }
 }

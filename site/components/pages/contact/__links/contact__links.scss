@@ -1,12 +1,13 @@
 @mixin contact__links {
-  @include dl;
   padding: 0 $lem;
+
+  @include mobile {
+    padding: $lem;
+  }
 
   .link {
     @include link(white-on-blue);
   }
 
-  @include mobile {
-    padding: $lem;
-  }
+  @include dl;
 }

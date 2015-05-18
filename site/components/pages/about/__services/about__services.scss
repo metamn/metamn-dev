@@ -12,10 +12,6 @@
   }
 
   @include mobile {
-    padding: 0 0 $lem;
-
-    .title {
-      @include colors(white-on-blue);
-    }
+    @include about__services--mobile;
   }
 }
