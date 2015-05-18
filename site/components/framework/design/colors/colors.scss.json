@@ -11,11 +11,6 @@
       "description": "Main color"
     },
     {
-      "name": "black",
-      "value": "#003A40",
-      "description": "Secondary color"
-    },
-    {
       "name": "gray",
       "value": "#ccc",
       "description": "Secondary color"

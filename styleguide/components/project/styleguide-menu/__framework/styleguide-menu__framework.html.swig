@@ -45,6 +45,10 @@ Decorations</div>
 <div>
 <a class="link" title="Long dash" href="{{ site.url }}framework/design/decorations/long-dash"><span data-hover="Long dash">Long dash</span></a>
 </li>
+<li class="file menu-item-separator-line">
+<div>
+<a class="link" title="Separator line" href="{{ site.url }}framework/design/decorations/separator-line"><span data-hover="Separator line">Separator line</span></a>
+</li>
 </ul>
 </li>
 <li class="folder menu-item-typography">

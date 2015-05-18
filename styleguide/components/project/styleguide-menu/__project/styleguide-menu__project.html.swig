@@ -15,6 +15,10 @@ Project</div>
 <div>
 <a class="link" title="Menu" href="{{ site.url }}project/menu"><span data-hover="Menu">Menu</span></a>
 </li>
+<li class="file menu-item-page">
+<div>
+<a class="link" title="Page" href="{{ site.url }}project/page"><span data-hover="Page">Page</span></a>
+</li>
 <li class="file menu-item-slider">
 <div>
 <a class="link" title="Slider" href="{{ site.url }}project/slider"><span data-hover="Slider">Slider</span></a>
