@@ -1,14 +1,22 @@
 @mixin about__services {
-  padding: 0 $lem;
+  padding: 0 $lem * 2;
 
-  .title {
-    @include text-style(title);
+  li {
     display: flex;
+    align-items: center;
   }
 
-  .ul {
-    @include ul;
-    padding: 0 $lem;
+  .glyph {
+    width: $lem;
+  }
+
+  .long-dash {
+    @include long-dash;
+    margin: 0 $lem;
+  }
+
+  .link {
+    @include link(white-on-blue);
   }
 
   @include mobile {

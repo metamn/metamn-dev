@@ -1,6 +1,6 @@
 @mixin work__thumbs {
-  padding: $lem 0;
-  @include grid('.thumb', $lem);
+  padding: $lem;
+  @include grid('.thumb', 1px);
 
   .thumb {
     @include thumb;

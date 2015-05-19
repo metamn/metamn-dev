@@ -1,6 +1,13 @@
 <aside class="about__services">
-  <h3 class="title">Services</h3>
+  <h3>Services</h3>
 
-  {% set items = about.services %}
-  {% include '../../../framework/design/typography/elements/ul/ul.html.swig' %}
+  <ul>
+    {% for link in about.links %}
+      <li>
+        <span class="glyph">{{ link.glyph }}</span>
+        {% include '../../../framework/design/decorations/long-dash/long-dash.html.swig' %}
+        {% include '../../../framework/design/typography/elements/link/link.html.swig' %}
+      </li>
+    {% endfor %}
+  </ul>
 </aside>

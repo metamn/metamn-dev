@@ -61,10 +61,7 @@
       "description": "The title of an article or a page.",
       "based_on": "Nimbus Sans",
       "mixins": [
-        {
-          "name": "font",
-          "value": "nimbus-sans-bold"
-        }
+        
       ]
     },
     {
@@ -72,18 +69,7 @@
       "description": "The links in a menu.",
       "based_on": "Nimbus Sans",
       "mixins": [
-        {
-          "name": "font",
-          "value": "nimbus-sans-bold"
-        },
-        {
-          "name": "scale",
-          "value": "small-1"
-        },
-        {
-          "name": "uppercase",
-          "value": "1.9px"
-        }
+
       ]
     }
   ]
