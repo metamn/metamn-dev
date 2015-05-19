@@ -11,6 +11,7 @@
 
   .menu {
     flex-basis: 100%;
+    align-self: flex-end;
   }
 
   @include mobile {

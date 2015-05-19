@@ -1,9 +1,7 @@
 html {
   &.home {
     body {
-      @include landscape {
-        @include home--landscape;
-      }
+      @include stretch--columns;
 
       .home__intro {
         @include home__intro;
