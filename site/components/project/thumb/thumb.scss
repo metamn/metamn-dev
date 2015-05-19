@@ -4,11 +4,6 @@
 //
 // Styleguide thumb
 @mixin thumb {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
   .link {
     @include link(white-on-blue);
   }
@@ -16,7 +11,7 @@
   figure {
     @include figure;
     @include colors(white-on-blue);
-    padding: $lem * 2;
+    padding: $lem;
 
     @include desktop {
       padding: $lem * 3;

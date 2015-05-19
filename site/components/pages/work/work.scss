@@ -2,6 +2,7 @@ html {
   &.work-archive {
     body {
       @include colors(blue-on-white);
+      @include stretch(columns);
 
       .header {
         @include header(blue-on-white);
@@ -11,13 +12,8 @@ html {
         @include menu(blue-on-white);
       }
 
-
-      .title {
-        @include title;
-      }
-
-      .work__thumbs {
-        @include work__thumbs;
+      .works {
+        @include works;
       }
     }
   }
