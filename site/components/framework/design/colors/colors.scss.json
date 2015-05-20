@@ -11,6 +11,11 @@
       "description": "Main color"
     },
     {
+      "name": "green",
+      "value": "#35e6b0",
+      "description": "Secondary color"
+    },
+    {
       "name": "gray",
       "value": "#ccc",
       "description": "Secondary color"
@@ -49,6 +54,19 @@
         {
           "name": "color",
           "value": "$gray"
+        },
+        {
+          "name": "background-color",
+          "value": "$blue"
+        }
+      ]
+    },
+    {
+      "name": "green-on-blue",
+      "properties": [
+        {
+          "name": "color",
+          "value": "$green"
         },
         {
           "name": "background-color",

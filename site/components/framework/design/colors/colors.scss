@@ -13,6 +13,9 @@ $white: #fff;
 $blue: #002EA7;
 
 // Secondary color
+$green: #35e6b0;
+
+// Secondary color
 $gray: #ccc;
 
 
@@ -37,6 +40,12 @@ $gray: #ccc;
     
   }
 
+  @if ($name == 'green-on-blue') {
+    color: $green;
+    background-color: $blue;
+    
+  }
+
 }
 
 // Color classes
@@ -47,6 +56,10 @@ $gray: #ccc;
 
 .blue {
   background: #002EA7;
+};
+
+.green {
+  background: #35e6b0;
 };
 
 .gray {
@@ -70,6 +83,12 @@ $gray: #ccc;
 
 .gray-on-blue {
   color: $gray;
+  background-color: $blue;
+  
+}
+
+.green-on-blue {
+  color: $green;
   background-color: $blue;
   
 }
