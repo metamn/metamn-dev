@@ -1,8 +1,8 @@
 @mixin about__contact--mobile {
-  padding: 0 0 $lem;
+  padding: $lem * 2 $lem $lem;
 
-  &:after {
-    @include separator-line;
-    padding: $lem 0;
+  .long-dash {
+    @include long-dash;
+    margin: 0 $lem / 2;
   }
 }

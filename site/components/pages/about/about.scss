@@ -3,6 +3,12 @@ html {
     body {
       @include page;
 
+      .title {
+        @include mobile {
+          display: none;
+        }
+      }
+
       .description {
         @include description;
         padding-bottom: 0;

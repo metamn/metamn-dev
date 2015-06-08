@@ -30,4 +30,8 @@
       }
     }
   }
+
+  @include mobile {
+    @include about__avatar--mobile;
+  }
 }

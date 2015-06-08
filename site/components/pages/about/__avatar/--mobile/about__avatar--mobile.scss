@@ -1,0 +1,12 @@
+@mixin about__avatar--mobile {
+  display: none;
+  flex-basis: 100%;
+  position: relative;
+  order: -1;
+
+  figure {
+    top: $lem / 2;
+    right: $lem;
+    left: auto;
+  }
+}
