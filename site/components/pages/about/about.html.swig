@@ -13,4 +13,6 @@ title: About
 
   {% include '__contact/about__contact.html.swig' %}
 
+  {% include '__avatar/about__avatar.html.swig' %}
+
 {% endblock %}

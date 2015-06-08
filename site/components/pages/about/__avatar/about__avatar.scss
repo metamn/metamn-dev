@@ -1,0 +1,33 @@
+@mixin about__avatar {
+  position: absolute;
+  cursor: pointer;
+
+  figure {
+    @include figure;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    @include transition(opacity);
+    &:first-of-type {
+      opacity: 0;
+    }
+
+    &:last-of-type {
+      opacity: .7;
+    }
+  }
+
+  &:hover {
+    figure {
+      &:first-of-type {
+        opacity: 1;
+      }
+
+      &:last-of-type {
+        opacity: 0;
+      }
+    }
+  }
+}

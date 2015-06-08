@@ -11,6 +11,10 @@ html {
       .about__contact {
         @include about__contact;
       }
+
+      .about__avatar {
+        @include about__avatar;
+      }
     }
   }
 }
