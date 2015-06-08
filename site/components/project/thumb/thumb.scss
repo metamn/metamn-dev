@@ -5,7 +5,7 @@
 // Styleguide thumb
 @mixin thumb {
   .link {
-    @include link(white-on-blue);
+    @include link(white-on-blue, flip);
   }
 
   figure {

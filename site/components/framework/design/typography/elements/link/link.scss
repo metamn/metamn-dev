@@ -4,14 +4,22 @@
 // Links inside a long text are decorated with an underline, inactive menu items are marked with a line-through.
 //
 // Styleguide link
-@mixin link($color-scheme: none, $decoration: none, $hover: on) {
-  @if ($color-scheme != none ) {
+@mixin link($color-scheme: none, $type: none) {
+  text-decoration: none;
+  
+  @if ($color-scheme != none) {
     @include colors($color-scheme);
   }
 
-  @include link--decoration($decoration);
+  @if ($type == flip) {
+    @include link--flip;
+  }
 
-  @if ($hover == on) {
-    @include flip($decoration);
+  @if ($type == line-through) {
+    @include link--line-through;
+  }
+
+  @if ($type == underline) {
+    @include link--underline;
   }
 }

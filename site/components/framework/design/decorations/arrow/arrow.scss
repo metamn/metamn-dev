@@ -8,7 +8,7 @@
   display: inline-flex;
 
   a {
-    @include link($color-scheme, $hover: off);
+    @include link($color-scheme, none);
     display: flex;
     align-items: center;
   }

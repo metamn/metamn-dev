@@ -26,7 +26,6 @@
     top: 100%;
     content: attr(data-hover);
     transform: translate3d(0, 0, 0);
-    @include colors(green-on-blue);
   }
 
   &:hover span,

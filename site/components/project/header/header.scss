@@ -12,6 +12,6 @@
   }
 
   .link {
-    @include link($color-scheme);
+    @include link($color-scheme, flip);
   }
 }

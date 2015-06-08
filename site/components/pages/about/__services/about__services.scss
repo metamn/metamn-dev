@@ -16,7 +16,7 @@
   }
 
   .link {
-    @include link(white-on-blue, underline);
+    @include link(green-on-blue, underline);
   }
 
   @include mobile {
