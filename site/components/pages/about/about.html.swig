@@ -11,6 +11,6 @@ title: About
   {% set description = about %}
   {% include '../../project/description/description.html.swig' %}
 
-  {% include '__services/about__services.html.swig' %}
+  {% include '__contact/about__contact.html.swig' %}
 
 {% endblock %}

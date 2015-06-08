@@ -8,8 +8,8 @@ html {
         padding-bottom: 0;
       }
 
-      .about__services {
-        @include about__services;
+      .about__contact {
+        @include about__contact;
       }
     }
   }

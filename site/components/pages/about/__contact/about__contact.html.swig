@@ -1,4 +1,4 @@
-<aside class="about__services">
+<aside class="about__contact">
   <h3>Services</h3>
 
   <ul>

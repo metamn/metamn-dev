@@ -1,4 +1,4 @@
-@mixin about__services {
+@mixin about__contact {
   padding: $lem * 2;
 
   li {
@@ -20,6 +20,6 @@
   }
 
   @include mobile {
-    @include about__services--mobile;
+    @include about__contact--mobile;
   }
 }
