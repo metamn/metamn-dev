@@ -1,10 +1,12 @@
 @mixin thumb--mobile {
-  padding-right: 0;
-  padding-bottom: 0;
+  @include mobile {
+    padding-right: 0;
+    padding-bottom: 0;
 
-  .thumb__title,
-  .thumb__services {
-    padding: $lem;
-    @include colors(white-on-blue);
+    .thumb__title,
+    .thumb__services {
+      padding: $lem;
+      @include colors(white-on-blue);
+    }
   }
 }

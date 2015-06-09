@@ -23,5 +23,6 @@
   }
 
   @include thumb--mobile;
+  @include thumb--tablet;
   @include thumb--hover;
 }
