@@ -9,10 +9,8 @@
 
   &:before {
     content: "Work-";
-    font-size: 8000%;
-    line-height: .5;
     word-wrap: break-word;
-    max-width: 90vw;
+    max-width: 99vw;
     overflow: hidden;
 
     position: absolute;
@@ -21,6 +19,13 @@
     margin-top: 5%;
 
     z-index: -1;
-    color: $green;
+    color: $gray;
+
+    font-size: 5500%;
+    line-height: .7;
+    @include desktop {
+      font-size: 12000%;
+      line-height: .3;
+    }
   }
 }
