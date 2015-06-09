@@ -7,25 +7,5 @@
     @include thumb;
   }
 
-  &:before {
-    content: "Work-";
-    word-wrap: break-word;
-    max-width: 99vw;
-    overflow: hidden;
-
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin-top: 5%;
-
-    z-index: -1;
-    color: $gray;
-
-    font-size: 5500%;
-    line-height: .7;
-    @include desktop {
-      font-size: 12000%;
-      line-height: .3;
-    }
-  }
+  @include works__title;
 }

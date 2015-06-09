@@ -1,0 +1,25 @@
+@mixin thumb--hover {
+  .thumb__title,
+  .thumb__services {
+    @include transition(transform);
+  }
+
+  &:hover,
+  &:active {
+    .thumb__title,
+    .thumb__services {
+      @include colors(white-on-blue);
+      width: calc(100% - #{$lem / 2});
+    }
+
+    .thumb__title {
+      transform: translate($lem / 2, $lem * 1.5);
+      z-index: 2;
+    }
+
+    .thumb__services {
+      transform: translate($lem / 2, -$lem * 3.5);
+      background: transparent;
+    }
+  }
+}

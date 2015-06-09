@@ -21,4 +21,6 @@
   .thumb__title {
     display: flex;
   }
+
+  @include thumb--hover;
 }
