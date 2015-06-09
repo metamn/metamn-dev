@@ -1,1 +1,5 @@
-@mixin thumb__services {}
+@mixin thumb__services {
+  ul {
+    @include ul;
+  }
+}

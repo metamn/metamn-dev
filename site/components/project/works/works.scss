@@ -1,9 +1,26 @@
 @mixin works {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-end;
+  justify-content: center;
 
   .thumb {
     @include thumb;
+  }
+
+  &:before {
+    content: "Work-";
+    font-size: 8000%;
+    line-height: .5;
+    word-wrap: break-word;
+    max-width: 90vw;
+    overflow: hidden;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 5%;
+
+    z-index: -1;
+    color: $green;
   }
 }
