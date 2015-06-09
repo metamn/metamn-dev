@@ -1,8 +1,9 @@
 @mixin works {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
+  justify-content: flex-end;
 
-  .works__thumbs {
-    @include works__thumbs;
+  .thumb {
+    @include thumb;
   }
 }

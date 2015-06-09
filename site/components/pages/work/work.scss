@@ -2,7 +2,6 @@ html {
   &.work-archive {
     body {
       @include colors(blue-on-white);
-      @include stretch(columns);
 
       .header {
         @include header(blue-on-white);

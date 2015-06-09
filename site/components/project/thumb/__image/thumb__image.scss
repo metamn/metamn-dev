@@ -1,15 +1,9 @@
 @mixin thumb__image {
-  padding: $lem;
+  @include figure;
+  @include colors(white-on-blue);
+  padding: $lem * 2;
 
   @include desktop {
     padding: $lem * 3;
-  }
-
-  .link {
-    @include link(white-on-blue, flip);
-  }
-
-  figure {
-    @include figure;
   }
 }

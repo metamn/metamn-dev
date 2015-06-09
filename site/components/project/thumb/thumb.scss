@@ -4,17 +4,25 @@
 //
 // Styleguide thumb
 @mixin thumb {
-  .link {
-    @include link(white-on-blue, flip);
-  }
+  display: flex;
+  flex-direction: column;
+  padding: $lem;
+  padding-left: 0;
+
 
   figure {
-    @include figure;
-    @include colors(white-on-blue);
-    padding: $lem;
+    @include thumb__image;
+  }
 
-    @include desktop {
-      padding: $lem * 3;
-    }
+  .thumb__services {
+    @include thumb__services;
+  }
+
+  .thumb__title {
+    display: flex;
+    transform: rotate(-90deg);
+    align-self: flex-end;
+    background: $green;
+    padding: $lem / 4 $lem / 2;
   }
 }
