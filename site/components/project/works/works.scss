@@ -3,9 +3,9 @@
   flex-wrap: wrap;
   justify-content: center;
 
+  @include works__title;
+
   .thumb {
     @include thumb;
   }
-
-  @include works__title;
 }

@@ -6,9 +6,9 @@
 @mixin thumb {
   display: flex;
   flex-direction: column;
+
   padding: $lem;
   padding-left: 0;
-
 
   figure {
     @include thumb__image;
@@ -22,5 +22,6 @@
     display: flex;
   }
 
+  @include thumb--mobile;
   @include thumb--hover;
 }

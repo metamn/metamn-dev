@@ -6,4 +6,8 @@
   @include desktop {
     padding: $lem * 3;
   }
+
+  @include mobile {
+    padding: $lem;
+  }
 }

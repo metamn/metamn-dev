@@ -18,10 +18,7 @@
     font-size: 5500%;
     line-height: .7;
 
-    @include desktop {
-      font-size: 12000%;
-      line-height: .3;
-      letter-spacing: .1em;
-    }
+    @include works__title--desktop;
+    @include works__title--mobile;
   }
 }
