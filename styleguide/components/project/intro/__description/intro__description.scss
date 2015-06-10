@@ -6,7 +6,7 @@
   @include grid('p', $lem);
 
   a {
-    @include link(white-on-blue, underlined, $hover: off);
+    @include link(white-on-blue, underlined);
   }
 
   p {

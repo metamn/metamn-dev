@@ -17,11 +17,11 @@
         "images": [
           {
             "title": "The top of OCCRP frontpage on mobile",
-            "name": "occrp-frontpage-top-mobile"
+            "name": "occrp-frontpage-mobile"
           },
           {
             "title": "The OCCRP frontpage on mobile",
-            "name": "occrp-frontpage-mobile"
+            "name": "occrp-frontpage-2-mobile"
           },
           {
             "title": "The OCCRP archive page on mobile",
@@ -33,7 +33,7 @@
         "images": [
           {
             "title": "The OCCRP archive page on tablet",
-            "name": "occrp-archive-tablet"
+            "name": "occrp-frontpage-tablet"
           },
           {
             "title": "The OCCRP article page on tablet",

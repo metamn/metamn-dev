@@ -5,7 +5,7 @@
     @include text-style(body-text);
 
     a {
-      @include link(blue-on-white, underline, $hover: off);
+      @include link(blue-on-white, underline);
     }
   }
 }

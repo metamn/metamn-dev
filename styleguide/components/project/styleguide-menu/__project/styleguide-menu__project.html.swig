@@ -53,6 +53,10 @@ Templates</div>
 <div>
 <a class="link" title="Work" href="{{ site.url }}project/work"><span data-hover="Work">Work</span></a>
 </li>
+<li class="file menu-item-works">
+<div>
+<a class="link" title="Works" href="{{ site.url }}project/works"><span data-hover="Works">Works</span></a>
+</li>
 </ul>
 </li>
 </ul>
