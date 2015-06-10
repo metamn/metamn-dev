@@ -1,0 +1,6 @@
+@mixin works__title--tablet {
+  @include tablet {
+    font-size: 4000%;
+    line-height: .7;
+  }
+}

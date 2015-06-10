@@ -18,7 +18,9 @@
     font-size: 5500%;
     line-height: .7;
 
-    @include works__title--desktop;
     @include works__title--mobile;
+    @include works__title--tablet;
+    @include works__title--tablet-landscape;
+    @include works__title--desktop;
   }
 }

@@ -35,6 +35,12 @@ $breakpoint-desktop: 1600px;
   }
 }
 
+@mixin mobile-and-up {
+  @media only screen and (min-width: $breakpoint-mobile + 0.1) {
+    @content
+  }
+}
+
 @mixin tablet {
   @media only screen and (min-width: $breakpoint-mobile) and (max-width: $breakpoint-tablet) {
     @content

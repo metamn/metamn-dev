@@ -1,0 +1,6 @@
+@mixin works__title--tablet-landscape {
+  @include tablet-landscape {
+    font-size: 5000%;
+    line-height: .7;
+  }
+}

@@ -1,5 +1,5 @@
 @mixin thumb--hover {
-  @include tablet-and-up {
+  @include mobile-and-up {
     .thumb__title,
     .thumb__services {
       @include transition(transform);
