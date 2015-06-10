@@ -55,22 +55,6 @@
           "name": "p"
         }
       ]
-    },
-    {
-      "name": "Title",
-      "description": "The title of an article or a page.",
-      "based_on": "Nimbus Sans",
-      "mixins": [
-        
-      ]
-    },
-    {
-      "name": "Menu",
-      "description": "The links in a menu.",
-      "based_on": "Nimbus Sans",
-      "mixins": [
-
-      ]
     }
   ]
 }

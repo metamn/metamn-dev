@@ -49,22 +49,6 @@ $text-block-width: 25em;
     
   }
   
-  // Title
-  // - The title of an article or a page.
-  @if ($variant == 'title') {
-    
-    
-    
-  }
-  
-  // Menu
-  // - The links in a menu.
-  @if ($variant == 'menu') {
-    
-    
-    
-  }
-  
 }
 
 
@@ -92,18 +76,6 @@ $text-block-width: 25em;
   @include p;
   
   max-width: 25em;
-  
-  
-}
-
-.text-style--title {
-  
-  
-  
-}
-
-.text-style--menu {
-  
   
   
 }
