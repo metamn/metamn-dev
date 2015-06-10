@@ -20,7 +20,9 @@
   }
 
   // Spinner
-  @include figure__spinner($spinner-type);
+  @if ($spinner-type != 'none') {
+    @include figure__spinner($spinner-type);
+  }
 
   figcaption {
     @include figure__figcaption($figcaption);

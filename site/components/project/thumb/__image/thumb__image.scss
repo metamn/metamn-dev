@@ -1,5 +1,5 @@
 @mixin thumb__image {
-  @include figure;
+  @include figure($spinner-type: none);
   @include colors(white-on-blue);
   padding: $lem * 2;
 
