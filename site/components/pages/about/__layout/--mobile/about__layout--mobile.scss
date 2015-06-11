@@ -1,0 +1,17 @@
+@mixin about__layout--mobile {
+  @include mobile {
+    .header,
+    .title,
+    .title__main {
+      flex-basis: 100%;
+    }
+
+    .title__main {
+      transform: rotate(0deg);
+    }
+
+    .title {
+      display: none;
+    }
+  }
+}

@@ -1,13 +1,7 @@
 html {
   &.about {
     body {
-      @include page;
-
-      .title {
-        @include mobile {
-          display: none;
-        }
-      }
+      @include about__layout;
 
       .description {
         @include description;

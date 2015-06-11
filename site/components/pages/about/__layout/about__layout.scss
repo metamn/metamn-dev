@@ -1,4 +1,4 @@
-@mixin page {
+@mixin about__layout {
   @include stretch--rows;
 
   .title {
@@ -14,7 +14,5 @@
     align-self: flex-end;
   }
 
-  @include mobile {
-    @include page--mobile;
-  }
+  @include about__layout--mobile;
 }
