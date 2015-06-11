@@ -1,7 +1,0 @@
-@mixin separator-line {
-  content: '';
-  border-bottom: 1px solid;
-  width: $lem * 3;
-
-  display: flex;
-}
