@@ -1,13 +1,9 @@
 @mixin thumb__image {
   @include figure($spinner-type: none);
   @include colors(white-on-blue);
+
   padding: $lem * 2;
 
-  @include desktop {
-    padding: $lem * 3;
-  }
-
-  @include mobile {
-    padding: $lem;
-  }
+  @include thumb__image--desktop;
+  @include thumb__image--mobile;
 }

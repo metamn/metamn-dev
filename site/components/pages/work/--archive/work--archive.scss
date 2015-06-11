@@ -1,0 +1,15 @@
+@mixin work--archive {
+  @include colors(blue-on-white);
+
+  .header {
+    @include header(blue-on-white);
+  }
+
+  .menu {
+    @include menu(blue-on-white);
+  }
+
+  .works {
+    @include works;
+  }
+}
