@@ -4,22 +4,20 @@
   li {
     display: flex;
     align-items: center;
+
+    .glyph {
+      width: $lem;
+    }
+
+    .long-dash {
+      @include long-dash;
+      margin: 0 $lem;
+    }
+
+    .link {
+      @include link(green-on-blue, underline);
+    }
   }
 
-  .glyph {
-    width: $lem;
-  }
-
-  .long-dash {
-    @include long-dash;
-    margin: 0 $lem;
-  }
-
-  .link {
-    @include link(green-on-blue, underline);
-  }
-
-  @include mobile {
-    @include about__contact--mobile;
-  }
+  @include about__contact--mobile;
 }

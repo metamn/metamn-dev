@@ -2,36 +2,11 @@
   position: absolute;
   cursor: pointer;
 
-  figure {
-    @include figure;
+  width: 10em;
+  right: 20%;
+  bottom: 30%;
+  padding: $lem;
 
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    @include transition(opacity);
-    &:first-of-type {
-      opacity: 0;
-    }
-
-    &:last-of-type {
-      opacity: .7;
-    }
-  }
-
-  &:hover {
-    figure {
-      &:first-of-type {
-        opacity: 1;
-      }
-
-      &:last-of-type {
-        opacity: 0;
-      }
-    }
-  }
-
-  @include mobile {
-    @include about__avatar--mobile;
-  }
+  @include figure-on-figure;
+  @include about__avatar--mobile;
 }

@@ -1,8 +1,10 @@
 @mixin about__contact--mobile {
-  padding: $lem * 2 $lem $lem;
+  @include mobile {
+    padding: $lem * 2 $lem $lem;
 
-  .long-dash {
-    @include long-dash;
-    margin: 0 $lem / 2;
+    .long-dash {
+      @include long-dash;
+      margin: 0 $lem / 2;
+    }
   }
 }

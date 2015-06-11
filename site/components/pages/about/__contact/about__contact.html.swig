@@ -1,5 +1,5 @@
 <aside class="about__contact">
-  <h3>Services</h3>
+  <h3>Contact</h3>
 
   <ul>
     {% for link in about.links %}
