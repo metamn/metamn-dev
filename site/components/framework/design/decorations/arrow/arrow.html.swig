@@ -1,6 +1,6 @@
 {% if arrow.item.title %}
   <div class="arrow active">
-    <a href="{{ site.url }}{{ arrow.item.url }}" title="{{ arrow.item.title }}">
+    <a class="link" href="{{ site.url }}{{ arrow.item.url }}" title="{{ arrow.item.title }}">
       {% if arrow.direction == 'left' %}
         <span class="arrow__icon arrow__icon--left">&lsaquo;</span>
         <span class="arrow__text">{{ arrow.item.title }}</span>

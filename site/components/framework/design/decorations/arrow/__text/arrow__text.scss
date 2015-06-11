@@ -1,0 +1,6 @@
+@mixin arrow__text {
+  .arrow__text {
+    @include text-style(menu);
+    display: none;
+  }
+}

@@ -7,31 +7,12 @@
 @mixin arrow($color-scheme, $arrow-inactive) {
   display: inline-flex;
 
-  a {
-    @include link($color-scheme, none);
-    display: flex;
-    align-items: center;
-  }
-
-  .arrow__icon {
-    font-size: 400%;
-    line-height: 0;
-
-    position: relative;
-    top: -$lem / 16;
-  }
-
-  .arrow__text {
-    @include text-style(menu);
-    display: none;
-  }
-
   + .arrow {
     margin-left: $lem / 2;
   }
 
-
-  &.inactive {
-    color: $arrow-inactive;
-  }
+  @include arrow__link($color-scheme);
+  @include arrow__icon;
+  @include arrow__text;
+  @include arrow--inactive($arrow-inactive);
 }

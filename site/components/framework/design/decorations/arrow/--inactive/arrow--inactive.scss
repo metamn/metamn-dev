@@ -1,0 +1,5 @@
+@mixin arrow--inactive($arrow-inactive) {
+  &.inactive {
+    color: $arrow-inactive;
+  }
+}

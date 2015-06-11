@@ -1,0 +1,7 @@
+@mixin arrow__link($color-scheme) {
+  .link {
+    @include link($color-scheme, none);
+    display: flex;
+    align-items: center;
+  }
+}

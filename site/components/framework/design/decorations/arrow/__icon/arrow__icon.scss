@@ -1,0 +1,9 @@
+@mixin arrow__icon {
+  .arrow__icon {
+    font-size: 400%;
+    line-height: 0;
+
+    position: relative;
+    top: -$lem / 16;
+  }
+}
