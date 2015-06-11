@@ -14,19 +14,8 @@
     @include slider__bullets;
   }
 
-  @include portrait {
-    @include work__description-with-images--portrait;
-  }
-
-  @include mobile {
-    @include work__description-with-images--mobile;
-  }
-
-  @include landscape {
-    @include work__description-with-images--landscape;
-  }
-
-  @include tablet-landscape {
-    @include work__description-with-images--tablet-landscape;
-  }
+  @include work__description-with-images--portrait;
+  @include work__description-with-images--mobile;
+  @include work__description-with-images--landscape;
+  @include work__description-with-images--tablet-landscape;
 }

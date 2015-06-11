@@ -1,7 +1,9 @@
 @mixin work__description-with-images--portrait {
-  flex-direction: column;
+  @include portrait {
+    flex-direction: column;
 
-  .slider__bullets {
-    padding: $lem / 2 0;
+    .slider__bullets {
+      padding: $lem / 2 0;
+    }
   }
 }

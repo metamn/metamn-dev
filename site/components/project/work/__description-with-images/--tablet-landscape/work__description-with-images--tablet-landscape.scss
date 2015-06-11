@@ -1,7 +1,9 @@
 @mixin work__description-with-images--tablet-landscape {
-  padding: $lem;
+  @include tablet-landscape {
+    padding: $lem;
 
-  .slider {
-    @include slider(3, 2);
+    .slider {
+      @include slider(3, 2);
+    }
   }
 }

@@ -1,14 +1,16 @@
 @mixin work__description-with-images--landscape {
-  padding: 0 $lem;
+  @include landscape {
+    padding: 0 $lem;
 
-  flex-direction: row;
-  align-items: center;
+    flex-direction: row;
+    align-items: center;
 
-  .description {
-    padding: 0 $lem 0 0;
-  }
+    .description {
+      padding: 0 $lem 0 0;
+    }
 
-  .slider__bullets {
-    @include slider__bullets--vertical;
+    .slider__bullets {
+      @include slider__bullets--vertical;
+    }
   }
 }

@@ -1,0 +1,5 @@
+@mixin work__title {
+  @include title;
+  @include colors(blue-on-white);
+  padding-bottom: $lem;
+}
