@@ -1,9 +1,0 @@
-@mixin page-transition--out {
-  @include transition(opacity);
-
-  &.clicked {
-    section, header, nav, article, aside {
-      opacity: 0;
-    }
-  }
-}

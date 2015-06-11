@@ -3,7 +3,6 @@ html {
     @include semantic-html5-titles;
     @include reset;
     @include text-style(default);
-    @include page-transition;
 
     .header {
       @include header;
