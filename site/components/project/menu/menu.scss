@@ -11,26 +11,6 @@
   padding: $lem;
   @include colors($color-scheme);
 
-  a {
-    @include link($color-scheme, flip);
-    @include text-style(menu);
-  }
-
-  .menu__item {
-    &.inactive {
-      a {
-        span {
-          @include link($color-scheme, line-through);
-        }
-      }
-    }
-
-    + .menu__item {
-      margin-left: $lem;
-    }
-  }
-
-  @include mobile {
-    @include menu--mobile;
-  }
+  @include menu__item($color-scheme);
+  @include menu--mobile;
 }

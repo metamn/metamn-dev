@@ -1,7 +1,9 @@
 @mixin menu--mobile {
-  flex-direction: column;
+  @include mobile {
+    flex-direction: column;
 
-  .menu__item + .menu__item {
-    margin-left: 0;
+    .menu__item + .menu__item {
+      margin-left: 0;
+    }
   }
 }
