@@ -15,11 +15,6 @@
     @include color-overlay($blue, .1, $hover: off);
   }
 
-  @include portrait {
-    @include home__intro--portrait;
-  }
-
-  @include landscape {
-    @include home__intro--landscape;
-  }
+  @include home__intro--portrait;
+  @include home__intro--landscape;
 }
