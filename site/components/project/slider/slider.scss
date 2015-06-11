@@ -8,40 +8,13 @@
   overflow: hidden;
   @include colors(white-on-blue);
 
-  @include tablet-and-below {
-    width: 100%;
-  }
-
-  // Stretch content to fill the full space available
-  @include tablet-and-up {
-    flex-grow: 1;
-  }
+  @include slider__layout;
 
   .slides {
     @include intrinsic-ratio($ratio-width, $ratio-height, '.slide', 'figure');
 
     .slide {
-      @include transition(transform);
-
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-      cursor: pointer;
-
-      figure {
-        @include figure;
-
-        + figure {
-          padding-left: $lem;
-        }
-      }
+      @include slider__slide;
     }
   }
 }

@@ -1,0 +1,10 @@
+@mixin slider__layout {
+  @include tablet-and-below {
+    width: 100%;
+  }
+
+  // Stretch content to fill the full space available
+  @include tablet-and-up {
+    flex-grow: 1;
+  }
+}
