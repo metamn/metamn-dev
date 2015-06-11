@@ -15,4 +15,10 @@
     margin: 0;
     padding: 0;
   }
+
+  // Remove the extra bottom spacing for <img> inside <a>
+  figure a {
+    line-height: 0;
+    display: block;
+  }
 }

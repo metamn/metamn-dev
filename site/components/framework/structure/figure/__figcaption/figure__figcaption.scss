@@ -8,18 +8,10 @@
   }
 
   @if ($figcaption == figcaption) {
-    display: none;
-
-    &.figcaption {
-      display: flex;
-    }
+    @include figure__figcaption--from-figcaption;
   }
 
   @if ($figcaption == from-title) {
-    display: none;
-
-    &.figcaption--from-title {
-      display: flex;
-    }
+    @include figure__figcaption--from-title;
   }
 }

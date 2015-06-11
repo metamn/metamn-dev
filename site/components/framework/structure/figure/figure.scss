@@ -13,12 +13,6 @@
     max-height: 100%;
   }
 
-  // Remove the extra bottom spacing for <img> inside <a>
-  a {
-    line-height: 0;
-    display: block;
-  }
-
   // Spinner
   @if ($spinner-type != 'none') {
     @include figure__spinner($spinner-type);
