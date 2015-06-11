@@ -1,1 +1,0 @@
-A page or section title with an eventual subtitle separated with a long-dash. It can be rotated left with 90 degrees.
