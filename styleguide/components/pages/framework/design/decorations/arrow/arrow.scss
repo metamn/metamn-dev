@@ -10,7 +10,7 @@ html {
             }
 
             .arrow {
-              @include arrow(white-on-blue, $gray);
+              @include arrow(white-on-blue, black);
 
               position: relative;
               top: $lem - $lem / 4;

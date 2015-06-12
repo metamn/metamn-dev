@@ -8,12 +8,12 @@ title: Uppercase
   <aside class="aside">
     <h3 class="aside__title">Uppercase</h3>
     <div class="box example-1">
-      This is an uppercase text with proper letter spacing.
+      This is an uppercase text with larger letter spacing.
     </div>
   </aside>
 
   <aside class="aside">
-    <h3 class="aside__title">Browser default Uppercase</h3>
+    <h3 class="aside__title">Browser default uppercase</h3>
     <div class="box example-2">
       This is an uppercase text with no extra letter spacing.
     </div>

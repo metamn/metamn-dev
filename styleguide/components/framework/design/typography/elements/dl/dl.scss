@@ -4,15 +4,17 @@
   dt {
     @include text-style(title);
     word-wrap: break-word;
-    border: 1px solid;
-    border-bottom: none;
-    padding: $lem;
+    padding: $lem / 2 0;
+    border-bottom: 1px solid;
   }
 
   dd {
+    padding: $lem / 2 0;
     margin: 0;
-    padding: $lem;
-    border: 1px solid;
+
+    + dd {
+      padding: 0;
+    }
 
     + dt {
         margin-top: $lem + $lem / 2;
