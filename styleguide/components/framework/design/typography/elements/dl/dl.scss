@@ -1,0 +1,21 @@
+@mixin dl {
+  margin: 0;
+
+  dt {
+    @include text-style(title);
+    word-wrap: break-word;
+    border: 1px solid;
+    border-bottom: none;
+    padding: $lem;
+  }
+
+  dd {
+    margin: 0;
+    padding: $lem;
+    border: 1px solid;
+
+    + dt {
+        margin-top: $lem + $lem / 2;
+    }
+  }
+}

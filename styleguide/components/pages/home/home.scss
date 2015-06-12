@@ -9,17 +9,7 @@ html {
         display: none;
       }
 
-      .example {
-        padding: 0 !important;
-
-        .intro {
-          @include intro;
-        }
-
-        @include mobile {
-          padding-top: $lem;
-        }
-      }
+      @include home__example;
     }
   }
 }

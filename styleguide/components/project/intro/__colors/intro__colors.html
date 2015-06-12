@@ -1,14 +1,10 @@
 <article class="intro__colors">
   <h3>Colors</h3>
 
+
     <div class="item">
       <span class="white placeholder"></span>
       <span class="name">white</span>
-    </div>
-
-    <div class="item">
-      <span class="black placeholder"></span>
-      <span class="name">black</span>
     </div>
 
     <div class="item">
@@ -17,8 +13,13 @@
     </div>
 
     <div class="item">
-      <span class="thumbblue placeholder"></span>
-      <span class="name">thumbblue</span>
+      <span class="green placeholder"></span>
+      <span class="name">green</span>
+    </div>
+
+    <div class="item">
+      <span class="gray placeholder"></span>
+      <span class="name">gray</span>
     </div>
 
 </article>

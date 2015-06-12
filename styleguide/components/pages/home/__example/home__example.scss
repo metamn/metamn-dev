@@ -1,0 +1,13 @@
+@mixin home__example {
+  .example {
+    padding: 0 !important;
+
+    .intro {
+      @include intro;
+    }
+
+    @include mobile {
+      padding-top: $lem;
+    }
+  }
+}

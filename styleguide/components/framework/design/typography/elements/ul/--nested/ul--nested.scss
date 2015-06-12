@@ -37,8 +37,10 @@
       }
 
       &.inactive {
-        div {
-          @include menu--inactive;
+        a {
+          span {
+            @include link(blue-on-white, line-through);
+          }
         }
       }
     }

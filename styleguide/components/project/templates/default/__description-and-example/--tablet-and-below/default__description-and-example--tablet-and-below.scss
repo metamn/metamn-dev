@@ -1,0 +1,10 @@
+@mixin default__description-and-example--tablet-and-below {
+  @include tablet-and-below {
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    .styleguide-description {
+      flex-basis: auto;
+    }
+  }
+}
