@@ -2,12 +2,12 @@
 
 
 <!doctype html>
-<html lang="en" class="styleguide styleguide-link ">
+<html lang="en" class="styleguide styleguide-figure-on-figure ">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <title>Link &mdash; Styleguide</title>
+    <title>Figure on figure &mdash; Styleguide</title>
 
     <script src="//use.typekit.net/wrb3hlx.js"></script>
     <script>try{Typekit.load();}catch(e){}</script>
@@ -79,30 +79,18 @@
   
     <span class="long-dash"></span>
 
-    <span class="title__subtitle">Link</span>
+    <span class="title__subtitle">Figure on figure</span>
   
 </header>
 
 
 
 <section class="description-and-example">
-  <h3>Link</h3>
+  <h3>Figure on figure</h3>
 
   
 
 
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
 
   
 
@@ -121,11 +109,22 @@
       <h3>Description</h3>
 
       <div class="text">
-        <p>Simple link styling. By default no underline just differentiation by style.
-Links inside a long text are decorated with an underline, inactive menu items are marked with a line-through.</p>
+        <p>Two figures overlapping. On hover the top figure is fading out showing the other figure.</p>
 
       </div>
     </article>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
   
 
   
@@ -162,19 +161,122 @@ Links inside a long text are decorated with an underline, inactive menu items ar
     
 
   <aside class="aside">
-    <h3 class="aside__title">Link</h3>
+    <h3 class="aside__title">Figure on figure</h3>
+
     <div class="box">
-      <div class="example-1">
-        <a class="link" href="#" title="This is a link"><span data-hover="This is a link">This is a link.</span></a>
-      </div>
+      
+        
+        
+        <figure >
+  
 
-      <div class="example-2">
-        <a class="link" href="#" title="This is an underlined link">This is an underlined link.</a>
-      </div>
+  <!-- The default extension is .png but other formats are handled too -->
+  
+  
 
-      <div class="example-3">
-        <a class="link" href="#" title="This is a link with line-through">This is a link with line-through.</a>
-      </div>
+  <!-- Naming convention for responsive images -->
+  
+  
+  
+  
+  
+  
+  
+  
+
+
+  <!-- Showing different images for different devices -->
+  
+
+
+  <!-- Figcaption is image title unless is not set explicitely -->
+  
+  
+
+  
+
+
+  <!-- Images are served from /site also for /styleguide -->
+  
+  
+    
+  
+
+
+  <picture>
+    <!--[if IE 9]><video style="display: none;"><![endif]-->
+    <source media="(min-width: 1600px)" srcset="/assets/images/avatar-blue_desktop.png, /assets/images/avatar-blue_desktop2x.png 2x">
+    <source media="(min-width: 1199px)" srcset="/assets/images/avatar-blue_laptop.png, /assets/images/avatar-blue_laptop2x.png 2x">
+    <source media="(min-width: 600px)" srcset="/assets/images/avatar-blue_tablet.png, /assets/images/avatar-blue_tablet2x.png 2x">
+    <source srcset="/assets/images/avatar-blue_mobile.png, /assets/images/avatar-blue_mobile2x.png 2x">
+    <!--[if IE 9]></video><![endif]-->
+    <img srcset="/assets/images/avatar-blue_desktop.png" alt="Avatar blue">
+  </picture>
+
+  <figcaption class="figcaption figcaption--from-title">
+    Avatar blue
+  </figcaption>
+
+  
+</figure>
+
+      
+        
+        
+        <figure >
+  
+
+  <!-- The default extension is .png but other formats are handled too -->
+  
+  
+
+  <!-- Naming convention for responsive images -->
+  
+  
+  
+  
+  
+  
+  
+  
+
+
+  <!-- Showing different images for different devices -->
+  
+
+
+  <!-- Figcaption is image title unless is not set explicitely -->
+  
+  
+
+  
+
+
+  <!-- Images are served from /site also for /styleguide -->
+  
+  
+    
+  
+
+
+  <picture>
+    <!--[if IE 9]><video style="display: none;"><![endif]-->
+    <source media="(min-width: 1600px)" srcset="/assets/images/avatar-kubist_desktop.png, /assets/images/avatar-kubist_desktop2x.png 2x">
+    <source media="(min-width: 1199px)" srcset="/assets/images/avatar-kubist_laptop.png, /assets/images/avatar-kubist_laptop2x.png 2x">
+    <source media="(min-width: 600px)" srcset="/assets/images/avatar-kubist_tablet.png, /assets/images/avatar-kubist_tablet2x.png 2x">
+    <source srcset="/assets/images/avatar-kubist_mobile.png, /assets/images/avatar-kubist_mobile2x.png 2x">
+    <!--[if IE 9]></video><![endif]-->
+    <img srcset="/assets/images/avatar-kubist_desktop.png" alt="Avatar kubist">
+  </picture>
+
+  <figcaption class="figcaption figcaption--from-title">
+    Avatar kubist
+  </figcaption>
+
+  
+</figure>
+
+      
     </div>
   </aside>
 

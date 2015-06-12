@@ -1,3 +1,8 @@
+// Figure on figure
+//
+// Two figures overlapping. On hover the top figure is fading out showing the other figure.
+//
+// Styleguide figure-on-figure
 @mixin figure-on-figure {
   figure {
     @include figure;

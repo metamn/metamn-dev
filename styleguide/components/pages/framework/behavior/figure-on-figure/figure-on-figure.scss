@@ -1,0 +1,33 @@
+html {
+  &.styleguide-figure-on-figure {
+    body {
+      .description-and-example {
+        .example {
+          .aside {
+            @include figure-on-figure;
+            position: relative;
+
+            figure {
+              padding: $lem;
+              cursor: pointer;
+            }
+
+            .box {
+              min-height: 17em;
+
+              @include mobile {
+                min-height: 10em;
+              }
+            }
+
+            .aside__title {
+              position: absolute;
+              bottom: 0;
+              width: calc(100% - #{$lem * 2} - 2px);
+            }
+          }
+        }
+      }
+    }
+  }
+}
