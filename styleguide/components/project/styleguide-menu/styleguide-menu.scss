@@ -8,28 +8,17 @@
 
   a {
     @include link(blue-on-white);
-    @include text-style(menu);
   }
 
-
-  .styleguide-menu__framework, .styleguide-menu__project {
+  .styleguide-menu__framework,
+  .styleguide-menu__project {
     flex-basis: $text-block-width;
     @include ul--nested;
   }
 
   .styleguide-menu__framework {
-    margin-right: $lem * 2;
-
-    @include mobile {
-      margin-right: 0;
-    }
+    @include styleguide-menu__framework;
   }
 
-  .menu-item-reset,
-  .menu-item-helpers,
-  .menu-item-templates,
-  .menu-item-work,
-  .menu-item-works {
-    display: none;
-  }
+  @include styleguide-menu--hidden;
 }

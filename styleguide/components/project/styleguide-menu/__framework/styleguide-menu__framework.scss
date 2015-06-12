@@ -1,0 +1,7 @@
+@mixin styleguide-menu__framework {
+  margin-right: $lem * 2;
+
+  @include mobile {
+    margin-right: 0;
+  }
+}
