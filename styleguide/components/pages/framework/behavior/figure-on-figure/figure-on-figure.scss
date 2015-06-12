@@ -8,22 +8,13 @@ html {
             position: relative;
 
             figure {
+              @include figure($spinner-type: none);
               padding: $lem;
               cursor: pointer;
             }
 
             .box {
               min-height: 17em;
-
-              @include mobile {
-                min-height: 10em;
-              }
-            }
-
-            .aside__title {
-              position: absolute;
-              bottom: 0;
-              width: calc(100% - #{$lem * 2} - 2px);
             }
           }
         }
