@@ -7,13 +7,13 @@ Framework</div>
 <div>
 Behavior</div>
 <ul>
+<li class="file menu-item-figure-on-figure">
+<div>
+<a class="link" title="Figure on figure" href="{{ site.url }}framework/behavior/figure-on-figure"><span data-hover="Figure on figure">Figure on figure</span></a>
+</li>
 <li class="file menu-item-flip">
 <div>
 <a class="link" title="Flip" href="{{ site.url }}framework/behavior/flip"><span data-hover="Flip">Flip</span></a>
-</li>
-<li class="file menu-item-page-transition">
-<div>
-<a class="link" title="Page transition" href="{{ site.url }}framework/behavior/page-transition"><span data-hover="Page transition">Page transition</span></a>
 </li>
 <li class="file menu-item-transition">
 <div>
@@ -45,10 +45,6 @@ Decorations</div>
 <div>
 <a class="link" title="Long dash" href="{{ site.url }}framework/design/decorations/long-dash"><span data-hover="Long dash">Long dash</span></a>
 </li>
-<li class="file menu-item-separator-line">
-<div>
-<a class="link" title="Separator line" href="{{ site.url }}framework/design/decorations/separator-line"><span data-hover="Separator line">Separator line</span></a>
-</li>
 </ul>
 </li>
 <li class="folder menu-item-typography">
@@ -59,10 +55,6 @@ Typography</div>
 <div>
 Elements</div>
 <ul>
-<li class="file menu-item-dl">
-<div>
-<a class="link" title="Dl" href="{{ site.url }}framework/design/typography/elements/dl"><span data-hover="Dl">Dl</span></a>
-</li>
 <li class="file menu-item-link">
 <div>
 <a class="link" title="Link" href="{{ site.url }}framework/design/typography/elements/link"><span data-hover="Link">Link</span></a>
