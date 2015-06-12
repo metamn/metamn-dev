@@ -1,0 +1,17 @@
+@mixin intro-description-p {
+  @include text-style(body-text);
+
+  .link {
+    @include link(white-on-blue, underline);
+  }
+
+
+  &.bordered {
+    @include intro-description-p--bordered;
+  }
+
+
+  @include tablet-and-below {
+    max-width: 20em;
+  }
+}

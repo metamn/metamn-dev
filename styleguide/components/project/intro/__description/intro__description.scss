@@ -3,21 +3,13 @@
   align-items: center;
   justify-content: space-around;
 
-  @include grid('p', $lem);
-
-  a {
-    @include link(white-on-blue, underlined);
-  }
-
-  p {
-    @include intro__description--p;
-  }
-
-  .bordered {
-    @include intro__description--bordered;
-  }
-
   @include landscape {
     flex-wrap: nowrap;
+  }
+
+  @include grid('p', $lem);
+
+  p {
+    @include intro-description-p;
   }
 }

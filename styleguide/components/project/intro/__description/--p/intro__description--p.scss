@@ -1,7 +1,0 @@
-@mixin intro__description--p {
-  @include text-style(body-text);
-
-  @include tablet-and-below {
-    max-width: 20em;
-  }
-}
