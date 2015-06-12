@@ -9,10 +9,7 @@ title: Colors
     <h3>Colors</h3>
 
     {% for color in colors %}
-      <div class="item">
-        <span class="{{ color.name }} placeholder"></span>
-        <span class="name">{{ color.name }}</span>
-      </div>
+      {% include '../../../../framework/design/decorations/color-swatch/color-swatch.html.swig' %}
     {% endfor %}
   </article>
 

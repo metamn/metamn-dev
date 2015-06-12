@@ -5,25 +5,8 @@ html {
         .example__colors {
           @include grid('.item', $lem * 2);
 
-          .item {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-
-            margin-right: $lem * 2;
-            margin-bottom: $lem * 2;
-
-            .name {
-              @include text-style(title);
-            }
-
-            .placeholder {
-              @include circle(5em);
-            }
-
-            .white {
-              border: 1px solid;
-            }
+          .color-swatch {
+            @include color-swatch('.white');
           }
         }
 

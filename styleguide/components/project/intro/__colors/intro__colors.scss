@@ -19,18 +19,7 @@
     padding-bottom: $lem;
   }
 
-  .item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-right: $lem * 2;
-
-    .placeholder {
-      @include circle(5em);
-    }
-
-    .blue {
-      border: 1px solid;
-    }
+  .color-swatch {
+    @include color-swatch('.blue');
   }
 }
