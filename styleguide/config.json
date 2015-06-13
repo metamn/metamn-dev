@@ -1,10 +1,12 @@
 {
   "url": "/styleguide/",
   "urlx": "http://metamn.io/styleguide/",
+  "urly": "http://metamn.github.io/metamn-v1/styleguide/",
   "title": "Styleguide",
   "site_title": "Metamn",
   "site_url": "/",
   "site_urlx": "http://metamn.io/",
+  "site_urly": "http://metamn.github.io/metamn-v1/",
   "images": "assets/images/",
 
   "links": {

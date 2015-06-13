@@ -10,7 +10,10 @@
   padding: $lem;
   padding-left: 0;
 
-  figure {
+  width: 25em;
+  height: 25em;
+
+  .thumb__image {
     @include thumb__image;
   }
 

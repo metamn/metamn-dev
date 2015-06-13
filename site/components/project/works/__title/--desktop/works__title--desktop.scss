@@ -1,7 +1,6 @@
 @mixin works__title--desktop {
   @include desktop {
-    font-size: 12000%;
-    line-height: .3;
-    letter-spacing: .1em;
+    font-size: 4500%;
+    margin-top: 15%;
   }
 }
