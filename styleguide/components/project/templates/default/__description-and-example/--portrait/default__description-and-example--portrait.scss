@@ -1,5 +1,5 @@
-@mixin default__description-and-example--tablet-and-below {
-  @include tablet-and-below {
+@mixin default__description-and-example--portrait {
+  @include portrait {
     flex-direction: column;
     flex-wrap: nowrap;
 
