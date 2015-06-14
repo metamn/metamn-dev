@@ -1,7 +1,5 @@
 @mixin thumb--mobile {
   @include mobile {
-    height: 23em;
-    
     padding: 2px 0 0;
 
     &:first-of-type {
@@ -12,6 +10,12 @@
     .thumb__services {
       padding: $lem;
       @include colors(white-on-blue);
+    }
+
+    .thumb__image {
+      figure {
+        padding: $lem;
+      }
     }
   }
 }

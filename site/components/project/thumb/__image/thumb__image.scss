@@ -1,24 +1,7 @@
 @mixin thumb__image {
-  @include intrinsic-ratio(4, 3, 'figure', 'picture');
-
   figure {
     @include figure($spinner-type: 'none');
     @include colors(white-on-blue);
     padding: $lem * 2;
   }
-
-  @include portrait {
-    @include intrinsic-ratio(3, 2, 'figure', 'picture');
-
-    figure {
-      img {
-        max-width: 80%;
-      }
-    }
-  }
-
-  @include mobile {
-    @include intrinsic-ratio(16, 9, 'figure', 'picture');
-  }
-
 }
