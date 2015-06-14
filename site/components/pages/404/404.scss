@@ -1,0 +1,11 @@
+html {
+  &.page-not-found {
+    body {
+      @include stretch--columns;
+
+      p {
+        padding: 0 $lem;
+      }
+    }
+  }
+}

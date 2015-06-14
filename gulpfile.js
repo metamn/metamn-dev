@@ -343,6 +343,10 @@ var _html = function(source, dest) {
       }
       // rename work.html > index.html
       path.basename = 'index';
+      if (path.dirname == '404') {
+        path.dirname = '';
+        path.basename = '404';
+      }
     }))
     .pipe(minifyHTML())
     .pipe(gulp.dest(dest));
