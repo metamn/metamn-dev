@@ -1,0 +1,36 @@
+@mixin not-found__layout {
+  display: flex;
+  flex-wrap: wrap;
+
+  .not-found__title {
+    flex-basis: $text-block-width;
+  }
+
+  .not-found__animation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+
+    .metamn {
+      width: $lem * 10;
+      height: $lem * 10;
+    }
+  }
+
+  @include portrait {
+    flex-direction: column;
+    height: 70vh;
+
+    .not-found__title {
+      flex-basis: auto;
+    }
+
+    .not-found__animation {
+      .metamn {
+        width: $lem * 5;
+        height: $lem * 5;
+      }
+    }
+  }
+}

@@ -343,7 +343,7 @@ var _html = function(source, dest) {
       }
       // rename work.html > index.html
       path.basename = 'index';
-      if (path.dirname == '404') {
+      if (path.dirname == 'not-found') {
         path.dirname = '';
         path.basename = '404';
       }

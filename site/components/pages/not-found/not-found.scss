@@ -1,0 +1,20 @@
+html {
+  &.page-not-found {
+    body {
+      @include stretch--columns;
+
+      .not-found {
+        @include not-found__layout;
+
+        .not-found__title {
+          display: flex;
+          padding: 0 $lem;
+        }
+
+        .metamn {
+          @include metamn;
+        }
+      }
+    }
+  }
+}
