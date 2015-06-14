@@ -1,3 +1,8 @@
+// Spin
+//
+// Spinning an element. Used on the 404/Not found page.
+//
+// Styleguide spin
 @mixin spin {
   animation-name:             rotate;
   animation-duration:         1.5s;

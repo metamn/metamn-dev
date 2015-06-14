@@ -1,0 +1,17 @@
+@mixin not-found__layout--portrait {
+  @include portrait {
+    flex-direction: column;
+    height: 70vh;
+
+    .not-found__title {
+      flex-basis: auto;
+    }
+
+    .not-found__animation {
+      .metamn {
+        width: $lem * 5;
+        height: $lem * 5;
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+html {
+  &.styleguide-spin {
+    body {
+      .description-and-example {
+        .example {
+          .aside {
+            .not-found {
+              @include not-found__layout;
+
+              .metamn {
+                @include metamn;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
