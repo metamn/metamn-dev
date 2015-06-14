@@ -6,6 +6,7 @@ html {
           @include thumb;
           @include colors(white-on-blue);
           margin: 0;
+          width: auto !important;
 
           @include landscape {
             flex-basis: auto !important;
