@@ -6,7 +6,7 @@ title: Page not found
 {% block content %}
 
   <p>
-    Page not found
+    Page not found.
   </p>
 
 
