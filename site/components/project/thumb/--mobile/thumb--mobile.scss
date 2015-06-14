@@ -15,6 +15,13 @@
     .thumb__image {
       figure {
         padding: $lem;
+
+        img {
+          // Stretching the thumb on first page load to the original size
+          // - when loading images the layout won't grow/flick
+          min-width: 272px;
+          min-height: 153px;
+        }
       }
     }
   }

@@ -1,4 +1,18 @@
 @mixin thumb--hover {
+  @include mobile {
+    figure {
+      @include transition(transform);
+    }
+
+    &:hover,
+    &:active {
+      figure {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+
   @include mobile-and-up {
     .thumb__title,
     .thumb__services {
@@ -10,7 +24,7 @@
       .thumb__title,
       .thumb__services {
         @include colors(white-on-blue);
-        width: calc(100% - #{$lem / 2});
+        background: transparent;
       }
 
       .thumb__title {
@@ -20,7 +34,6 @@
 
       .thumb__services {
         transform: translate($lem / 2, -$lem * 3.5);
-        background: transparent;
       }
     }
   }
