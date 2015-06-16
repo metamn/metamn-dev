@@ -6,7 +6,7 @@ title: Color overlay
 {% block content %}
 
   <aside class='aside overlay'>
-    <h3 class="aside__title">Images with color overlay</h3>
+    <h3 class="aside__title">Images with color overlay. Please hover any of the images.</h3>
 
     <div class="box">
       {% for image in overlay.images %}

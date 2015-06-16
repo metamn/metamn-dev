@@ -9,11 +9,11 @@ title: Arrow
     <h3 class="aside__title">Active arrows</h3>
 
     <div class="box">
-      {% set active = { title: "Test" } %}
-      {% set arrow = { item: active, direction: 'left' } %}
+      {% set item = { title: "Test", url: 'framework/design/decorations/arrow/' } %}
+      {% set arrow = { item: item, direction: 'left' } %}
       {% include '../../../../../../../site/components/framework/design/decorations/arrow/arrow.html.swig' %}
 
-      {% set arrow = { item: active, direction: 'right' } %}
+      {% set arrow = { item: item, direction: 'right' } %}
       {% include '../../../../../../../site/components/framework/design/decorations/arrow/arrow.html.swig' %}
     </div>
   </aside>

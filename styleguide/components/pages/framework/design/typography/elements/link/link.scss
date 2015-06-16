@@ -18,7 +18,7 @@ html {
 
         .example-2 {
           .link {
-            @include link(blue-on-white, underlined);
+            @include link(blue-on-white, underline);
           }
         }
 
