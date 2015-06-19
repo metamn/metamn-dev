@@ -8,8 +8,6 @@
   flex-direction: column;
 
   padding: $lem;
-  border-left: 1px solid;
-  border-bottom: 1px solid;
 
   .thumb__image {
     @include thumb__image;
@@ -28,5 +26,5 @@
   @include thumb--tablet-and-up;
   @include thumb--hover;
 
-
+  @include thumb__border;
 }

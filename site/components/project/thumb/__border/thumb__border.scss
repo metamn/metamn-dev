@@ -1,0 +1,6 @@
+@mixin thumb__border {
+  @include thumb__border--mobile;
+  @include thumb__border--tablet;
+  @include thumb__border--tablet-and-up;
+  @include thumb__border--desktop;
+}

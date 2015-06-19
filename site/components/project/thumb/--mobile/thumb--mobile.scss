@@ -10,7 +10,6 @@
     .thumb__title,
     .thumb__services {
       padding: $lem;
-      @include colors(white-on-blue);
     }
 
     .thumb__image {

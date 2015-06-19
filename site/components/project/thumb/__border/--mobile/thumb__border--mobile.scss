@@ -1,0 +1,9 @@
+@mixin thumb__border--mobile {
+  @include mobile {
+    border-top: 1px solid;
+
+    &:first-of-type {
+      border-top: none;
+    }
+  }
+}

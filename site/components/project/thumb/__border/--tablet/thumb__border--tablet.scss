@@ -1,0 +1,14 @@
+@mixin thumb__border--tablet {
+  @include tablet {
+    border-top: 1px solid;
+
+    &:nth-of-type(1),
+    &:nth-of-type(2) {
+      border-top: none;
+    }
+
+    &:nth-of-type(2n+1) {
+      border-right: 1px solid;
+    }
+  }
+}
