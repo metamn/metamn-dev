@@ -3,7 +3,7 @@
   flex-wrap: wrap;
   justify-content: center;
 
-  @include works__title;
+  @include colors(white-on-blue);
 
   .thumb {
     @include thumb;

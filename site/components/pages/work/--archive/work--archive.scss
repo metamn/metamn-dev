@@ -1,5 +1,6 @@
 @mixin work--archive {
   @include colors(blue-on-white);
+  @include stretch(rows);
 
   .header {
     @include header(blue-on-white);
