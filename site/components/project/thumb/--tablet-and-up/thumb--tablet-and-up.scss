@@ -1,6 +1,6 @@
 @mixin thumb--tablet-and-up {
   @include tablet-and-up {
-    width: 25em;
+    flex-basis: 29%;
     height: 25em;
 
     .thumb__image {

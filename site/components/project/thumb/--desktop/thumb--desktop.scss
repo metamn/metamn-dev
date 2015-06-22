@@ -1,0 +1,5 @@
+@mixin thumb--desktop {
+  @include desktop {
+    flex-basis: 22%;
+  }
+}

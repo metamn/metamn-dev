@@ -1,7 +1,7 @@
 @mixin thumb--tablet {
   @include tablet {
-    width: 43%;
-    height: 25em;
+    flex-basis: 43%;
+    height: 20em;
 
     @include portrait {
       .thumb__image {
