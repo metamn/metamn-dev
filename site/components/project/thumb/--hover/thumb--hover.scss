@@ -28,12 +28,12 @@
       }
 
       .thumb__title {
-        transform: translate($lem / 2, $lem * 1.5);
+        transform: translate($lem / 2, $lem / 2);
         z-index: 2;
       }
 
       .thumb__services {
-        transform: translate($lem / 2, -$lem * 3.5);
+        transform: translate($lem / 2, -$lem);
       }
     }
   }
