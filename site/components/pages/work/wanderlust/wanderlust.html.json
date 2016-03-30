@@ -16,6 +16,29 @@
       {
         "images": [
           {
+            "title": "The Wanderlust learn page on tablet",
+            "name": "wanderlust-learn-tablet-angle"
+          }
+        ]
+      },{
+        "images": [
+          {
+            "title": "The Wanderlust leran page on mobile",
+            "name": "wanderlust-learn-mobile-2"
+          },
+          {
+            "title": "The Wanderlust leran page on mobile",
+            "name": "wanderlust-learn-mobile-1"
+          },
+          {
+            "title": "The Wanderlust leran page on mobile",
+            "name": "wanderlust-learn-mobile-3"
+          }
+        ]
+      },
+      {
+        "images": [
+          {
             "title": "The Wanderlust experience page on mobile",
             "name": "wanderlust-experience-mobile"
           },
@@ -50,6 +73,22 @@
           {
             "title": "The Wanderlust Stratton festival page on laptop",
             "name": "wanderlust-festival-laptop-stratton"
+          }
+        ]
+      },
+      {
+        "images": [
+          {
+            "title": "The Wanderlust contact on desktop",
+            "name": "wanderlust-contact-desktop"
+          }
+        ]
+      },
+      {
+        "images": [
+          {
+            "title": "The Wanderlust festival intro on desktop",
+            "name": "wanderlust-festival-desktop"
           }
         ]
       }
