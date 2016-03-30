@@ -33,6 +33,14 @@
             "extension": ".jpg"
           }
         ]
+      },
+      {
+        "images": [
+          {
+            "title": "Beat",
+            "name": "intro-beat"
+          }
+        ]
       }
     ]
   }

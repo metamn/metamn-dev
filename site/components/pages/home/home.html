@@ -283,6 +283,66 @@
 </div>
 
     
+      
+      <div class="slide">
+  
+    
+    
+    <figure >
+  
+
+  <!-- The default extension is .png but other formats are handled too -->
+  
+  
+
+  <!-- Naming convention for responsive images -->
+  
+  
+  
+  
+  
+  
+  
+  
+
+
+  <!-- Showing different images for different devices -->
+  
+
+
+  <!-- Figcaption is image title unless is not set explicitely -->
+  
+  
+
+  
+
+
+  <!-- Images are served from /site also for /styleguide -->
+  
+  
+
+
+  <picture>
+    <!--[if IE 9]><video style="display: none;"><![endif]-->
+    <source media="(min-width: 1600px)" srcset="/assets/images/intro-beat_desktop.png, /assets/images/intro-beat_desktop2x.png 2x">
+    <source media="(min-width: 1199px)" srcset="/assets/images/intro-beat_laptop.png, /assets/images/intro-beat_laptop2x.png 2x">
+    <source media="(min-width: 600px)" srcset="/assets/images/intro-beat_tablet.png, /assets/images/intro-beat_tablet2x.png 2x">
+    <source srcset="/assets/images/intro-beat_mobile.png, /assets/images/intro-beat_mobile2x.png 2x">
+    <!--[if IE 9]></video><![endif]-->
+    <img srcset="/assets/images/intro-beat_desktop.png" alt="Beat">
+  </picture>
+
+  <figcaption class="figcaption figcaption--from-title">
+    Beat
+  </figcaption>
+
+  
+</figure>
+
+  
+</div>
+
+    
   </aside>
 </article>
 
@@ -299,6 +359,16 @@
 
 
 <div class="bullet active">
+  <span class="inactive">O</span>
+  <span class="active">&bull;</span>
+</div>
+
+  
+    
+
+
+
+<div class="bullet ">
   <span class="inactive">O</span>
   <span class="active">&bull;</span>
 </div>
