@@ -56,6 +56,22 @@
       {
         "images": [
           {
+            "title": "The Beat home page on laptop",
+            "name": "beat-home-laptop"
+          }
+        ]
+      },
+      {
+        "images": [
+          {
+            "title": "The Beat Practically page on laptop",
+            "name": "beat-practically-laptop"
+          }
+        ]
+      },
+      {
+        "images": [
+          {
             "title": "The Beat home page on desktop",
             "name": "beat-masters-desktop"
           }
