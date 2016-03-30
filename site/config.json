@@ -1,11 +1,24 @@
 {
   "url": "/",
-  "url": "http://metamn.io/",
+  "urlx": "http://metamn.io/",
   "urly": "http://metamn.github.io/metamn-v1/",
   "title": "Metamn",
   "images": "assets/images/",
 
   "works": [
+    {
+      "title": "Beat",
+      "url": "work/beat",
+      "services": [
+        "Design",
+        "Front-end"
+      ],
+      "image": {
+        "title": "Beat",
+        "name": "wanderlust-thumb",
+        "url": "work/beat"
+      }
+    },
     {
       "title": "Wanderlust",
       "url": "work/wanderlust",
