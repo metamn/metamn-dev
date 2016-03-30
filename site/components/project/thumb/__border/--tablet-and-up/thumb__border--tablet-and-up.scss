@@ -16,5 +16,9 @@
     &:nth-of-type(7) {
       border-right: 1px solid;
     }
+
+    &:last-of-type {
+      border-left: 1px solid;
+    }
   }
 }
