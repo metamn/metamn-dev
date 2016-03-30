@@ -7,7 +7,7 @@
     ],
     "description": {
       "paragraphs": [
-        "Reboot is a social design consultancy focused on international development.",
+        "<a href='http://reboot.org' title='Reboot'>Reboot</a> is a social design consultancy focused on international development.",
         "After growing out the startup phase the Reboot design team created a new look and wanted a developer to implement in Wordpress.",
         "The requirement for back&ndash;end was portability. No third-party plugins, just Wordpress core features and structures."
       ]

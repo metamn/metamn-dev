@@ -8,5 +8,10 @@
 
   .description__text {
     @include text-style(body-text);
+
+    a,
+    .link {
+      @include link(white-on-blue, underline);
+    }
   }
 }
