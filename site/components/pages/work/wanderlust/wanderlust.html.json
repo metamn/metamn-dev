@@ -39,30 +39,6 @@
       {
         "images": [
           {
-            "title": "The Wanderlust experience page on mobile",
-            "name": "wanderlust-experience-mobile"
-          },
-          {
-            "title": "The Wanderlust experience page on tablet",
-            "name": "wanderlust-experience-tablet"
-          }
-        ]
-      },
-      {
-        "images": [
-          {
-            "title": "The Wanderlust festival page on mobile",
-            "name": "wanderlust-festival-mobile"
-          },
-          {
-            "title": "The Wanderlust festival page on tablet",
-            "name": "wanderlust-festival-tablet"
-          }
-        ]
-      },
-      {
-        "images": [
-          {
             "title": "The Wanderlust festival page on laptop",
             "name": "wanderlust-festival-laptop"
           }
