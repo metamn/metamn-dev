@@ -2,12 +2,12 @@
 {% set classname = c.classname(title) %}
 
 {% for k in kss %}
-  {% if k.data.reference == classname %}
+  {% if k.reference == classname %}
     <article class="styleguide-description">
       <h3>Description</h3>
 
       <div class="text">
-        {{ k.data.description | safe }}
+        {{ k.description | safe }}
       </div>
     </article>
   {% endif %}

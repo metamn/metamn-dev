@@ -1,6 +1,6 @@
 {
   "url": "/styleguide/",
-  "url": "http://metamn.io/styleguide/",
+  "urlx": "http://metamn.io/styleguide/",
   "urly": "http://metamn.github.io/metamn-v1/styleguide/",
   "title": "Styleguide",
   "site_title": "Metamn",
@@ -16,12 +16,12 @@
         "url": "../"
       },
       {
-        "title": "Styleguide",
-        "url": "../styleguide"
-      },
-      {
         "title": "Work",
         "url": "../work"
+      },
+      {
+        "title": "Styleguide",
+        "url": "../styleguide"
       },
       {
         "title": "About",
