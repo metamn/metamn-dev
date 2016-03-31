@@ -25,16 +25,16 @@
       {
         "description": "I'll get back to you in a business day",
         "url": "bartus.csongor@gmail.com",
-        "title": "bartus.csongor@gmail.com",
+        "title": "bartus.csongor@gmail",
         "type": "email",
         "glyph": "E"
       },
       {
-        "description": "Industry pulse",
-        "url": "http://twitter.com/metamn",
-        "title": "@metamn",
+        "description": "Code sample",
+        "url": "http://github.com/metamn",
+        "title": "github.com/metamn",
         "type": "external",
-        "glyph": "Tw"
+        "glyph": "G"
       },
       {
         "description": "Inspiration",
@@ -44,11 +44,18 @@
         "glyph": "T"
       },
       {
-        "description": "Code sample",
-        "url": "http://github.com/metamn",
-        "title": "github.com/metamn",
+        "description": "Chat",
+        "url": "http://twitter.com/metamn",
+        "title": "@metamn",
         "type": "external",
-        "glyph": "G"
+        "glyph": "Tw"
+      },
+      {
+        "description": "Industry pulse",
+        "url": "http://metamn.io/beat",
+        "title": "beat",
+        "type": "external",
+        "glyph": "B"
       }
     ]
   }
