@@ -20,6 +20,9 @@
     <!-- Picturefill Responsive Images -->
     <script async src="{{ site.url }}assets/scripts/picturefill.min.js"></script>
 
+    <!-- ga.js -->
+    <script async src="{{ site.url }}assets/scripts/ga.js"></script>
+
     {% include '__icons/head__icons.html.swig' %}
   </head>
 

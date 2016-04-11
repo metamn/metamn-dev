@@ -22,6 +22,9 @@
 
     <!-- Picturefill Responsive Images -->
     <script async src="{{ site.site_url }}assets/scripts/picturefill.min.js"></script>
+
+    <!-- ga.js -->
+    <script async src="{{ site.site_url }}assets/scripts/ga.js"></script>
   </head>
 
   <body>
