@@ -10,18 +10,16 @@
       {
         "images": [
           {
-            "title": "Inu Chivu",
-            "name": "intro-inu-chivu",
-            "extension": ".jpg"
+            "title": "Beat",
+            "name": "intro-beat"
           }
         ]
       },
       {
         "images": [
           {
-            "title": "Reboot",
-            "name": "intro-reboot",
-            "extension": ".jpg"
+            "title": "Wandelust",
+            "name": "intro-wanderlust"
           }
         ]
       },
@@ -37,8 +35,9 @@
       {
         "images": [
           {
-            "title": "Beat",
-            "name": "intro-beat"
+            "title": "Inu Chivu",
+            "name": "intro-inu-chivu",
+            "extension": ".jpg"
           }
         ]
       }
