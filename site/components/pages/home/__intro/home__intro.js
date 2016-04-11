@@ -2,34 +2,18 @@ var introAnimation = function(slidesID) {
   var slides = document.querySelectorAll(slidesID);
   if (!slides) return;
 
-  var activeSlideIndex = -1;
   for (var i = 0; i < slides.length; i++) {
-    if (slides[i].style.transform == "translateX(0px)") {
-      activeSlideIndex = i;
-      break;
-    }
+    homeAnimation1(slides[i], i + 1);
   }
-  if (activeSlideIndex == -1) return;
+}
 
-  var slide = slides[i];
-  if (!slide) return;
 
+function homeAnimation1(slide, activeSlideIndex) {
   var position = slide.getBoundingClientRect();
 
   var year = slide.dataset.year;
   if (!year) return;
 
-  switch (activeSlideIndex) {
-    case 0:
-      homeAnimation1(slide, year, activeSlideIndex + 1, position)
-      break;
-    default:
-  }
-
-}
-
-
-function homeAnimation1(slide, year, activeSlideIndex, position) {
   var w = position.width - (position.width / 30);
   var h = position.height - (position.height / 30);
 
