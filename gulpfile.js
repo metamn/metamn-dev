@@ -89,7 +89,7 @@ var paths = {
 
 
   // .js files to concat
-  js_src: ['site/components/framework/**/**/*.js', 'site/components/project/**/**/*.js', 'site/components/framework/pages/**/**/*.js]'],
+  js_src: ['site/components/framework/**/**/*.js', 'site/components/project/**/**/*.js', 'site/components/pages/**/**/*.js'],
 
   // .js minimezed file name
   js_filename: 'site.js',

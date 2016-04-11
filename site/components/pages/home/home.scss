@@ -6,6 +6,10 @@ html {
       .home__intro {
         @include home__intro;
       }
+
+      .home__intro--animation-1 {
+        @include home__intro--animation-1;
+      }
     }
   }
 }

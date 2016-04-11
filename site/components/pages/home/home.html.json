@@ -13,7 +13,8 @@
             "title": "Beat",
             "name": "intro-beat"
           }
-        ]
+        ],
+        "year": "2016"
       },
       {
         "images": [
@@ -21,7 +22,8 @@
             "title": "Wandelust",
             "name": "intro-wanderlust"
           }
-        ]
+        ],
+        "year": "2015"
       },
       {
         "images": [
@@ -30,7 +32,8 @@
             "name": "intro-scatter",
             "extension": ".jpg"
           }
-        ]
+        ],
+        "year": "2014"
       },
       {
         "images": [
@@ -39,7 +42,8 @@
             "name": "intro-inu-chivu",
             "extension": ".jpg"
           }
-        ]
+        ],
+        "year": "2013"
       }
     ]
   }
