@@ -1,0 +1,18 @@
+@mixin line($direction) {
+  display: flex;
+
+  &__border {
+    animation-duration: 3s;
+    animation-timing-function: cubic-bezier(0.465, 0.183, 0.153, 0.946);
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+  }
+
+  @if ($direction == vertical) {
+    @include line--vertical;
+  }
+
+  @if ($direction == horizontal) {
+    @include line--horizontal;
+  }
+}

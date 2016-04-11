@@ -1,0 +1,17 @@
+// Keyframes
+//
+// https://developer.mozilla.org/en/docs/Web/CSS/@keyframes
+// http://codepen.io/mavame/pen/tJfLI
+//
+// Example
+// @include keyframes(slide-down) {
+//  0% { opacity: 1; }
+//  90% { opacity: 0; }
+// }
+//
+// Styleguide keyframes
+@mixin keyframes($animation) {
+  @keyframes #{$animation} {
+    @content;
+  }
+}

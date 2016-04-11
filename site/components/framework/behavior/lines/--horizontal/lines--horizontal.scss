@@ -1,0 +1,9 @@
+@mixin lines--horizontal($count) {
+  flex-direction: column;
+  justify-content: space-around;
+
+  .line {
+    @include line(horizontal);
+    height: calc(100vh / #{$count + 1});
+  }
+}

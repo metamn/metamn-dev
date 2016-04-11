@@ -1,0 +1,18 @@
+@mixin line--horizontal {
+  align-items: center;
+  
+  &__border {
+    @include border;
+    animation-name: line-draw-horizontal;
+  }
+}
+
+@include keyframes(line-draw-horizontal) {
+  from {
+    flex-basis: 0%;
+  }
+
+  to {
+    flex-basis: 100%;
+  }
+}

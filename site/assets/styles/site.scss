@@ -4,9 +4,10 @@
 
 
 // Internal components
+@import '../../components/framework/behavior/keyframes/keyframes.scss';
+@import '../../components/framework/behavior/**/*.scss';
 @import '../../components/framework/structure/**/*.scss';
 @import '../../components/framework/design/**/*.scss';
-@import '../../components/framework/behavior/**/*.scss';
 @import '../../components/project/**/*.scss';
 @import '../../components/pages/**/*.scss';
 

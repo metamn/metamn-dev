@@ -3,12 +3,38 @@ var introAnimation = function(slidesID) {
   if (!slides) return;
 
   for (var i = 0; i < slides.length; i++) {
-    homeAnimation1(slides[i], i + 1);
+    introAnimationDisplayYear(slides[i], i + 1);
   }
+
+  introAnimationAddGrid(slides[1], 2);
 }
 
 
-function homeAnimation1(slide, activeSlideIndex) {
+function introAnimationAddGrid(slide, index) {
+  var position = slide.getBoundingClientRect();
+  var w = position.width / 3 * 2;
+  var h = position.height / 3 * 2;
+
+  var s = document.querySelector('.home__intro--animation-' + index);
+
+  var d = document.createElement('div');
+  d.className = 'lines lines--vertical';
+  d.style.width = w + 'px';
+  s.style.height = h + 'px';
+  introAnimationDrawLines(10, d);
+  s.appendChild(d);
+
+  var d = document.createElement('div');
+  d.className = 'lines lines--horizontal';
+  d.style.width = w + 'px';
+  s.style.height = h + 'px';
+  introAnimationDrawLines(10, d);
+  s.appendChild(d);
+}
+
+
+
+function introAnimationDisplayYear(slide, activeSlideIndex) {
   var position = slide.getBoundingClientRect();
 
   var year = slide.dataset.year;
@@ -49,6 +75,23 @@ function homeAnimation1(slide, activeSlideIndex) {
   d.appendChild(s4);
 
   slide.appendChild(d);
+}
+
+
+
+// Helpers
+
+function introAnimationDrawLines(nr, parent) {
+  for (var i = 0; i < nr; i++) {
+    var g = document.createElement('span');
+    g.className = 'line';
+
+    var b = document.createElement('span');
+    b.className = 'line__border';
+
+    g.appendChild(b);
+    parent.appendChild(g);
+  }
 }
 
 

@@ -2,7 +2,10 @@
   display: none;
 
   @include mobile-and-up {
-    display: inline;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     position: absolute;
     top: 0;
     left: 0;
@@ -11,5 +14,26 @@
     .letter {
       position: absolute;
     }
+
+    .lines {
+      position: absolute;
+
+      &--vertical {
+        @include lines(4, vertical);
+      }
+
+      &--horizontal {
+        @include lines(4, horizontal);
+      }
+
+      //@include fuzzy-text;
+    }
+  }
+}
+
+
+@include keyframes(home-intro-animation-2-skew) {
+  from {
+    //
   }
 }

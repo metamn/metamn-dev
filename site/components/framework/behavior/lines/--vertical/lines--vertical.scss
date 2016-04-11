@@ -1,0 +1,9 @@
+@mixin lines--vertical($count) {
+  height: 100vh;
+  justify-content: space-around;
+
+  .line {
+    @include line(vertical);
+    width: calc(100vw / #{$count - 1});
+  }
+}
