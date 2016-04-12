@@ -12,8 +12,8 @@ var introAnimation = function(slidesID) {
 
 function introAnimationAddGrid(slide, index) {
   var position = slide.getBoundingClientRect();
-  var w = position.width;
-  var h = position.height;
+  var w = position.width - (position.width / 10);
+  var h = position.height - (position.height / 10);
 
   var s = document.querySelector('.home__intro--animation-' + index);
 

@@ -1,0 +1,11 @@
+@mixin lines--delayed($count, $duration) {
+  @for $i from 1 to $count {
+    .line--#{$i} {
+      .line__border {
+        width: 0;
+        height: 0;
+        animation-delay: $i * $duration;
+      }
+    }
+  }
+}

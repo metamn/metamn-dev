@@ -17,9 +17,11 @@
 
     .lines {
       position: absolute;
-      @include fuzzy-text;
+      top: 2.5vh;
+      left: 2.5vw;
 
-      $duration: 1s;
+      $duration: .3s;
+      @include lines--delayed(20, $duration);
 
       &--vertical {
         @include lines(20, vertical, $duration);
@@ -28,23 +30,6 @@
       &--horizontal {
         @include lines(20, horizontal, $duration);
       }
-
-      @for $i from 1 to 20 {
-        .line--#{$i} {
-          .line__border {
-            width: 0;
-            height: 0;
-            animation-delay: $i * $duration;
-          }
-        }
-      }
     }
-  }
-}
-
-
-@include keyframes(home-intro-animation-2-skew) {
-  from {
-    //
   }
 }
