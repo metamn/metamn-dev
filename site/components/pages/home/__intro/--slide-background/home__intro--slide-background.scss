@@ -1,0 +1,25 @@
+@mixin home__intro--slide-background {
+  .slide {
+    &:nth-of-type(2) {
+      figure {
+        border: 1px solid;
+      }
+    }
+  }
+
+  .slide__background {
+    display: none;
+
+    @include mobile-and-up {
+      display: inline;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 2;
+
+      .letter {
+        position: absolute;
+      }
+    }
+  }
+}

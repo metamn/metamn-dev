@@ -3,30 +3,12 @@ var introAnimation = function(slidesID) {
   if (!slides) return;
 
   for (var i = 0; i < slides.length; i++) {
-    introAnimationDisplayYear(slides[i], i + 1);
+    introAnimationDisplayYear(slides[i]);
   }
-
-  introAnimationAddBackground(slides[1], 2);
 }
 
 
-
-function introAnimationAddBackground(slide, index) {
-  var position = slide.getBoundingClientRect();
-  var w = position.width - 128;
-  var h = position.height - 128;
-
-  var s = document.querySelector('.home__intro--animation-' + index);
-
-  var d = document.createElement('div');
-  d.className = 'background';
-  d.style.width = w + 'px';
-  d.style.height = h + 'px';
-  s.appendChild(d);
-}
-
-
-function introAnimationDisplayYear(slide, activeSlideIndex) {
+function introAnimationDisplayYear(slide) {
   var position = slide.getBoundingClientRect();
 
   var year = slide.dataset.year;
@@ -36,7 +18,7 @@ function introAnimationDisplayYear(slide, activeSlideIndex) {
   var h = position.height - 32;
 
   var d = document.createElement('div');
-  d.className = 'home__intro--animation-' + activeSlideIndex;
+  d.className = 'slide__background';
 
   var s1 = document.createElement('span');
   s1.innerHTML = year[0];
@@ -68,49 +50,6 @@ function introAnimationDisplayYear(slide, activeSlideIndex) {
 
   slide.appendChild(d);
 }
-
-
-function introAnimationAddGrid(slide, index) {
-  var position = slide.getBoundingClientRect();
-  var w = position.width - (position.width / 10);
-  var h = position.height - (position.height / 10);
-
-  var s = document.querySelector('.home__intro--animation-' + index);
-
-  var d = document.createElement('div');
-  d.className = 'lines lines--vertical';
-  d.style.width = w + 'px';
-  d.style.height = h + 'px';
-  introAnimationDrawLines(20, d);
-  s.appendChild(d);
-
-  var d = document.createElement('div');
-  d.className = 'lines lines--horizontal';
-  d.style.width = w + 'px';
-  d.style.height = h + 'px';
-  introAnimationDrawLines(20, d);
-  s.appendChild(d);
-}
-
-
-
-
-// Helpers
-
-function introAnimationDrawLines(nr, parent) {
-  for (var i = 0; i < nr; i++) {
-    var g = document.createElement('span');
-    j = i + 1;
-    g.className = 'line line--' + j;
-
-    var b = document.createElement('span');
-    b.className = 'line__border';
-
-    g.appendChild(b);
-    parent.appendChild(g);
-  }
-}
-
 
 
 introAnimation('.home__intro .slider .slides .slide');

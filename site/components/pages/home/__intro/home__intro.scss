@@ -13,9 +13,10 @@
 
   figure {
     @include color-overlay($blue, .1, $hover: off);
-    z-index: 1;
   }
 
   @include home__intro--portrait;
   @include home__intro--landscape;
+
+  @include home__intro--slide-background;
 }

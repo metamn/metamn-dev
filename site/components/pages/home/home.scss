@@ -6,22 +6,6 @@ html {
       .home__intro {
         @include home__intro;
       }
-
-      .home__intro--animation-1 {
-        @include home__intro--animation-1;
-      }
-
-      .home__intro--animation-2 {
-        @include home__intro--animation-2;
-      }
-
-      .home__intro--animation-3 {
-        @include home__intro--animation-3;
-      }
-
-      .home__intro--animation-4 {
-        @include home__intro--animation-4;
-      }
     }
   }
 }
