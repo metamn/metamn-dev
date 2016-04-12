@@ -33,32 +33,6 @@
       }
     },
     {
-      "title": "Iorad",
-      "url": "work/iorad",
-      "services": [
-        "Design",
-        "Front-end"
-      ],
-      "image": {
-        "title": "Iorad",
-        "name": "iorad-thumb",
-        "url": "work/iorad"
-      }
-    },
-    {
-      "title": "OCCRP",
-      "url": "work/occrp",
-      "services": [
-        "Design",
-        "Front-end"
-      ],
-      "image": {
-        "title": "OCCRP",
-        "name": "occrp-thumb",
-        "url": "work/occrp"
-      }
-    },
-    {
       "title": "Reboot",
       "url": "work/reboot",
       "services": [
@@ -125,6 +99,10 @@
         "name": "smuff-thumb",
         "url": "work/smuff"
       }
+    },
+    {
+      "title": "Work with me",
+      "url": "work-with-me"
     }
   ],
 

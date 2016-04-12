@@ -1,7 +1,6 @@
 @mixin thumb__border--desktop {
   @include desktop {
-    &:nth-of-type(3),
-    &:nth-of-type(6) {
+    &:nth-of-type(3) {
       border-right: 1px solid;
     }
 
@@ -9,15 +8,8 @@
       border-left: none;
     }
 
-    &:nth-of-type(7),
-    &:nth-of-type(8) {
-      border-bottom: 1px solid;
-    }
-
     &:last-of-type {
-      border-right: 1px solid;
-      border-left: 1px solid;
-      border-bottom: none;
+      border-right: none;
     }
 
   }
