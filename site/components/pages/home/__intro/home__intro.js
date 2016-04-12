@@ -12,23 +12,23 @@ var introAnimation = function(slidesID) {
 
 function introAnimationAddGrid(slide, index) {
   var position = slide.getBoundingClientRect();
-  var w = position.width / 3 * 2;
-  var h = position.height / 3 * 2;
+  var w = position.width;
+  var h = position.height;
 
   var s = document.querySelector('.home__intro--animation-' + index);
 
   var d = document.createElement('div');
   d.className = 'lines lines--vertical';
   d.style.width = w + 'px';
-  s.style.height = h + 'px';
-  introAnimationDrawLines(10, d);
+  d.style.height = h + 'px';
+  introAnimationDrawLines(20, d);
   s.appendChild(d);
 
   var d = document.createElement('div');
   d.className = 'lines lines--horizontal';
   d.style.width = w + 'px';
-  s.style.height = h + 'px';
-  introAnimationDrawLines(10, d);
+  d.style.height = h + 'px';
+  introAnimationDrawLines(20, d);
   s.appendChild(d);
 }
 
