@@ -11,7 +11,8 @@
       "url": "work/beat",
       "services": [
         "Design",
-        "Front-end"
+        "Front-end",
+        "Static site"
       ],
       "image": {
         "title": "Beat",
@@ -102,7 +103,18 @@
     },
     {
       "title": "Work with me",
-      "url": "work-with-me"
+      "url": "work-with-me",
+      "services": [
+        "Design",
+        "Front-end",
+        "Wordpress",
+        "Static site"
+      ],
+      "image": {
+        "title": "Work with me",
+        "name": "work-with-me",
+        "url": "work-with-me"
+      }
     }
   ],
 

@@ -12,5 +12,11 @@
       border-right: none;
     }
 
+    &:nth-of-type(5),
+    &:nth-of-type(6),
+    &:nth-of-type(7),
+    &:nth-of-type(8) {
+      border-bottom: none;
+    }
   }
 }
