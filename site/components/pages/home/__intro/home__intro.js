@@ -9,11 +9,10 @@ var introAnimation = function(slidesID) {
 
 
 function introAnimationDisplayYear(slide) {
-  var position = slide.getBoundingClientRect();
-
   var year = slide.dataset.year;
   if (!year) return;
 
+  var position = slide.getBoundingClientRect();
   var w = position.width - 32;
   var h = position.height - 32;
 
