@@ -1,11 +1,11 @@
-@mixin lines($count, $direction: horizontal) {
+@mixin lines($count, $direction: horizontal, $duration: 3s) {
   display: flex;
 
   @if ($direction == horizontal) {
-    @include lines--horizontal($count);
+    @include lines--horizontal($count, $duration);
   }
 
   @if ($direction == vertical) {
-    @include lines--vertical($count);
+    @include lines--vertical($count, $duration);
   }
 }

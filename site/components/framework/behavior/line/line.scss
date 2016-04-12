@@ -1,11 +1,10 @@
-@mixin line($direction) {
+@mixin line($direction, $duration: 3s) {
   display: flex;
 
   &__border {
-    animation-duration: 3s;
+    animation-duration: $duration;
     animation-timing-function: cubic-bezier(0.465, 0.183, 0.153, 0.946);
-    animation-direction: alternate;
-    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
   }
 
   @if ($direction == vertical) {

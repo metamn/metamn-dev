@@ -84,7 +84,8 @@ function introAnimationDisplayYear(slide, activeSlideIndex) {
 function introAnimationDrawLines(nr, parent) {
   for (var i = 0; i < nr; i++) {
     var g = document.createElement('span');
-    g.className = 'line';
+    j = i + 1;
+    g.className = 'line line--' + j;
 
     var b = document.createElement('span');
     b.className = 'line__border';
