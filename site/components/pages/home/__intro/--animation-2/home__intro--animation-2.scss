@@ -15,21 +15,12 @@
       position: absolute;
     }
 
-    .lines {
+    .background {
       position: absolute;
-      top: 2.5vh;
-      left: 2.5vw;
+      top: 64px;
+      left: 64px;;
 
-      $duration: .3s;
-      @include lines--delayed(20, $duration);
-
-      &--vertical {
-        @include lines(20, vertical, $duration);
-      }
-
-      &--horizontal {
-        @include lines(20, horizontal, $duration);
-      }
+      border: 1px solid;
     }
   }
 }
