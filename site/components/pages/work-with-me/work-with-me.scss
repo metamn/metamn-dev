@@ -1,0 +1,24 @@
+html {
+  &.work-with-me {
+    body {
+      @include stretch--columns;
+
+      .title {
+        @include title;
+
+        a {
+          @include link(green-on-blue);
+          @include link--underline;
+        }
+
+        @include mobile {
+          margin-bottom: $lem;
+        }
+      }
+
+      .services {
+        @include services;
+      }
+    }
+  }
+}

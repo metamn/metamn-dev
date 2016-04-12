@@ -1,0 +1,40 @@
+{
+  "subtitle": "<a href='mailto:bartus.csongor@gmail.com' title='bartus.csongor@gmail.com'>bartus.csongor@gmail</a>",
+  "services": [
+    {
+      "title": "Design",
+      "items": [
+        "Your message delivered",
+        "Clean user interfaces",
+        "Meaningful interactions",
+        "No hype"
+      ]
+    },
+    {
+      "title": "Front-end",
+      "items": [
+        "Fast",
+        "Cross-browser compatible",
+        "Responsive",
+        "Reusable components",
+        "Living styleguide"
+      ]
+    },
+    {
+      "title": "Wordpress",
+      "items": [
+        "Experience since 2006",
+        "Custom themes and plugins",
+        "Performance, deployment, scaling"
+      ]
+    },
+    {
+      "title": "Static site",
+      "items": [
+        "Experience since 2009",
+        "100% Secure",
+        "Best performance"
+      ]
+    }
+  ]
+}

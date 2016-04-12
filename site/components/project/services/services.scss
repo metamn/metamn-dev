@@ -1,0 +1,11 @@
+@mixin services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  padding: $lem;
+
+  .service {
+    @include service;
+  }
+}

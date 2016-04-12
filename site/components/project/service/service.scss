@@ -1,0 +1,18 @@
+@mixin service {
+  display: flex;
+  flex-direction: column;
+
+  @include tablet {
+    margin-bottom: $lem;
+  }
+
+  &__title {
+    @include title;
+    display: flex;
+    padding: 0;
+  }
+
+  &__items {
+    @include service__items;
+  }
+}
