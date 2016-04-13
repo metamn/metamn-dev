@@ -5,8 +5,6 @@
 //
 // Styleguide figure
 @mixin figure($figcaption: off, $spinner-type: '') {
-  margin: 0;
-
   // Fluid images, both vertically and horizontally. Works well with the intrinsic ratio mixin
   img {
     max-width: 100%;

@@ -4,8 +4,6 @@
       flex-wrap: wrap;
 
       figure {
-        margin: none;
-
         + figure {
           padding-left: 0 !important;
         }
@@ -13,11 +11,34 @@
         @for $i from 2 to 5 {
           &:nth-of-type(#{$i}) {
             transform: translateY(-($i - 1) * 100%);
-            //display: none;
+            opacity: 0;
+
+            animation-name: animate-slide;
+            animation-duration: 12s;
+            animation-iteration-count: infinite;
+            animation-delay: ($i - 1) * 3s;
           }
         }
       }
 
     }
+  }
+}
+
+@include keyframes(animate-slide) {
+  0% {
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
   }
 }
