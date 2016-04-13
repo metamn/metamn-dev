@@ -29,6 +29,10 @@
         "images": [
           {
             "title": "Themes",
+            "name": "intro-themes"
+          },
+          {
+            "title": "Themes",
             "name": "intro-themes-1"
           },
           {

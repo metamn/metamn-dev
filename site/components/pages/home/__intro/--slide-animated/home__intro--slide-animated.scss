@@ -8,15 +8,25 @@
           padding-left: 0 !important;
         }
 
-        @for $i from 2 to 5 {
+        @for $i from 2 to 6 {
           &:nth-of-type(#{$i}) {
             transform: translateY(-($i - 1) * 100%);
             opacity: 0;
 
-            animation-name: animate-slide;
-            animation-duration: 12s;
+            animation-duration: 15s;
             animation-iteration-count: infinite;
             animation-delay: ($i - 1) * 3s;
+          }
+        }
+
+        &:nth-of-type(2) {
+          animation-name: animate-slide-first;
+          opacity: 1;
+        }
+
+        @for $i from 3 to 6 {
+          &:nth-of-type(#{$i}) {
+            animation-name: animate-slide;
           }
         }
       }
@@ -25,16 +35,44 @@
   }
 }
 
+
+@include keyframes(animate-slide-first) {
+  0% {
+    opacity: 1;
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  40% {
+    opacity: 0;
+  }
+
+  60% {
+    opacity: 0;
+  }
+
+  80% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
 @include keyframes(animate-slide) {
   0% {
     opacity: 0;
   }
 
-  25% {
+  20% {
     opacity: 1;
   }
 
-  50% {
+  25% {
     opacity: 0;
   }
 
