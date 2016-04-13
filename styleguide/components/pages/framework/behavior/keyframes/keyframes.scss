@@ -1,0 +1,35 @@
+html {
+  &.styleguide-keyframes {
+    body {
+      .example {
+        display: flex;
+        flex-direction: column;
+
+        div {
+          max-width: $text-block-width;
+          align-items: center;
+
+          @include colors(white-on-blue);
+          padding: $lem / 2 $lem;
+          margin-bottom: $lem;
+
+          cursor: pointer;
+        }
+
+        .example-1 {
+          animation: styleguide-keyframes 3s infinite;
+        }
+      }
+    }
+  }
+}
+
+@include keyframes(styleguide-keyframes) {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}

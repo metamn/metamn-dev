@@ -1,0 +1,11 @@
+html {
+  &.styleguide-ol {
+    body {
+      .example {
+        ol {
+          @include ol;
+        }
+      }
+    }
+  }
+}
