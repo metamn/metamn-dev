@@ -4,13 +4,18 @@
       flex-wrap: wrap;
 
       figure {
+        // flex-wrap disables vertical centering
+        // - this is a fix;
+        top: 50%;
+        transform: translateY(-50%);
+
         + figure {
           padding-left: 0 !important;
         }
 
         @for $i from 2 to 6 {
           &:nth-of-type(#{$i}) {
-            transform: translateY(-($i - 1) * 100%);
+            transform: translateY(-($i - 1) * 100% - 50%);
             opacity: 0;
 
             animation-duration: 15s;
@@ -20,17 +25,25 @@
         }
 
         &:nth-of-type(2) {
-          animation-name: animate-slide-first;
           opacity: 1;
+
+          @include mobile-and-up {
+            animation-name: animate-slide-first;
+          }
         }
 
         @for $i from 3 to 6 {
           &:nth-of-type(#{$i}) {
-            animation-name: animate-slide;
+            @include mobile {
+              display: none;
+            }
+
+            @include mobile-and-up {
+              animation-name: animate-slide;
+            }
           }
         }
       }
-
     }
   }
 }
