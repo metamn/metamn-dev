@@ -1,0 +1,23 @@
+@mixin home__intro--slide-animated {
+  .slide {
+    &:nth-of-type(3) {
+      flex-wrap: wrap;
+
+      figure {
+        margin: none;
+
+        + figure {
+          padding-left: 0 !important;
+        }
+
+        @for $i from 2 to 5 {
+          &:nth-of-type(#{$i}) {
+            transform: translateY(-($i - 1) * 100%);
+            //display: none;
+          }
+        }
+      }
+
+    }
+  }
+}

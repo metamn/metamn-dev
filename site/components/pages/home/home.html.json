@@ -28,8 +28,20 @@
       {
         "images": [
           {
-            "title": "Its Csongor",
-            "name": "intro-itscsongor"
+            "title": "Themes",
+            "name": "intro-themes-1"
+          },
+          {
+            "title": "Themes",
+            "name": "intro-themes-2"
+          },
+          {
+            "title": "Themes",
+            "name": "intro-themes-3"
+          },
+          {
+            "title": "Themes",
+            "name": "intro-themes-4"
           }
         ],
         "year": "2014"
