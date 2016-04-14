@@ -2,12 +2,12 @@
 
 
 <!doctype html>
-<html lang="en" class="styleguide styleguide-keyframes ">
+<html lang="en" class="styleguide styleguide-marquee ">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <title>Keyframes &mdash; Styleguide</title>
+    <title>Marquee &mdash; Styleguide</title>
 
     <script src="//use.typekit.net/wrb3hlx.js"></script>
     <script>try{Typekit.load();}catch(e){}</script>
@@ -82,18 +82,24 @@
   
     <span class="long-dash"></span>
 
-    <span class="title__subtitle">Keyframes</span>
+    <span class="title__subtitle">Marquee</span>
   
 </header>
 
 
 
 <section class="description-and-example">
-  <h3>Keyframes</h3>
+  <h3>Marquee</h3>
 
   
 
 
+
+  
+
+  
+
+  
 
   
 
@@ -124,21 +130,11 @@
       <h3>Description</h3>
 
       <div class="text">
-        <p>Keyframes animation mixin based on a <a href="http://codepen.io/mavame/pen/tJfLI">Codepen</a></p>
-<p>Example:</p>
-<pre><code>@include keyframes(slide-down) {
- 0% { opacity: 1; }
- 90% { opacity: 0; }
-}
-</code></pre>
+        <p>A responsive marquee based on <a href="http://jsfiddle.net/jonathansampson/xxuxd/">this fiddle</a>.
+Uses &#39;text-indent&#39; because &#39;transform: translateX&#39; is simply doesn&#39;t work in this case</p>
+
       </div>
     </article>
-  
-
-  
-
-  
-
   
 
   
@@ -177,7 +173,7 @@
     
 
   <div class="example-1">
-    <span>Animation with keyframes</span>
+    <div class="marquee">A scrolling text</div>
   </div>
 
 

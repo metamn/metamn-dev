@@ -19,6 +19,10 @@ Behavior</div>
 <div>
 <a class="link" title="Keyframes" href="{{ site.url }}framework/behavior/keyframes"><span data-hover="Keyframes">Keyframes</span></a>
 </li>
+<li class="file menu-item-marquee">
+<div>
+<a class="link" title="Marquee" href="{{ site.url }}framework/behavior/marquee"><span data-hover="Marquee">Marquee</span></a>
+</li>
 <li class="file menu-item-spin">
 <div>
 <a class="link" title="Spin" href="{{ site.url }}framework/behavior/spin"><span data-hover="Spin">Spin</span></a>

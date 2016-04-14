@@ -1,0 +1,67 @@
+html {
+  &.styleguide-marquee {
+    body {
+      .example {
+        display: flex;
+        flex-direction: column;
+
+        div {
+          max-width: $text-block-width;
+          align-items: center;
+
+          @include colors(white-on-blue);
+          padding: $lem / 2 $lem;
+          margin-bottom: $lem;
+
+          cursor: pointer;
+        }
+
+        .marquee {
+          @include marquee(230px, 16, marquee-styleguide);
+        }
+      }
+    }
+  }
+}
+
+
+@include keyframes(marquee-styleguide-mobile) {
+  from  {
+    text-indent: 100%;
+  }
+
+  to {
+    text-indent: -393%;
+  }
+}
+
+
+@include keyframes(marquee-styleguide-tablet) {
+  from  {
+    text-indent: 100%;
+  }
+
+  to {
+    text-indent: -233%;
+  }
+}
+
+@include keyframes(marquee-styleguide-tablet-and-up) {
+  from  {
+    text-indent: 100%;
+  }
+
+  to {
+    text-indent: -180%;
+  }
+}
+
+@include keyframes(marquee-styleguide-desktop) {
+  from  {
+    text-indent: 100%;
+  }
+
+  to {
+    text-indent: -164%;
+  }
+}
