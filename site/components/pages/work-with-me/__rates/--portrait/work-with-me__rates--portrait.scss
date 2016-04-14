@@ -1,7 +1,10 @@
 @mixin work-with-me__rates--portrait {
-  margin-bottom: $lem;
+  @include portrait {
+    margin-bottom: $lem;
 
-  .marquee {
-    @include marquee(100vw, 29, marquee-rates, debug-off);
+    .marquee {
+      @include marquee(100vw, 29, marquee-rates, debug-off);
+      transform: rotate(-45deg) translateX(10vw);
+    }
   }
 }

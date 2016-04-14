@@ -1,5 +1,8 @@
 @mixin work-with-me__rates--landscape {
-  .marquee {
-    @include marquee(50vw, 29, marquee-rates, debug-off);
+  @include landscape {
+    .marquee {
+      @include marquee(50vw, 29, marquee-rates, debug-off);
+      transform: rotate(-45deg) translateX(20vw);
+    }
   }
 }

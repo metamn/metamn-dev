@@ -1,5 +1,6 @@
 @mixin work-with-me__rates {
   @include work-with-me__rates--portrait;
+  @include work-with-me__rates--mobile;
   @include work-with-me__rates--landscape;
 
   .marquee {
