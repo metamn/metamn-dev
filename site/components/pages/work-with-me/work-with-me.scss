@@ -19,6 +19,10 @@ html {
       .services {
         @include services;
       }
+
+      .work-with-me__rates {
+        @include work-with-me__rates;
+      }
     }
   }
 }

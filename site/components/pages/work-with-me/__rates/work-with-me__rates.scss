@@ -1,0 +1,55 @@
+@mixin work-with-me__rates {
+  @include work-with-me__rates--portrait;
+  @include work-with-me__rates--landscape;
+
+  .marquee {
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+
+    a {
+      @include link(white-on-blue);
+    }
+  }
+}
+
+
+@include keyframes(marquee-rates-mobile) {
+  from  {
+    text-indent: 100%;
+  }
+
+  to {
+    text-indent: -133%;
+  }
+}
+
+
+@include keyframes(marquee-rates-tablet) {
+  from  {
+    text-indent: 100%;
+  }
+
+  to {
+    text-indent: -61%;
+  }
+}
+
+@include keyframes(marquee-rates-tablet-and-up) {
+  from  {
+    text-indent: 100%;
+  }
+
+  to {
+    text-indent: -73%;
+  }
+}
+
+@include keyframes(marquee-rates-desktop) {
+  from  {
+    text-indent: 100%;
+  }
+
+  to {
+    text-indent: -58%;
+  }
+}

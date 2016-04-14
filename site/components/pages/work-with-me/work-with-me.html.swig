@@ -11,4 +11,6 @@ title: Work with me
   {% set services = services %}
   {% include '../../project/services/services.html.swig' %}
 
+  {% include '__rates/work-with-me__rates.html.swig' %}
+
 {% endblock %}
