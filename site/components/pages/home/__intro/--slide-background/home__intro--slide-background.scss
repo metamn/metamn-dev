@@ -2,7 +2,7 @@
   .slide__background {
     display: none;
 
-    @include mobile-and-up {
+    @include tablet-and-up {
       display: inline;
       position: absolute;
       top: 0;
@@ -10,6 +10,7 @@
       z-index: 2;
 
       .letter {
+        @include text-style(headline);
         position: absolute;
       }
     }

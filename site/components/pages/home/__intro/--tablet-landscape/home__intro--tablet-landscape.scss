@@ -1,0 +1,7 @@
+@mixin home__intro--tablet-landscape {
+  @include tablet-landscape {
+    .slider {
+      @include slider(1, 1);
+    }
+  }
+}

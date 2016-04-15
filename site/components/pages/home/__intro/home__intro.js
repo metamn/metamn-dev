@@ -13,8 +13,9 @@ function introAnimationDisplayYear(slide) {
   if (!year) return;
 
   var position = slide.getBoundingClientRect();
-  var w = position.width - 32;
-  var h = position.height - 32;
+  // the width and height of a letter is removed
+  var w = position.width - 28.4333;
+  var h = position.height - 42.0833;
 
   var d = document.createElement('div');
   d.className = 'slide__background';
@@ -22,14 +23,14 @@ function introAnimationDisplayYear(slide) {
   var s1 = document.createElement('span');
   s1.innerHTML = year[0];
   s1.className = 'letter letter--1';
-  s1.style.top = '16px';
-  s1.style.left = '16px';
+  s1.style.top = '0px';
+  s1.style.left = '0px';
   d.appendChild(s1);
 
   var s2 = document.createElement('span');
   s2.innerHTML = year[1];
   s2.className = 'letter letter--2';
-  s2.style.top = '16px';
+  s2.style.top = '0px';
   s2.style.left = w + 'px';
   d.appendChild(s2);
 
@@ -37,7 +38,7 @@ function introAnimationDisplayYear(slide) {
   s3.innerHTML = year[2];
   s3.className = 'letter letter--3';
   s3.style.top = h + 'px';
-  s3.style.left = '16px';
+  s3.style.left = '0px';
   d.appendChild(s3);
 
   var s4 = document.createElement('span');
