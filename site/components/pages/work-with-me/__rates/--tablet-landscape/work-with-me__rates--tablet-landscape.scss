@@ -1,0 +1,9 @@
+@mixin work-with-me__rates--tablet-landscape {
+  @include tablet-landscape {
+    order: -1;
+    
+    .marquee {
+      @include marquee(100vw, 29, marquee-rates, debug-off, $scale: 1.777em);
+    }
+  }
+}

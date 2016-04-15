@@ -1,6 +1,7 @@
 @mixin work-with-me__rates {
   @include work-with-me__rates--portrait;
   @include work-with-me__rates--landscape;
+  @include work-with-me__rates--tablet-landscape;
 
   .marquee {
     @include text-style(headline);
