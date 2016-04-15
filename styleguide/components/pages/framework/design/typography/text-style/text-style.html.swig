@@ -36,8 +36,8 @@ title: Text Style
           A page or section title. Bold.
         {% endif %}
 
-        {% if classname == 'menu' %}
-          Menu looks different yet non-intrusive.
+        {% if classname == 'headline' %}
+          This is a large headline text.
         {% endif %}
       </div>
     </aside>

@@ -49,6 +49,15 @@ $text-block-width: 25em;
     
   }
   
+  // Headline
+  // - A short text which must really stand out.
+  @if ($variant == 'headline') {
+    @include scale(large-2);
+    
+    
+    
+  }
+  
 }
 
 
@@ -76,6 +85,13 @@ $text-block-width: 25em;
   @include p;
   
   max-width: 25em;
+  
+  
+}
+
+.text-style--headline {
+  @include scale(large-2);
+  
   
   
 }

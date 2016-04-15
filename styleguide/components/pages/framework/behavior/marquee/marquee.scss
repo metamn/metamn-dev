@@ -17,7 +17,7 @@ html {
         }
 
         .marquee {
-          @include marquee(230px, 16, marquee-styleguide);
+          @include marquee(230px, 16, marquee-styleguide, off);
         }
       }
     }

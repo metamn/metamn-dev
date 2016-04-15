@@ -1,7 +1,0 @@
-@mixin work-with-me__rates--mobile {
-  @include mobile {
-    .marquee {
-      transform: rotate(-45deg) translateY(20vh);
-    }
-  }
-}

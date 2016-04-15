@@ -3,8 +3,7 @@
     margin-bottom: $lem;
 
     .marquee {
-      @include marquee(100vw, 29, marquee-rates, debug-off);
-      transform: rotate(-45deg) translateX(10vw);
+      @include marquee(100vw, 29, marquee-rates, debug-off, $scale: 1.777em);
     }
   }
 }

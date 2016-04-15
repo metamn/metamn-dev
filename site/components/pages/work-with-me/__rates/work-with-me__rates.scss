@@ -1,9 +1,10 @@
 @mixin work-with-me__rates {
   @include work-with-me__rates--portrait;
-  @include work-with-me__rates--mobile;
   @include work-with-me__rates--landscape;
 
   .marquee {
+    @include text-style(headline);
+
     border-top: 1px solid;
     border-bottom: 1px solid;
 
@@ -20,7 +21,7 @@
   }
 
   to {
-    text-indent: -133%;
+    text-indent: -235%;
   }
 }
 
@@ -31,7 +32,7 @@
   }
 
   to {
-    text-indent: -61%;
+    text-indent: -100%;
   }
 }
 

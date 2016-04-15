@@ -55,6 +55,17 @@
           "name": "p"
         }
       ]
+    },
+    {
+      "name": "Headline",
+      "description": "A short text which must really stand out.",
+      "based_on": "Nimbus Sans",
+      "mixins": [
+        {
+          "name": "scale",
+          "value": "large-2"
+        }
+      ]
     }
   ]
 }
