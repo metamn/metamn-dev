@@ -5,8 +5,6 @@
       "title": "Design",
       "items": [
         "Your message delivered",
-        "Clean user interfaces",
-        "Meaningful interactions",
         "No hype"
       ]
     },
@@ -14,27 +12,26 @@
       "title": "Front-end",
       "items": [
         "Fast",
-        "Cross-browser compatible",
+        "Compatible",
         "Responsive",
-        "Reusable components",
-        "Living styleguide"
+        "Reusable",
+        "Styleguide"
       ]
     },
     {
       "title": "Wordpress",
       "items": [
-        "Experience since 2006",
-        "Custom themes and plugins",
-        "E-commerce",
-        "Performance, deployment, scaling"
+        "Since 2006",
+        "Themes, plugins",
+        "E-commerce"
       ]
     },
     {
       "title": "Static websites",
       "items": [
-        "Experience since 2009",
-        "100% Secure",
-        "Best performance"
+        "Since 2009",
+        "Secure",
+        "Fast"
       ]
     }
   ]
