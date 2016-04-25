@@ -3,7 +3,7 @@ var introAnimation = function(slidesID) {
   if (!slides) return;
 
   for (var i = 0; i < slides.length; i++) {
-    introAnimationDisplayYear(slides[i]);
+    //introAnimationDisplayYear(slides[i]);
   }
 }
 
