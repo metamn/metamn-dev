@@ -1,7 +1,7 @@
 @mixin home__intro--landscape {
   @include landscape {
     .slider {
-      @include slider(16, 9);
+      @include slider(4, 3);
     }
 
     .slider__bullets {
