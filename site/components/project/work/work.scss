@@ -1,4 +1,6 @@
 @mixin work-item {
+  @include stretch(columns);
+
   .title {
     @include work__title;
   }
@@ -9,9 +11,5 @@
 
   .work__services-and-navigation {
     @include work__services-and-navigation;
-  }
-
-  @include tablet-and-up {
-    @include stretch(columns);
   }
 }
