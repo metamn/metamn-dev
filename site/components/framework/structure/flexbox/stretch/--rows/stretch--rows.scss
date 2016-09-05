@@ -1,7 +1,13 @@
 @mixin stretch--rows {
   display: flex;
   flex-wrap: wrap;
-  min-height: 100vh;
-
   align-items: flex-end;
+
+  @include portrait {
+    min-height: 100vh;
+  }
+
+  @include landscape {
+    height: 100vh;
+  }
 }

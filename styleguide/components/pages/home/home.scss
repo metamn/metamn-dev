@@ -1,10 +1,6 @@
 html {
   &.styleguide-home {
     body {
-      @include desktop {
-        @include stretch--columns;
-      }
-
       .title {
         display: none;
       }

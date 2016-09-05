@@ -5,6 +5,7 @@
 
   @include colors(white-on-blue);
   padding: $lem;
+  width: 100%;
 
   .intro__title {
     @include intro__title;

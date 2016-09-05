@@ -2,7 +2,20 @@ html {
   &.styleguide {
     body {
       @include colors(blue-on-white);
-      @include stretch--columns;
+
+      // IE 11 bugifx ...: https://codepen.io/chriswrightdesign/pen/emQNGZ/
+      display: flex;
+      flex-direction: row;
+
+      .flexbox-ie-container {
+        width: 100%;
+
+        @include stretch--columns;
+        @include landscape {
+          height: auto;
+          min-height: 100vh;
+        }
+      }
 
       .styleguide-header {
         @include header(blue-on-white);
