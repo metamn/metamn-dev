@@ -29,23 +29,7 @@
         "images": [
           {
             "title": "Themes",
-            "name": "intro-themes"
-          },
-          {
-            "title": "Themes",
-            "name": "intro-themes-1"
-          },
-          {
-            "title": "Themes",
-            "name": "intro-themes-2"
-          },
-          {
-            "title": "Themes",
-            "name": "intro-themes-3"
-          },
-          {
-            "title": "Themes",
-            "name": "intro-themes-4"
+            "name": "intro-themes-filled"
           }
         ],
         "year": "2014"

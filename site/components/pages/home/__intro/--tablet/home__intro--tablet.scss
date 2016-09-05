@@ -1,7 +1,0 @@
-@mixin home__intro--tablet {
-  @include tablet {
-    .slide {
-      justify-content: flex-start !important;
-    }
-  }
-}

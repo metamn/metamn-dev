@@ -17,9 +17,7 @@
 
   @include home__intro--portrait;
   @include home__intro--landscape;
-  @include home__intro--tablet;
-  @include home__intro--tablet-landscape;
 
-  @include home__intro--slide-background;
-  @include home__intro--slide-animated;
+  //@include home__intro--slide-background;
+  //@include home__intro--slide-animated;
 }
