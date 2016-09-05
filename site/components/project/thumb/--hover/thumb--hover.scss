@@ -1,5 +1,7 @@
 @mixin thumb--hover {
   @include mobile {
+    overflow-x: hidden;
+    
     figure {
       @include transition(transform);
     }
