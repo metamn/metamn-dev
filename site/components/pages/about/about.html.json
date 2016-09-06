@@ -44,18 +44,25 @@
         "glyph": "T"
       },
       {
-        "description": "Chat",
-        "url": "http://twitter.com/metamn",
-        "title": "@metamn",
+        "description": "Blog",
+        "url": "http://metamn.io/beat",
+        "title": "beat - blog",
         "type": "external",
-        "glyph": "Tw"
+        "glyph": "B"
       },
       {
         "description": "Industry pulse",
-        "url": "http://metamn.io/beat",
-        "title": "beat",
+        "url": "http://metamn.io/pulse",
+        "title": "pulse - links",
         "type": "external",
-        "glyph": "B"
+        "glyph": "P"
+      },
+      {
+        "description": "Why I'm Metaman",
+        "url": "http://metamn.io/gust",
+        "title": "gust - meta",
+        "type": "external",
+        "glyph": "G"
       }
     ]
   }
