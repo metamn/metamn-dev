@@ -357,6 +357,23 @@ gulp.task("html_sg", function() {
   _html("styleguide/" + paths.html_src, paths.dest + "/styleguide/");
 });
 
+function getJSONData(file) {
+  // home/work/cs/c/pages/home/home.html.swig -> home/work/cs/c/pages/home/home
+  var split = file.path.split(".");
+
+  if (split[0]) {
+    var json = split[0] + ".json";
+    try {
+      var stats = fs.lstatSync(json);
+      if (stats.isFile()) {
+        return require(json);
+      }
+    } catch (e) {
+      console.log("split error:", split);
+    }
+  }
+}
+
 // SWIG
 // - compile swig files into html, scss or js. Each swig file has two extensions like colors.scss.swig or page.html.swig
 // - process YAML Front Matter data, if any
@@ -369,6 +386,7 @@ var _swig = function(source, dest, config, grabJSON) {
       .pipe(plumber({ errorHandler: onError }))
 
       // use JSON definitions from /site in /styleguide
+      /*
       .pipe(
         data(function(file) {
           if (grabJSON) {
@@ -383,8 +401,10 @@ var _swig = function(source, dest, config, grabJSON) {
           }
         })
       )
+	  */
 
       // use YAML Front Matter
+      /*
       .pipe(
         data(function(file) {
           var content = fm(String(file.contents));
@@ -392,8 +412,10 @@ var _swig = function(source, dest, config, grabJSON) {
           return content.attributes;
         })
       )
+	  */
 
       // load JSONs
+      //.pipe(data(getJSONData)) // comes from Beat ... might not work well
       .pipe(
         swig({
           // Load a same-name JSON file if found
@@ -402,9 +424,9 @@ var _swig = function(source, dest, config, grabJSON) {
             cache: false,
             locals: {
               // Load site-wide JSON settings
-              site: require(config),
+              site: require(config)
               // Load site-wide KSS file
-              kss: require("./styleguide/kss.json")
+              // kss: require("./styleguide/kss.json")
             }
           }
         })
@@ -416,7 +438,12 @@ var _swig = function(source, dest, config, grabJSON) {
 
 // Swig
 gulp.task("swig", function() {
-  _swig("site/" + paths.swig_src, "site/" + paths.swig_dest, paths.config_json);
+  _swig(
+    "site/" + paths.swig_src,
+    "site/" + paths.swig_dest,
+    paths.config_json,
+    false
+  );
 });
 
 gulp.task("swig_sg", function() {
